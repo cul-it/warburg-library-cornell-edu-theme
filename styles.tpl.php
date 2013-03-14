@@ -38,8 +38,8 @@ if ($style_name == 'tilezoom') {
   $height = 4289;
   $path = "../drupal_files/panels/Panel C_files";
   $tilezoom = "$('#tilezoom-container').tilezoom({width: $width, height: $height, path: '$path', mousewheel: true});";
-  $startposition = "$('#tilezoom-starthere').click();"
-  $ready = "$(document).ready(function(){ $tilezoom $startposition });"
+  $startposition = "$('#tilezoom-starthere').click();";
+  $ready = "$(document).ready(function(){ $tilezoom $startposition });";
 }
 else {
   print $output;
