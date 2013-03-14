@@ -18,7 +18,7 @@
 <?php print $prefix; ?>
 <?php
 if ($style_name == 'tilezoom') {
-  $arr = $variables['object']->uri;
+  $arr = file_stream_wrapper_get_instance_by_uri($variables['object']->uri);
   print '<pre>';
   print_r($arr);
   print '</pre>';
