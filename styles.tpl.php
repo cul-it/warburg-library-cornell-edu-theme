@@ -49,7 +49,7 @@ if ($style_name == 'tilezoom') {
             <div class="zoom-hotspots">
               <a style="left:34%;top:78%;" href="#">Lisa's hands</a>
               <a style="left:86%;top:20%;" href="#" rel="12">Detail of the background</a>
-              <a style="left:25%;top:75%;" href="#" rel="11" id="tilezoom-starthere">starting point</a>
+              <a style="left:5%;top:5%;" href="#" rel="11" id="tilezoom-starthere">starting point</a>
             </div>
           </div>
         </div>
