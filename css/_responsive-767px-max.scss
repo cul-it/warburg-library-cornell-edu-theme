@@ -1,0 +1,31 @@
+//
+// Responsive: Landscape phone to desktop/tablet
+// --------------------------------------------------
+
+@media (max-width: 767px) {
+	body { 
+		padding: 0;
+		margin: 0;
+		font-size: 90%; }
+	.navbar {
+		.container { 
+			width: auto;
+			padding: 0 10px; }
+		.btn-navbar {
+			background: $turquoise;
+			margin-top: 10px;
+		}
+		.btn-navbar:hover { background: $turquoise; }
+		.nav {
+			float: none;
+			li {
+				a,
+				a:hover {
+					background-image: none; }
+			}
+		}
+	}
+	.container { padding: 0 10px; }
+	.new-book { 
+		float: none; }
+}

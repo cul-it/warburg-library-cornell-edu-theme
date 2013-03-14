@@ -1,0 +1,21 @@
+.cornell-brand {
+	font-family: $cornellFont;
+	color: #222;
+	height: 45px;
+	background: $cornellBar;
+	}
+
+.cornell-search {
+	text-align: right;
+	margin-top: 10px;
+	a {
+		color: white;
+	  	text-decoration: none;
+	  	font-size: 0.6875em;
+	  	padding: 5px 15px;
+	}
+	a:hover {
+	  	background: $cornellPrimaryHover; }
+}
+
+

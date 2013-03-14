@@ -1,0 +1,61 @@
+/* Books page - list */
+/***************************/
+
+.book-listing {
+	padding: 30px 0;
+	background: url("/sites/all/themes/signale/images/hr-bg.png") no-repeat bottom;
+	span { display: block;
+		font-size: 1.375em;
+		line-height: 1.2em; }
+	img {
+		max-width: 200px;
+		border: 1px solid #c4c4c4; }
+	.title { 
+		font-size: 1.5em;
+		margin: 1em 0;
+		padding-right: 20px; }
+	.author {
+		font-family: 'museo500';
+		margin-bottom: 1em; }
+	.pub-info { margin-bottom: 0.5em; }
+	strong {
+		font-weight: normal;
+		font-family: 'museo700'; }
+	.book-info { 
+		background: url("/sites/all/themes/signale/images/side-divider.png") no-repeat top right;
+		padding-bottom: 50px;
+	}
+	.publisher { margin: 1em 0 0.5em 0; }
+	.prices { 
+		font-size: 1em;
+		margin-bottom: 1em; }
+	.purchase-link {
+		margin-bottom: 1em;
+		a { 
+			display: inline-block;
+			background: $turquoise;
+			color: white;
+			padding: 4px 12px; }
+		a:hover { background: #0099b2; }
+	}
+	.purchase-options {
+		font-size: 1.125em;
+	}
+	.book-formats {
+		margin: 10px 0 0 0;
+		a, .inactive { margin-right: 5px; }
+	}
+}
+.views-row-first { 
+	.book-listing {
+		padding-top: 0; }
+}
+
+/* Books carousel -- override */
+/***************************/
+.jcarousel-skin-default {
+	.jcarousel-item {
+		width: 200px !important;
+		height: auto;
+	}
+}

@@ -1,0 +1,54 @@
+.navbar {
+	.container { width: 1170px; } // bootstrap override to set fixed width
+	.brand {
+		margin: 25px 0 25px -20px;
+		padding-top: 30px;
+		float: none;
+		font-size: 6.5em;
+		color: $turquoise;
+		font-family: 'MercuryRegular';
+		text-transform: lowercase;
+	}
+	.brand:hover { color: $turquoiseHover; }
+	.nav {
+		float: right;
+		margin-right: 0; }
+	.menu {
+		margin-top: 60px;
+		list-style: none;
+		li {
+			float: left;
+			margin-left: 0;
+			a {
+				text-shadow: 0 0 0;
+				color: #4d4e53; 
+				height: 41px;
+				font-size: 1.25em;
+				margin-left: 0;
+				padding: 10px;
+				background: url("/sites/all/themes/signale/images/nav-divider.png") no-repeat; }
+				text-transform: lowercase;
+			a:hover {
+				color: $turquoise;
+				background: url("/sites/all/themes/signale/images/nav-divider.png") no-repeat; }
+		}
+		li:first-child {
+			a { background-image: none; }
+		}
+		li.active-trail {
+			a, 
+			a:hover {
+				color: $turquoise;
+				border-bottom: 5px solid $turquoise;
+				background-color: inherit;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none; }
+		}
+		li.leaf {
+			background-image: none;
+			list-style: none;
+			padding: 0; }
+		li.expanded, li.collapsed, li.leaf { padding: 0; }
+ 	}
+}

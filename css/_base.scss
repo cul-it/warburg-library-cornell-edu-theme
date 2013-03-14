@@ -1,0 +1,66 @@
+body {
+	font-size: 100%;
+	font-family: $baseFontFamily;
+	color: $textColorDark;
+	background: white;
+}
+
+/* Links */
+/***************************/
+a,
+a:visited { color: $linkPrimary; }
+a:hover,
+a:active { text-decoration: none; }
+
+/* Typography */
+/***************************/
+
+h1 {
+	// font-family: $headerFontFamily;
+	color: $textColorLight;
+	font-size: 6em;
+	font-weight: normal;
+	text-shadow: 0 3px 0 #444;
+}
+h2 {
+	// font-family: $headerFontFamily;
+	font-size: 2.2em;
+	font-weight: normal;
+	color: $headerColor; 
+}
+h3 { font-size: 1.2em; }
+p { 
+	line-height: 1.6em;
+	margin-bottom: 1.5em; }
+
+
+/* Miscellaneous */
+/***************************/
+p.top-link,
+p.next-link {
+	text-align: right;
+	font-size: 3.5em;
+	margin: 0 0 -35px 0;
+	line-height: 1em;
+	a { color: $lightGray; }
+	a:hover { 
+		color: $mediumGray;
+		text-decoration: none; }
+}
+p.caption {
+	font-size: 0.875em;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+.align-right { text-align: right; }
+
+
+// hr{
+//       background:url(short-rule.gif) repeat-x top left;
+//       border: 0;
+// }
+// #secondary-content hr{
+//       background:url(med-rule.gif) no-repeat top center;
+//       border: 0;
+// }
