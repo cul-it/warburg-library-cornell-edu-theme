@@ -36,7 +36,7 @@ if ($style_name == 'tilezoom') {
   // inline js code for the ready function
   $width = 2835;
   $height = 4289;
-  $path = "sites/default/panels/PanelC_files";
+  $path = "/sites/default/panels/PanelC_files";
   $tilezoom = "jQuery('#tilezoom-container').tilezoom({width: $width, height: $height, path: '$path', mousewheel: true});";
   $startposition = "jQuery('#tilezoom-starthere').click();";
   $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
