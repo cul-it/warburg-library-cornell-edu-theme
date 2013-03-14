@@ -36,7 +36,7 @@ if ($style_name == 'tilezoom') {
   // inline js code for the ready function
   $width = 2835;
   $height = 4289;
-  $path = "../drupal_files/panels/Panel C_files";
+  $path = "/libweb/sites/warburg.test.library.cornell.edu/drupal_files/panels/Panel C_files";
   $tilezoom = "$('#tilezoom-container').tilezoom({width: $width, height: $height, path: '$path', mousewheel: true});";
   $startposition = "$('#tilezoom-starthere').click();";
   $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
