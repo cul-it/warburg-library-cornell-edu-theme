@@ -18,10 +18,12 @@
 <?php print $prefix; ?>
 <?php
 if ($style_name == 'tilezoom') {
-  $arr = get_defined_vars();
+  $arr = $variables;
   print '<pre>';
   print_r($arr);
   print '</pre>';
+
+  //$url = $varibales['object']->uri;
 }
 else {
   print $output;
