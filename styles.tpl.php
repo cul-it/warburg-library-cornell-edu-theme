@@ -39,7 +39,9 @@ if ($style_name == 'tilezoom') {
   $path = "../drupal_files/panels/Panel C_files";
   $tilezoom = "$('#tilezoom-container').tilezoom({width: $width, height: $height, path: '$path', mousewheel: true});";
   $startposition = "$('#tilezoom-starthere').click();";
-  $ready = "$(document).ready(function(){ $tilezoom $startposition });";
+  $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
+  dsm($ready);
+  drupal_add_js($ready, 'inline');
 }
 else {
   print $output;
