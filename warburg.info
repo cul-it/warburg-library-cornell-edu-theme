@@ -10,7 +10,7 @@ core        = 7.x
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/font-awesome.min.css
 
-scripts[] = js/bootstrap.min.js
+;scripts[] = js/bootstrap.min.js
 
 regions[header]         = Header
 regions[navigation]     = Navigation bar
