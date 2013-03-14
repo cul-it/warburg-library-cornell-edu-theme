@@ -26,7 +26,7 @@ if ($style_name == 'tilezoom') {
   //$url = $varibales['object']->uri;
 
   // add the css container class definition for #tilezoom-container
-  drupal_add_css(drupal_get_path('theme', 'warburg') . '/css/tilezoom.css', options);
+  drupal_add_css(drupal_get_path('theme', 'warburg') . '/css/tilezoom.css', array('type' => 'file'));
 
   // add the javascript to support tilezoom
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/jquery.mousewheel.js', array('group' => JS_THEME));
