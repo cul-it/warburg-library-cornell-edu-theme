@@ -20,9 +20,9 @@
 if ($style_name == 'tilezoom') {
   $uri = $variables['object']->uri;
   $arr = file_stream_wrapper_get_instance_by_uri($variables['object']->uri)->realpath();
-  print '<pre>';
-  print_r($arr);
-  print '</pre>';
+  //print '<pre>';
+  //print_r($arr);
+  //print '</pre>';
 
   //$url = $varibales['object']->uri;
 
@@ -37,14 +37,14 @@ if ($style_name == 'tilezoom') {
   $width = 2918;
   $height = 4000;
   $path = "/sites/default/files/panels/PanelC_files";
-  $tilezoom = "jQuery('#tilezoom-container').tilezoom({width: $width, height: $height, path: '$path', mousewheel: false});";
+  $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$path', mousewheel: false});";
   $startposition = ''; // "jQuery('#tilezoom-starthere').click();";
   $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
   dsm($ready);
   drupal_add_js($ready, 'inline');
   $divs = <<<EOT
       <div id="tilezoom-content" class="clearfix">
-        <div id="tilezoom-container">
+        <div id="container">
           <div class="zoom-holder">
             <div class="zoom-hotspots">
               <a style="left:34%;top:78%;" href="#">Lisa's hands</a>
