@@ -7,8 +7,8 @@ core        = 7.x
 ; First we remove the system's menu styling since Zen has its own.
 ; stylesheets[all][] = system.menus.css
 
-stylesheets[all][] = css/style.css
-stylesheets[all][] = css/font-awesome.min.css
+;stylesheets[all][] = css/style.css
+;stylesheets[all][] = css/font-awesome.min.css
 
 ;scripts[] = js/bootstrap.min.js
 
