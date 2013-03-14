@@ -37,8 +37,8 @@ if ($style_name == 'tilezoom') {
   $width = 2835;
   $height = 4289;
   $path = "/libweb/sites/warburg.test.library.cornell.edu/drupal_files/panels/PanelC_files";
-  $tilezoom = "$('#tilezoom-container').tilezoom({width: $width, height: $height, path: '$path', mousewheel: true});";
-  $startposition = "$('#tilezoom-starthere').click();";
+  $tilezoom = "jQuery('#tilezoom-container').tilezoom({width: $width, height: $height, path: '$path', mousewheel: true});";
+  $startposition = "jQuery('#tilezoom-starthere').click();";
   $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
   dsm($ready);
   drupal_add_js($ready, 'inline');
