@@ -16,6 +16,15 @@
    */
 ?>
 <?php print $prefix; ?>
-hello styles!
-  <?php print $output; ?>
+<?php
+if ($style_name == 'tilezoom') {
+  $arr = get_defined_vars();
+  print '<pre>';
+  print_r($arr);
+  print '</pre>';
+}
+else {
+  print $output;
+}
+?>
 <?php print $suffix; ?>
