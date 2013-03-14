@@ -43,7 +43,8 @@ if ($style_name == 'tilezoom') {
   dsm($ready);
   drupal_add_js($ready, 'inline');
   $divs = <<<EOT
-      <div id="tilezoom-container">
+      <div id="tilezoom-content" class="clearfix">
+        <div id="tilezoom-container">
           <div class="zoom-holder">
             <div class="zoom-hotspots">
               <a style="left:34%;top:78%;" href="#">Lisa's hands</a>
@@ -52,6 +53,8 @@ if ($style_name == 'tilezoom') {
             </div>
           </div>
         </div>
+      </div>
+
 EOT;
   print $divs;
 }

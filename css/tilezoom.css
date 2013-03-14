@@ -1,4 +1,4 @@
-#tilezoom_container {
+#tilezoom-container {
   background-color: black;
   border: 1px solid black;
   color: white;   /* for error messages, etc. */
@@ -8,4 +8,9 @@
   height: 700px;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+#tilezoom-content {
+  margin: 20px 0 0 0;
+  padding: 0 10px 40px 10px;
 }
