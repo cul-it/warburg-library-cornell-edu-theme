@@ -34,8 +34,8 @@ if ($style_name == 'tilezoom') {
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/tilezoom/jquery.tilezoom.js', array('group' => JS_THEME));
 
   // inline js code for the ready function
-  $width = 2835;
-  $height = 4289;
+  $width = 2918;
+  $height = 4000;
   $path = "/sites/default/files/panels/PanelC_files";
   $tilezoom = "jQuery('#tilezoom-container').tilezoom({width: $width, height: $height, path: '$path', mousewheel: true});";
   $startposition = "jQuery('#tilezoom-starthere').click();";
