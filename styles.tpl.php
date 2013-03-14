@@ -42,6 +42,18 @@ if ($style_name == 'tilezoom') {
   $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
   dsm($ready);
   drupal_add_js($ready, 'inline');
+  $divs = <<<EOT
+      <div id="tilezoom-container">
+          <div class="zoom-holder">
+            <div class="zoom-hotspots">
+              <a style="left:34%;top:78%;" href="#">Lisa's hands</a>
+              <a style="left:86%;top:20%;" href="#" rel="12">Detail of the background</a>
+              <a style="left:12%;top:45%;" href="#" rel="11" id="tilezoom-starthere">starting point</a>
+            </div>
+          </div>
+        </div>
+EOT;
+  print $divs;
 }
 else {
   print $output;
