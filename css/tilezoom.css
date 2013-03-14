@@ -1,0 +1,11 @@
+#tilezoom_container {
+  background-color: black;
+  border: 1px solid black;
+  color: white;   /* for error messages, etc. */
+  overflow: hidden;
+  position: relative;
+  width: 940px;
+  height: 700px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
