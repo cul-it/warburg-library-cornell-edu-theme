@@ -30,7 +30,7 @@ function warburg_hotspot($image_nid) {
       $hotspot['bottom'] = $box[3]['value'];
       $hotspot['type'] = $node->type;
       $hotspot['nid'] = $node->nid;
-      $hotspot['title'] = empty($node->field_full_title['und'][0]['safe_value']) ? $node->title
+      $hotspot['title'] = empty($node->field_full_title['und']) ? $node->title
       : $node->field_full_title['und'][0]['safe_value'];
     }
   }
