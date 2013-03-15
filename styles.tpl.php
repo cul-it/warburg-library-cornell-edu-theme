@@ -19,15 +19,19 @@
 <?php
 if ($style_name == 'tilezoom') {
   // read the .xml file to find the tiled image dimensions
+  $width = 2000;
+  $height = 2000;
   $path = file_stream_wrapper_get_instance_by_uri($variables['object']->uri)->realpath();
   $xml = file_get_contents($path);
   if (!empty($xml)) {
-    preg_match_all('/<Size Width="([0-9]+)" Height="([0-9]+)"/', $xml, $matches);
-    dsm($matches);
+    if (preg_match_all('/<Size Width="([0-9]+)" Height="([0-9]+)"/', $xml, $matches)) {
+      $width = $matches[1];
+      $height = $matches[2];
+    }
   }
-  //print '<pre>';
-  //print_r($arr);
-  //print '</pre>';
+
+  // directory of image tiles has same name as .xml file with '_files' instead of '.xml'
+  $tiles = preg_replace('/\.xml$', '_files', $path);
 
   $panel = $variables['entity'];
 
@@ -45,10 +49,10 @@ if ($style_name == 'tilezoom') {
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/tilezoom/jquery.tilezoom.js', array('group' => JS_THEME));
 
   // inline js code for the ready function
-  $width = 2918;
-  $height = 4000;
-  $path = "/sites/default/files/panels/PanelC_files";
-  $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$path', mousewheel: true});";
+  //$width = 2918;
+  //$height = 4000;
+  //$path = "/sites/default/files/panels/PanelC_files";
+  $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$tiles', mousewheel: true});";
   $startposition = "jQuery('#tilezoom-starthere').click();";
   $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
   drupal_add_js($ready, 'inline');
