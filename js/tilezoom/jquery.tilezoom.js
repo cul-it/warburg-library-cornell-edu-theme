@@ -622,9 +622,6 @@ function setSizePosition($cont, coords ,speed, callback) {
 		pos.top = -parseInt(($cont.height() / -2 ) + centerY * ratio);
 	}
 
-
-	console.log(pos); //jgr25
-
 	checkBoundaries($cont, pos);
 
 	var styles = {
