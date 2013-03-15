@@ -24,7 +24,7 @@ if ($style_name == 'tilezoom') {
   //print_r($arr);
   //print '</pre>';
 
-  dsm($id);
+  dsm($row);
   dsm($variables);
 
   //$url = $varibales['object']->uri;
