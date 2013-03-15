@@ -82,7 +82,7 @@ function warburg_hotspot_format($hotspot, $url_base, $starthere = FALSE) {
   $top = $hotspot['top'] + $hgt / 2;
   $rel = 11;
   $url = url($url_base . '/' . $hotspot['nid'], array('absolute' => TRUE));
-  $str = t('<a href="!base/!nid" style="left:@left%;top:@top%;" rel="@rel" onclick="window.location=!url">@title</a>',
+  $str = t('<a href="!base/!nid" style="left:@left%;top:@top%;" rel="@rel" onclick="alert(!url)">@title</a>',
     array('!base' => $url_base, '!nid' => $hotspot['nid'],
       '@left' => $left, '@top' => $top, '@rel' => $rel, '@title' => $hotspot['title'],
       '!url' => $url));
