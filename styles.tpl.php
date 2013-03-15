@@ -30,6 +30,7 @@ function warburg_hotspot($image_nid) {
       $hotspot['bottom'] = $box[3]['value'];
       $hotspot['type'] = $node->type;
       $hotspot['nid'] = $node->nid;
+      $hotspot['title'] = empty($node->field_full_title) ? $node->title : $node->field_full_title;
     }
   }
   return $hotspot;
@@ -45,6 +46,7 @@ function warburg_hotspot_list($nid) {
     elseif ($node->type == 'image_group') {
       $group = array('type' => $node->type, 'nid' => $node->nid, 'hotspots' => array());
       $bounds = array();
+      $group['title'] = empty($node->field_full_title) ? $node->title : $node->field_full_title;
       foreach ($node->field_image_list['und'] as $val) {
         $nid = $val['target_id'];
         $hotspot = warburg_hotspot($nid);
@@ -69,6 +71,19 @@ function warburg_hotspot_list($nid) {
     }
   }
   return $hotspot;
+}
+
+function warburg_hotspot_format($hotspot, $url_base, $starthere = FALSE) {
+  // makes an <a href for this hotspot
+  $wid = $hotspot['right'] - $hotspot['left'];
+  $hgt = $hotspot['bottom'] - $hotspot['top'];
+  $left = $hotspot['left'] + $wid / 2;
+  $top = $hotspot['top'] + $hgt / 2;
+  $rel = 11;
+  $str = t('<a href="!base/!nid" style="left:@left%;top:@top%" rel="@rel">@title</a>',
+    array('!base' => $url_base, '!nid' => $hotspot['nid'],
+      '@left' => $left, '@top' => $top, '@rel' => $rel, '@title' => $hotspot['title']));
+  return $str;
 }
 ?>
 <?php print $prefix; ?>
@@ -102,14 +117,16 @@ if ($style_name == 'tilezoom') {
     case 'panel-images':
       // find image locations for hotspots
       foreach ($panel->field_first_ordinal_group['und'] as $val) {
-        $hotspots[] = warburg_hotspot_list($val['target_id']);
+        $hotspot = warburg_hotspot_list($val['target_id']);
+        $hotspots[] = warburg_hotspot_format($hotspot, 'image-list');
       }
       break;
     case 'panel-series':
       // find image locations for hotspots
       foreach ($panel->field_first_sequence_group['und'] as $val) {
-        $hotspots[] = warburg_hotspot_list($val['target_id']);
-      }
+        $hotspot = warburg_hotspot_list($val['target_id']);
+        $hotspots[] = warburg_hotspot_format($hotspot, 'image-sequence');
+     }
       break;
   }
 
@@ -135,19 +152,25 @@ if ($style_name == 'tilezoom') {
   $startposition = ''; //"jQuery('#tilezoom-starthere').click();";
   $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
   drupal_add_js($ready, 'inline');
-  $divs = <<<EOT
+  $divs1 = <<<EOT
         <div id="container">
           <div class="zoom-holder">
             <div class="zoom-hotspots">
-              <a style="left:34%;top:78%;" href="#">Lisa's hands</a>
-              <a style="left:86%;top:20%;" href="#" rel="12">Detail of the background</a>
-              <a style="left:5%;top:5%;" href="#" rel="11" id="tilezoom-starthere">starting point</a>
+EOT;
+  $divs2 = <<<EOT
             </div>
           </div>
         </div>
-
 EOT;
-  print $divs;
+/*
+              <a style="left:34%;top:78%;" href="#">Lisa's hands</a>
+              <a style="left:86%;top:20%;" href="#" rel="12">Detail of the background</a>
+              <a style="left:5%;top:5%;" href="#" rel="11" id="tilezoom-starthere">starting point</a>
+
+ */
+  print $divs1;
+  print implode("/n", $hotspots);
+  print $divs2;
 }
 else {
   print $output;
