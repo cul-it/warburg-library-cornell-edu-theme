@@ -152,14 +152,14 @@ if ($style_name == 'tilezoom') {
   //$width = 2918;
   //$height = 4000;
   //$path = "/sites/default/files/panels/PanelC_files";
-  $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$tiles', mousewheel: true});";
+  $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$tiles', mousewheel: true, beforeZoom:function($cont){alert('beforezoom');}});";
   $startposition = ''; //"jQuery('#tilezoom-starthere').click();";
   $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
   drupal_add_js($ready, 'inline');
   $divs1 = <<<EOT
         <div id="container">
           <div class="zoom-holder">
-            <div class="zoom-notspots">
+            <div class="zoom-hotspots">
 EOT;
   $divs2 = <<<EOT
             </div>
