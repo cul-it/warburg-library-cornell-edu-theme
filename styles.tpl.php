@@ -15,6 +15,62 @@
    *    $id => The unique ID.
    */
 ?>
+<?php
+// functions for handling panels, image groups, images
+function warburg_hotspot($image_nid) {
+  // load the image node
+  $hotspot = array();
+  $node = node_load($image_nid);
+  if ($node != FALSE) {
+    if ($node->type == 'panel_image') {
+      $box = $node->field_bounding_box['und'];
+      $hotspot['left'] = $box[0]['value'];
+      $hotspot['top'] = $box[1]['value'];
+      $hotspot['right'] = $box[2]['value'];
+      $hotspot['bottom'] = $box[3]['value'];
+      $hotspot['type'] = $node->type;
+      $hotspot['nid'] = $node->nid;
+    }
+  }
+  return $hotspot;
+}
+
+function warburg_hotspot_list($nid) {
+  $hotspot = array();
+  $node = node_load($nid);
+  if ($node != FALSE) {
+    if ($node->type == 'panel_image') {
+      $hotspot = warburg_hotspot($node->nid);
+    }
+    elseif ($node->type == 'image_group') {
+      $group = array('type' => $node->type, 'nid' => $node->nid, 'hotspots' => array());
+      $bounds = array();
+      foreach ($node['field_image_list']['und'] as $val) {
+        $nid = $val['target_id'];
+        $hotspot = warburg_hotspot($nid);
+        if (!empty($hotspot)) {
+          $group['hotspots'][] = $hotspot;
+          if (empty($bounds)) {
+            $bounds = $hotspot;
+          }
+          else {
+            $bounds['left'] = min($bounds['left'], $hotspot['left']);
+            $bounds['top'] = min($bounds['top'], $hotspot['top']);
+            $bounds['right'] = max($bounds['right'], $hotspot['right']);
+            $bounds['bottom'] = max($bounds['bottom'], $hotspot['bottom']);
+          }
+        }
+      }
+      $group['left'] = $bounds['left'];
+      $group['top'] = $bounds['top'];
+      $group['right'] = $bounds['right'];
+      $group['bottom'] = $bounds['bottom'];
+      $hotspot = $group;
+    }
+  }
+  return $hotspot;
+}
+?>
 <?php print $prefix; ?>
 <?php
 if ($style_name == 'tilezoom') {
@@ -35,21 +91,29 @@ if ($style_name == 'tilezoom') {
   $path = parse_url($url, PHP_URL_PATH);
   $tiles = preg_replace('/\.xml$/', '_files', $path);
 
+  $panel = $variables['entity'];
+
   // find out what mode display
   $mode = arg(0);
-  dsm ($mode);
+  $hotspots = array();
   switch ($mode) {
     case 'panel-overview':
       break;
     case 'panel-images':
       // find image locations for hotspots
+      foreach ($panel->first_ordinal_group['und'] as $val) {
+        $hotspots[] = warburg_hotspot_list($val->target_id);
+      }
       break;
     case 'panel-series':
+      // find image locations for hotspots
+      foreach ($panel->first_sequence_group['und'] as $val) {
+        $hotspots[] = warburg_hotspot_list($val->target_id);
+      }
       break;
   }
 
-  $panel = $variables['entity'];
-
+  dsm($hotspots);
   dsm($panel);
   //dsm($variables);
 
