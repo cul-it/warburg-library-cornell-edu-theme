@@ -37,8 +37,8 @@ if ($style_name == 'tilezoom') {
 
   $panel = $variables['entity'];
 
-  dsm($panel);
-  dsm($variables);
+  //dsm($panel);
+  //dsm($variables);
 
   $url = $variables['object']->uri;
 
