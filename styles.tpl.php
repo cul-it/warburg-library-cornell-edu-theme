@@ -18,16 +18,23 @@
 <?php print $prefix; ?>
 <?php
 if ($style_name == 'tilezoom') {
-  $uri = $variables['object']->uri;
-  $arr = file_stream_wrapper_get_instance_by_uri($variables['object']->uri)->realpath();
+  // read the .xml file to find the tiled image dimensions
+  $path = file_stream_wrapper_get_instance_by_uri($variables['object']->uri)->realpath();
+  $xml = file_get_contents($path);
+  if (!empty($xml)) {
+    preg_match_all('/<Size Width="([0-9]+)" Height="([0-9]+)"/', $xml, $matches);
+    dsm($matches);
+  }
   //print '<pre>';
   //print_r($arr);
   //print '</pre>';
 
-  dsm($row);
+  $panel = $variables['entity'];
+
+  dsm($panel);
   dsm($variables);
 
-  //$url = $varibales['object']->uri;
+  $url = $variables['object']->uri;
 
   // add the css container class definition for #tilezoom-container
   drupal_add_css(drupal_get_path('theme', 'warburg') . '/css/tilezoom.css', array('type' => 'file'));
