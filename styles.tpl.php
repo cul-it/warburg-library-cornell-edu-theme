@@ -152,7 +152,7 @@ if ($style_name == 'tilezoom') {
   //$width = 2918;
   //$height = 4000;
   //$path = "/sites/default/files/panels/PanelC_files";
-  $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$tiles', mousewheel: true, beforeZoom:function(cont){alert('beforezoom');}});";
+  $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$tiles', mousewheel: true, beforeZoom:function(cont){alert('beforezoom' + cont.toSource());}});";
   $startposition = ''; //"jQuery('#tilezoom-starthere').click();";
   $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
   drupal_add_js($ready, 'inline');
