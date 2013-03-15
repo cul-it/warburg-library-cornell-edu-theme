@@ -24,6 +24,9 @@ if ($style_name == 'tilezoom') {
   //print_r($arr);
   //print '</pre>';
 
+  dsm($id);
+  dsm($variables);
+
   //$url = $varibales['object']->uri;
 
   // add the css container class definition for #tilezoom-container
