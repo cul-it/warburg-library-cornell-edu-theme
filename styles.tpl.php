@@ -108,6 +108,7 @@ if ($style_name == 'tilezoom') {
   $tiles = preg_replace('/\.xml$/', '_files', $path);
 
   $panel = $variables['entity'];
+  $panel_nid = $panel->nid;
 
   // find out what mode display
   $mode = arg(0);
@@ -119,14 +120,14 @@ if ($style_name == 'tilezoom') {
       // find image locations for hotspots
       foreach ($panel->field_first_ordinal_group['und'] as $val) {
         $hotspot = warburg_hotspot_list($val['target_id']);
-        $hotspots[] = warburg_hotspot_format($hotspot, 'image-list');
+        $hotspots[] = warburg_hotspot_format($hotspot, "$panel_nid/image");
       }
       break;
     case 'panel-series':
       // find image locations for hotspots
       foreach ($panel->field_first_sequence_group['und'] as $val) {
         $hotspot = warburg_hotspot_list($val['target_id']);
-        $hotspots[] = warburg_hotspot_format($hotspot, 'image-sequence');
+        $hotspots[] = warburg_hotspot_format($hotspot, "$panel_nid/image");
      }
       break;
   }
@@ -170,7 +171,7 @@ EOT;
 
  */
   print $divs1;
-  print implode("/n", $hotspots);
+  print implode(PHP_EOL, $hotspots);
   print $divs2;
 }
 else {
