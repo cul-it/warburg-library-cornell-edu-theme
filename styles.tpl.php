@@ -33,7 +33,7 @@ if ($style_name == 'tilezoom') {
   // directory of image tiles has same name as .xml file with '_files' instead of '.xml'
   $url = file_create_url($variables['object']->uri);
   dsm($url);
-  $path = ($url);
+  $path = parse_url($url, PHP_URL_PATH);
   dsm($path);
   $tiles = preg_replace('/\.xml$/', '_files', $path);
 
