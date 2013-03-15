@@ -25,11 +25,10 @@ if ($style_name == 'tilezoom') {
   $xml = file_get_contents($path);
   if (!empty($xml)) {
     if (preg_match_all('/<Size Width="([0-9]+)" Height="([0-9]+)"/', $xml, $matches)) {
-      $width = $matches[1];
-      $height = $matches[2];
+      $width = $matches[1][0];
+      $height = $matches[2][0];
     }
   }
-  dsm($width);
 
   // directory of image tiles has same name as .xml file with '_files' instead of '.xml'
   $url = file_create_url($variables['object']->uri);
