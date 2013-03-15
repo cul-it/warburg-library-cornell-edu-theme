@@ -102,13 +102,13 @@ if ($style_name == 'tilezoom') {
     case 'panel-images':
       // find image locations for hotspots
       foreach ($panel->first_ordinal_group['und'] as $val) {
-        $hotspots[] = warburg_hotspot_list($val->target_id);
+        $hotspots[] = warburg_hotspot_list($val['target_id']);
       }
       break;
     case 'panel-series':
       // find image locations for hotspots
       foreach ($panel->first_sequence_group['und'] as $val) {
-        $hotspots[] = warburg_hotspot_list($val->target_id);
+        $hotspots[] = warburg_hotspot_list($val['target_id']);
       }
       break;
   }
