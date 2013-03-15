@@ -159,7 +159,7 @@ if ($style_name == 'tilezoom') {
   $divs1 = <<<EOT
         <div id="container">
           <div class="zoom-holder">
-            <div class="zoom-hotspots">
+            <div class="zoom-notspots">
 EOT;
   $divs2 = <<<EOT
             </div>
