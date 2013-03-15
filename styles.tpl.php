@@ -39,9 +39,8 @@ if ($style_name == 'tilezoom') {
   $height = 4000;
   $path = "/sites/default/files/panels/PanelC_files";
   $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$path', mousewheel: true});";
-  $startposition = ''; // "jQuery('#tilezoom-starthere').click();";
+  $startposition = "jQuery('#tilezoom-starthere').click();";
   $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
-  dsm($ready);
   drupal_add_js($ready, 'inline');
   $divs = <<<EOT
         <div id="container">
