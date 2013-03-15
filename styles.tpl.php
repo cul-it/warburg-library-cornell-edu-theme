@@ -36,6 +36,7 @@ if ($style_name == 'tilezoom') {
   $path = parse_url($url, PHP_URL_PATH);
   dsm($path);
   $tiles = preg_replace('/\.xml$/', '_files', $path);
+  dsm($tiles);
 
   $panel = $variables['entity'];
 
