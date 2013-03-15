@@ -45,7 +45,7 @@ function warburg_hotspot_list($nid) {
     elseif ($node->type == 'image_group') {
       $group = array('type' => $node->type, 'nid' => $node->nid, 'hotspots' => array());
       $bounds = array();
-      foreach ($node->field_image_list['und'] as $val) {
+      foreach ($node->field_image_list->und as $val) {
         $nid = $val['target_id'];
         $hotspot = warburg_hotspot($nid);
         if (!empty($hotspot)) {
