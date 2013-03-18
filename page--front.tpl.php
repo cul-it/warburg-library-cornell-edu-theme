@@ -108,7 +108,7 @@
           </div>
           <div class="span5 offset1">
             <div class="new-book">
-              <a href="#"><img src="/sites/all/themes/signale/img/covers/johnson.png"></a>
+              <a href="#"><img src="/sites/all/themes/signale/images/johnson.png"></a>
               <p><strong>Christopher D. Johnson</strong><br>
                 Cornell University Library and Cornell University Press</p>
           </div>
