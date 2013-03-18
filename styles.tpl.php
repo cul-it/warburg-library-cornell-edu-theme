@@ -82,10 +82,11 @@ function warburg_hotspot_format($hotspot, $url_base, $starthere = FALSE) {
   $top = $hotspot['top'] + $hgt / 2;
   $rel = 11;
   $url = url($url_base . '/' . $hotspot['nid'], array('absolute' => TRUE));
-  $str = t('<a href="!base/!nid" style="left:@left%;top:@top%;" rel="@rel">@title</a>',
+  $starthere_id = $starthere ? 'id="tilezoom-starthere" ' : '';
+  $str = t('<a href="!base/!nid" style="left:@left%;top:@top%;" rel="@rel" !id >@title</a>',
     array('!base' => $url_base, '!nid' => $hotspot['nid'],
       '@left' => $left, '@top' => $top, '@rel' => $rel, '@title' => $hotspot['title'],
-      '!url' => $url));
+      '!url' => $url, '!id' => $starthere_id));
   return $str;
 }
 
@@ -119,6 +120,8 @@ if ($style_name == 'tilezoom') {
   $panel = $variables['entity'];
   $panel_nid = $panel->nid;
 
+  $startposition = ''; //"jQuery('#tilezoom-starthere').click();";
+
   // find out what mode display
   $mode = arg(0);
   $hotspots = array();
@@ -150,7 +153,8 @@ if ($style_name == 'tilezoom') {
       $prefix = '/' . $mode . '/' . $panel_nid . '/';
       $nid = $panel_nid;
       $hotspot = warburg_hotspot($nid);
-      $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type']);
+      $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], TRUE);
+      $startposition = "jQuery('#tilezoom-starthere').click();";
       break;
   }
 
@@ -173,7 +177,6 @@ if ($style_name == 'tilezoom') {
   //$height = 4000;
   //$path = "/sites/default/files/panels/PanelC_files";
   $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$tiles', mousewheel: true});";
-  $startposition = ''; //"jQuery('#tilezoom-starthere').click();";
   $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
   drupal_add_js($ready, 'inline');
   $divs1 = <<<EOT
