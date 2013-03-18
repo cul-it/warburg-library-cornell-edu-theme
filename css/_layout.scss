@@ -24,25 +24,23 @@
 /* Sub page title */
 /***************************/
 
-.not-front {
-	.page-title {
-		background: url("../images/hero/etching1.jpg") no-repeat;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-		height: 160px;
-		h2 {
-			font-family: 'museo500';
-			font-size: 2.5em;
-			text-transform: uppercase;
-			padding: 20px 50px 20px 20px;
-			background: $turquoise;
-			color: white;
-			display: inline-block;
-			margin-top: 100px;
-			opacity: .9;
-		}
+.page-title {
+	background: url("../img/hero/etching1.jpg") no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 160px;
+	h2 {
+		font-family: 'museo500';
+		font-size: 2.5em;
+		text-transform: uppercase;
+		padding: 20px 50px 20px 20px;
+		background: $turquoise;
+		color: white;
+		display: inline-block;
+		margin-top: 100px;
+		opacity: .9;
 	}
 }
 
@@ -70,7 +68,7 @@
 /***************************/
 footer {
 	padding: 60px 0;
-	background: url("../images/hr-bg.png") no-repeat top;
+	border-top: 1px solid #eee;
 	nav {
 		ul {
 			list-style: none;
@@ -85,7 +83,7 @@ footer {
 				display: block;
 				color: #4d4e53;
 				padding: 2px 2px 0 10px;
-				background: url("../images/nav-divider-footer.png") no-repeat;
+				background: url("../img/nav-divider-footer.png") no-repeat;
 			}
 			li:first-child {
 				a { background-image: none; }

@@ -5671,49 +5671,34 @@ p.caption {
   margin: 25px 0 25px -20px;
   padding-top: 30px;
   float: none;
-  font-size: 6.5em;
+  font-size: 4.5em;
   color: #18b9d2;
-  font-family: 'MercuryRegular';
-  text-transform: lowercase; }
+  font-family: 'MercuryRegular'; }
 .navbar .brand:hover {
   color: #0099b2; }
 .navbar .nav {
-  float: right;
-  margin-right: 0; }
-.navbar .menu {
-  margin-top: 60px;
-  list-style: none; }
-  .navbar .menu li {
-    float: left;
-    margin-left: 0;
-    text-transform: lowercase; }
-    .navbar .menu li a {
-      text-shadow: 0 0 0;
-      color: #4d4e53;
-      height: 41px;
-      font-size: 1.25em;
-      margin-left: 0;
-      padding: 10px;
-      background: url("/sites/all/themes/signale/images/nav-divider.png") no-repeat; }
-    .navbar .menu li a:hover {
-      color: #18b9d2;
-      background: url("/sites/all/themes/signale/images/nav-divider.png") no-repeat; }
-  .navbar .menu li:first-child a {
+  margin-top: 50px;
+  float: right; }
+  .navbar .nav li a {
+    text-shadow: 0 0 0;
+    color: #4d4e53;
+    font-size: 1.25em;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: url("../img/nav-divider.png") no-repeat; }
+  .navbar .nav li a:hover {
+    color: #18b9d2;
+    background: url("../img/nav-divider.png") no-repeat; }
+  .navbar .nav li:first-child a {
     background-image: none; }
-  .navbar .menu li.active-trail a,
-  .navbar .menu li.active-trail a:hover {
+  .navbar .nav li.active a,
+  .navbar .nav li.active a:hover {
     color: #18b9d2;
     border-bottom: 5px solid #18b9d2;
     background-color: inherit;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none; }
-  .navbar .menu li.leaf {
-    background-image: none;
-    list-style: none;
-    padding: 0; }
-  .navbar .menu li.expanded, .navbar .menu li.collapsed, .navbar .menu li.leaf {
-    padding: 0; }
 
 /* Identity */
 /***************************/
@@ -5737,14 +5722,14 @@ p.caption {
 
 /* Sub page title */
 /***************************/
-.not-front .page-title {
-  background: url("../images/hero/etching1.jpg") no-repeat;
+.page-title {
+  background: url("../img/hero/etching1.jpg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 160px; }
-  .not-front .page-title h2 {
+  .page-title h2 {
     font-family: 'museo500';
     font-size: 2.5em;
     text-transform: uppercase;
@@ -5779,7 +5764,7 @@ p.caption {
 /***************************/
 footer {
   padding: 60px 0;
-  background: url("../images/hr-bg.png") no-repeat top; }
+  border-top: 1px solid #eeeeee; }
   footer nav ul {
     list-style: none;
     margin-left: 0; }
@@ -5792,7 +5777,7 @@ footer {
       display: block;
       color: #4d4e53;
       padding: 2px 2px 0 10px;
-      background: url("../images/nav-divider-footer.png") no-repeat; }
+      background: url("../img/nav-divider-footer.png") no-repeat; }
     footer nav ul li:first-child a {
       background-image: none; }
   footer p.copyright {
@@ -5802,7 +5787,7 @@ footer {
 /* Hero */
 /***************************/
 .hero {
-  background: url("../images/hero/etching1.jpg") no-repeat;
+  background: #f1f1f1;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -5812,6 +5797,19 @@ footer {
 .new-book {
   float: right;
   margin: 35px 60px 30px 0; }
+  .new-book .ribbon {
+    display: inline-block;
+    background: #00b3d6;
+    color: white;
+    opacity: .7;
+    padding: 20px 10px 20px 30px;
+    font-size: 2.5em;
+    position: fixed;
+    margin-top: 20px;
+    margin-left: -10px; }
+    .new-book .ribbon .ribbon-content:before {
+      left: 0;
+      border-width: 1em 0 0 1em; }
 
 .book-formats {
   margin: 15px 0 0 30px; }
@@ -5822,7 +5820,7 @@ footer {
     height: 40px;
     float: left;
     margin-right: 10px;
-    background: url("../images/book-formats.png") no-repeat; }
+    background: url("../img/book-formats.png") no-repeat; }
   .book-formats a.cu-press {
     background-position: 0 -40px; }
   .book-formats a.cu-press:hover {
@@ -5844,11 +5842,7 @@ footer {
 
 /* Featured content */
 /***************************/
-.panel-display h2.pane-title {
-  background: #595959;
-  color: white;
-  width: 70%;
-  padding: 5px 10px;
+.feature h3 {
   font-size: 1.625em;
   margin-bottom: 1em; }
 
@@ -5876,18 +5870,18 @@ footer {
 /***************************/
 .carousel {
   min-height: 400px;
-  background: url("../images/hr-bg.png") no-repeat bottom; }
+  background: url("../img/hr-bg.png") no-repeat bottom; }
 
 /* Books page - list */
 /***************************/
 .book-listing {
   padding: 30px 0;
-  background: url("/sites/all/themes/signale/images/hr-bg.png") no-repeat bottom; }
+  background: url("../img/hr-bg.png") no-repeat top; }
   .book-listing span {
     display: block;
     font-size: 1.375em;
     line-height: 1.2em; }
-  .book-listing img {
+  .book-listing .cover {
     max-width: 200px;
     border: 1px solid #c4c4c4; }
   .book-listing .title {
@@ -5903,7 +5897,7 @@ footer {
     font-weight: normal;
     font-family: 'museo700'; }
   .book-listing .book-info {
-    background: url("/sites/all/themes/signale/images/side-divider.png") no-repeat top right;
+    background: url("../img/side-divider.png") no-repeat top right;
     padding-bottom: 50px; }
   .book-listing .publisher {
     margin: 1em 0 0.5em 0; }
@@ -5926,14 +5920,9 @@ footer {
     .book-listing .book-formats a, .book-listing .book-formats .inactive {
       margin-right: 5px; }
 
-.views-row-first .book-listing {
-  padding-top: 0; }
-
-/* Books carousel -- override */
-/***************************/
-.jcarousel-skin-default .jcarousel-item {
-  width: 200px !important;
-  height: auto; }
+.book-listing-first {
+  padding-top: 0;
+  background-image: none; }
 
 @media (min-width: 980px) and (max-width: 1199px) {
   body {

@@ -70,19 +70,6 @@
  */
 ?>
 
-<section class="cornell-brand">
-  <div class="container">
-    <div class="row">
-      <div class="span6">
-        <a href="http://www.cornell.edu/"><img src="/sites/all/themes/signale/images/layout/cornell.gif" alt="Cornell University" border="0" /></a>
-      </div>
-      <div class="cornell-search span6 hidden-phone">
-        <a href="http://www.cornell.edu/search/">Search Cornell</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <nav class="navbar">
   <div class="container">
     <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -108,31 +95,25 @@
 </nav>
 
 <section class="hero">
-  <div class="container">
-    <div class="row">
-      <div class="span6">
-        <div class="site-identity">
-          <h2>Modern German letters, cultures and thought</h2>
-          <p>Signale is a book series for English-language scholarship on the literature, culture, criticism, and intellectual history of the German-speaking world, as well as translations of important German-language works.</p>
+      <div class="container">
+        <div class="row">
+          <div class="span6">
+            <div>
+              <h2>Sunt in culpa qui officia</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <ul>
+                <li><a href="#">Interactive pathways</a></li>
+                <li><a href="#">Browse panels</a></li>
+            </div>
+          </div>
+          <div class="span5 offset1">
+            <div class="new-book">
+              <a href="#"><img src="img/covers/johnson.png"></a>
+              <p><strong>Christopher D. Johnson</strong><br>
+                Cornell University Library and Cornell University Press</p>
+          </div>
         </div>
-      </div>
-      <div class="span5 offset1">
-        <div class="new-book">
-          <a href="#"><img src="/sites/all/themes/signale/images/new-book/blumenberg.png"></a>
-          <div class="book-formats">
-            <a href="#" class="cu-press">Cornell University Press</a>
-            <a href="#" class="amazon">Amazon</a>
-            <a href="#" class="google-books">Google Books</a>
-        </div>
-      </div>
-    </div>
-</section>
-
-<section class="books">
-  <div class="container">
-    <?php print render($page['carousel']); ?>
-  </div>
-<section>
+    </section>
 
 <section class="main-content">
   <div class="container">
