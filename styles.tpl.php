@@ -151,7 +151,7 @@ if ($style_name == 'tilezoom') {
     case 'image-single':
       // display a single image
       $prefix = '/' . $mode . '/' . $panel_nid . '/';
-      $nid = $panel_nid;
+      $nid = arg(1);
       $hotspot = warburg_hotspot($nid);
       $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], TRUE);
       $startposition = "jQuery('#tilezoom-starthere').click();";
