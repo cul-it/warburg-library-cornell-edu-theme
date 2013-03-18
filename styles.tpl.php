@@ -88,6 +88,13 @@ function warburg_hotspot_format($hotspot, $url_base, $starthere = FALSE) {
       '!url' => $url));
   return $str;
 }
+
+function warburg_bounding_box_scale($image_width, $image_height, $left, $top, $right, $bottom) {
+  // calculate the best scale (rel="?") for the given bounding box
+  $pct_width = $right - $left;
+  $pct_height = $bottom - $top;
+
+}
 ?>
 <?php print $prefix; ?>
 <?php
@@ -137,6 +144,13 @@ if ($style_name == 'tilezoom') {
             $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type']);
          }
        }
+      break;
+    case 'image-single':
+      // display a single image
+      $prefix = '/' . $mode . '/' . $panel_nid . '/';
+      $nid = $panel_nid;
+      $hotspot = warburg_hotspot($nid);
+      $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type']);
       break;
   }
 
