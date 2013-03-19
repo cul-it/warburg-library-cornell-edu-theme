@@ -178,6 +178,7 @@ if ($style_name == 'tilezoom') {
         $seq = node_load($seq_id);
         if ($seq !== FALSE) {
           if (isset($seq->field_steps['und'])) {
+            dsm($seq);
             $prefix = '';
             foreach ($seq->field_steps['und'] as $val) {
               $hotspot = warburg_hotspot_list($val['target_id']);
