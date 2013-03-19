@@ -100,107 +100,121 @@ function warburg_bounding_box_scale($image_width, $image_height, $left, $top, $r
 <?php print $prefix; ?>
 <?php
 if ($style_name == 'tilezoom') {
-  // read the .xml file to find the tiled image dimensions
-  $width = 2000;
-  $height = 2000;
-  $path = file_stream_wrapper_get_instance_by_uri($variables['object']->uri)->realpath();
-  $xml = file_get_contents($path);
-  if (!empty($xml)) {
-    if (preg_match_all('/<Size Width="([0-9]+)" Height="([0-9]+)"/', $xml, $matches)) {
-      $width = $matches[1][0];
-      $height = $matches[2][0];
+  // find out what mode display
+  $mode = '';
+  if (in_array(arg(0), array('panel-overview', 'panel-series', 'panel-images'))) {
+    if (is_numeric(arg(1))) {
+      $mode = arg(0);
+      $panel_nid = arg(1);
+      if (!empty(arg(2)) && in_array(arg(2), array('panel_image', 'image_group')) && is_numeric(arg(3))) {
+        $mode .= '-' . arg(2);
+        $image_nid = arg(3);
+      }
     }
   }
-
-  // directory of image tiles has same name as .xml file with '_files' instead of '.xml'
-  $url = file_create_url($variables['object']->uri);
-  $path = parse_url($url, PHP_URL_PATH);
-  $tiles = preg_replace('/\.xml$/', '_files', $path);
-
-  $panel = $variables['entity'];
-  $panel_nid = $panel->nid;
-
-  $startposition = ''; //"jQuery('#tilezoom-starthere').click();";
-
-  // find out what mode display
-  $mode = arg(0);
-  $hotspots = array();
-  switch ($mode) {
-    case 'panel-overview':
-      break;
-    case 'panel-images':
-      // find image locations for hotspots
-      $prefix = '/' . $mode . '/' . $panel_nid . '/';
-      if (isset($panel->field_first_ordinal_group['und'])) {
-        foreach ($panel->field_first_ordinal_group['und'] as $val) {
-          $hotspot = warburg_hotspot_list($val['target_id']);
-          $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type']);
-        }
+  if (empty($mode)) {
+    print $output;
+  }
+  else {
+    // read the .xml file to find the tiled image dimensions
+    $width = 2000;
+    $height = 2000;
+    $path = file_stream_wrapper_get_instance_by_uri($variables['object']->uri)->realpath();
+    $xml = file_get_contents($path);
+    if (!empty($xml)) {
+      if (preg_match_all('/<Size Width="([0-9]+)" Height="([0-9]+)"/', $xml, $matches)) {
+        $width = $matches[1][0];
+        $height = $matches[2][0];
       }
-      break;
-    case 'panel-series':
-      // find image locations for hotspots
-      $prefix = '/' . $mode . '/' . $panel_nid . '/';
-      if (isset($panel->field_first_sequence_group['und'])) {
-         foreach ($panel->field_first_sequence_group['und'] as $val) {
+    }
+
+    // directory of image tiles has same name as .xml file with '_files' instead of '.xml'
+    $url = file_create_url($variables['object']->uri);
+    $path = parse_url($url, PHP_URL_PATH);
+    $tiles = preg_replace('/\.xml$/', '_files', $path);
+
+    $panel = $variables['entity'];
+    $panel_nid = $panel->nid;
+
+    $startposition = ''; //"jQuery('#tilezoom-starthere').click();";
+    $hotspots = array();
+    dsm($mode);
+    switch ($mode) {
+      case 'panel-overview':
+        break;
+      case 'panel-images':
+        // find image locations for hotspots
+        $prefix = '/' . $mode . '/' . $panel_nid . '/';
+        if (isset($panel->field_first_ordinal_group['und'])) {
+          foreach ($panel->field_first_ordinal_group['und'] as $val) {
             $hotspot = warburg_hotspot_list($val['target_id']);
             $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type']);
+          }
+        }
+        break;
+      case 'panel-series':
+        // find image locations for hotspots
+        $prefix = '/' . $mode . '/' . $panel_nid . '/';
+        if (isset($panel->field_first_sequence_group['und'])) {
+           foreach ($panel->field_first_sequence_group['und'] as $val) {
+              $hotspot = warburg_hotspot_list($val['target_id']);
+              $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type']);
+           }
          }
-       }
-      break;
-    case 'image-single':
-      // display a single image
-      $prefix = '/' . $mode . '/' . $panel_nid . '/';
-      $nid = arg(1);
-      $hotspot = warburg_hotspot($nid);
-      $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], TRUE);
-      $startposition = "jQuery('#tilezoom-starthere').click();";
-      break;
-  }
+        break;
+      case 'panel-images-panel_image':
+        // display a single image
+        $prefix = '';
+        $hotspot = warburg_hotspot($image_nid);
+        $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], TRUE);
+        $startposition = "jQuery('#tilezoom-starthere').click();";
+        break;
+    }
 
-  //dsm($hotspots);
-  //dsm($panel);
-  //dsm($variables);
+    //dsm($hotspots);
+    //dsm($panel);
+    //dsm($variables);
 
-  $url = $variables['object']->uri;
+    $url = $variables['object']->uri;
 
-  // add the css container class definition for #tilezoom-container
-  drupal_add_css(drupal_get_path('theme', 'warburg') . '/css/tilezoom.css', array('type' => 'file'));
-  drupal_add_css(drupal_get_path('theme', 'warburg') . '/js/tilezoom/jquery.tilezoom.css', array('type' => 'file'));
+    // add the css container class definition for #tilezoom-container
+    drupal_add_css(drupal_get_path('theme', 'warburg') . '/css/tilezoom.css', array('type' => 'file'));
+    drupal_add_css(drupal_get_path('theme', 'warburg') . '/js/tilezoom/jquery.tilezoom.css', array('type' => 'file'));
 
-  // add the javascript to support tilezoom
-  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/jquery.mousewheel.js', array('group' => JS_THEME));
-  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/tilezoom/jquery.tilezoom.js', array('group' => JS_THEME));
+    // add the javascript to support tilezoom
+    drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/jquery.mousewheel.js', array('group' => JS_THEME));
+    drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/tilezoom/jquery.tilezoom.js', array('group' => JS_THEME));
 
-  // inline js code for the ready function
-  //$width = 2918;
-  //$height = 4000;
-  //$path = "/sites/default/files/panels/PanelC_files";
-  $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$tiles', mousewheel: true});";
-  $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
-  drupal_add_js($ready, 'inline');
-  $divs1 = <<<EOT
-        <div id="container">
-          <div class="zoom-holder">
-            <div class="zoom-hotspots">
-EOT;
-  $divs2 = <<<EOT
+    // inline js code for the ready function
+    //$width = 2918;
+    //$height = 4000;
+    //$path = "/sites/default/files/panels/PanelC_files";
+    $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$tiles', mousewheel: true});";
+    $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
+    drupal_add_js($ready, 'inline');
+    $divs1 = <<<EOT
+          <div id="container">
+            <div class="zoom-holder">
+              <div class="zoom-hotspots">
+  EOT;
+    $divs2 = <<<EOT
+              </div>
             </div>
           </div>
-        </div>
-EOT;
-/*
-              <a style="left:34%;top:78%;" href="#">Lisa's hands</a>
-              <a style="left:86%;top:20%;" href="#" rel="12">Detail of the background</a>
-              <a style="left:5%;top:5%;" href="#" rel="11" id="tilezoom-starthere">starting point</a>
+  EOT;
+  /*
+                <a style="left:34%;top:78%;" href="#">Lisa's hands</a>
+                <a style="left:86%;top:20%;" href="#" rel="12">Detail of the background</a>
+                <a style="left:5%;top:5%;" href="#" rel="11" id="tilezoom-starthere">starting point</a>
 
- */
-  print $divs1;
-  print implode(PHP_EOL, $hotspots);
-  print $divs2;
-  print '<ul id="hotspots"><li>';
-  print implode('</li>' . PHP_EOL .'<li>', $hotspots);
-  print '</li></ul>';
+   */
+    print $divs1;
+    print implode(PHP_EOL, $hotspots);
+    print $divs2;
+    print '<ul id="hotspots"><li>';
+    print implode('</li>' . PHP_EOL .'<li>', $hotspots);
+    print '</li></ul>';
+  }
 }
 else {
   print $output;
