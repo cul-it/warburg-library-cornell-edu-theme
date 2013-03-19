@@ -140,7 +140,7 @@ if ($style_name == 'tilezoom') {
 
     $startposition = ''; //"jQuery('#tilezoom-starthere').click();";
     $hotspots = array();
-    dsm($mode);
+    //dsm($mode);
     switch ($mode) {
       case 'panel-overview':
         break;
