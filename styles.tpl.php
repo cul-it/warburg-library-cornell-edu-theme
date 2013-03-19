@@ -106,9 +106,11 @@ if ($style_name == 'tilezoom') {
     if (is_numeric(arg(1))) {
       $mode = arg(0);
       $panel_nid = arg(1);
-      if (!empty(arg(2)) && in_array(arg(2), array('panel_image', 'image_group')) && is_numeric(arg(3))) {
-        $mode .= '-' . arg(2);
-        $image_nid = arg(3);
+      $submode = arg(2);
+      $nodeid = arg(3);
+      if (!empty($submode) && in_array($submode, array('panel_image', 'image_group')) && is_numeric($nodeid)) {
+        $mode .= '-' . $submode;
+        $image_nid = $nodeid;
       }
     }
   }
