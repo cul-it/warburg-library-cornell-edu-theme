@@ -102,13 +102,13 @@ function warburg_bounding_box_scale($image_width, $image_height, $left, $top, $r
 if ($style_name == 'tilezoom') {
   // find out what mode display
   $mode = '';
-  if (in_array(arg(0), array('panel-overview', 'panel-series', 'panel-images'))) {
+  if (in_array(arg(0), array('panel-overview', 'panel-images', 'panel-sequence'))) {
     if (is_numeric(arg(1))) {
       $mode = arg(0);
       $panel_nid = arg(1);
       $submode = arg(2);
       $nodeid = arg(3);
-      if (!empty($submode) && in_array($submode, array('panel_image', 'image_group')) && is_numeric($nodeid)) {
+      if (!empty($submode) && in_array($submode, array('image', 'sequence')) && is_numeric($nodeid)) {
         $mode .= '-' . $submode;
         $image_nid = $nodeid;
       }
@@ -164,12 +164,27 @@ if ($style_name == 'tilezoom') {
            }
          }
         break;
+      case 'panel-images-image':
       case 'panel-images-panel_image':
         // display a single image
         $prefix = '';
         $hotspot = warburg_hotspot($image_nid);
         $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], TRUE);
         $startposition = "jQuery('#tilezoom-starthere').click();";
+        break;
+      case 'panel-sequence-sequence':
+        // display all hotspots for this sequence
+        $seq_id = $image_nid;
+        $seq = node_load($seq_id);
+        if ($seq !== FALSE) {
+          if (isset($seq->field_steps['und'])) {
+            prefix = '';
+            foreach ($seq->field_steps['und'] as $val) {
+              $hotspot = warburg_hotspot_list($val['target_id']);
+              $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type']);
+            }
+          }
+        }
         break;
     }
 
