@@ -198,12 +198,12 @@ if ($style_name == 'tilezoom') {
           <div id="container">
             <div class="zoom-holder">
               <div class="zoom-hotspots">
-  EOT;
+EOT;
     $divs2 = <<<EOT
               </div>
             </div>
           </div>
-  EOT;
+EOT;
   /*
                 <a style="left:34%;top:78%;" href="#">Lisa's hands</a>
                 <a style="left:86%;top:20%;" href="#" rel="12">Detail of the background</a>
