@@ -75,18 +75,29 @@ function warburg_hotspot_list($nid) {
   return $hotspot;
 }
 
-function warburg_hotspot_format($hotspot, $url_base, $starthere = FALSE) {
+/**
+ * anchor tag to locate and scale hotspot on the image
+ * @param  box  $hotspot   position of image in pixels at raw resolution
+ * @param  url  $url_base  prefix for url that ends in a node id
+ * @param  int  $img_wid   width of the full sized image in pixels
+ * @param  int  $img_hgt   height of the full sized image in pixels
+ * @param  boolean $starthere if TRUE include id="tilezoom-starthere" for initial zoomed in positioning
+ * @return text             <a tag for hotspot
+ */
+function warburg_hotspot_format($hotspot, $url_base, $img_wid, $img_hgt, $starthere = FALSE) {
   // makes an <a href for this hotspot
   $wid = $hotspot['right'] - $hotspot['left'];
   $hgt = $hotspot['bottom'] - $hotspot['top'];
   $left = $hotspot['left'] + $wid / 2;
   $top = $hotspot['top'] + $hgt / 2;
+  $left_pct = floor($left * 100 / $img_wid);
+  $top_pct = floor($top * 100 / $img_hgt);
   $rel = 11;
   $url = url($url_base . '/' . $hotspot['nid'], array('absolute' => TRUE));
   $starthere_id = $starthere ? 'id="tilezoom-starthere" ' : '';
   $str = t('<a href="!base/!nid" style="left:@left%;top:@top%;" rel="@rel" !id >@title</a>',
     array('!base' => $url_base, '!nid' => $hotspot['nid'],
-      '@left' => $left, '@top' => $top, '@rel' => $rel, '@title' => $hotspot['title'],
+      '@left' => $left_pct, '@top' => $top_pct, '@rel' => $rel, '@title' => $hotspot['title'],
       '!url' => $url, '!id' => $starthere_id));
   return $str;
 }
@@ -151,7 +162,7 @@ if ($style_name == 'tilezoom') {
         if (isset($panel->field_first_ordinal_group['und'])) {
           foreach ($panel->field_first_ordinal_group['und'] as $val) {
             $hotspot = warburg_hotspot_list($val['target_id']);
-            $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type']);
+            $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], $width, $height);
           }
         }
         break;
@@ -161,7 +172,7 @@ if ($style_name == 'tilezoom') {
         if (isset($panel->field_first_sequence_group['und'])) {
            foreach ($panel->field_first_sequence_group['und'] as $val) {
               $hotspot = warburg_hotspot_list($val['target_id']);
-              $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type']);
+              $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], $width, $height);
            }
          }
         break;
@@ -170,7 +181,7 @@ if ($style_name == 'tilezoom') {
         // display a single image
         $prefix = '';
         $hotspot = warburg_hotspot($image_nid);
-        $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], TRUE);
+        $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], $width, $height, TRUE);
         $startposition = "jQuery('#tilezoom-starthere').click();";
         break;
       case 'panel-sequence-sequence':
@@ -183,7 +194,7 @@ if ($style_name == 'tilezoom') {
             $prefix = '';
             foreach ($seq->field_steps['und'] as $val) {
               $hotspot = warburg_hotspot_list($val['target_id']);
-              $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type']);
+              $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], $width, $height);
             }
           }
         }
