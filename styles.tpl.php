@@ -92,7 +92,7 @@ function warburg_hotspot_format($hotspot, $url_base, $img_wid, $img_hgt, $starth
   $top = $hotspot['top'] + $hgt / 2;
   $left_pct = floor($left * 100 / $img_wid);
   $top_pct = floor($top * 100 / $img_hgt);
-  $rel = 11;
+  $rel = (max($wid, $hgt) > 1300) ? 11 : 12;
   $url = url($url_base . '/' . $hotspot['nid'], array('absolute' => TRUE));
   $starthere_id = $starthere ? 'id="tilezoom-starthere" ' : '';
   $str = t('<a href="!base/!nid" style="left:@left%;top:@top%;" rel="@rel" !id >@title</a>',
