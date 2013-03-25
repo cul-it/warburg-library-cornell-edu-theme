@@ -212,14 +212,14 @@ if ($style_name == 'tilezoom') {
     drupal_add_css(drupal_get_path('theme', 'warburg') . '/js/tilezoom/jquery.tilezoom.css', array('type' => 'file'));
 
     // add the javascript to support tilezoom
-    drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/jquery.mousewheel.js', array('group' => JS_THEME));
+    // drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/jquery.mousewheel.js', array('group' => JS_THEME));
     drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/tilezoom/jquery.tilezoom.js', array('group' => JS_THEME));
 
     // inline js code for the ready function
     //$width = 2918;
     //$height = 4000;
     //$path = "/sites/default/files/panels/PanelC_files";
-    $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$tiles', mousewheel: true});";
+    $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$tiles', mousewheel: false});";
     $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
     drupal_add_js($ready, 'inline');
     $divs1 = <<<EOT
