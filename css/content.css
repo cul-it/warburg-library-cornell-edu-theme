@@ -5899,7 +5899,8 @@ h2 {
   .navbar .nav {
     float: right; }
     .navbar .nav li {
-      float: left; }
+      float: left;
+      margin: 0; }
       .navbar .nav li a {
         text-shadow: 0 0 0;
         color: #4d4e53;
