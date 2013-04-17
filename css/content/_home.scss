@@ -1,0 +1,155 @@
+/* Background image */
+/*------------------------------*/
+
+.hero {
+	width: 100%;
+	height: 543px;
+	background: url("../img/panel.jpg") no-repeat scroll top left;
+	background-position: center 14px;
+	.content {
+		float: left;
+		padding-left: 16.4583333%;
+		padding-top: 73px;
+		/*width: 62.3611111% minus padding 16.4583333%;*/
+		width: 43%;
+		color: $textColorLight;
+		p {
+			width: 500px;
+			background-color: $textColorDark;
+			opacity: .91;
+			font-size: 1.4375em;
+			padding: 30px;
+			margin: 0;
+			line-height: 1.2em; }
+		ul {
+			margin: 0;
+			padding: 0;
+			margin-top: 10px;
+			li {
+				display: block;
+				list-style-type:none; 
+				float: left; }
+		}
+	}
+	aside {
+		float: right;
+		width: 37.6388889%;
+		opacity: .96;
+		background-color: #3d3c38;
+		height: 540px;
+		a {
+			display: block;
+			margin-left: 33px; }
+	}
+}
+.btn-pathway {
+	font-size: 2em;
+	background-color: #83b63d;
+	padding: 10px;
+	color: $textColorLight;
+}
+.btn-panels {
+	font-size: 1.6875em;
+	background-color: #7ca43f;
+	padding: 10px;
+	margin-left: 3px;
+	color: $textColorLight;
+}
+.book-cover {
+	margin-top: 22px;
+}
+a.cup {
+	display: block;
+ 	font-size: 1.3em;
+	opacity: .6;
+	margin-left: 0;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	color: $textColorLight;
+}
+a.signale {
+	display: inline-block;
+	font-size: 1.3em;
+	opacity: .6;
+	margin-left: 0;
+	color: $textColorLight;
+
+}
+
+/* Featured content */
+/*------------------------------*/
+.featured-content {
+	padding: 30px 0;
+	p, li { font-size: 1.125em; }
+	h3 {
+		background: #595959;
+		color: $textColorLight;
+		width: 70%;
+		padding: 5px 10px ;
+		font-size: 1.625em;
+		margin-bottom: 1em; }
+	.media {
+		h3 { width: 30%; }
+		h4 { 
+			font-size: 1.625em;
+			color: #554e5a; // TODO: Add variable?
+			a { 
+				font-size: 75%;
+				margin-left: 10px; }
+		}
+	}
+}
+.featured-content-first {
+	background: url("../img/hr.png") no-repeat bottom;
+	padding-bottom: 0;
+}
+
+/* Media */
+/*------------------------------*/
+.media { background: url("../img/hr-vert.png") no-repeat right top; }
+.video-player { margin-bottom: 30px; }
+
+/* Warburg Institute */
+/*------------------------------*/
+.warburg-institute {
+	h3 { margin-bottom: .5em; }
+	h4 { 
+		text-transform: uppercase;
+		font-size: 1.5em; }
+	img { margin-bottom: 15px; }
+}
+
+/* Interviews */
+/*------------------------------*/
+.interview {
+	content: "";
+	display: table;
+	clear: both;
+	padding: 15px 0;
+	background: url("../img/interview-bg.png") no-repeat bottom;
+	img { 
+		border: 1px solid #c8c8c8; // TODO: Add variable; change to global rule for images to have border?
+		float: left;
+		margin-right: 10px; }
+}
+
+/* Other Atlas */
+/*------------------------------*/
+.other-atlas {
+	padding: 15px 0 0;
+	img {
+		border: 1px solid #c8c8c8;
+		margin-bottom: 10px; }
+	p { margin-left: 15px; }
+}
+
+/* Book Resources */
+/*------------------------------*/
+.book-resources {
+	list-style: none;
+	margin: 0;
+	li { 
+		padding-left: 15px;
+		background: url("../img/icon-arrow-green.png") no-repeat left top;
+		margin-bottom: 1em; }
+}

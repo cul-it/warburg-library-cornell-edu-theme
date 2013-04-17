@@ -1,0 +1,82 @@
+//
+// Responsive: Landscape phone to desktop/tablet
+// --------------------------------------------------
+
+@media (max-width: 767px) {
+	body { 
+		padding: 0;
+		margin: 0;
+		font-size: 90%; }
+	.navbar {
+		.container { 
+			width: auto;
+			padding: 0 10px; }
+		.btn-navbar {
+			background: black;
+			margin-top: 10px;
+		}
+		.btn-navbar:hover { background: black; }
+		.nav {
+			float: none;
+			li {
+				a,
+				a:hover {
+					background-image: none; }
+			}
+		}
+	}
+	.container { padding: 0 10px; }
+	.hero {
+		width: 100%;
+		.content {
+			padding-left: 5%;
+			width: 95%;
+			opacity: 1;
+			h2 { width: 75%; }
+			p { width: 85%; }
+		}
+		aside {
+			float: left;
+			width: 100%;
+			height: auto;
+			margin-top: 48px;
+			opacity: 1;
+			a {
+				display: inline;
+				margin-left: 33px; }
+			p {
+				float: left;
+				width: 65%;
+				margin-left: 10px; }
+			a.cup {
+				display: block;
+			 	font-size: 1.3em;
+				opacity: .6;
+				margin-left: 0;
+				margin-bottom: 15px;
+				margin-top: 20px;
+			}
+			a.signale {
+				display: inline-block;
+				font-size: 1.3em;
+				opacity: .6;
+				margin-left: 0; }
+		}
+	}
+	.book-cover {
+		margin-top: 22px;
+		width: 25%;
+		float: left;
+		padding-left: 5%;
+		padding-bottom: 20px;
+	}
+	
+	
+	// .hero .content ul {
+	// 	margin-top: 7px;
+	// }
+
+	// .hero aside 
+	// }
+}
+

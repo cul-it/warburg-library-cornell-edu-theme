@@ -1,0 +1,65 @@
+/* Institution branding */
+/*------------------------------*/
+.institution-brand {
+	background: $darkGray;
+	padding: 12px 0;
+	a { color: #fefefe; }
+}
+
+/* Header on sub pages */
+/*------------------------------*/
+header {
+	background: url("../img/panel.jpg") no-repeat scroll top left;
+	background-position: center 14px;
+	height: 165px;
+	h2 { margin-top: 90px; }
+}
+
+/* Main content on sub pages */
+/*------------------------------*/
+.main-content { padding: 50px 0; }
+
+/* Sidebar on sub pages */
+/*------------------------------*/
+.sidebar {
+	h3 {
+	background: #595959;
+	color: $textColorLight;
+	width: 70%;
+	padding: 5px 10px ;
+	font-size: 1.625em;
+	margin-bottom: 1em;
+	margin-top: 0; }
+	p { font-size: 1em; }
+}
+
+/* Footer */
+/*------------------------------*/
+footer {
+	text-align: center;
+	color: $darkGray;
+	.container { 
+		background: url("../img/hr.png") no-repeat top;
+		padding: 30px 0; }
+	ul.footer-nav {
+		list-style: none;
+		margin: 0 0 1em;
+		li { 
+			display: inline-block;
+			font-size: 1.1875em;
+			.divider { padding: 0 5px; }
+		}
+		a { color: $darkGray; }
+		li.active { 
+			color: $linkPrimary;
+			a { color: $linkPrimary; }
+			.divider { color: $darkGray; }
+		}
+	}
+	p { font-size: 1.125em; }
+}
+.institution-logos,
+.social-icons {
+	margin: 20px 0;
+	img { padding: 0 5px; }
+}

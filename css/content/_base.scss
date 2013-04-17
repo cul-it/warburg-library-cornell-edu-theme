@@ -1,0 +1,66 @@
+body {
+	font-size: 100%;
+	font-family: $baseFontFamily;
+	font-weight: 200;
+	color: $textColorDark;
+}
+
+/* Links */
+/*------------------------------*/
+a { color: $linkPrimary;}
+a:visited {}
+a:hover { text-decoration: none; }
+a:active { }
+
+
+/* Typography */
+/*------------------------------*/
+h2 {
+	display: inline-block;
+	background-color: #2c2f2e;
+	opacity: .92;
+	font-size:	3.2em;
+	line-height: 1.1em;
+	font-weight: normal;
+	font-size: 3.1875em;
+	padding: 10px 20px;
+	margin: 0;
+	color: $textColorLight; }
+
+.main-content {
+	p { 
+		font-size: 1.4375em;
+		line-height: 1.2em; }
+	h3 { 
+		font-size: 1.625em;
+		margin-top: 1.5em; }
+}
+
+/* Icons */
+/*------------------------------*/
+.icon-arrow {
+	width: 6px;
+	height: 17px;
+	vertical-align: middle;
+	margin-bottom: 2px;
+	margin-top: 0; }
+.icon-arrow-green {
+	background: url("../img/icon-arrow-green.png") no-repeat; }
+.icon-arrow-white {
+	background: url("../img/icon-arrow-white.png") no-repeat; }
+.icon-pathways {
+	width: 42px;
+	height: 42px;
+	vertical-align: middle;
+	background: url("../img/icon-pathways.png") no-repeat;
+	margin-top: 0;
+	margin-bottom: 4px; }
+.icon-panels {
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+	background: url("../img/icon-panels.png") no-repeat;
+	margin-top: 0;
+	margin-bottom: 4px; }
+
+

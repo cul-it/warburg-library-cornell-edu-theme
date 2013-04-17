@@ -1,0 +1,24 @@
+/* Warburg portrait */
+/*------------------------------*/
+.warburg-portrait {
+	width: 293px;
+	margin-bottom: 60px;
+	p.caption {
+		width: 263px;
+		height: 40px;
+		margin-top: -65px;
+		z-index: 100;
+		position: relative;
+		padding: 20px 10px 5px 20px;
+	}
+}
+
+/* Image caption */
+/*------------------------------*/
+p.caption {
+	background: #404040;
+	opacity: .87;
+	color: $textColorLight;
+	width: 100%;
+	padding: 5px 10px ;
+	font-size: 1.625em; }

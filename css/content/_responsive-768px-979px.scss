@@ -1,0 +1,33 @@
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
+@media (min-width: 768px) and (max-width: 979px) {
+	body { font-size: 90%; }
+	.navbar {
+		.container { width: 724px; }
+		.brand { font-size: 6em; }
+		.nav {
+			li {
+				a { font-size: 1em; }
+			}
+		}
+		// override bootstrap nav collapse at this size
+		.btn-navbar { display: none; }
+	}
+	// override bootstrap nav collapse at this size
+	.nav-collapse, 
+	.nav-collapse.collapse { overflow: visible; }
+	.nav-collapse {
+		.nav > li { 
+			float: left;
+			font-size: 90%; }
+	}
+	footer {
+		nav {
+			ul {
+				li { font-size: 1em; }
+			}
+		}
+	}
+}
