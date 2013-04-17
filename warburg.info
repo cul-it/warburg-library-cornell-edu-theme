@@ -13,7 +13,7 @@ scripts[] = js/bootstrap.min.js
 
 regions[header]         = Header
 regions[navigation]     = Navigation bar
-regions[carousel]  		= Masthead
+regions[masthead]  		= Masthead
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
