@@ -88,6 +88,7 @@
         <?php if ($site_name): ?>
           <a class="brand" href="<?php print $front_page; ?>"><?php print $site_name; ?></a>
         <?php endif; ?>
+        <div class="subtitle">Meanderings through Aby Warburg's Atlas</div>
       </div>
       <div class="span8">
         <div class="nav-collapse collapse">
