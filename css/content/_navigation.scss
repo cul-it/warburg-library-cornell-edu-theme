@@ -15,7 +15,8 @@
 		font-size: 1em; }
 	// .brand:hover { color: $turquoiseHover; }
 	.nav {
-		float: right;
+		float: right; }
+	.menu {
 		li {
 			a {
 				text-shadow: 0 0 0;
@@ -40,4 +41,38 @@
 				box-shadow: none; }
 		}
 	}
+	// .nav {
+	// 	float: right; }
+	// .menu {
+	// 	margin-top: 50px;
+	// 	list-style: none;
+	// 	li {
+	// 		float: left;
+	// 		a {
+	// 			text-shadow: 0 0 0;
+	// 			color: #4d4e53; 
+	// 			// height: 41px;
+	// 			font-size: 1.25em;
+	// 			padding-left: 10px;
+	// 			padding-right: 10px;
+	// 			background: url("/sites/all/themes/signale/images/nav-divider.png") no-repeat; }
+	// 			text-transform: lowercase;
+	// 		a:hover {
+	// 			color: $turquoise;
+	// 			background: url("/sites/all/themes/signale/images/nav-divider.png") no-repeat; }
+	// 	}
+	// 	li:first-child {
+	// 		a { background-image: none; }
+	// 	}
+	// 	li.active {
+	// 		a, 
+	// 		a:hover {
+	// 			color: $turquoise;
+	// 			border-bottom: 5px solid $turquoise;
+	// 			background-color: inherit;
+	// 			-webkit-box-shadow: none;
+	// 			-moz-box-shadow: none;
+	// 			box-shadow: none; }
+	// 	}
+	// }
 }
