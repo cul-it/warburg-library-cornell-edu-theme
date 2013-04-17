@@ -100,39 +100,62 @@
   </div>
 </nav>
 
-<section class="page-title">
+<header>
   <div class="container">
     <?php if ($title): ?>
       <h2><?php print $title; ?></h2>
-    <?php endif; ?>    
+    <?php endif; ?>
   </div>
-</section>
+</header>
 
 <section class="main-content">
   <div class="container">
-    <?php print render($page['highlighted']); ?>
-    <!--<?php print $breadcrumb; ?>-->
-    <?php print $messages; ?>
-    <?php print render($tabs); ?>
-    <?php print render($page['help']); ?>
-    <?php if ($action_links): ?>
-      <ul class="action-links"><?php print render($action_links); ?></ul>
-    <?php endif; ?>
-    <?php if(drupal_is_front_page()) {
-      unset($page['content']['system_main']['default_message']);
-    }?>
-    <?php print render($page['content']); ?>
-     <?php
-      // Render the sidebars to see if there's anything in them.
-      $sidebar_first  = render($page['sidebar_first']);
-      $sidebar_second = render($page['sidebar_second']);
+    <?php
+        // Render the sidebars to see if there's anything in them.
+        $sidebar_first  = render($page['sidebar_first']);
+        $sidebar_second = render($page['sidebar_second']);
     ?>
 
+    <!--if there is a sidebar, then create two column layout-->
     <?php if ($sidebar_first || $sidebar_second): ?>
-      <aside class="sidebars">
-        <?php print $sidebar_first; ?>
-        <?php print $sidebar_second; ?>
-      </aside><!-- /.sidebars -->
+
+      <div class="row">
+        <div class="span8">
+          <?php print render($page['highlighted']); ?>
+          <!--<?php print $breadcrumb; ?>-->
+          <?php print $messages; ?>
+          <?php print render($tabs); ?>
+          <?php print render($page['help']); ?>
+          <?php if ($action_links): ?>
+            <ul class="action-links"><?php print render($action_links); ?></ul>
+          <?php endif; ?>
+          <!--<?php if(drupal_is_front_page()) {
+            unset($page['content']['system_main']['default_message']);
+          }?>-->
+          <?php print render($page['content']); ?>
+        </div>
+        <div class="span4 sidebar">
+          <?php print $sidebar_first; ?>
+          <?php print $sidebar_second; ?>
+        </div>
+      </div>
+
+    <!--if there isn't a sidebar, then create one column layout-->
+    <?php else :?>
+
+      <?php print render($page['highlighted']); ?>
+      <!--<?php print $breadcrumb; ?>-->
+      <?php print $messages; ?>
+      <?php print render($tabs); ?>
+      <?php print render($page['help']); ?>
+      <?php if ($action_links): ?>
+        <ul class="action-links"><?php print render($action_links); ?></ul>
+      <?php endif; ?>
+      <!--<?php if(drupal_is_front_page()) {
+        unset($page['content']['system_main']['default_message']);
+      }?>-->
+      <?php print render($page['content']); ?>
+
     <?php endif; ?>
   </div>
 </section>
