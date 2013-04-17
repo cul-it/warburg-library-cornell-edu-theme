@@ -17,15 +17,15 @@ ul.menu li {
 }
 ul li.expanded {
   list-style-image: none;
-  list-style-type: circle;
+  list-style-type: none;
 }
 ul li.collapsed {
   list-style-image: none; /* LTR */
-  list-style-type: disc;
+  list-style-type: none;
 }
 ul li.leaf {
   list-style-image: none;
-  list-style-type: square;
+  list-style-type: none;
 }
 li.expanded,
 li.collapsed,
