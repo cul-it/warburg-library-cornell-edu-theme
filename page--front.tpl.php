@@ -113,7 +113,7 @@
     </nav>
   </section>
   <aside>
-    <a href="#"><img class="book-cover" src="img/johnson-cover.jpg" /></a>
+    <a href="#"><img class="book-cover" src="/sites/all/themes/warburg/images/johnson-cover.jpg" /></a>
     <p><a class="cup" href="#">Cornell University Press <i class="icon-arrow icon-arrow-white"></i></a>
     <a class="signale" href="#">Signale: Modern German Letters, <br />Cultures, &amp; Thought <i class="icon-arrow icon-arrow-white"></i></a></p>
   </aside>
@@ -143,7 +143,7 @@
       </div>
       <div class="span4 warburg-institute">
         <h3>Warburg Institute</h3>
-        <img src="img/warburg-institute.jpg" alt="The Warburg Institute">
+        <img src="/sites/all/themes/warburg/images/warburg-institute.jpg" alt="The Warburg Institute">
         <h4><a href="http://warburg.sas.ac.uk/home/">The Warburg Institute</a></h4>
         <p>The Warburg Institute of the University of London exists principally to further the study of the classical tradition, that is of those elements of European thought...</p>
         <p><a href="#">Read more <i class="icon-arrow icon-arrow-green"></i></a></p>
@@ -158,26 +158,26 @@
       <div class="span4">
         <h3>Interviews</h3>
         <div class="interview">
-          <img src="img/placeholder-interview1.jpg">
+          <img src="/sites/all/themes/warburg/images/placeholder-interview1.jpg">
           <p>Lorem ipsum dolor sit amet. Consectetur adipiscing elit.</p>
         </div>
         <div class="interview">
-          <img src="img/placeholder-interview2.jpg">
+          <img src="/sites/all/themes/warburg/images/placeholder-interview2.jpg">
           <p>Lorem ipsum dolor sit amet. Consectetur adipiscing elit.</p>
         </div>
         <div class="interview">
-          <img src="img/placeholder-interview3.jpg">
+          <img src="/sites/all/themes/warburg/images/placeholder-interview3.jpg">
           <p>Lorem ipsum dolor sit amet. Consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="span4">
         <h3>Other Atlas</h3>
         <div class="other-atlas">
-          <img src="img/placeholder-other1.jpg">
+          <img src="/sites/all/themes/warburg/images/placeholder-other1.jpg">
           <p>Other atlas info goes here</p>
         </div>
         <div class="other-atlas">
-          <img src="img/placeholder-other2.jpg">
+          <img src="/sites/all/themes/warburg/images/placeholder-other2.jpg">
           <p>Other atlas info goes here</p>
         </div>
       </div>
