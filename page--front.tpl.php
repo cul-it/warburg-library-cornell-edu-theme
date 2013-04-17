@@ -100,15 +100,26 @@
   </div>
 </nav>
 
-<section class="page-title">
-  <div class="container">
-    <?php if ($title): ?>
-      <h2><?php print $title; ?></h2>
-    <?php endif; ?>    
-  </div>
+
+<section class="hero">
+ <section class="content"> 
+    <h2>Sunt in culpa qui officia.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+    <nav>
+      <ul>
+        <li><a class="btn-pathway" href="#"><i class="icon-pathways"></i> Guided Pathways</a></li>
+        <li><a class="btn-panels" href="#"><i class="icon-panels"></i> All panels</a></li>
+      <ul>
+    </nav>
+  </section>
+  <aside>
+    <a href="#"><img class="book-cover" src="img/johnson-cover.jpg" /></a>
+    <p><a class="cup" href="#">Cornell University Press <i class="icon-arrow icon-arrow-white"></i></a>
+    <a class="signale" href="#">Signale: Modern German Letters, <br />Cultures, &amp; Thought <i class="icon-arrow icon-arrow-white"></i></a></p>
+  </aside>
 </section>
 
-<section class="main-content">
+<section class="featured-content featured-content-first">
   <div class="container">
     <?php print render($page['highlighted']); ?>
     <!--<?php print $breadcrumb; ?>-->
@@ -121,21 +132,66 @@
     <?php if(drupal_is_front_page()) {
       unset($page['content']['system_main']['default_message']);
     }?>
-    <?php print render($page['content']); ?>
-     <?php
-      // Render the sidebars to see if there's anything in them.
-      $sidebar_first  = render($page['sidebar_first']);
-      $sidebar_second = render($page['sidebar_second']);
-    ?>
-
-    <?php if ($sidebar_first || $sidebar_second): ?>
-      <aside class="sidebars">
-        <?php print $sidebar_first; ?>
-        <?php print $sidebar_second; ?>
-      </aside><!-- /.sidebars -->
-    <?php endif; ?>
+    <!--<?php print render($page['content']); ?>-->
+    <div class="row">
+      <div class="span8 media">
+        <h3>Media</h3>
+        <h4>Atlas. How to Carry the World on One's Back? <a href="#">All media <i class="icon-arrow icon-arrow-green"></i></a></h4>
+        <div class="video-player">
+          <iframe src="http://player.vimeo.com/video/24023841" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        </div>
+      </div>
+      <div class="span4 warburg-institute">
+        <h3>Warburg Institute</h3>
+        <img src="img/warburg-institute.jpg" alt="The Warburg Institute">
+        <h4><a href="http://warburg.sas.ac.uk/home/">The Warburg Institute</a></h4>
+        <p>The Warburg Institute of the University of London exists principally to further the study of the classical tradition, that is of those elements of European thought...</p>
+        <p><a href="#">Read more <i class="icon-arrow icon-arrow-green"></i></a></p>
+      </div>
+    </div>
   </div>
-</section>
+</section>  
+
+<section class="featured-content">
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <h3>Interviews</h3>
+        <div class="interview">
+          <img src="img/placeholder-interview1.jpg">
+          <p>Lorem ipsum dolor sit amet. Consectetur adipiscing elit.</p>
+        </div>
+        <div class="interview">
+          <img src="img/placeholder-interview2.jpg">
+          <p>Lorem ipsum dolor sit amet. Consectetur adipiscing elit.</p>
+        </div>
+        <div class="interview">
+          <img src="img/placeholder-interview3.jpg">
+          <p>Lorem ipsum dolor sit amet. Consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="span4">
+        <h3>Other Atlas</h3>
+        <div class="other-atlas">
+          <img src="img/placeholder-other1.jpg">
+          <p>Other atlas info goes here</p>
+        </div>
+        <div class="other-atlas">
+          <img src="img/placeholder-other2.jpg">
+          <p>Other atlas info goes here</p>
+        </div>
+      </div>
+      <div class="span4">
+        <h3>Book Resources</h3>
+        <ul class="book-resources">
+          <li>Consectetur adipiscing integer molestie lorem at massa facilisis in pretium nisl aliquet</li>
+          <li>Lorem ipsum dolor sit ametc onsectetur adipiscing elit integer molestie lorem at massa acilisis in pretium nisl aliquet</li>
+          <li>Ipsum dolor sit ametc onsectetur adipiscing elit integer molestie lorem at massa acilisis in pretium nisl aliquet</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>  
 
 <footer>
   <div class="container">
