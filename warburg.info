@@ -1,5 +1,5 @@
 screenshot  = screenshot.png
-name        = Zen sub-theme
+name        = Warburg
 description = theme for Cornell University Library Warburg web site
 
 core        = 7.x
