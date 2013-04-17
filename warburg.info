@@ -5,7 +5,7 @@ description = theme for Cornell University Library Warburg web site
 core        = 7.x
 
 ; First we remove the system's menu styling since Zen has its own.
-; stylesheets[all][] = system.menus.css
+stylesheets[all][] = system.menus.css
 
 stylesheets[all][] = css/content.css
 
