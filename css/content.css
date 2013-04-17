@@ -5898,12 +5898,14 @@ h2 {
     font-size: 1em; }
   .navbar .nav {
     float: right; }
-    .navbar .nav li a {
-      text-shadow: 0 0 0;
-      color: #4d4e53;
-      font-size: 1.25em;
-      padding: 5px 10px;
-      border-left: 1px solid #cad6b5; }
+    .navbar .nav li {
+      float: left; }
+      .navbar .nav li a {
+        text-shadow: 0 0 0;
+        color: #4d4e53;
+        font-size: 1.25em;
+        padding: 5px 10px;
+        border-left: 1px solid #cad6b5; }
     .navbar .nav li:first-child a {
       border: none; }
     .navbar .nav li.active a,
