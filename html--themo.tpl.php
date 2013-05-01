@@ -56,7 +56,7 @@
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
-  <blockquote>This page rendered by html--themo.tpl.php</blockquote>
+  <blockquote>This page rendered by html--themo.tpl.php --------</blockquote>
   <?php //print $page_top; ?>
   
   
