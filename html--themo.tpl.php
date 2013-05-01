@@ -44,11 +44,7 @@
  */
 ?>
 
-<?php 
-// full path to the theme.
-$path_theme_panels = base_path() . path_to_theme();
-print $path_theme_panels; 
-?>
+<?php $path_theme_panels = base_path() . path_to_theme(); // full path to the theme. ?>
 
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
@@ -118,7 +114,7 @@ print $path_theme_panels;
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
-                                <img class="panel-image" src="images/panels/carousel/Panel-C.jpg" width="148" height="198" alt="Panel C" />
+                                <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-C.jpg" width="148" height="198" alt="Panel C" />
                                 <span class="panel-name">Panel C</span>
                             </a>                        
                         </p>
@@ -126,7 +122,7 @@ print $path_theme_panels;
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
-                                <img class="panel-image" src="images/panels/carousel/Panel-8.jpg" width="148" height="198" alt="Panel 8" />
+                                <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-8.jpg" width="148" height="198" alt="Panel 8" />
                                 <span class="panel-name">Panel 8</span>
                             </a>                        
                         </p>
@@ -134,7 +130,7 @@ print $path_theme_panels;
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
-                                <img class="panel-image" src="images/panels/carousel/Panel-45.jpg" width="148" height="198" alt="Panel 45" />
+                                <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-45.jpg" width="148" height="198" alt="Panel 45" />
                                 <span class="panel-name">Panel 45</span>
                             </a>                        
                         </p>
@@ -143,7 +139,7 @@ print $path_theme_panels;
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
-                                <img class="panel-image" src="images/panels/carousel/Panel-46.jpg" width="148" height="198" alt="Panel 46" />
+                                <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-46.jpg" width="148" height="198" alt="Panel 46" />
                                 <span class="panel-name">Panel 46</span>
                             </a>                        
                         </p>
@@ -152,7 +148,7 @@ print $path_theme_panels;
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
-                                <img class="panel-image" src="images/panels/carousel/Panel-47.jpg" width="148" height="198" alt="Panel 47" />
+                                <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-47.jpg" width="148" height="198" alt="Panel 47" />
                                 <span class="panel-name">Panel 47</span>
                             </a>                        
                         </p>
@@ -161,7 +157,7 @@ print $path_theme_panels;
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
-                                <img class="panel-image" src="images/panels/carousel/Panel-48.jpg" width="148" height="198" alt="Panel 48" />
+                                <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-48.jpg" width="148" height="198" alt="Panel 48" />
                                 <span class="panel-name active">Panel 48</span>
                             </a>                        
                         </p>
@@ -170,7 +166,7 @@ print $path_theme_panels;
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
-                                <img class="panel-image" src="images/panels/carousel/Panel-61-62-63-64.jpg" width="148" height="198" alt="Panel 61-62-63-64" />
+                                <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-61-62-63-64.jpg" width="148" height="198" alt="Panel 61-62-63-64" />
                                 <span class="panel-name">Panel 61-62-63-64</span>
                             </a>                        
                         </p>
@@ -179,7 +175,7 @@ print $path_theme_panels;
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
-                                <img class="panel-image" src="images/panels/carousel/Panel-70.jpg" width="148" height="198" alt="Panel 70" />
+                                <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-70.jpg" width="148" height="198" alt="Panel 70" />
                                 <span class="panel-name">Panel 70</span>
                             </a>                        
                         </p>
@@ -188,7 +184,7 @@ print $path_theme_panels;
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
-                                <img class="panel-image" src="images/panels/carousel/Panel-79.jpg" width="148" height="198" alt="Panel 79" />
+                                <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-79.jpg" width="148" height="198" alt="Panel 79" />
                                 <span class="panel-name">Panel 79</span>
                             </a>                        
                         </p>
@@ -274,26 +270,26 @@ print $path_theme_panels;
     <!--<script src="js/bootstrap.min.js"></script>-->
     
     <!-- carousel lib -->
-    <script type="text/javascript" src="js/panels/carousel/lib/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/lib/jquery.ui.widget.js"></script>
     <!-- if using touch -->
-    <script type="text/javascript" src="js/panels/carousel/lib/jquery.event.drag.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/lib/jquery.event.drag.js"></script>
     <!-- if using touch and translate3d -->
-    <script type="text/javascript" src="js/panels/carousel/lib/jquery.translate3d.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/lib/jquery.translate3d.js"></script>
 
     <!-- carousel core -->
-    <script type="text/javascript" src="js/panels/carousel/jquery.rs.carousel.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/jquery.rs.carousel.js"></script>
 
     <!-- carousel extensions (optional) -->
-    <script type="text/javascript" src="js/panels/carousel/jquery.rs.carousel-autoscroll.js"></script>
-    <script type="text/javascript" src="js/panels/carousel/jquery.rs.carousel-continuous.js"></script>
-    <script type="text/javascript" src="js/panels/carousel/jquery.rs.carousel-touch.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/jquery.rs.carousel-autoscroll.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/jquery.rs.carousel-continuous.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/jquery.rs.carousel-touch.js"></script>
     
     <!-- panel utils -->
-    <script type="text/javascript" src="js/panels/panels-utils.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/panels-utils.js"></script>
     
     
-    <script type="text/javascript" src="js/panels/jquery.mousewheel.js"></script>
-  	<script type="text/javascript" src="js/panels/tilezoom/jquery.tilezoom.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/jquery.mousewheel.js"></script>
+  	<script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/tilezoom/jquery.tilezoom.js"></script>
 
   </body>
 </html>
