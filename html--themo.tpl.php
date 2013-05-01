@@ -44,6 +44,13 @@
  */
 ?>
 
+<?php 
+// full path to the theme.
+var $path_to_theme = base_path() . path_to_theme();
+print $path_to_theme;
+?>
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -82,11 +89,6 @@
   </head>
 
 <body>
-  
-<?php 
-// full path to the theme.
-var $path_to_theme = base_path() . path_to_theme();
-?>
   
     <div class="page panels">
         
