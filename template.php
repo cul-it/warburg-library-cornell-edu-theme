@@ -224,3 +224,18 @@ function signale_preprocess_block(&$variables, $hook) {
   //}
 }
 // */
+
+/**
+ * suggest a template file to be used for rendering entire html page when themo node is showing
+ * @param  [type] $vars [description]
+ * @return [type]       [description]
+ * see http://drupal.org/node/1041768
+ * html--themo.tpl.php <-- [drupal root]/modules/system/html.tpl.php
+ */
+function warburg_preprocess_html(&$vars) {
+  if ($node = menu_get_object()) {
+    if ($node->type == 'themo') {
+      $vars['theme_hook_suggestions'][] = 'html__themo';
+    }
+  }
+}
