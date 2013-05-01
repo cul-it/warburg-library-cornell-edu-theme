@@ -85,8 +85,8 @@
   
 <?php 
 // full path to the theme.
-var $path_theme = base_path() . path_to_theme();
-print $path_theme; 
+$path_theme_panels = base_path() . path_to_theme();
+print $path_theme_panels; 
 ?>
   
     <div class="page panels">
