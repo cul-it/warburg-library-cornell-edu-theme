@@ -44,13 +44,6 @@
  */
 ?>
 
-<?php 
-// full path to the theme.
-var $path_to_theme = base_path() . path_to_theme();
-print $path_to_theme;
-?>
-
-
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -67,13 +60,13 @@ print $path_to_theme;
     
     <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     
-    <link href="<?php print $path_to_theme; ?>/css/panels.css" rel="stylesheet">
+    <link href="css/panels.css" rel="stylesheet">
     
     <!-- carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php print $path_to_theme; ?>/css/panels/carousel/jquery.rs.carousel.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/panels/carousel/jquery.rs.carousel.css" media="all" />
     
     <!-- ZOOM -->
-    <link rel="stylesheet" type="text/css" media="all" href="<?php print $path_to_theme; ?>/js/panels/tilezoom/jquery.tilezoom.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="js/panels/tilezoom/jquery.tilezoom.css" />
     
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -89,6 +82,12 @@ print $path_to_theme;
   </head>
 
 <body>
+  
+<?php 
+// full path to the theme.
+var $path_to_theme = base_path() . path_to_theme();
+print "full path to the theme : " . base_path() . path_to_theme() . "///" . $path_to_theme; 
+?>
   
     <div class="page panels">
         
@@ -275,26 +274,26 @@ print $path_to_theme;
     <!--<script src="js/bootstrap.min.js"></script>-->
     
     <!-- carousel lib -->
-    <script type="text/javascript" src="<?php print $path_to_theme; ?>/js/panels/carousel/lib/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="js/panels/carousel/lib/jquery.ui.widget.js"></script>
     <!-- if using touch -->
-    <script type="text/javascript" src="<?php print $path_to_theme; ?>/js/panels/carousel/lib/jquery.event.drag.js"></script>
+    <script type="text/javascript" src="js/panels/carousel/lib/jquery.event.drag.js"></script>
     <!-- if using touch and translate3d -->
-    <script type="text/javascript" src="<?php print $path_to_theme; ?>/js/panels/carousel/lib/jquery.translate3d.js"></script>
+    <script type="text/javascript" src="js/panels/carousel/lib/jquery.translate3d.js"></script>
 
     <!-- carousel core -->
-    <script type="text/javascript" src="<?php print $path_to_theme; ?>/js/panels/carousel/jquery.rs.carousel.js"></script>
+    <script type="text/javascript" src="js/panels/carousel/jquery.rs.carousel.js"></script>
 
     <!-- carousel extensions (optional) -->
-    <script type="text/javascript" src="<?php print $path_to_theme; ?>/js/panels/carousel/jquery.rs.carousel-autoscroll.js"></script>
-    <script type="text/javascript" src="<?php print $path_to_theme; ?>/js/panels/carousel/jquery.rs.carousel-continuous.js"></script>
-    <script type="text/javascript" src="<?php print $path_to_theme; ?>/js/panels/carousel/jquery.rs.carousel-touch.js"></script>
+    <script type="text/javascript" src="js/panels/carousel/jquery.rs.carousel-autoscroll.js"></script>
+    <script type="text/javascript" src="js/panels/carousel/jquery.rs.carousel-continuous.js"></script>
+    <script type="text/javascript" src="js/panels/carousel/jquery.rs.carousel-touch.js"></script>
     
     <!-- panel utils -->
-    <script type="text/javascript" src="<?php print $path_to_theme; ?>/js/panels/panels-utils.js"></script>
+    <script type="text/javascript" src="js/panels/panels-utils.js"></script>
     
     
-    <script type="text/javascript" src="<?php print $path_to_theme; ?>/js/panels/jquery.mousewheel.js"></script>
-  	<script type="text/javascript" src="<?php print $path_to_theme; ?>/js/panels/tilezoom/jquery.tilezoom.js"></script>
+    <script type="text/javascript" src="js/panels/jquery.mousewheel.js"></script>
+  	<script type="text/javascript" src="js/panels/tilezoom/jquery.tilezoom.js"></script>
 
   </body>
 </html>
