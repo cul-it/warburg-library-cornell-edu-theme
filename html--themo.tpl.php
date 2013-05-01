@@ -82,6 +82,9 @@
   </head>
 
 <body>
+  
+<?php print "full path to the theme : " . base_path() . path_to_theme(); ?>
+  
     <div class="page panels">
         
         <header>

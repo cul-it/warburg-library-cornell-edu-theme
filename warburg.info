@@ -9,11 +9,6 @@ stylesheets[all][] = css/system.menus.css
 
 stylesheets[all][] = css/content.css
 
-; Adding this css file for now. The template for the panels
-; should render the css below and NOT the rest of the
-; templates
-stylesheets[all][] = css/panels.css
-
 scripts[] = js/bootstrap.min.js
 
 regions[header]         = Header
