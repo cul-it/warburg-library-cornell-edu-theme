@@ -42,208 +42,252 @@
  *
  * @ingroup themeable
  */
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
-  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
+?>
 
-<head profile="<?php print $grddl_profile; ?>">
-  <?php print $head; ?>
-  <title><?php print $head_title; ?></title>
-  <?php print $styles; ?>
-  <?php print $scripts; ?>
-</head>
-<body class="<?php print $classes; ?>" <?php print $attributes;?>>
-  <div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-  </div>
-  <blockquote>This page rendered by html--themo.tpl.php --------</blockquote>
-  <?php //print $page_top; ?>
-  
-  
-  <div class="page panels">
-      
-      <header>
-          <nav>
-              <ul>
-                  <li><a href="#" title="">Home</a></li>
-                  <li><a class="active" href="#" title="">All Panels</a></li>
-                  <li><a href="#" title="">Guided Panels</a></li>
-                  <li><a href="#" title="">Browse Themes</a></li>
-              
-                  <li class="search-panels"><a href="#" title=""><span class="search-panels-icon"></span></a></li>
-              </ul>
-          </nav>  
-      </header>
-      
-      <section>
-          <nav class="rs-carousel">
-              <ul>
-                  <li>
-                      <p class="panel-item">
-                          <a href="#" title"">
-                              <img class="panel-image" src="images/panels/carousel/Panel-B.jpg" width="148" height="198" alt="Panel B" />
-                              <span class="panel-name">Panel B</span>
-                          </a>                        
-                      </p>
-                  </li>
-                  <li>
-                      <p class="panel-item">
-                          <a href="#" title"">
-                              <img class="panel-image" src="images/panels/carousel/Panel-C.jpg" width="148" height="198" alt="Panel C" />
-                              <span class="panel-name">Panel C</span>
-                          </a>                        
-                      </p>
-                  </li>
-                  <li>
-                      <p class="panel-item">
-                          <a href="#" title"">
-                              <img class="panel-image" src="images/panels/carousel/Panel-8.jpg" width="148" height="198" alt="Panel 8" />
-                              <span class="panel-name">Panel 8</span>
-                          </a>                        
-                      </p>
-                  </li>
-                  <li>
-                      <p class="panel-item">
-                          <a href="#" title"">
-                              <img class="panel-image" src="images/panels/carousel/Panel-45.jpg" width="148" height="198" alt="Panel 45" />
-                              <span class="panel-name">Panel 45</span>
-                          </a>                        
-                      </p>
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <title>Mnemosyne: Meanderings through Aby Warburg's Atlas | Cornell University</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    
+    <link href="css/panels.css" rel="stylesheet">
+    
+    <!-- carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="css/panels/carousel/jquery.rs.carousel.css" media="all" />
+    
+    <!-- ZOOM -->
+    <link rel="stylesheet" type="text/css" media="all" href="js/panels/tilezoom/jquery.tilezoom.css" />
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+<body>
+    <div class="page panels">
+        
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" title="">Home</a></li>
+                    <li><a class="active" href="#" title="">All Panels</a></li>
+                    <li><a href="#" title="">Guided Panels</a></li>
+                    <li><a href="#" title="">Browse Themes</a></li>
+                
+                    <li class="search-panels"><a href="#" title=""><span class="search-panels-icon"></span></a></li>
+                </ul>
+            </nav>  
+        </header>
+        
+        <section>
+            <nav class="rs-carousel">
+                <ul>
+                    <li>
+                        <p class="panel-item">
+                            <a href="#" title"">
+                                <img class="panel-image" src="images/panels/carousel/Panel-B.jpg" width="148" height="198" alt="Panel B" />
+                                <span class="panel-name">Panel B</span>
+                            </a>                        
+                        </p>
+                    </li>
+                    <li>
+                        <p class="panel-item">
+                            <a href="#" title"">
+                                <img class="panel-image" src="images/panels/carousel/Panel-C.jpg" width="148" height="198" alt="Panel C" />
+                                <span class="panel-name">Panel C</span>
+                            </a>                        
+                        </p>
+                    </li>
+                    <li>
+                        <p class="panel-item">
+                            <a href="#" title"">
+                                <img class="panel-image" src="images/panels/carousel/Panel-8.jpg" width="148" height="198" alt="Panel 8" />
+                                <span class="panel-name">Panel 8</span>
+                            </a>                        
+                        </p>
+                    </li>
+                    <li>
+                        <p class="panel-item">
+                            <a href="#" title"">
+                                <img class="panel-image" src="images/panels/carousel/Panel-45.jpg" width="148" height="198" alt="Panel 45" />
+                                <span class="panel-name">Panel 45</span>
+                            </a>                        
+                        </p>
+                        
+                    </li>
+                    <li>
+                        <p class="panel-item">
+                            <a href="#" title"">
+                                <img class="panel-image" src="images/panels/carousel/Panel-46.jpg" width="148" height="198" alt="Panel 46" />
+                                <span class="panel-name">Panel 46</span>
+                            </a>                        
+                        </p>
+                        
+                    </li>
+                    <li>
+                        <p class="panel-item">
+                            <a href="#" title"">
+                                <img class="panel-image" src="images/panels/carousel/Panel-47.jpg" width="148" height="198" alt="Panel 47" />
+                                <span class="panel-name">Panel 47</span>
+                            </a>                        
+                        </p>
+                
+                    </li>
+                    <li>
+                        <p class="panel-item">
+                            <a href="#" title"">
+                                <img class="panel-image" src="images/panels/carousel/Panel-48.jpg" width="148" height="198" alt="Panel 48" />
+                                <span class="panel-name active">Panel 48</span>
+                            </a>                        
+                        </p>
+                                  
+                    </li>
+                    <li>
+                        <p class="panel-item">
+                            <a href="#" title"">
+                                <img class="panel-image" src="images/panels/carousel/Panel-61-62-63-64.jpg" width="148" height="198" alt="Panel 61-62-63-64" />
+                                <span class="panel-name">Panel 61-62-63-64</span>
+                            </a>                        
+                        </p>
+                       
+                    </li>
+                    <li>
+                        <p class="panel-item">
+                            <a href="#" title"">
+                                <img class="panel-image" src="images/panels/carousel/Panel-70.jpg" width="148" height="198" alt="Panel 70" />
+                                <span class="panel-name">Panel 70</span>
+                            </a>                        
+                        </p>
                       
-                  </li>
-                  <li>
-                      <p class="panel-item">
-                          <a href="#" title"">
-                              <img class="panel-image" src="images/panels/carousel/Panel-46.jpg" width="148" height="198" alt="Panel 46" />
-                              <span class="panel-name">Panel 46</span>
-                          </a>                        
-                      </p>
-                      
-                  </li>
-                  <li>
-                      <p class="panel-item">
-                          <a href="#" title"">
-                              <img class="panel-image" src="images/panels/carousel/Panel-47.jpg" width="148" height="198" alt="Panel 47" />
-                              <span class="panel-name">Panel 47</span>
-                          </a>                        
-                      </p>
-              
-                  </li>
-                  <li>
-                      <p class="panel-item">
-                          <a href="#" title"">
-                              <img class="panel-image" src="images/panels/carousel/Panel-48.jpg" width="148" height="198" alt="Panel 48" />
-                              <span class="panel-name active">Panel 48</span>
-                          </a>                        
-                      </p>
-                                
-                  </li>
-                  <li>
-                      <p class="panel-item">
-                          <a href="#" title"">
-                              <img class="panel-image" src="images/panels/carousel/Panel-61-62-63-64.jpg" width="148" height="198" alt="Panel 61-62-63-64" />
-                              <span class="panel-name">Panel 61-62-63-64</span>
-                          </a>                        
-                      </p>
-                     
-                  </li>
-                  <li>
-                      <p class="panel-item">
-                          <a href="#" title"">
-                              <img class="panel-image" src="images/panels/carousel/Panel-70.jpg" width="148" height="198" alt="Panel 70" />
-                              <span class="panel-name">Panel 70</span>
-                          </a>                        
-                      </p>
-                    
-                  </li>
-                  <li>
-                      <p class="panel-item">
-                          <a href="#" title"">
-                              <img class="panel-image" src="images/panels/carousel/Panel-79.jpg" width="148" height="198" alt="Panel 79" />
-                              <span class="panel-name">Panel 79</span>
-                          </a>                        
-                      </p>
-                     
-                  </li>
-              </ul>
-          </nav>
-  
-          <div class="carousel-left-limit"></div>
-          <div class="carousel-right-limit"></div>
-      </section>
+                    </li>
+                    <li>
+                        <p class="panel-item">
+                            <a href="#" title"">
+                                <img class="panel-image" src="images/panels/carousel/Panel-79.jpg" width="148" height="198" alt="Panel 79" />
+                                <span class="panel-name">Panel 79</span>
+                            </a>                        
+                        </p>
+                       
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="carousel-left-limit"></div>
+            <div class="carousel-right-limit"></div>
+        </section>
+            
+        <section class="panels-display">
+
+            <section class="panels-photo">
           
-      <section class="panels-display">
-
-          <section class="panels-photo">
-        
-              <div id="container">
-            
-                  <div class="zoom-holder">
-                      <div class="zoom-hotspots">
-                          <a style="left:85%;top:55%;" href="#"></a>
-                          <a style="left:90%;top:66%;" href="#" rel="12"></a>
-                          <a style="left:7%;top:66%;" href="#" rel="9"></a>
-                          <!--<a style="left:7%;top:66%;display:block;width:45%;height:24%;background-color: green;opacity: .5" href="#"  rel="10"></a>-->
-                      </div>
-                  </div>
-                  
-              </div>
-          </section>
-        
-          <section class="panel-description">
-            
-            <!-- Template metadata individual panels -->
-            <!--<h3><span>--><!--arrow--><!--</span>Panel 48</h3>-->
-            <!--<h4>Various levels of transferring the cosmic system to humanity. Harmonic correspondence. Later reduction of the harmony to abstract geometry instead of to cosmically conditional [geometry] (Leonardo). </h4>
-            <p>Panels  B  and  <a href="#" title="">C</a>  (which along with the not included panel A) provide the ‘grammar’ or ‘syntax’ with which to read the subsequent 60 panels. Offering an initial, paradigmatic itinerary or ‘meandering’ through Warburg’s vision, we see the genealogical and astrological  connections that link humanity and the cosmos. Panel B tracks the tensions between astrological and scientific-astronomical world views. In panel B the astrological is still dominant, whereas in panel <a href="#" title="">C</a>, with images showing Kepler’s astrological and astronomical</p>
-             
-            <h5>Theme:</h5>
-            <ul>
-                <li><a href="#" title="">Cosmographical sequence</a></li>
-                <li><a href="#" title="">Theme 2</a></li>
-                <li><a href="#" title="">Theme 3</a></li>
-            </ul>-->
-            <!--END Template metadata individual panels -->
-            
-            
-            <!-- Template metadata PATHWAY panels -->
-            <h3 class="pathway"><span><!--arrow--></span>Panel 7 <br />
-               <span class="secuence"><img src="images/panels/pathway-icon.png" width="44" height="44" alt="Pathway Icon"> Sequence 1</span>
-               <a href="#" title="Previous sequence">Previous</a>
-               <a href="#" title="Next sequence">Next</a>
-                </h3>
-            <h4>Various levels of transferring the cosmic system to humanity. Harmonic correspondence. Later reduction of the harmony to abstract geometry instead of to cosmically conditional [geometry] (Leonardo). </h4>
+                <div id="container">
+              
+                    <div class="zoom-holder">
+                        <div class="zoom-hotspots">
+                            <a style="left:85%;top:55%;" href="#"></a>
+                            <a style="left:90%;top:66%;" href="#" rel="12"></a>
+                            <a style="left:7%;top:66%;" href="#" rel="9"></a>
+                            <!--<a style="left:7%;top:66%;display:block;width:45%;height:24%;background-color: green;opacity: .5" href="#"  rel="10"></a>-->
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+          
+            <section class="panel-description">
+              
+              <!-- Template metadata individual panels -->
+              <!--<h3><span>--><!--arrow--><!--</span>Panel 48</h3>-->
+              <!--<h4>Various levels of transferring the cosmic system to humanity. Harmonic correspondence. Later reduction of the harmony to abstract geometry instead of to cosmically conditional [geometry] (Leonardo). </h4>
               <p>Panels  B  and  <a href="#" title="">C</a>  (which along with the not included panel A) provide the ‘grammar’ or ‘syntax’ with which to read the subsequent 60 panels. Offering an initial, paradigmatic itinerary or ‘meandering’ through Warburg’s vision, we see the genealogical and astrological  connections that link humanity and the cosmos. Panel B tracks the tensions between astrological and scientific-astronomical world views. In panel B the astrological is still dominant, whereas in panel <a href="#" title="">C</a>, with images showing Kepler’s astrological and astronomical</p>
-
+               
               <h5>Theme:</h5>
               <ul>
                   <li><a href="#" title="">Cosmographical sequence</a></li>
                   <li><a href="#" title="">Theme 2</a></li>
                   <li><a href="#" title="">Theme 3</a></li>
-              </ul>
-              <!-- END Template metadata PATHWAY panels -->
+              </ul>-->
+              <!--END Template metadata individual panels -->
+              
+              
+              <!-- Template metadata PATHWAY panels -->
+              <h3 class="pathway"><span><!--arrow--></span>Panel 7 <br />
+                 <span class="secuence"><img src="images/panels/pathway-icon.png" width="44" height="44" alt="Pathway Icon"> Sequence 1</span>
+                 <a href="#" title="Previous sequence">Previous</a>
+                 <a href="#" title="Next sequence">Next</a>
+                  </h3>
+              <h4>Various levels of transferring the cosmic system to humanity. Harmonic correspondence. Later reduction of the harmony to abstract geometry instead of to cosmically conditional [geometry] (Leonardo). </h4>
+                <p>Panels  B  and  <a href="#" title="">C</a>  (which along with the not included panel A) provide the ‘grammar’ or ‘syntax’ with which to read the subsequent 60 panels. Offering an initial, paradigmatic itinerary or ‘meandering’ through Warburg’s vision, we see the genealogical and astrological  connections that link humanity and the cosmos. Panel B tracks the tensions between astrological and scientific-astronomical world views. In panel B the astrological is still dominant, whereas in panel <a href="#" title="">C</a>, with images showing Kepler’s astrological and astronomical</p>
 
-          </section>
-          
-          <nav>
-              <ul id="panel-tools">
-                  <li><a class="original active" href="#" title=""></a></li>
-                  <li><a class="map" href="#" title=""></a></li>
-                  <li><a class="pathway" href="#" title=""></a></li>
-                  
-                  <li class="display-tools"></li>
+                <h5>Theme:</h5>
+                <ul>
+                    <li><a href="#" title="">Cosmographical sequence</a></li>
+                    <li><a href="#" title="">Theme 2</a></li>
+                    <li><a href="#" title="">Theme 3</a></li>
                 </ul>
-          </nav>
-         
-          
-          
-          
-      </section>
-  </div>
+                <!-- END Template metadata PATHWAY panels -->
   
-  
-  
-  <?php print $page; ?>
-  <?php //print $page_bottom; ?>
-</body>
+            </section>
+            
+            <nav>
+                <ul id="panel-tools">
+                    <li><a class="original active" href="#" title=""></a></li>
+                    <li><a class="map" href="#" title=""></a></li>
+                    <li><a class="pathway" href="#" title=""></a></li>
+                    
+                    <li class="display-tools"></li>
+                  </ul>
+            </nav>
+           
+            
+            
+            
+        </section>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    
+    <!-- carousel lib -->
+    <script type="text/javascript" src="js/panels/carousel/lib/jquery.ui.widget.js"></script>
+    <!-- if using touch -->
+    <script type="text/javascript" src="js/panels/carousel/lib/jquery.event.drag.js"></script>
+    <!-- if using touch and translate3d -->
+    <script type="text/javascript" src="js/panels/carousel/lib/jquery.translate3d.js"></script>
+
+    <!-- carousel core -->
+    <script type="text/javascript" src="js/panels/carousel/jquery.rs.carousel.js"></script>
+
+    <!-- carousel extensions (optional) -->
+    <script type="text/javascript" src="js/panels/carousel/jquery.rs.carousel-autoscroll.js"></script>
+    <script type="text/javascript" src="js/panels/carousel/jquery.rs.carousel-continuous.js"></script>
+    <script type="text/javascript" src="js/panels/carousel/jquery.rs.carousel-touch.js"></script>
+    
+    <!-- panel utils -->
+    <script type="text/javascript" src="js/panels/panels-utils.js"></script>
+    
+    
+    <script type="text/javascript" src="js/panels/jquery.mousewheel.js"></script>
+  	<script type="text/javascript" src="js/panels/tilezoom/jquery.tilezoom.js"></script>
+
+  </body>
 </html>
+
