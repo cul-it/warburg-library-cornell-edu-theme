@@ -1,0 +1,33 @@
+/* 
+ * The modules directory is reserved for Sass code that doesn’t 
+ *cause Sass to actually output CSS. Things like mixin 
+ *declarations, functions, and variables.
+ */
+
+/* 
+ * Opacity
+ */
+@mixin opacity($opacity) {
+	filter: alpha(opacity=#{$opacity*100});// IE 5-9+
+	opacity: $opacity; 
+	}
+	
+/* 
+* Panel tools states
+*/
+@mixin panel-tool-states ( $name) {
+  a.#{$name} {
+    background: url($pathPanelIcons + $name + '.png') 0 0;
+		margin-top: -4px;
+  }
+
+  a.#{$name}:hover {
+    background: url($pathPanelIcons + $name + '-active.png') 0 0;
+  }
+  
+  a.#{$name}.active {
+
+    background: url($pathPanelIcons + $name + '-active.png') 0 0;
+  }
+}
+

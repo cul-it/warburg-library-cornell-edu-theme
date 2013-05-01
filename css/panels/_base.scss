@@ -1,0 +1,436 @@
+/*
+ * 
+ */
+
+body {
+	width: 100%; //960px ;
+	font-family: 'Abel', sans-serif;
+	font-weight: normal;
+	font-size: 100%;
+	height: 100%;
+}
+
+.page.panels {
+	
+/*
+ *
+ */
+	
+	header {
+		
+		nav {
+		
+			ul {
+				height: 45px;
+				background-color: $gray;
+				list-style-type: none;
+				margin-left: 0;
+				margin-bottom: 0;
+			
+				li {
+					float: left;
+					height: 45px;
+					line-height: 45px;
+					background-color: $gray;
+					overflow: hidden;
+					
+					&.search-panels {
+						
+						float: right;
+						
+						a {
+							
+							padding: 0;
+							
+							&:hover {
+								background-color: transparent;
+								@include opacity(.5);
+							}
+							
+							.search-panels-icon {
+								background-image: url($pathSprites);
+								background-position: 0 0;
+								width: 28px;
+								height: 26px;
+								display: inline-block;
+								margin-top: 9px;
+								margin-right: 5px;
+							}
+						}	
+					}
+
+        			a {
+        				display: inline-block;
+        				padding-left: 24px;
+        				padding-right: 24px;
+        				text-decoration: none;
+        				color: $white;
+						font-size: 1.375em;
+
+        				&.active {
+        					background-color: $blue;
+        					border-bottom: 3px solid $blueLight;
+        					color: $white;
+        				}
+
+        				&:hover {
+        					background-color: $blue;
+        					border-bottom: 3px solid $blueLight;
+        					color: $white;
+        				}
+        			}
+				}
+			}
+		}
+	}
+}
+
+//Carousel
+.carousel-left-limit {
+	
+	height: 220px;
+	width: 80px;
+	background-color: $white;
+	//	@include opacity(.8);
+	position: absolute;
+	top: 45px;
+	left: 0;
+}
+
+.carousel-right-limit {
+	
+	height: 220px;
+	width: 80px;
+	background-color: $white;
+	//opacity: .8;
+	position: absolute;
+	top: 45px;
+	right: 0;
+}
+
+.rs-carousel {
+	
+	ul {
+		
+		height: 205px;
+		list-style-type: none;
+		padding-top: 15px;
+		margin-left: 0;
+		margin-right: 0;
+		
+		li {
+
+			margin-right: 25px;
+			
+			&:first-child {
+				margin-left: 75px;
+			}
+
+			.panel-item {
+				
+				
+				a {	
+					position: relative;
+					display: inline-block;
+					text-decoration: none;
+					
+					
+					
+					
+					
+					.panel-image {
+						
+						&:hover {
+							//background-color: $blue;
+							//@include opacity(.5);
+						}
+						
+						&.active {
+							//Placeholder
+						}
+						
+					}
+					
+					span.panel-name {
+							position: absolute;
+							display: inline-block;
+							padding: 10px;
+							padding-right: 0;
+							font-size: 1.1em;
+							color: #fff;
+							background-color: $green;
+							width: 138px;
+							bottom: 3px;
+							left: 0;
+							margin: 0;
+					
+							&:hover {
+								background-color: $blue;
+							}
+					
+							&.active {
+								background-color: $blue;
+							}
+							
+							&.hover {
+								background-color: $blue;
+							}
+						}
+				}
+			}
+		}
+	}
+	
+	.rs-carousel-action-prev {
+		
+		display: inline-block;
+		
+		position: absolute;
+		top: 100px;
+		left: 20px;
+		
+		background-image: url($pathSprites);
+		background-position: -5px -63px;
+		width: 38px;
+		height: 100px;
+		@include opacity(.5);
+		z-index: 99;
+	}
+	
+	.rs-carousel-action-next {
+		
+		display: inline-block;
+		
+		position: absolute;
+		top: 100px;
+		right: 20px;
+		
+		background-image: url($pathSprites);
+		background-position: -54px -63px;
+		width: 38px;
+		height: 100px;
+		@include opacity(.5);
+		z-index: 99;
+		
+	}
+	
+	.rs-carousel-action-active {
+		
+		opacity: 1;
+		
+
+	}
+}
+
+//Panel display
+
+.panels-display {
+	position: relative;
+	
+	width: 100%;
+	background-color: $greayDark;
+	
+	
+	.panels-photo {
+		
+		padding: 0;
+		margin: 0;
+		float: left;
+		width: 65.763889%;
+		overflow: hidden;
+		
+		#container {
+			margin: 0 auto;
+			width: 100%;//VERY IMPORTANT
+			height: 100%;//VERY IMPORTANT
+			position: relative;
+		}
+
+	}
+
+
+	
+	
+	
+	.panel-description {
+
+		float: left;
+		width: 30.902778%;
+		background-color: #76777b;
+		//@include opacity(.5);
+		color: #fff;
+		
+		overflow: auto;
+		
+		a:hover {
+			background-color: $blue;
+		}
+
+		
+		h3 {
+			position: relative;		
+			font-weight: normal;
+			font-size: 36px;
+			background-color: #4d4e53;
+			padding: 15px 20px;
+			margin-top: 0;
+			
+			&.pathway {
+				color: #919194;
+			}
+			
+			.secuence {
+				
+				display: inline-block;
+				font-size: 30px;
+				margin-top: 10px;
+				color: #fff;
+				
+				img {
+				vertical-align: middle;	
+				}
+				
+			}
+			
+			//span {
+			 	//position: absolute;
+				//top: 0;
+				//left: -30px;
+			//}
+			
+			a {
+				font-size: 24px;
+			}
+		}
+		
+		h4 {
+			font-weight: normal;
+			font-size: 24px;
+			padding: 20px;
+			padding-top: 10px;
+			line-height: 1.2em;
+			padding-bottom: 0;
+		}
+		
+		p {
+			font-weight: normal;
+			font-size: 18px;
+			padding: 20px;
+			line-height: 1.2em;
+			
+			a {
+				display: inline-block;
+				padding: 4px;
+				background-color: $green;
+				color: #fff;
+				text-decoration: none;
+			}
+		}	
+		
+		h5 {
+			font-weight: normal;
+			font-size: 18px;
+			padding: 0 20px 20px 20px;
+			clear: both;
+			float: left;
+			width: 35px;
+			display: inline-block;
+			margin-top: 0;
+			padding-top: 6px;
+		}	
+		
+		ul {
+			float: left;
+			list-style-type: none;
+			margin-left: 5px;
+			
+			li {
+				float: left;
+				margin-right: 10px;
+				
+				a	 {
+					display: inline-block;
+					padding: 6px 8px;
+					background-color: $green;
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	
+	nav {
+		
+		position: absolute;
+		top: 0;
+		right: 0;
+		//width: 48px;
+		width: 3.3333333%;
+		
+		#panel-tools {
+
+			list-style-type: none;
+			margin-left: 1px;
+
+			li {
+				float: left;
+				margin-left: 1px;
+				height: 40px;
+				margin-bottom: 1px;
+				
+				&:first-child,
+				&.display-tools {
+
+						margin-top: 33px;
+				}
+				
+				a {
+
+					display: inline-block;
+					width: 39px;
+					height: 40px;
+					text-indent: -9999px;
+				}	
+				
+				@include panel-tool-states( 'original' );
+				@include panel-tool-states( 'map' );
+				@include panel-tool-states( 'pathway' );
+				
+				&.display-tools  {
+					@include panel-tool-states( 'go-home' );
+					@include panel-tool-states( 'zoom-in' );
+					@include panel-tool-states( 'zoom-out' );
+					@include panel-tool-states( 'toggle-full' );
+					
+					a {
+
+					}
+				}		
+			}			
+		}
+	}
+	
+	
+	
+}
+
+/*
+.search-panels {
+	background-position: 0 0;
+	width: 28px;
+	height: 26px;
+}
+
+.carousel-left-control {
+	background-position: -5px -63px;
+	width: 38px;
+	height: 100px;
+}
+
+.carousel-right-control.png {
+	background-position: -54px -63px;
+	width: 38px;
+	height: 100px;
+}*/
+
+
