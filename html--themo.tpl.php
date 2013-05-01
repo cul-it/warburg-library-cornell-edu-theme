@@ -44,6 +44,12 @@
  */
 ?>
 
+<?php 
+// full path to the theme.
+$path_theme_panels = base_path() . path_to_theme();
+print $path_theme_panels; 
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -60,13 +66,13 @@
     
     <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     
-    <link href="css/panels.css" rel="stylesheet">
+    <link href="<?php print $path_theme_panels; ?>/css/panels.css" rel="stylesheet">
     
     <!-- carousel CSS -->
-    <link rel="stylesheet" type="text/css" href="css/panels/carousel/jquery.rs.carousel.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="<?php print $path_theme_panels; ?>/css/panels/carousel/jquery.rs.carousel.css" media="all" />
     
     <!-- ZOOM -->
-    <link rel="stylesheet" type="text/css" media="all" href="js/panels/tilezoom/jquery.tilezoom.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php print $path_theme_panels; ?>/js/panels/tilezoom/jquery.tilezoom.css" />
     
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -82,13 +88,7 @@
   </head>
 
 <body>
-  
-<?php 
-// full path to the theme.
-$path_theme_panels = base_path() . path_to_theme();
-print $path_theme_panels; 
-?>
-  
+    
     <div class="page panels">
         
         <header>
@@ -110,7 +110,7 @@ print $path_theme_panels;
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
-                                <img class="panel-image" src="images/panels/carousel/Panel-B.jpg" width="148" height="198" alt="Panel B" />
+                                <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-B.jpg" width="148" height="198" alt="Panel B" />
                                 <span class="panel-name">Panel B</span>
                             </a>                        
                         </p>
