@@ -68,7 +68,7 @@
     <link rel="stylesheet" type="text/css" href="<?php print $path_theme_panels; ?>/css/panels/carousel/jquery.rs.carousel.css" media="all" />
     
     <!-- ZOOM -->
-    <link rel="stylesheet" type="text/css" media="all" href="<?php print $path_theme_panels; ?>/js/panels/tilezoom/jquery.tilezoom.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?php print $path_theme_panels; ?>/js/tilezoom/jquery.tilezoom.css" />
     
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -270,26 +270,26 @@
     <!--<script src="js/bootstrap.min.js"></script>-->
     
     <!-- carousel lib -->
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/lib/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/lib/jquery.ui.widget.js"></script>
     <!-- if using touch -->
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/lib/jquery.event.drag.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/lib/jquery.event.drag.js"></script>
     <!-- if using touch and translate3d -->
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/lib/jquery.translate3d.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/lib/jquery.translate3d.js"></script>
 
     <!-- carousel core -->
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/jquery.rs.carousel.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel.js"></script>
 
     <!-- carousel extensions (optional) -->
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/jquery.rs.carousel-autoscroll.js"></script>
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/jquery.rs.carousel-continuous.js"></script>
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/jquery.rs.carousel-touch.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-autoscroll.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-continuous.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-touch.js"></script>
     
     <!-- panel utils -->
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/panels-utils.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels-utils.js"></script>
     
     
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/jquery.mousewheel.js"></script>
-  	<script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/tilezoom/jquery.tilezoom.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/jquery.mousewheel.js"></script>
+  	<script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/tilezoom/jquery.tilezoom.js"></script>
 
   </body>
 </html>
