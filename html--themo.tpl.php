@@ -218,8 +218,8 @@
             <section class="panel-description">
               
               <!-- Template metadata individual panels -->
-              <!--<h3><span>--><!--arrow--><!--</span>Panel 48</h3>-->
-              <!--<h4>Various levels of transferring the cosmic system to humanity. Harmonic correspondence. Later reduction of the harmony to abstract geometry instead of to cosmically conditional [geometry] (Leonardo). </h4>
+              <h3><span><!--arrow--></span>Panel 48</h3>
+              <h4>Various levels of transferring the cosmic system to humanity. Harmonic correspondence. Later reduction of the harmony to abstract geometry instead of to cosmically conditional [geometry] (Leonardo). </h4>
               <p>Panels  B  and  <a href="#" title="">C</a>  (which along with the not included panel A) provide the ‘grammar’ or ‘syntax’ with which to read the subsequent 60 panels. Offering an initial, paradigmatic itinerary or ‘meandering’ through Warburg’s vision, we see the genealogical and astrological  connections that link humanity and the cosmos. Panel B tracks the tensions between astrological and scientific-astronomical world views. In panel B the astrological is still dominant, whereas in panel <a href="#" title="">C</a>, with images showing Kepler’s astrological and astronomical</p>
                
               <h5>Theme:</h5>
@@ -227,26 +227,11 @@
                   <li><a href="#" title="">Cosmographical sequence</a></li>
                   <li><a href="#" title="">Theme 2</a></li>
                   <li><a href="#" title="">Theme 3</a></li>
-              </ul>-->
+              </ul>
               <!--END Template metadata individual panels -->
               
               
-              <!-- Template metadata PATHWAY panels -->
-              <h3 class="pathway"><span><!--arrow--></span>Panel 7 <br />
-                 <span class="secuence"><img src="images/panels/pathway-icon.png" width="44" height="44" alt="Pathway Icon"> Sequence 1</span>
-                 <a href="#" title="Previous sequence">Previous</a>
-                 <a href="#" title="Next sequence">Next</a>
-                  </h3>
-              <h4>Various levels of transferring the cosmic system to humanity. Harmonic correspondence. Later reduction of the harmony to abstract geometry instead of to cosmically conditional [geometry] (Leonardo). </h4>
-                <p>Panels  B  and  <a href="#" title="">C</a>  (which along with the not included panel A) provide the ‘grammar’ or ‘syntax’ with which to read the subsequent 60 panels. Offering an initial, paradigmatic itinerary or ‘meandering’ through Warburg’s vision, we see the genealogical and astrological  connections that link humanity and the cosmos. Panel B tracks the tensions between astrological and scientific-astronomical world views. In panel B the astrological is still dominant, whereas in panel <a href="#" title="">C</a>, with images showing Kepler’s astrological and astronomical</p>
-
-                <h5>Theme:</h5>
-                <ul>
-                    <li><a href="#" title="">Cosmographical sequence</a></li>
-                    <li><a href="#" title="">Theme 2</a></li>
-                    <li><a href="#" title="">Theme 3</a></li>
-                </ul>
-                <!-- END Template metadata PATHWAY panels -->
+             
   
             </section>
             
