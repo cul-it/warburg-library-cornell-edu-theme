@@ -8,6 +8,8 @@ core        = 7.x
 stylesheets[all][] = css/system.menus.css
 
 stylesheets[all][] = css/content.css
+stylesheets[all][] = css/panels.css
+stylesheets[all][] = css/panels/carousel/jquery.rs.carousel.css
 
 scripts[] = js/bootstrap.min.js
 
