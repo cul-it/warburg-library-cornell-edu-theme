@@ -30,6 +30,23 @@
 ?>
 <blockquote>hello from views-view-fields--panel.tpl.php </blockquote>
 <?php print '<pre>'; var_dump(array_keys($fields)); print '</pre>'; ?>
+<section class="panels-display">
+  <section class="panels-photo">
+    <?php print $fields['field_panel_photo']->content; ?>
+  </section>
+  <section class="panel-description">
+    <?php print $fields['body']->content; ?>
+  </section>
+  <nav>
+    <ul id="panel-tools">
+      <li><a class="original active" href="#" title=""></a></li>
+      <li><a class="map" href="#" title=""></a></li>
+      <li><a class="pathway" href="#" title=""></a></li>
+
+      <li class="display-tools"></li>
+    </ul>
+  </nav>
+</section>
 <?php foreach ($fields as $id => $field): ?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
@@ -40,4 +57,5 @@
     <?php print $field->content; ?>
   <?php print $field->wrapper_suffix; ?>
 <?php endforeach; ?>
+
 
