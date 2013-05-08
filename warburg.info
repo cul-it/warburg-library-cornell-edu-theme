@@ -7,7 +7,7 @@ core        = 7.x
 ; First we remove the system's menu styling since Zen has its own.
 stylesheets[all][] = css/system.menus.css
 
-;stylesheets[all][] = css/content.css
+stylesheets[all][] = css/content.css
 ;stylesheets[all][] = css/panels.css
 ;stylesheets[all][] = css/panels/carousel/jquery.rs.carousel.css
 
