@@ -7,20 +7,19 @@ core        = 7.x
 ; First we remove the system's menu styling since Zen has its own.
 stylesheets[all][] = css/system.menus.css
 
-stylesheets[all][] = css/content.css
-stylesheets[all][] = css/panels.css
-stylesheets[all][] = css/panels/carousel/jquery.rs.carousel.css
+;stylesheets[all][] = css/content.css
+;stylesheets[all][] = css/panels.css
+;stylesheets[all][] = css/panels/carousel/jquery.rs.carousel.css
 
 scripts[] = js/bootstrap.min.js
 
 ; Carousel jquery library
-scripts[] = js/carousel/lib/jquery.ui.widget.js
-scripts[] = js/carousel/lib/jquery.event.drag.js
-scripts[] = js/carousel/lib/jquery.translate3d.js
-scripts[] = js/carousel/jquery.rs.carousel.js
-scripts[] = js/carousel/jquery.rs.carousel-autoscroll.js
-scripts[] = js/carousel/jquery.rs.carousel-continuous.js
-scripts[] = js/carousel/jquery.rs.carousel-touch.js
+;scripts[] = js/carousel/lib/jquery.event.drag.js
+;scripts[] = js/carousel/lib/jquery.translate3d.js
+;scripts[] = js/carousel/jquery.rs.carousel.js
+;scripts[] = js/carousel/jquery.rs.carousel-autoscroll.js
+;scripts[] = js/carousel/jquery.rs.carousel-continuous.js
+;scripts[] = js/carousel/jquery.rs.carousel-touch.js
 
 scripts[] = js/panels-utils.js
 
