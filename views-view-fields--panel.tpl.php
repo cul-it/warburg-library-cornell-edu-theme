@@ -29,7 +29,7 @@
  */
 ?>
 <blockquote>hello from views-view-fields--panel.tpl.php </blockquote>
-<?php print '<pre>'; var_dump($fields); print '</pre>'; ?>
+<?php print '<pre>'; var_dump(array_keys($fields)); print '</pre>'; ?>
 <?php foreach ($fields as $id => $field): ?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
