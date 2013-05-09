@@ -45,9 +45,13 @@
   </section>
   <nav>
     <ul id="panel-tools">
-      <li><a class="original active" href="#" title=""></a></li>
+      <li><a class="original active" href="<?php print $fields['nothing']->content; ?>" title=""></a></li>
+      <?php if (!empty($fields['field_first_ordinal_group']->content)): ?>
       <li><a class="map" href="#" title=""></a></li>
+      <?php endif; ?>
+      <?php if (!empty($fields['field_first_sequence_group']->content)):: ?>
       <li><a class="pathway" href="#" title=""></a></li>
+      <?php endif; ?>
 
       <li class="display-tools"></li>
     </ul>
