@@ -69,11 +69,13 @@
 <?php print '<pre>'; var_dump(array_keys($fields)); print '</pre>'; ?>
 -->
 <?php
+print '<section class="technical">';
 if (!empty($fields['field_first_ordinal_group']->content)) {
   print '<pre>Ordinal: ' . $fields['field_first_ordinal_group']->content . '</pre>';
 }
 if (!empty($fields['field_first_sequence_group']->content)) {
   print '<pre>Sequence: ' . $fields['field_first_sequence_group']->content . '</pre>';
 }
+print '</section>';
 ?>
 
