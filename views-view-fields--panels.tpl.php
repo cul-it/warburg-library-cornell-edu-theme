@@ -28,8 +28,6 @@
  * views-view-fields--panels.tpl.php
  */
 ?>
-<blockquote>hello from views-view-fields--panels.tpl.php </blockquote>
-<?php print '<pre>'; var_dump(array_keys($fields)); print '</pre>'; ?>
 <section class="panels-display">
   <section class="panels-photo">
     <?php print $fields['field_panel_photo']->content; ?>
@@ -55,6 +53,8 @@
     </ul>
   </nav>
 </section>
+
+<!--
 <?php foreach ($fields as $id => $field): ?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
@@ -65,5 +65,7 @@
     <?php print $field->content; ?>
   <?php print $field->wrapper_suffix; ?>
 <?php endforeach; ?>
+-->
 
+<?php print '<pre>'; var_dump(array_keys($fields)); print '</pre>'; ?>
 
