@@ -35,7 +35,15 @@
     <?php print $fields['field_panel_photo']->content; ?>
   </section>
   <section class="panel-description">
+    <!-- Template metadata individual panels -->
+    <h3><span><!--arrow--></span><?php print $fields['title']->content; ?></h3>
+    <h4><?php print $fields['field_full_title']->content; ?></h4>
     <?php print $fields['body']->content; ?>
+    <h5><?php print t('Theme:'); ?></h5>
+    <ul>
+      <li><a href="#" title=""><?php print $fields['field_theme']->content; ?></a></li>
+      <li><a href="#" title=""><?php print $fields['field_secondary_theme']->content; ?></a></li>
+    </ul>
   </section>
   <nav>
     <ul id="panel-tools">
