@@ -65,17 +65,16 @@
     <?php print $field->content; ?>
   <?php print $field->wrapper_suffix; ?>
 <?php endforeach; ?>
-
-<?php print '<pre>'; var_dump(array_keys($fields)); print '</pre>'; ?>
 -->
 <?php
-print '<section class="technical">';
-if (!empty($fields['field_first_ordinal_group']->content)) {
-  print '<pre>Ordinal: ' . $fields['field_first_ordinal_group']->content . '</pre>';
+print '<section class="technical"><pre>';
+var_dump(array_keys($fields));
+if (!empty($fields['field_first_ordinal_group']->raw)) {
+  print 'Ordinal: ' . var_dump($fields['field_first_ordinal_group']->raw);
 }
-if (!empty($fields['field_first_sequence_group']->content)) {
-  print '<pre>Sequence: ' . $fields['field_first_sequence_group']->content . '</pre>';
+if (!empty($fields['field_first_sequence_group']->raw)) {
+  print 'Sequence: ' . var_dump($fields['field_first_sequence_group']->raw);
 }
-print '</section>';
+print '</pre></section>';
 ?>
 
