@@ -28,9 +28,6 @@
  * views-view-fields--panels.tpl.php
  */
 ?>
-<?php
-  drupal_add_css(drupal_get_path('theme', 'warburg') . '/css/panels.css', array('type' => 'file'));
-?>
 <blockquote>hello from views-view-fields--panels.tpl.php </blockquote>
 <?php print '<pre>'; var_dump(array_keys($fields)); print '</pre>'; ?>
 <section class="panels-display">

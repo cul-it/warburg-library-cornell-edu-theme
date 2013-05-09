@@ -15,6 +15,7 @@
 <?php
 if (!empty($rows)) {
   // add css to suport carousel
+  drupal_add_css(drupal_get_path('theme', 'warburg') . '/css/panels.css', array('type' => 'file'));
   drupal_add_css(drupal_get_path('theme', 'warburg') . '/css/panels/carousel/jquery.rs.carousel.css', array('type' => 'file'));
 
   // add javascript to support carousel
