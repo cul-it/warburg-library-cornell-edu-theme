@@ -243,6 +243,7 @@ function warburg_preprocess_html(&$vars) {
 /**
   * Generic preprocess that is still working on D7
   * see http://webpartners.es/en/drupal-7-views-templates-and-preprocess
+  * TODO - remove
   */
 function warburg_preprocess_views_view(&$vars) {
   if (isset($vars['view']->name)) {
@@ -255,18 +256,20 @@ function warburg_preprocess_views_view(&$vars) {
 
 /**
   * Then the specific preprocess that worked without the above code for D6
+  * TODO remove
   */
 function warburg_preprocess_views_view__panels__page(&$vars) {
   // panels/xx/overview preprocess code
-  dsm('hello from panels/xx/overview preprocess code');
+  //dsm('hello from panels/xx/overview preprocess code');
 }
 
 /**
   * Then the specific preprocess that worked without the above code for D6
+  * TODO remove
   */
 function warburg_preprocess_views_view__panels__page_1(&$vars) {
   // panels/xx/map preprocess code
-  dsm('hello from panels/xx/map preprocess code');
-  dsm($vars);
+  //dsm('hello from panels/xx/map preprocess code');
+  //dsm($vars);
 }
 
