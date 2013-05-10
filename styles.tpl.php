@@ -194,7 +194,7 @@ if ($style_name == 'tilezoom') {
         if (isset($panel->field_first_sequence_group['und'])) {
            foreach ($panel->field_first_sequence_group['und'] as $val) {
               $hotspot = warburg_hotspot_list($val['target_id']);
-              dsm($hotspot);
+              dsm($val);
               $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], $width, $height);
            }
          }
