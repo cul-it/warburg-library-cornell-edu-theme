@@ -258,8 +258,16 @@ function warburg_preprocess_views_view(&$vars) {
 /**
   * Then the specific preprocess that worked without the above code for D6
   */
-function warburg_preprocess_views_view__panels__map(&$vars) {
-  // my specific preprocess code
-  dsm('hello from warburg_preprocess_views_view__panels__map');
+function warburg_preprocess_views_view__panels__page(&$vars) {
+  // panels/xx/overview preprocess code
+  dsm('hello from panels/xx/overview preprocess code');
+}
+
+/**
+  * Then the specific preprocess that worked without the above code for D6
+  */
+function warburg_preprocess_views_view__panels__page_1(&$vars) {
+  // panels/xx/map preprocess code
+  dsm('hello from panels/xx/map preprocess code');
 }
 
