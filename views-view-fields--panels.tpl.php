@@ -81,8 +81,8 @@ if (!empty($fields['field_first_sequence_group']->content)) {
   print 'Sequence: ';
   var_dump($fields['field_first_sequence_group']->content);
 }
-var_dump($view);
-var_dump($row);
+//var_dump($view);
+//var_dump($row);
 print '</pre></section>';
 ?>
 
