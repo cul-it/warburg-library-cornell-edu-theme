@@ -48,6 +48,8 @@
     
       $(':rs-carousel').carousel('refresh');
       console.log( maxHeightPanel + " Refreshed");
+      
+      console.log( headerHeight + " header");
   });
 
 
