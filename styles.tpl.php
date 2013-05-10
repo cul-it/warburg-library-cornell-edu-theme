@@ -114,16 +114,27 @@ function warburg_bounding_box_scale($image_width, $image_height, $left, $top, $r
 if ($style_name == 'tilezoom') {
   // find out what mode display
   $mode = '';
-  if (in_array(arg(0), array('panels', 'panel-overview', 'panel-images', 'panel-sequence'))) {
+  if (in_array(arg(0), array('panel-overview', 'panel-images', 'panel-sequence'))) {
     if (is_numeric(arg(1))) {
       $mode = arg(0);
-      $panel_nid = arg(1);
+      $warburg_id = arg(1);
       $submode = arg(2);
       $nodeid = arg(3);
-      if (!empty($submode) && in_array($submode, array('image', 'sequence', 'map')) && is_numeric($nodeid)) {
+      if (!empty($submode) && in_array($submode, array('image', 'sequence')) && is_numeric($nodeid)) {
         $mode .= '-' . $submode;
         $image_nid = $nodeid;
       }
+    }
+  }
+  if (arg(0) == 'panels') {
+    $mode = arg(0);
+    $warburg_id = arg(1);
+    $submode = arg(2);
+    if (!empty($submode) && in_array($submode, array('map', 'pathway'))) {
+      $mode .= '-' . $submode;
+    }
+    if (is_numeric($nodeid = arg(3))) {
+      $image_nid = $nodeid;
     }
   }
   if (empty($mode)) {
