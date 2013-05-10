@@ -154,7 +154,7 @@ if ($style_name == 'tilezoom') {
     $hotspots = array();
     //dsm($mode);
     switch ($mode) {
-      case 'panels'
+      case 'panels':
       case 'panel-overview':
         break;
       case 'panels-map':
