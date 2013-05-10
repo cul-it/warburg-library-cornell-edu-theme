@@ -114,20 +114,17 @@ function warburg_bounding_box_scale($image_width, $image_height, $left, $top, $r
 if ($style_name == 'tilezoom') {
   // find out what mode display
   $mode = '';
-  if (in_array(arg(0), array('panel-overview', 'panel-images', 'panel-sequence'))) {
+  if (in_array(arg(0), array('panels', 'panel-overview', 'panel-images', 'panel-sequence'))) {
     if (is_numeric(arg(1))) {
       $mode = arg(0);
       $panel_nid = arg(1);
       $submode = arg(2);
       $nodeid = arg(3);
-      if (!empty($submode) && in_array($submode, array('image', 'sequence')) && is_numeric($nodeid)) {
+      if (!empty($submode) && in_array($submode, array('image', 'sequence', 'map')) && is_numeric($nodeid)) {
         $mode .= '-' . $submode;
         $image_nid = $nodeid;
       }
     }
-  }
-  elseif (in_array(arg(0), array('panels'))) {
-    dsm($variables);
   }
   if (empty($mode)) {
     print $output;
@@ -157,8 +154,10 @@ if ($style_name == 'tilezoom') {
     $hotspots = array();
     //dsm($mode);
     switch ($mode) {
+      case 'panels'
       case 'panel-overview':
         break;
+      case 'panels-map':
       case 'panel-images':
         // find image locations for hotspots
         $prefix = '/' . $mode . '/' . $panel_nid . '/';
@@ -169,6 +168,7 @@ if ($style_name == 'tilezoom') {
           }
         }
         break;
+      case 'panels-sequence':
       case 'panel-series':
         // find image locations for hotspots
         $prefix = '/' . $mode . '/' . $panel_nid . '/';
@@ -179,6 +179,7 @@ if ($style_name == 'tilezoom') {
            }
          }
         break;
+      case 'panels-image':
       case 'panel-images-image':
       case 'panel-images-panel_image':
         // display a single image
@@ -187,6 +188,7 @@ if ($style_name == 'tilezoom') {
         $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], $width, $height, TRUE);
         $startposition = "jQuery('#tilezoom-starthere').click();";
         break;
+      case 'panels-sequence':
       case 'panel-sequence-sequence':
         // display all hotspots for this sequence
         $seq_id = $image_nid;
