@@ -106,8 +106,15 @@
 		   
   			$searchIcon .click(function(){
   			  
-  			  $searchIconImg.toggleClass('search-panels-icon', 'search-panels-close-icon');
-  			  $('#search-panels').toggle();
+  			  
+  			  $('#search-panels').toggle(function(){
+  			    
+  			    $searchIconImg.removeClass("search-panels-icon");
+  			    $searchIconImg.addClass("search-panels-close-icon")
+  			    
+  			  });
+  			  
+  			  
  
   			});
 			
