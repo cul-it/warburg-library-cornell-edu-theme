@@ -193,9 +193,15 @@ if ($style_name == 'tilezoom') {
         $prefix = "/panels/$warburg_id/pathway/";
         if (isset($panel->field_first_sequence_group['und'])) {
            foreach ($panel->field_first_sequence_group['und'] as $val) {
-              $hotspot = warburg_hotspot_list($val['target_id']);
-              dsm($val);
-              $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], $width, $height);
+              $squence_id = $val['target_id'];
+              $squence = node_load($squence_id);
+              if (isset($sequence->field_steps['und'])) {
+                foreach ($sequence->field_steps['und'] as $val2) {
+                  dsm($val2);
+                  $hotspot = warburg_hotspot_list($val2['target_id']);
+                  $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], $width, $height);
+                }
+              }
            }
          }
         break;
