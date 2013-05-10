@@ -244,7 +244,8 @@ function warburg_preprocess_html(&$vars) {
   * Generic preprocess that is still working on D7
   * see http://webpartners.es/en/drupal-7-views-templates-and-preprocess
   */
-function warburg_preprocess_views_view(&$vars) {
+function warburg_preprocess_views_view_fields(&$vars) {
+  dsm('warburg_preprocess_views_view_fields');
   if (isset($vars['view']->name)) {
     $function = __FUNCTION__ . '__' . $vars['view']->name . '__' . $vars['view']->current_display;
     dsm($function);
