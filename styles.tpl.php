@@ -152,7 +152,7 @@ if ($style_name == 'tilezoom') {
 
     $startposition = ''; //"jQuery('#tilezoom-starthere').click();";
     $hotspots = array();
-    //dsm($mode);
+    dsm($mode);
     switch ($mode) {
       case 'panels':
       case 'panel-overview':
@@ -207,7 +207,7 @@ if ($style_name == 'tilezoom') {
     }
 
     dsm($hotspots);
-    //dsm($panel);
+    dsm($panel);
     //dsm($variables);
 
     $url = $variables['object']->uri;
