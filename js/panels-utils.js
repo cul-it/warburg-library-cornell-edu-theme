@@ -70,7 +70,7 @@
     
     
       //ZOOM
-      $('#container').tilezoom({
+      /*$('#container').tilezoom({
   			xml: 'dest/Panel79a.xml',
   			mousewheel: true,
   			navigation: true,
@@ -80,7 +80,7 @@
   			navigation: '#panel-tools li.display-tools'
   			//'#panel-tools'
 
-  		});
+  		});*/
 		
 		
   		//hover over carousel of panels will change image legend to active color.
