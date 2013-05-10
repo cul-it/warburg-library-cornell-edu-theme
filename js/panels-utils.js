@@ -100,9 +100,16 @@
   		//.search-panels-close-icon
 		
   		// $('#search-panels').show();
-		
-  			$('.search-panels').click(function(){
-  			  $('#search-panels').toggle();
+  		
+		   var $search = $('.search-panels')
+  			$search .click(function(){
+  			  $('#search-panels').toggle(function(){
+  			    $search.removeClass('search-panels-icon');
+  			    $search.addClass('search-panels-close-icon');
+  			  },function(){
+  			    $search.removeClass('search-panels-close-icon');
+  			    $search.addClass('search-panels-icon');
+  			  });
   			});
 			
 			
