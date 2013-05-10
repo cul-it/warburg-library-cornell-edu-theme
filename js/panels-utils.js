@@ -101,14 +101,15 @@
 		
   		// $('#search-panels').show();
   		
-		   var $search = $('.search-panels');
-  			$search .click(function(){
+		   var $searchIcon = $('.search-panels');
+		   var $searchIconImg = $search('.search-panels-icon');
+  			$searchIcon .click(function(){
   			  $('#search-panels').toggle(function(){
-  			    $search.removeClass('search-panels-icon');
-  			    $search.addClass('search-panels-close-icon');
+  			    $searchIconImg.removeClass('search-panels-icon');
+  			    $searchIconImg.addClass('search-panels-close-icon');
   			  },function(){
-  			    $search.removeClass('search-panels-close-icon');
-  			    $search.addClass('search-panels-icon');
+  			    $searchIconImg.removeClass('search-panels-close-icon');
+  			    $searchIconImg.addClass('search-panels-icon');
   			  });
   			});
 			
