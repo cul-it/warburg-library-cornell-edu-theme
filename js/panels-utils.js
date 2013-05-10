@@ -112,7 +112,12 @@
   			    $searchIconImg.removeClass("search-panels-icon");
   			    $searchIconImg.addClass("search-panels-close-icon")
   			    
-  			  });
+  			  },  function(){
+
+    			    $searchIconImg.addClass("search-panels-icon");
+    			    $searchIconImg.removeClass("search-panels-close-icon")
+
+    			  });
   			  
   			  
  
