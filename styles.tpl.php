@@ -126,6 +126,9 @@ if ($style_name == 'tilezoom') {
       }
     }
   }
+  elseif (in_array(arg(0), array('panels'))) {
+    dsm($variables);
+  }
   if (empty($mode)) {
     print $output;
   }
