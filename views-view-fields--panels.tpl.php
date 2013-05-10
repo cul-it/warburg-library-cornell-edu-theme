@@ -30,7 +30,7 @@
 ?>
 <section class="panels-display">
   <section class="panels-photo">
-    <?php print $fields['field_panel_photo']->content; ?>
+    <?php print $fields['field_tiled_panel_image']->content; ?>
   </section>
   <section class="panel-description">
     <!-- Template metadata individual panels -->
