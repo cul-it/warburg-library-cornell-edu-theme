@@ -224,8 +224,8 @@ if ($style_name == 'tilezoom') {
     //$width = 2918;
     //$height = 4000;
     $container_width = 769;
-    $container_height = 769 * $height / $width;
-    dsm(array($widrh, $height, $container_height));
+    $container_height = floor(769 * $height / $width);
+    dsm(array($width, $height, $container_height));
     //$path = "/sites/default/files/panels/PanelC_files";
     $tilezoom = "jQuery('#container').tilezoom({width: $container_width, height: $container_height, path: '$tiles', mousewheel: false});";
     $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
