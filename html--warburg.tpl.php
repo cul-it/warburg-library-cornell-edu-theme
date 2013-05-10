@@ -313,7 +313,7 @@
 
 <h2>Warburg theme - html--warburg.tpl.php</h2>
 <?php
-print views_embed_view('panels','page', 36);
+print views_embed_view('panels','page', 'panels', '79');
 ?>
   </body>
 </html>
