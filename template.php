@@ -245,10 +245,8 @@ function warburg_preprocess_html(&$vars) {
   * see http://webpartners.es/en/drupal-7-views-templates-and-preprocess
   */
 function warburg_preprocess_views_view(&$vars) {
-  dsm('warburg_preprocess_views_view');
   if (isset($vars['view']->name)) {
     $function = __FUNCTION__ . '__' . $vars['view']->name . '__' . $vars['view']->current_display;
-    dsm($function);
     if (function_exists($function)) {
      $function($vars);
     }
@@ -269,5 +267,6 @@ function warburg_preprocess_views_view__panels__page(&$vars) {
 function warburg_preprocess_views_view__panels__page_1(&$vars) {
   // panels/xx/map preprocess code
   dsm('hello from panels/xx/map preprocess code');
+  dsm($vars);
 }
 
