@@ -206,7 +206,7 @@ if ($style_name == 'tilezoom') {
         break;
     }
 
-    //dsm($hotspots);
+    dsm($hotspots);
     //dsm($panel);
     //dsm($variables);
 
