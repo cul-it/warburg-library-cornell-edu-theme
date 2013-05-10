@@ -117,7 +117,7 @@ if ($style_name == 'tilezoom') {
   if (in_array(arg(0), array('panel-overview', 'panel-images', 'panel-sequence'))) {
     if (is_numeric(arg(1))) {
       $mode = arg(0);
-      $warburg_id = arg(1);
+      $panel_nid = arg(1);
       $submode = arg(2);
       $nodeid = arg(3);
       if (!empty($submode) && in_array($submode, array('image', 'sequence')) && is_numeric($nodeid)) {
@@ -169,6 +169,15 @@ if ($style_name == 'tilezoom') {
       case 'panel-overview':
         break;
       case 'panels-map':
+        // find image locations for hotspots
+        $prefix = "/panels/$warburg_id/map/";
+        if (isset($panel->field_first_ordinal_group['und'])) {
+          foreach ($panel->field_first_ordinal_group['und'] as $val) {
+            $hotspot = warburg_hotspot_list($val['target_id']);
+            $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], $width, $height);
+          }
+        }
+        break;
       case 'panel-images':
         // find image locations for hotspots
         $prefix = '/' . $mode . '/' . $panel_nid . '/';
