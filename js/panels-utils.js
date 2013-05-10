@@ -109,7 +109,7 @@
   			    $searchIconImg.removeClass('search-panels-icon');
   			    $searchIconImg.addClass('search-panels-close-icon');
   			  },function(){
-  			    console.log("2 + "$searchIconImg);
+  			    console.log("2" + $searchIconImg);
   			    $searchIconImg.removeClass('search-panels-close-icon');
   			    $searchIconImg.addClass('search-panels-icon');
   			  });
