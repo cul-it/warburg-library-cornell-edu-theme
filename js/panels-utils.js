@@ -102,7 +102,7 @@
   		// $('#search-panels').show();
   		
 		   var $searchIcon = $('.search-panels');
-		   var $searchIconImg = $search('.search-panels-icon');
+		   var $searchIconImg = $('.search-panels span');
   			$searchIcon .click(function(){
   			  $('#search-panels').toggle(function(){
   			    $searchIconImg.removeClass('search-panels-icon');
