@@ -188,7 +188,16 @@ if ($style_name == 'tilezoom') {
           }
         }
         break;
-      case 'panels-sequence':
+      case 'panels-pathway':
+        // find image locations for hotspots
+        $prefix = "/panels/$warburg_id/pathway/";
+        if (isset($panel->field_first_sequence_group['und'])) {
+           foreach ($panel->field_first_sequence_group['und'] as $val) {
+              $hotspot = warburg_hotspot_list($val['target_id']);
+              $hotspots[] = warburg_hotspot_format($hotspot, $prefix . $hotspot['type'], $width, $height);
+           }
+         }
+        break;
       case 'panel-series':
         // find image locations for hotspots
         $prefix = '/' . $mode . '/' . $panel_nid . '/';
