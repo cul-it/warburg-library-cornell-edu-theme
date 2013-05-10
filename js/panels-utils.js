@@ -101,7 +101,7 @@
 		
   		// $('#search-panels').show();
   		
-		   var $search = $('.search-panels')
+		   var $search = $('.search-panels');
   			$search .click(function(){
   			  $('#search-panels').toggle(function(){
   			    $search.removeClass('search-panels-icon');
