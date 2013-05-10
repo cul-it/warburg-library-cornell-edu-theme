@@ -28,55 +28,6 @@
  * views-view-fields--panels.tpl.php
  */
 ?>
-
-<div class="page panels">
-    
-    <header>
-        
-        <nav id="nav" role="navigation">
-        	<a href="#nav" title="Show navigation">Show navigation</a>
-        	<a href="#" title="Hide navigation">Hide navigation</a>
-        	<ul class="clearfix">
-
-        		<li><a href="#" title="">Home</a></li>
-                <li><a class="active" href="#" title="">All Panels</a></li>
-                <li><a href="#" title="">Guided Panels</a></li>
-                <li>
-                    <a href="#" title=""><span>Browse Themes</span></a>
-        			<ul>
-        				<li><a href="#">Theme type #1</a></li>
-        				<li><a href="#">Theme type #2</a></li>
-        				<li><a href="#">Theme type #3</a></li>
-        			</ul>
-        		</li>
-                 
-        	</ul>
-        
-       
-        </nav>
-        
-        <a class="search-panels" href="#" title=""><span class="search-panels-icon"></span></a>
-        
-         <form id="search-panels" action="#" method="get" name="search-panels">
-                <input name="query" type="text" value="" />
-                <input class="search" type="submit" value="search" />
-        </form>
-        
-        <!--<nav>
-            <ul>
-                <li><a href="#" title="">Home</a></li>
-                <li><a class="active" href="#" title="">All Panels</a></li>
-                <li><a href="#" title="">Guided Panels</a></li>
-                <li><a href="#" title="">Browse Themes</a></li>
-            
-                <li class="search-panels"><a href="#" title=""><span class="search-panels-icon"></span></a></li>
-            </ul>
-        </nav> --> 
-        
-        
-    </header>
-    
-    
 <section class="panels-display">
   <section class="panels-photo">
     <?php print $fields['field_tiled_panel_image']->content; ?>
@@ -106,7 +57,6 @@
     </ul>
   </nav>
 </section>
-</div>
 
 <!--
 <?php foreach ($fields as $id => $field): ?>
