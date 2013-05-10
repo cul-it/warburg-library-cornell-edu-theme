@@ -239,3 +239,26 @@ function warburg_preprocess_html(&$vars) {
     }
   }
 }
+
+/**
+  * Generic preprocess that is still working on D7
+  * see http://webpartners.es/en/drupal-7-views-templates-and-preprocess
+  */
+function warburg_preprocess_views_view_fields(&$vars) {
+  if (isset($vars['view']->name)) {
+    $function = __FUNCTION__ . '__' . $vars['view']->name . '__' . $vars['view']->current_display;
+    dsm($function);
+    if (function_exists($function)) {
+     $function($vars);
+    }
+  }
+}
+
+/**
+  * Then the specific preprocess that worked without the above code for D6
+  */
+function warburg_preprocess_views_view_fields__panels__map(&$vars) {
+  // my specific preprocess code
+  dsm('hello from warburg_preprocess_views_view_fields__panels__map');
+}
+
