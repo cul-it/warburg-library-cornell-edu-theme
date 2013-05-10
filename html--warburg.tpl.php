@@ -311,7 +311,7 @@
   	 <!-- panel utils -->
       <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels-utils.js"></script>
 
-
+<h2>Warburg theme - html--warburg.tpl.php</h2>
   </body>
 </html>
 
