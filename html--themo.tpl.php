@@ -85,10 +85,41 @@
 
 <body>
     
+
     <div class="page panels">
         
         <header>
-            <nav>
+            
+            <nav id="nav" role="navigation">
+            	<a href="#nav" title="Show navigation">Show navigation</a>
+            	<a href="#" title="Hide navigation">Hide navigation</a>
+            	<ul class="clearfix">
+
+            		<li><a href="#" title="">Home</a></li>
+                    <li><a class="active" href="#" title="">All Panels</a></li>
+                    <li><a href="#" title="">Guided Panels</a></li>
+                    <li>
+                        <a href="#" title=""><span>Browse Themes</span></a>
+            			<ul>
+            				<li><a href="#">Theme type #1</a></li>
+            				<li><a href="#">Theme type #2</a></li>
+            				<li><a href="#">Theme type #3</a></li>
+            			</ul>
+            		</li>
+                     
+            	</ul>
+            
+           
+            </nav>
+            
+            <a class="search-panels" href="#" title=""><span class="search-panels-icon"></span></a>
+            
+             <form id="search-panels" action="#" method="get" name="search-panels">
+                    <input name="query" type="text" value="" />
+                    <input class="search" type="submit" value="search" />
+            </form>
+            
+            <!--<nav>
                 <ul>
                     <li><a href="#" title="">Home</a></li>
                     <li><a class="active" href="#" title="">All Panels</a></li>
@@ -97,7 +128,9 @@
                 
                     <li class="search-panels"><a href="#" title=""><span class="search-panels-icon"></span></a></li>
                 </ul>
-            </nav>  
+            </nav> --> 
+            
+            
         </header>
         
         <section>
@@ -218,8 +251,8 @@
             <section class="panel-description">
               
               <!-- Template metadata individual panels -->
-              <h3><span><!--arrow--></span>Panel 48</h3>
-              <h4>Various levels of transferring the cosmic system to humanity. Harmonic correspondence. Later reduction of the harmony to abstract geometry instead of to cosmically conditional [geometry] (Leonardo). </h4>
+              <!--<h3><span>--><!--arrow--><!--</span>Panel 48</h3>-->
+              <!--<h4>Various levels of transferring the cosmic system to humanity. Harmonic correspondence. Later reduction of the harmony to abstract geometry instead of to cosmically conditional [geometry] (Leonardo). </h4>
               <p>Panels  B  and  <a href="#" title="">C</a>  (which along with the not included panel A) provide the ‘grammar’ or ‘syntax’ with which to read the subsequent 60 panels. Offering an initial, paradigmatic itinerary or ‘meandering’ through Warburg’s vision, we see the genealogical and astrological  connections that link humanity and the cosmos. Panel B tracks the tensions between astrological and scientific-astronomical world views. In panel B the astrological is still dominant, whereas in panel <a href="#" title="">C</a>, with images showing Kepler’s astrological and astronomical</p>
                
               <h5>Theme:</h5>
@@ -227,11 +260,26 @@
                   <li><a href="#" title="">Cosmographical sequence</a></li>
                   <li><a href="#" title="">Theme 2</a></li>
                   <li><a href="#" title="">Theme 3</a></li>
-              </ul>
+              </ul>-->
               <!--END Template metadata individual panels -->
               
               
-             
+              <!-- Template metadata PATHWAY panels -->
+              <h3 class="pathway"><span><!--arrow--></span>Panel 7 <br />
+                 <span class="secuence"><img src="<?php print $path_theme_panels; ?>/images/panels/pathway-icon.png" width="44" height="44" alt="Pathway Icon"> Sequence 1</span>
+                 <a href="#" title="Previous sequence">Previous</a>
+                 <a href="#" title="Next sequence">Next</a>
+                  </h3>
+              <h4>Various levels of transferring the cosmic system to humanity. Harmonic correspondence. Later reduction of the harmony to abstract geometry instead of to cosmically conditional [geometry] (Leonardo). </h4>
+                <p>Panels  B  and  <a href="#" title="">C</a>  (which along with the not included panel A) provide the ‘grammar’ or ‘syntax’ with which to read the subsequent 60 panels. Offering an initial, paradigmatic itinerary or ‘meandering’ through Warburg’s vision, we see the genealogical and astrological  connections that link humanity and the cosmos. Panel B tracks the tensions between astrological and scientific-astronomical world views. In panel B the astrological is still dominant, whereas in panel <a href="#" title="">C</a>, with images showing Kepler’s astrological and astronomical</p>
+
+                <h5>Theme:</h5>
+                <ul>
+                    <li><a href="#" title="">Cosmographical sequence</a></li>
+                    <li><a href="#" title="">Theme 2</a></li>
+                    <li><a href="#" title="">Theme 3</a></li>
+                </ul>
+                <!-- END Template metadata PATHWAY panels -->
   
             </section>
             
@@ -255,26 +303,31 @@
     <!--<script src="js/bootstrap.min.js"></script>-->
     
     <!-- carousel lib -->
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/lib/jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/lib/jquery.ui.widget.js"></script>
     <!-- if using touch -->
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/lib/jquery.event.drag.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/lib/jquery.event.drag.js"></script>
     <!-- if using touch and translate3d -->
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/lib/jquery.translate3d.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/lib/jquery.translate3d.js"></script>
 
     <!-- carousel core -->
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/jquery.rs.carousel.js"></script>
 
     <!-- carousel extensions (optional) -->
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-autoscroll.js"></script>
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-continuous.js"></script>
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-touch.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/jquery.rs.carousel-autoscroll.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/jquery.rs.carousel-continuous.js"></script>
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/carousel/jquery.rs.carousel-touch.js"></script>
     
-    <!-- panel utils -->
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels-utils.js"></script>
+    <!-- Drop-Down Navigation: Responsive and Touch-Friendly --> 	
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/DoubleTapToGo.js"></script>
+
+   
+    <!-- tilezoom -->
+    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/jquery.mousewheel.js"></script>
+  	<script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/tilezoom/jquery.tilezoom.js"></script>
+  	
+  	 <!-- panel utils -->
+      <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels/panels-utils.js"></script>
     
-    
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/jquery.mousewheel.js"></script>
-  	<script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/tilezoom/jquery.tilezoom.js"></script>
 
   </body>
 </html>
