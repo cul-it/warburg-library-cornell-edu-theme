@@ -312,6 +312,9 @@
       <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels-utils.js"></script>
 
 <h2>Warburg theme - html--warburg.tpl.php</h2>
+<?php
+print views_embed_view('panels','page', 36);
+?>
   </body>
 </html>
 
