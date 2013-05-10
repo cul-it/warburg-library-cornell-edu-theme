@@ -191,6 +191,7 @@ if ($style_name == 'tilezoom') {
       case 'panels-pathway':
         // find image locations for hotspots
         $prefix = "/panels/$warburg_id/pathway/";
+        dsm($panel);
         if (isset($panel->field_first_sequence_group['und'])) {
            foreach ($panel->field_first_sequence_group['und'] as $val) {
               $squence_id = $val['target_id'];
