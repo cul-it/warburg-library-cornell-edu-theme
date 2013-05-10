@@ -269,9 +269,9 @@ EOT;
     print $divs1;
     print implode(PHP_EOL, $hotspots);
     print $divs2;
-    print '<ul id="hotspots"><li>';
-    print implode('</li>' . PHP_EOL .'<li>', $hotspots);
-    print '</li></ul>';
+    //print '<ul id="hotspots"><li>';
+    //print implode('</li>' . PHP_EOL .'<li>', $hotspots);
+    //print '</li></ul>';
   }
 }
 else {
