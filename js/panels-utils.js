@@ -103,24 +103,21 @@
   		
 		   var $searchIcon = $('.search-panels');
 		   var $searchIconImg = $('.search-panels span');
-		   
+		   var $searchFlag = true;
   			$searchIcon .click(function(){
   			  
-  			  
-  			  $('#search-panels').toggle(function(){
-  			    
-  			    $searchIconImg.removeClass("search-panels-icon");
-  			    $searchIconImg.addClass("search-panels-close-icon")
-  			    
-  			  },  function(){
-
-    			    $searchIconImg.addClass("search-panels-icon");
-    			    $searchIconImg.removeClass("search-panels-close-icon")
-
-    			  });
-  			  
-  			  
- 
+  			  if ($searchFlag) {
+  			    $('#search-panels').show();
+  			      $searchIconImg.removeClass("search-panels-icon");
+  			      $searchIconImg.addClass("search-panels-close-icon");
+  			      $searchFlag = !$searchFlag;
+  			  }else{
+            $('#search-panels').hide();
+              $searchIconImg.addClass("search-panels-icon");
+              $searchIconImg.removeClass("search-panels-close-icon");
+              $searchFlag = !$searchFlag;
+  			  }
+  		
   			});
 			
 			
