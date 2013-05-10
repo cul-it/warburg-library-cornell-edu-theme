@@ -237,6 +237,17 @@ function warburg_preprocess_html(&$vars) {
     if ($node->type == 'themo') {
       $vars['theme_hook_suggestions'][] = 'html__themo';
     }
+    dsm($node);
+  }
+}
+
+/**
+ * suggest a template file to be used for rendering the equivalent of page.ptl.php
+ */
+function warburg_preprocess_page(&$vars) {
+  if (isset($vars['node']->type)) {
+    $nodetype = $vars['node']->type;
+    $vars['theme_hook_suggestions'][] = 'page__' . $nodetype;
   }
 }
 
