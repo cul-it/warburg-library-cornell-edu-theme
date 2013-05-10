@@ -500,27 +500,28 @@ function initNavigation($cont) {
 	}
 
 	if($nav && $nav.get(0)) {
+	  
+	  //goHome button
+		if(!$nav.children('a.go-home').get(0)) {
+			$nav.append('<a class="go-home" href="#" title="Go Home"><!--Go Home--></a>');
+		}
+		settings.goHome = $nav.children('a.go-home');
+    
 		//zoomIn button
 		if(!$nav.children('a.zoom-in').get(0)) {
-			$nav.append('<a class="zoom-in" href="#" title="Zoom in">Zoom In</a>');
+			$nav.append('<a class="zoom-in" href="#" title="Zoom in"><!--Zoom In--></a>');
 		}
 		settings.zoomIn = $nav.children('a.zoom-in');
-
+		
 		//zoomOut button
 		if(!$nav.children('a.zoom-out').get(0)) {
-			$nav.append('<a class="zoom-out" href="#" title="Zoom Out">Zoom Out</a>');
+			$nav.append('<a class="zoom-out" href="#" title="Zoom Out"><!--Zoom Out--></a>');
 		}
 		settings.zoomOut = $nav.children('a.zoom-out');
 
-		//goHome button
-		if(!$nav.children('a.go-home').get(0)) {
-			$nav.append('<a class="go-home" href="#" title="Go Home">Go Home</a>');
-		}
-		settings.goHome = $nav.children('a.go-home');
-
 		//toggleFull button
 		if(!$nav.children('a.toggle-full').get(0)) {
-			$nav.append('<a class="toggle-full" href="#" title="Toggle Full Page">Toggle Full Page</a>');
+			$nav.append('<a class="toggle-full" href="#" title="Toggle Full Page"><!--Toggle Full Page--></a>');
 		}
 		settings.toggleFull = $nav.children('a.toggle-full');
 	}
