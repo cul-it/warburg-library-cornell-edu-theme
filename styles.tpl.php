@@ -223,8 +223,10 @@ if ($style_name == 'tilezoom') {
     // inline js code for the ready function
     //$width = 2918;
     //$height = 4000;
+    $container_width = 769;
+    $container_height = 769 * $height / $width;
     //$path = "/sites/default/files/panels/PanelC_files";
-    $tilezoom = "jQuery('#container').tilezoom({width: $width, height: $height, path: '$tiles', mousewheel: false});";
+    $tilezoom = "jQuery('#container').tilezoom({width: $container_width, height: $container_height, path: '$tiles', mousewheel: false});";
     $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
     drupal_add_js($ready, 'inline');
     $divs1 = <<<EOT
