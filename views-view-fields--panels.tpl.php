@@ -71,18 +71,7 @@
 <?php endforeach; ?>
 -->
 <?php
-print '<section class="technical"><pre>';
-var_dump(array_keys($fields));
-if (!empty($fields['field_first_ordinal_group']->content)) {
-  print 'Ordinal: ';
-  var_dump($fields['field_first_ordinal_group']->content);
-}
-if (!empty($fields['field_first_sequence_group']->content)) {
-  print 'Sequence: ';
-  var_dump($fields['field_first_sequence_group']->content);
-}
-//var_dump($view);
-//var_dump($row);
-print '</pre></section>';
+print '<section class="technical">';
+print '</section>';
 ?>
 
