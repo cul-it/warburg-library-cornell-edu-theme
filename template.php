@@ -239,6 +239,7 @@ function warburg_preprocess_html(&$vars) {
     }
     dsm($node);
   }
+    dsm($vars['node']);
 }
 
 /**
