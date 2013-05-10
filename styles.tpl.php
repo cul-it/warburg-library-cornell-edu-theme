@@ -226,8 +226,8 @@ if ($style_name == 'tilezoom') {
         break;
     }
 
-    dsm($hotspots);
-    dsm($panel);
+    //dsm($hotspots);
+    //dsm($panel);
     //dsm($variables);
 
     $url = $variables['object']->uri;
@@ -247,7 +247,7 @@ if ($style_name == 'tilezoom') {
     $container_height = floor(769 * $height / $width);
     dsm(array($width, $height, $container_height));
     //$path = "/sites/default/files/panels/PanelC_files";
-    $tilezoom = "jQuery('#container').tilezoom({width: '$width', height: '$height', path: '$tiles', mousewheel: false});";
+    $tilezoom = "jQuery('#container').tilezoom({width: '$container_width', height: '$container_height', path: '$tiles', mousewheel: false});";
     $ready = "jQuery(document).ready(function(){ $tilezoom $startposition });";
     drupal_add_js($ready, 'inline');
     $divs1 = <<<EOT
