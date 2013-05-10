@@ -196,6 +196,7 @@ if ($style_name == 'tilezoom') {
            foreach ($panel->field_first_sequence_group['und'] as $val) {
               $squence_id = $val['target_id'];
               $squence = node_load($squence_id);
+              dsm($sequence);
               if (isset($sequence->field_steps['und'])) {
                 foreach ($sequence->field_steps['und'] as $val2) {
                   dsm($val2);
