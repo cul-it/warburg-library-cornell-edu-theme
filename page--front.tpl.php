@@ -140,39 +140,10 @@
   <div class="container">
     <div class="row">
       <div class="span4">
-        <h3>Interviews</h3>
-        <div class="interview">
-          <img src="/sites/all/themes/warburg/images/placeholder-interview1.jpg">
-          <p>Lorem ipsum dolor sit amet. Consectetur adipiscing elit.</p>
-        </div>
-        <div class="interview">
-          <img src="/sites/all/themes/warburg/images/placeholder-interview2.jpg">
-          <p>Lorem ipsum dolor sit amet. Consectetur adipiscing elit.</p>
-        </div>
-        <div class="interview">
-          <img src="/sites/all/themes/warburg/images/placeholder-interview3.jpg">
-          <p>Lorem ipsum dolor sit amet. Consectetur adipiscing elit.</p>
-        </div>
+        <?php print render($page['home_panels']); ?>
       </div>
       <div class="span4">
-        <h3>Other Atlas</h3>
-        <div class="other-atlas">
-          <img src="/sites/all/themes/warburg/images/placeholder-other1.jpg">
-          <p>Other atlas info goes here</p>
-        </div>
-        <div class="other-atlas">
-          <img src="/sites/all/themes/warburg/images/placeholder-other2.jpg">
-          <p>Other atlas info goes here</p>
-        </div>
-      </div>
-      <div class="span4">
-        <h3>Book Resources</h3>
-        <ul class="book-resources">
-          <li>Consectetur adipiscing integer molestie lorem at massa facilisis in pretium nisl aliquet</li>
-          <li>Lorem ipsum dolor sit ametc onsectetur adipiscing elit integer molestie lorem at massa acilisis in pretium nisl aliquet</li>
-          <li>Ipsum dolor sit ametc onsectetur adipiscing elit integer molestie lorem at massa acilisis in pretium nisl aliquet</li>
-        </ul>
-      </div>
+        <?php print render($page['home_atlas']); ?>
     </div>
   </div>
 </section>  
