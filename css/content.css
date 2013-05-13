@@ -6043,20 +6043,13 @@ footer {
 .book-cover {
   margin-top: 22px; }
 
-a.cup {
+a.signale {
   display: block;
   font-size: 1.3em;
   opacity: .6;
   margin-left: 0;
   margin-bottom: 15px;
   margin-top: 20px;
-  color: white; }
-
-a.signale {
-  display: inline-block;
-  font-size: 1.3em;
-  opacity: .6;
-  margin-left: 0;
   color: white; }
 
 /* Featured content */
