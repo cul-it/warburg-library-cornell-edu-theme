@@ -5843,7 +5843,7 @@ h2 {
   margin: 0;
   color: white; }
 
-.main-content p {
+.main-content p, .main-content li {
   font-size: 1.4375em;
   line-height: 1.2em; }
 .main-content h3 {
