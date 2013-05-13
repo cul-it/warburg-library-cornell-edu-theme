@@ -103,15 +103,16 @@
 
 
 <section class="hero">
- <section class="content"> 
-    <h2>Sunt in culpa qui officia.</h2>
+ <section class="content">
+    <?php print render($page['intro_text']); ?>
+    <!-- <h2>Sunt in culpa qui officia.</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
     <nav>
       <ul>
         <li><a class="btn-pathway" href="#"><i class="icon-pathways"></i> Guided Pathways</a></li>
         <li><a class="btn-panels" href="#"><i class="icon-panels"></i> All panels</a></li>
       <ul>
-    </nav>
+    </nav> -->
   </section>
   <aside>
     <a href="#"><img class="book-cover" src="/sites/all/themes/warburg/images/johnson-cover.jpg" /></a>

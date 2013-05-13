@@ -29,6 +29,7 @@ regions[masthead]  		= Masthead
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
+regions[intro_text]   	= Home page intro text
 regions[sidebar]  		= Sidebar
 regions[footer]         = Footer
 
