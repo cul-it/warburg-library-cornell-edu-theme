@@ -144,6 +144,10 @@
       </div>
       <div class="span4">
         <?php print render($page['home_atlas']); ?>
+      </div>
+      <div class="span4">
+        <?php print render($page['home_resources']); ?>
+      </div>
     </div>
   </div>
 </section>  
