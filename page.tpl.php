@@ -112,13 +112,12 @@
 <section class="main-content">
   <div class="container">
     <?php
-        // Render the sidebars to see if there's anything in them.
-        $sidebar_first  = render($page['sidebar_first']);
-        $sidebar_second = render($page['sidebar_second']);
+        // Render the sidebar to see if there's anything in them.
+        $sidebar  = render($page['sidebar']);
     ?>
 
     <!--if there is a sidebar, then create two column layout-->
-    <?php if ($sidebar_first || $sidebar_second): ?>
+    <?php if ($sidebar): ?>
 
       <div class="row">
         <div class="span8">
@@ -136,8 +135,7 @@
           <?php print render($page['content']); ?>
         </div>
         <div class="span4 sidebar">
-          <?php print $sidebar_first; ?>
-          <?php print $sidebar_second; ?>
+          <?php print $sidebar; ?>
         </div>
       </div>
 
