@@ -124,7 +124,6 @@
     <?php if(drupal_is_front_page()) {
       unset($page['content']['system_main']['default_message']);
     }?>
-    <!--<?php print render($page['content']); ?>-->
     <div class="row">
       <div class="span8 media">
         <?php print render($page['home_media']); ?>
