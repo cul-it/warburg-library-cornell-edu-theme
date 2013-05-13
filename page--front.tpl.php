@@ -127,18 +127,10 @@
     <!--<?php print render($page['content']); ?>-->
     <div class="row">
       <div class="span8 media">
-        <h3>Media</h3>
-        <h4>Atlas. How to Carry the World on One's Back? <a href="#">All media <i class="icon-arrow icon-arrow-green"></i></a></h4>
-        <div class="video-player">
-          <iframe src="http://player.vimeo.com/video/24023841" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-        </div>
+        <?php print render($page['home_media']); ?>
       </div>
       <div class="span4 warburg-institute">
-        <h3>Warburg Institute</h3>
-        <img src="/sites/all/themes/warburg/images/warburg-institute.jpg" alt="The Warburg Institute">
-        <h4><a href="http://warburg.sas.ac.uk/home/">The Warburg Institute</a></h4>
-        <p>The Warburg Institute of the University of London exists principally to further the study of the classical tradition, that is of those elements of European thought...</p>
-        <p><a href="#">Read more <i class="icon-arrow icon-arrow-green"></i></a></p>
+        <?php print render($page['home_warburg']); ?>
       </div>
     </div>
   </div>

@@ -33,6 +33,8 @@ regions[sidebar]  		= Sidebar
 regions[footer]         = Footer
 regions[home_text]   	= Home page intro text
 regions[home_book]   	= Home page book
+regions[home_media]   	= Home page media
+regions[home_warburg]   = Home page Warburg Institute
 
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
