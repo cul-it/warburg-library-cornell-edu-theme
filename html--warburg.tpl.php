@@ -93,6 +93,11 @@
             <nav id="nav" role="navigation">
             	<a href="#nav" title="Show navigation">Show navigation</a>
             	<a href="#" title="Hide navigation">Hide navigation</a>
+                <?php
+                $block = module_invoke('menu', 'block_view', 'menu-panel-navigation');
+                print $block['content'];
+                ?>
+                <!--
             	<ul class="clearfix">
 
             		<li><a href="#" title="">Home</a></li>
@@ -108,7 +113,7 @@
             		</li>
 
             	</ul>
-
+                -->
 
             </nav>
 
