@@ -94,7 +94,7 @@
             	<a href="#nav" title="Show navigation">Show navigation</a>
             	<a href="#" title="Hide navigation">Hide navigation</a>
                 <?php
-                $block = module_invoke('menu', 'block_view', 'menu_panel_navigation');
+                $block = module_invoke('menu', 'block_view', 'menu-panel-navigation');
                 print $block['content'];
                 ?>
                 <!--
