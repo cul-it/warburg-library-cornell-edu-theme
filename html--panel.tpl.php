@@ -143,7 +143,6 @@
         </header>
 
         <section>
-            views/panel_selector-block
             <?php
             $block = module_invoke('views', 'block_view', 'panel_selector-block');
             print render($block);
@@ -249,7 +248,8 @@
         <section class="panels-display">
 
             <section class="panels-photo">
-
+                <?php print $fields['field_tiled_panel_image']->content; ?>
+                <!--
                 <div id="container">
 
                     <div class="zoom-holder">
@@ -257,11 +257,12 @@
                             <a style="left:85%;top:55%;" href="#"></a>
                             <a style="left:90%;top:66%;" href="#" rel="12"></a>
                             <a style="left:7%;top:66%;" href="#" rel="9"></a>
-                            <!--<a style="left:7%;top:66%;display:block;width:45%;height:24%;background-color: green;opacity: .5" href="#"  rel="10"></a>-->
+                            <!- -<a style="left:7%;top:66%;display:block;width:45%;height:24%;background-color: green;opacity: .5" href="#"  rel="10"></a>- ->
                         </div>
                     </div>
 
                 </div>
+                -->
             </section>
 
             <section class="panel-description">
