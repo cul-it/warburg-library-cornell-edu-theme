@@ -249,7 +249,7 @@
 
         <section class="panels-display">
        <?php
-        dsm(array_keys(get_defined_vars()));
+        print_r(array_keys(get_defined_vars()));
         //$block = module_invoke('views', 'panels', 'page');
         //print render($block);
         ?>
