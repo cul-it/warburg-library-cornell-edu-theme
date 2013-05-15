@@ -250,6 +250,7 @@
         <section class="panels-display">
        <?php
         print_r(array_keys(get_defined_vars()));
+        print_r($page);
         //$block = module_invoke('views', 'panels', 'page');
         //print render($block);
         ?>
