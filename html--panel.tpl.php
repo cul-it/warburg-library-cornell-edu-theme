@@ -44,6 +44,15 @@
  */
 ?>
 
+<?php
+ function warburg_block_render($module, $block_id) {
+  $block = block_load($module, $block_id);
+  $block_content = _block_render_blocks(array($block));
+  $build = _block_get_renderable_array($block_content);
+  $block_rendered = drupal_render($build);
+  return $block_rendered;
+}?>
+
 <?php $path_theme_panels = base_path() . path_to_theme(); // full path to the theme. ?>
 
 <!DOCTYPE html>
@@ -126,9 +135,7 @@
                 <div id="container">
 
                     <?php
-                    print 'container';
-                    $block = module_invoke('views', 'block_view', 'panel_tilezoom_block-block', 'block');
-                    print empty($block) ? 'empty image block' : render($block);
+                    print warburg_block_render('views', 'panel_tilezoom_block-block');
                     ?>
 
                 </div>
