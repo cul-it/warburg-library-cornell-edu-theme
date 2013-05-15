@@ -245,6 +245,7 @@
              -->
        </section>
         <?php
+        dsm(array_keys(get_defined_vars()));
         $block = module_invoke('views', 'panels', 'page');
         print render($block);
         ?>
@@ -252,7 +253,7 @@
         <section class="panels-display">
 
             <section class="panels-photo">
-                <?php print $fields['field_tiled_panel_image']->content; ?>
+                <?php //print $fields['field_tiled_panel_image']->content; ?>
                 <!--
                 <div id="container">
 
