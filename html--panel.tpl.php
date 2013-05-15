@@ -127,7 +127,7 @@
 
                     <?php
                     $block = module_invoke('views', 'block_view', 'panel_tilezoom_block-block', 'block');
-                    print render($block);
+                    print empty($block) ? 'empty image block' : render($block);
                     ?>
 
                 </div>
