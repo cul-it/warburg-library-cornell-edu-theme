@@ -143,7 +143,13 @@
         </header>
 
         <section>
-            <nav class="rs-carousel">
+            views/panel_selector-block
+            <?php
+            $block = module_invoke('views', 'block_view', 'panel_selector-block');
+            print render($block);
+            ?>
+            <!--
+           <nav class="rs-carousel">
                 <ul>
                     <li>
                         <p class="panel-item">
@@ -237,7 +243,8 @@
 
             <div class="carousel-left-limit"></div>
             <div class="carousel-right-limit"></div>
-        </section>
+             -->
+       </section>
 
         <section class="panels-display">
 
