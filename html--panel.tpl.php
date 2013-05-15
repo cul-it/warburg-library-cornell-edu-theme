@@ -63,9 +63,7 @@
 
     <?php print $styles; ?>
 
-    <!-- unauthorized sources
     <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    -->
 
     <link href="<?php print $path_theme_panels; ?>/css/panels.css" rel="stylesheet">
 
