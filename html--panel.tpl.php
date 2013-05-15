@@ -126,6 +126,7 @@
                 <div id="container">
 
                     <?php
+                    print 'container';
                     $block = module_invoke('views', 'block_view', 'panel_tilezoom_block-block', 'block');
                     print empty($block) ? 'empty image block' : render($block);
                     ?>
