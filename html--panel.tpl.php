@@ -244,6 +244,10 @@
             <div class="carousel-right-limit"></div>
              -->
        </section>
+        <?php
+        $block = module_invoke('views', 'panels', 'page');
+        print render($block);
+        ?>
 
         <section class="panels-display">
 
