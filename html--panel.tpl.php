@@ -114,7 +114,7 @@
 
         <section>
             <?php
-            $block = module_invoke('views', 'block_view', 'panel_selector-block', 'block');
+            $block = module_invoke('views', 'block_view', 'panel_selector-block');
             print render($block);
             ?>
         </section>
@@ -126,7 +126,7 @@
                 <div id="container">
 
                     <?php
-                    $block = module_invoke('views', 'block_view', 'panel_tilezoom_block-block');
+                    $block = module_invoke('views', 'block_view', 'panel_tilezoom_block-block', 'block');
                     print render($block);
                     ?>
 
