@@ -54,6 +54,7 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
   <head>
+    <?php print $head; ?>
     <meta charset="utf-8">
     <title>Mnemosyne: Meanderings through Aby Warburg's Atlas | Cornell University</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
