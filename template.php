@@ -240,10 +240,6 @@ function warburg_preprocess_html(&$vars) {
     elseif ($node->type == 'panel') {
       $vars['theme_hook_suggestions'][] = 'html__panel';
     }
-    else {
-      dsm($node);
-
-    }
   }
 }
 
