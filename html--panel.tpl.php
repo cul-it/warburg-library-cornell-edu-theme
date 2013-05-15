@@ -116,7 +116,7 @@
 
         <section>
             <?php
-            $block = module_invoke('views', 'block_view', 'panel_selector-block');
+            $block = module_invoke('views', 'block_view', 'panel_selector-block', 'block');
             print render($block);
             ?>
         </section>
