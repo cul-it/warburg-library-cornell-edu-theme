@@ -71,10 +71,12 @@
     <!-- ZOOM -->
     <link rel="stylesheet" type="text/css" media="all" href="<?php print $path_theme_panels; ?>/js/tilezoom/jquery.tilezoom.css" />
 
+    <?php print $styles; ?>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <?php print $scripts; ?>
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
