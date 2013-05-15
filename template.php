@@ -237,8 +237,8 @@ function warburg_preprocess_html(&$vars) {
     if ($node->type == 'themo') {
       $vars['theme_hook_suggestions'][] = 'html__themo';
     }
-    elseif ($node->type == 'panel') {
-      $vars['theme_hook_suggestions'][] = 'html__panel';
+    elseif ($node->type == 'panelx') {
+      $vars['theme_hook_suggestions'][] = 'html__panelx';
     }
     else {
       dsm($node);
