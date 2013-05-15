@@ -61,6 +61,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <?php print $styles; ?>
+
     <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 
     <link href="<?php print $path_theme_panels; ?>/css/panels.css" rel="stylesheet">
@@ -71,7 +73,6 @@
     <!-- ZOOM -->
     <link rel="stylesheet" type="text/css" media="all" href="<?php print $path_theme_panels; ?>/js/tilezoom/jquery.tilezoom.css" />
 
-    <?php print $styles; ?>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
