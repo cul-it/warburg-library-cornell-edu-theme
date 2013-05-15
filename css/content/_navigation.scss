@@ -9,10 +9,15 @@
 		float: none;
 		font-size: 3.375em;
 		color: #403e3c;
+		font-family: 'WalkwaySemiBoldRegular';
+		text-shadow: 0 0 0;
 	}
 	.subtitle { 
-		color: #596d75;
-		font-size: 1em; }
+		color: #869c4f;
+		font-size: 1.125em; 
+		font-family: 'WalkwayBoldRegular';
+		margin-top: 15px;
+		letter-spacing: 0.05em; }
 	// .brand:hover { color: $turquoiseHover; }
 	.nav {
 		float: right;
