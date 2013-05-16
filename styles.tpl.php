@@ -53,7 +53,7 @@ if ($style_name == 'tilezoom') {
     if ($node->type = 'panel') {
       $mode = 'node';
       $warburgtools_id = $node->field_warburg_id['und'][0]['value'];
-      print "warburgtools_id = $warburgtools_id"
+      print "warburgtools_id = $warburgtools_id";
     }
   }
   if (empty($mode)) {
