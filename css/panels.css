@@ -5014,7 +5014,8 @@ body {
       position: absolute;
       top: 100%;
       list-style-type: none;
-      margin-left: 0; }
+      margin-left: 0;
+      z-index: 200; }
     .page.panels header #nav li:hover ul {
       display: block;
       left: 0;
