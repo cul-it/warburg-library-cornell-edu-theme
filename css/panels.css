@@ -4951,7 +4951,6 @@ body {
       left: 0;
       margin-left: 0;
       /* 30 480 */
-      z-index: 99999;
       height: 45px;
       background-color: #4d4e53;
       list-style-type: none;
@@ -4980,7 +4979,6 @@ body {
       right: -0.313em;
       /* 5 */ }
     .page.panels header #nav > ul {
-      z-index: 99999;
       height: 45px;
       background-color: #4d4e53;
       list-style-type: none;
