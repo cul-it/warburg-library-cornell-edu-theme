@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/css?family=Abel);
 /*
  * Bootstrap v2.3.1
  *
@@ -5831,6 +5832,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 
 body {
   font-size: 100%;
+  font-family: Abel;
   font-weight: 200;
   color: #486570; }
 
