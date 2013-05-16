@@ -60,7 +60,9 @@ if ($style_name == 'tilezoom') {
     print $output;
   }
   else {
-    print ' loading ';
+    $file = DRUPAL_ROOT . '/' . drupal_get_path('module', $module) . "/warburgtools.module";
+    print ' loading ' . $file;
+    die ('here');
     $path = module_load_include('module', 'warburgtools');
     print $path;
     // read the .xml file to find the tiled image dimensions
