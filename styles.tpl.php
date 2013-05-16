@@ -49,6 +49,7 @@ if ($style_name == 'tilezoom') {
   if ((arg(0) == 'node') && (is_numeric(arg(2)))) {
     $mode = arg(0);
     $panel_nid = arg(1);
+    dsm($variables['entity']);
   }
   if (empty($mode)) {
     print $output;
