@@ -46,7 +46,7 @@ if ($style_name == 'tilezoom') {
       $image_nid = $nodeid;
     }
   }
-  if ((arg(0) == 'node') && (is_numeric(arg(2)))) {
+  if ((arg(0) == 'node') && (is_numeric(arg(1)))) {
     $panel_nid = arg(1);
     $node = node_load($panel_nid);
     if ($node->type = 'panel') {
