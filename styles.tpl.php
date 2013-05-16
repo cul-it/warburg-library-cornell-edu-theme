@@ -48,6 +48,7 @@ if ($style_name == 'tilezoom') {
   }
   if ((arg(0) == 'node') && (is_numeric(arg(1)))) {
     print 'checking node';
+    phpinfo();
     $panel_nid = arg(1);
     $node = node_load($panel_nid);
     if ($node->type = 'panel') {
