@@ -47,9 +47,13 @@ if ($style_name == 'tilezoom') {
     }
   }
   if ((arg(0) == 'node') && (is_numeric(arg(2)))) {
-    $mode = arg(0);
     $panel_nid = arg(1);
-    dsm($variables['entity']);
+    $node = node_load($panel_nid);
+    if ($node->type = 'panel') {
+      $mode = 'node';
+      $warburgtools_id = $node->field_warburg_id['und'][0]['value'];
+      dsm($variables);
+    }
   }
   if (empty($mode)) {
     print $output;
