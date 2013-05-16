@@ -136,7 +136,7 @@
 
                     <?php
                     $result = warburg_block_render('views', 'panel_tilezoom_block-block');
-                    var_dump($result);
+                    print $result;
                     ?>
 
                 </div>
