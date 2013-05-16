@@ -60,7 +60,7 @@ if ($style_name == 'tilezoom') {
     print $output;
   }
   else {
-    $file = DRUPAL_ROOT . '/' . drupal_get_path('module', $module) . "/warburgtools.module";
+    $file = DRUPAL_ROOT . '/' . drupal_get_path('module', 'warburgtools') . "/warburgtools.module";
     print ' loading ' . $file;
     require_once($file);
     //$path = module_load_include('module', 'warburgtools');
