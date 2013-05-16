@@ -125,8 +125,11 @@
       unset($page['content']['system_main']['default_message']);
     }?>
     <div class="row">
-      <div class="span8 media">
-        <?php print render($page['home_media']); ?>
+      <div class="span4">
+        <?php print render($page['home_panels']); ?>
+      </div>
+      <div class="span4">
+        <?php print render($page['home_atlas']); ?>
       </div>
       <div class="span4 warburg-institute">
         <?php print render($page['home_warburg']); ?>
@@ -138,11 +141,8 @@
 <section class="featured-content">
   <div class="container">
     <div class="row">
-      <div class="span4">
-        <?php print render($page['home_panels']); ?>
-      </div>
-      <div class="span4">
-        <?php print render($page['home_atlas']); ?>
+      <div class="span8 media">
+        <?php print render($page['home_media']); ?>
       </div>
       <div class="span4">
         <?php print render($page['home_resources']); ?>
