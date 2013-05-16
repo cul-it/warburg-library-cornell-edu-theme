@@ -151,6 +151,18 @@ function signale_preprocess_page(&$variables, $hook) {
   $variables['sample_variable'] = t('Lorem ipsum.');
 }
 // */
+function warburg_preprocess_page(&$vars, $hook)
+{
+  if (!module_exists('warburgtools'))
+  {
+    // No warburgtools means we need to add it, let everyone know.
+    //
+    print "<h1>"  . t( 'mytheme requires that module warburgtools is installed')
+        . "</h1>"
+        . "<h6>"  . t( 'warning generated in file: %f', array ( '%f'=>__FILE__ ))
+        . "</h6>";
+  }
+}
 
 /**
  * Override or insert variables into the node templates.
