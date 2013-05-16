@@ -60,11 +60,9 @@ if ($style_name == 'tilezoom') {
     print $output;
   }
   else {
-    if (!function_exists('warburgtools_hotspot_list')) {
-      print 'loading';
-      module_load_include('module', 'warburgtools');
-    }
-
+    print ' loading ';
+    $path = module_load_include('module', 'warburgtools');
+    print $path;
     // read the .xml file to find the tiled image dimensions
     $width = 2000;
     $height = 2000;
