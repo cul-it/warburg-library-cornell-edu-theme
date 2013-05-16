@@ -53,7 +53,7 @@ if ($style_name == 'tilezoom') {
     if ($node->type = 'panel') {
       $mode = 'node';
       $warburgtools_id = $node->field_warburg_id['und'][0]['value'];
-      dsm($variables);
+      print "warburgtools_id = $warburgtools_id"
     }
   }
   if (empty($mode)) {
@@ -65,6 +65,8 @@ if ($style_name == 'tilezoom') {
     require_once($file);
     //$path = module_load_include('module', 'warburgtools');
     //print $path;
+    print_r($variables);
+    die('here');
     // read the .xml file to find the tiled image dimensions
     $width = 2000;
     $height = 2000;
