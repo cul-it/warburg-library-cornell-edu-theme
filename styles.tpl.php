@@ -106,6 +106,8 @@ if ($style_name == 'tilezoom') {
         break;
       case 'node':
         print 'process node';
+        print_r($panel);
+        print 'panel_nid = ' . $panel_nid;
       case 'panel-images':
         // find image locations for hotspots
         $prefix = '/' . $mode . '/' . $panel_nid . '/';
