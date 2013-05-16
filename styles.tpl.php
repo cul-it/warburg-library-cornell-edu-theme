@@ -47,13 +47,13 @@ if ($style_name == 'tilezoom') {
     }
   }
   if ((arg(0) == 'node') && (is_numeric(arg(1)))) {
-    print 'checking node';
+    //print 'checking node';
     $panel_nid = arg(1);
     $node = node_load($panel_nid);
     if ($node->type = 'panel') {
       $mode = 'node';
       $warburgtools_id = $node->field_warburg_id['und'][0]['value'];
-      print "warburgtools_id = $warburgtools_id";
+      //print "warburgtools_id = $warburgtools_id";
     }
   }
   if (empty($mode)) {
@@ -61,12 +61,12 @@ if ($style_name == 'tilezoom') {
   }
   else {
     $file = DRUPAL_ROOT . '/' . drupal_get_path('module', 'warburgtools') . "/warburgtools.module";
-    print ' loading ' . $file;
+    //print ' loading ' . $file;
     require_once($file);
     //$path = module_load_include('module', 'warburgtools');
     //print $path;
-    print_r($variables);
-    die('here');
+    //print_r($variables);
+    //die('here');
     // read the .xml file to find the tiled image dimensions
     $width = 2000;
     $height = 2000;
