@@ -135,7 +135,7 @@
                 <div id="container">
 
                     <?php
-                    $result = warburg_block_render('views', 'panel_tilezoom_block-block');
+                    $result = warburg_block_render('tilezoom', 'tilezoom_display');
                     print $result;
                     ?>
 
