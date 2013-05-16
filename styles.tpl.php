@@ -46,6 +46,10 @@ if ($style_name == 'tilezoom') {
       $image_nid = $nodeid;
     }
   }
+  if ((arg(0) == 'node') && (is_numeric(arg(2)))) {
+    $mode = arg(0);
+    $panel_nid = arg(1);
+  }
   if (empty($mode)) {
     print $output;
   }
@@ -87,6 +91,7 @@ if ($style_name == 'tilezoom') {
           }
         }
         break;
+      case 'node':
       case 'panel-images':
         // find image locations for hotspots
         $prefix = '/' . $mode . '/' . $panel_nid . '/';
