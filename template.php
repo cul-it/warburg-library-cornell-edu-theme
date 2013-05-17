@@ -239,7 +239,10 @@ function warburg_preprocess_html(&$vars) {
     }
     elseif ($node->type == 'panel') {
       $vars['theme_hook_suggestions'][] = 'html__panel';
-      $vars['warburg'] = array('info from module', 'goes here');
+      if (module_exists('warburgtools')) {
+        // add some useful info for the theme to use when drawing the panel
+        $vars['warburg'] = warburgtools_panel_info($node);
+      }
     }
   }
 }
