@@ -135,8 +135,8 @@
                 <div id="container">
 
                     <?php
-                    $result = warburg_block_render('warburgtools', 'tilezoom_display');
-                    print $result;
+                    $block = module_invoke('warburgtools', 'block_view', 'tilezoom_display');
+                    print render($block);
                     ?>
 
                 </div>
@@ -214,9 +214,6 @@
   <?php
     $data = module_invoke('warburgtools', 'block_view', 'tilezoom_display');
     print '<pre>' . print_r($data, true) . '</pre>';
-    print render($data);
-    print 'drupal render';
-    print drupal_render($data);
   ?>
   </body>
 </html>
