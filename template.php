@@ -239,6 +239,7 @@ function warburg_preprocess_html(&$vars) {
     }
     elseif ($node->type == 'panel') {
       $vars['theme_hook_suggestions'][] = 'html__panel';
+      $vars['warburg'] = array('info from module', 'goes here');
     }
   }
 }
