@@ -211,7 +211,10 @@
 
   	 <!-- panel utils -->
       <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels-utils.js"></script>
-
+  <?php
+    $data = module_invoke('warburgtools', 'block_info');
+    print '<pre>' . print_r($data, true) . '</pre>';
+  ?>
   </body>
 </html>
 
