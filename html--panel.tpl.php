@@ -92,8 +92,12 @@
           $('#container').tilezoom({
             xml: '<?php print $variables['warburg']['image']['xml']; ?>',
             mousewheel: false,
-            navigation: null
-           });
+            navigation: null,
+            zoomIn: '#plus',
+            zoomOut: '#minus',
+            goHome: '#home'
+          });
+          $('#container').tilezoom('zoom', 16);
         });
       })(jQuery);
       </script>
