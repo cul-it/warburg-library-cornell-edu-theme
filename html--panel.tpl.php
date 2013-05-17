@@ -215,6 +215,7 @@
     $data = module_invoke('warburgtools', 'block_view', 'tilezoom_display');
     print '<pre>' . print_r($data, true) . '</pre>';
     print render($data);
+    print 'drupal render'
     print drupal_render($data);
   ?>
   </body>
