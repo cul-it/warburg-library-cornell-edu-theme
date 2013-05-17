@@ -206,7 +206,7 @@
 
 
     <!-- tilezoom -->
-    <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/jquery.mousewheel.js"></script>
+    <!--<script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/jquery.mousewheel.js"></script>-->
   	<script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/tilezoom/jquery.tilezoom.js"></script>
 
   	 <!-- panel utils -->
