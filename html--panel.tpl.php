@@ -144,8 +144,8 @@
 
             <section class="panel-description">
                     <?php
-                    $result = warburg_block_render('views', 'panel_description_block-block');
-                    print $result;
+                    $result = module_invoke('views', 'panel_description_block-block');
+                    print render($result);
                     ?>
 
               <!-- Template metadata individual panels -->
