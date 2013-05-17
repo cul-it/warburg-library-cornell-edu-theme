@@ -212,8 +212,10 @@
   	 <!-- panel utils -->
       <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels-utils.js"></script>
   <?php
-    $data = module_invoke('warburgtools', 'block_info');
+    $data = module_invoke('warburgtools', 'block_view', 'tilezoom_display');
     print '<pre>' . print_r($data, true) . '</pre>';
+    print render($data);
+    print drupal_render($data);
   ?>
   </body>
 </html>
