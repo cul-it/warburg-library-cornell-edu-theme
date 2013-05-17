@@ -214,6 +214,7 @@
   <?php
     $data = module_invoke('warburgtools', 'block_view', 'tilezoom_display');
     print '<pre>' . print_r($data, true) . '</pre>';
+    print '<pre>Variables: ' . print_r($variables, true) . '</pre>';
   ?>
   </body>
 </html>
