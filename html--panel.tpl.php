@@ -97,7 +97,6 @@
             zoomOut: '#minus',
             goHome: '#home'
           });
-          $('#container').tilezoom({'zoom', 16});
         });
       })(jQuery);
       </script>
@@ -219,8 +218,6 @@
   	 <!-- panel utils -->
       <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels-utils.js"></script>
   <?php
-    $data = module_invoke('warburgtools', 'block_view', 'tilezoom_display');
-    print '<pre>' . print_r($data, true) . '</pre>';
     print '<pre>Variables: ' . print_r($variables['warburg'], true) . '</pre>';
   ?>
   </body>
