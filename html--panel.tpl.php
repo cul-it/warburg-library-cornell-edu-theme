@@ -44,15 +44,6 @@
  */
 ?>
 
-<?php
- function warburg_block_render($module, $block_id) {
-  $block = block_load($module, $block_id);
-  $block_content = _block_render_blocks(array($block));
-  $build = _block_get_renderable_array($block_content);
-  $block_rendered = drupal_render($build);
-  return $block_rendered;
-}?>
-
 <?php $path_theme_panels = base_path() . path_to_theme(); // full path to the theme. ?>
 
 <!DOCTYPE html>
