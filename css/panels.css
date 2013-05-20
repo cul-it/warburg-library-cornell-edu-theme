@@ -5267,10 +5267,11 @@ body {
       padding-top: 6px; }
     .panels-display .panel-description h5.theme,
     .panels-display .panel-description h5.secondary-theme {
-      padding-bottom: 0; }
+      padding-bottom: 0;
+      display: block; }
     .panels-display .panel-description h5.theme + p,
     .panels-display .panel-description h5.secondary-theme + p {
-      display: block;
+      display: inline-block;
       padding: 6px 8px;
       background-color: #7a9945;
       color: #fff;

@@ -612,11 +612,12 @@ body {
 		h5.theme,
 		h5.secondary-theme {
 			padding-bottom: 0;
+			display: block;
 		}
 		
 		h5.theme + p,
 		h5.secondary-theme + p {
-			display: block;
+			display: inline-block;
 			padding: 6px 8px;
 			background-color: $green;
 			color: #fff;
