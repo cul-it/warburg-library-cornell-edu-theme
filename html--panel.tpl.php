@@ -97,7 +97,7 @@
             zoomIn: '#plus',
             zoomOut: '#minus',
             goHome: '#home',
-            beforeZoom: function($cont) { alert($cont); }
+            beforeZoom: function($cont) { alert($cont.toSource()); }
           });
         });
       })(jQuery);
