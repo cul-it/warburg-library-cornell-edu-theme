@@ -97,7 +97,7 @@
             zoomOut: '#minus',
             goHome: '#home',
            });
-          jQuery('#tilezoom-starthere').click();
+          $('#tilezoom-starthere').click();
         });
       })(jQuery);
       </script>
