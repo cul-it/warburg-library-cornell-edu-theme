@@ -5181,7 +5181,43 @@ body {
     width: 30.902778%;
     background-color: #76777b;
     color: #fff;
-    overflow: auto; }
+    overflow: auto;
+    /*ul {
+    	float: left;
+    	list-style-type: none;
+    	margin-left: 5px;
+    	
+    	li {
+    		float: left;
+    		margin-right: 10px;
+    		
+    		a	 {
+    			display: inline-block;
+    			padding: 6px 8px;
+    			background-color: $green;
+    			color: #fff;
+    			text-decoration: none;
+    		}
+    	}
+    }*/
+    /*ul {
+    	float: left;
+    	list-style-type: none;
+    	margin-left: 5px;
+    	
+    	li {
+    		float: left;
+    		margin-right: 10px;
+    		
+    		a	 {
+    			display: inline-block;
+    			padding: 6px 8px;
+    			background-color: $green;
+    			color: #fff;
+    			text-decoration: none;
+    		}
+    	}
+    }*/ }
     .panels-display .panel-description a:hover {
       background-color: #1faac0; }
     .panels-display .panel-description h3 {
@@ -5226,23 +5262,15 @@ body {
       padding: 0 20px 20px 20px;
       clear: both;
       float: left;
-      width: 35px;
       display: inline-block;
       margin-top: 0;
       padding-top: 6px; }
-    .panels-display .panel-description ul {
-      float: left;
-      list-style-type: none;
-      margin-left: 5px; }
-      .panels-display .panel-description ul li {
-        float: left;
-        margin-right: 10px; }
-        .panels-display .panel-description ul li a {
-          display: inline-block;
-          padding: 6px 8px;
-          background-color: #7a9945;
-          color: #fff;
-          text-decoration: none; }
+    .panels-display .panel-description h5 + p {
+      display: inline-block;
+      padding: 6px 8px;
+      background-color: #7a9945;
+      color: #fff;
+      text-decoration: none; }
   .panels-display nav {
     position: absolute;
     top: 0;

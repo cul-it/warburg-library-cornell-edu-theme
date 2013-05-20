@@ -604,13 +604,21 @@ body {
 			padding: 0 20px 20px 20px;
 			clear: both;
 			float: left;
-			width: 35px;
 			display: inline-block;
 			margin-top: 0;
 			padding-top: 6px;
 		}	
 		
-		ul {
+		h5 + p {
+			display: inline-block;
+			padding: 6px 8px;
+			background-color: $green;
+			color: #fff;
+			text-decoration: none;	
+		}
+		
+		
+		/*ul {
 			float: left;
 			list-style-type: none;
 			margin-left: 5px;
@@ -627,7 +635,27 @@ body {
 					text-decoration: none;
 				}
 			}
-		}
+		}*/
+		
+		
+		/*ul {
+			float: left;
+			list-style-type: none;
+			margin-left: 5px;
+			
+			li {
+				float: left;
+				margin-right: 10px;
+				
+				a	 {
+					display: inline-block;
+					padding: 6px 8px;
+					background-color: $green;
+					color: #fff;
+					text-decoration: none;
+				}
+			}
+		}*/
 	}
 	
 	nav {
