@@ -609,13 +609,20 @@ body {
 			padding-top: 6px;
 		}	
 		
+		h5.theme,
+		h5.secondary-theme {
+			padding-bottom: 0;
+		}
+		
 		h5.theme + p,
 		h5.secondary-theme + p {
-			display: inline-block;
+			display: block;
 			padding: 6px 8px;
 			background-color: $green;
 			color: #fff;
 			text-decoration: none;	
+			margin-left: 20px;
+			clear: both;
 		}
 		
 		

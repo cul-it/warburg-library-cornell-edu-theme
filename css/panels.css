@@ -5265,13 +5265,18 @@ body {
       display: inline-block;
       margin-top: 0;
       padding-top: 6px; }
+    .panels-display .panel-description h5.theme,
+    .panels-display .panel-description h5.secondary-theme {
+      padding-bottom: 0; }
     .panels-display .panel-description h5.theme + p,
     .panels-display .panel-description h5.secondary-theme + p {
-      display: inline-block;
+      display: block;
       padding: 6px 8px;
       background-color: #7a9945;
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-left: 20px;
+      clear: both; }
   .panels-display nav {
     position: absolute;
     top: 0;
