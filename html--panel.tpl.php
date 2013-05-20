@@ -99,7 +99,7 @@
             beforeZoom: function($cont) { alert($cont.data('tilezoom.settings').hotspots.toSource()); }
           });
         });
-        $(".spot-link").click function(event) { alert(event.toSource()); }
+        $(".spot-link").click(function(event) { alert(event.toSource()); });
       })(jQuery);
       </script>
   </head>
