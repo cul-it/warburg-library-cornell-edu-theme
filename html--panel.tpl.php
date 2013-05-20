@@ -89,7 +89,6 @@
      <script type="text/javascript">
       (function($){
         $(document).ready(function(){
-          var doBefore = function($cont) { alert($cont); };
           $('#container').tilezoom({
             xml: '<?php print $variables['warburg']['image']['xml']; ?>',
             mousewheel: false,
@@ -100,6 +99,7 @@
             beforeZoom: function($cont) { alert($cont.data('tilezoom.settings').hotspots.toSource()); }
           });
         });
+        $(".spot-link").click function(event) { alert(event.toSource()); }
       })(jQuery);
       </script>
   </head>
