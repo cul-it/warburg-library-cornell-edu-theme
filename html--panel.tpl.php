@@ -192,13 +192,12 @@
                   $pathways_link = $variables['warburg']['nav']['pathways'];
                   ?>
                   
-                  
-                    <li><a class="original active" href="<?php print $overview_link; ?>" title=""></a></li>
-                    <li><a class="map" href="<?php $images_link; ?>" title=""></a></li>
-                    <li><a class="pathway" href="<?php $pathways_link; ?>" title=""></a></li>
+                  <li><a class="original active" href="<?php print $overview_link; ?>" title=""></a></li>
+                  <li><a class="map" href="<?php $images_link; ?>" title=""></a></li>
+                  <li><a class="pathway" href="<?php $pathways_link; ?>" title=""></a></li>
 
-                    <li class="display-tools"></li>
-                  </ul>
+                  <li class="display-tools"></li>
+                </ul>
             </nav>
 
 
