@@ -197,13 +197,17 @@
 
                   <?php
                   $overview_link = $variables['warburg']['nav']['overview'];
-                  $images_link = $variables['warburg']['nav']['images'];
-                  $pathways_link = $variables['warburg']['nav']['pathways'];
+                  $images_link = empty($variables['warburg']['nav']['images']) ? '' : $variables['warburg']['nav']['images'];
+                  $pathways_link = empty($variables['warburg']['nav']['pathways']) ? '' : $variables['warburg']['nav']['pathways'];
                   ?>
 
                   <li><a class="original active" href="<?php print $overview_link; ?>" title=""></a></li>
+                  <?php if (!empty($images_link): )
                   <li><a class="map" href="<?php $images_link; ?>" title=""></a></li>
+                  <?php endif; ?>
+                  <?php if (!empty($pathways_link)): ?>
                   <li><a class="pathway" href="<?php $pathways_link; ?>" title=""></a></li>
+                  <?php endif; ?>
 
                   <li class="display-tools"></li>
                 </ul>
