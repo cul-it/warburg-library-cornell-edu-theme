@@ -97,9 +97,9 @@
             zoomOut: '#minus',
             goHome: '#home',
             beforeZoom: function($cont) {
-              $active = $cont.data('tilezoom.settings').hotspots.children().find('.active a');
-              $active.find('[href]').each(function(index){
-    alert(this.toSource());}); }
+              $active = $cont.data('tilezoom.settings').hotspots.find('.active a');
+              $active.find('[href]').each(function(index){ alert(index); });
+              }
           });
         });
       })(jQuery);
