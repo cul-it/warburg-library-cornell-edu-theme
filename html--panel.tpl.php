@@ -98,8 +98,11 @@
             goHome: '#home',
             beforeZoom: function($cont) {
               active = $('.zoom-holder').find('a.active');
-              if (active) {
-                window.location = active.attr('href');
+              if (active.length !== 0) {
+                href = active.attr('href');
+                if (href.length !== 0) {
+                  window.location = href;
+                }
               }
               }
           });
