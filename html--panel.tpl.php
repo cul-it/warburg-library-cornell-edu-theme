@@ -96,7 +96,7 @@
             zoomIn: '#plus',
             zoomOut: '#minus',
             goHome: '#home',
-            beforeZoom: function($cont) { alert($cont.data('tilezoom.settings').hotspots.get(0).toSource()); }
+            beforeZoom: function($cont) { alert($cont.data('tilezoom.settings').hotspots.toSource()); }
           });
         });
       })(jQuery);
