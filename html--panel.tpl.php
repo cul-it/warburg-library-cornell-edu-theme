@@ -89,6 +89,7 @@
      <script type="text/javascript">
       (function($){
         $(document).ready(function(){
+          var doBefore = function($cont) { alert($cont); };
           $('#container').tilezoom({
             xml: '<?php print $variables['warburg']['image']['xml']; ?>',
             mousewheel: false,
@@ -98,9 +99,6 @@
             goHome: '#home',
             beforeZoom: 'doBefore'
           });
-        function doBefore($cont){
-          alert($cont);
-        }
         });
       })(jQuery);
       </script>
