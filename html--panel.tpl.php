@@ -132,6 +132,9 @@
             $block = module_invoke('views', 'block_view', 'panel_selector-block');
             print render($block);
             ?>
+            
+            <div class="carousel-left-limit"></div>
+            <div class="carousel-right-limit"></div>
         </section>
 
         <section class="panels-display">
