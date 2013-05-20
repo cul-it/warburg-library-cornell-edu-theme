@@ -185,9 +185,17 @@
 
             <nav>
                 <ul id="panel-tools">
-                    <li><a class="original active" href="#" title=""></a></li>
-                    <li><a class="map" href="#" title=""></a></li>
-                    <li><a class="pathway" href="#" title=""></a></li>
+                  
+                  <?php
+                  $overview_link = $variables['warburg']['nav']['overview'];
+                  $images_link = $variables['warburg']['nav']['images'];
+                  $pathways_link = $variables['warburg']['nav']['pathways'];
+                  ?>
+                  
+                  
+                    <li><a class="original active" href="$overview_link" title=""></a></li>
+                    <li><a class="map" href="$images_link" title=""></a></li>
+                    <li><a class="pathway" href="$pathways_link" title=""></a></li>
 
                     <li class="display-tools"></li>
                   </ul>
@@ -232,14 +240,7 @@
     print '<pre>Variables: ' . print_r($variables['warburg'], true) . '</pre>';
   ?>
   
-  
-  <?php
-  $overview_link = $variables['warburg']['nav']['overview'];
-  $images_link = $variables['warburg']['nav']['images'];
-  $pathways_link = $variables['warburg']['nav']['pathways'];
-  print "$overview_link -- $images_link -- $pathways_link";
-  
-  ?>
+
   
   </body>
 </html>
