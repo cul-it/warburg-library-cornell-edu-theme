@@ -98,7 +98,9 @@
             goHome: '#home',
             beforeZoom: function($cont) {
               active = $('.zoom-holder').find('a.active');
-              alert(active.attr('href').toSource());
+              if (active) {
+                window.location = active.attr('href');
+              }
               }
           });
         });
