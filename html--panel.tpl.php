@@ -193,9 +193,9 @@
                   ?>
                   
                   
-                    <li><a class="original active" href="$overview_link" title=""></a></li>
-                    <li><a class="map" href="$images_link" title=""></a></li>
-                    <li><a class="pathway" href="$pathways_link" title=""></a></li>
+                    <li><a class="original active" href="<?php print $overview_link; ?>" title=""></a></li>
+                    <li><a class="map" href="<?php $images_link; ?>" title=""></a></li>
+                    <li><a class="pathway" href="<?php $pathways_link; ?>" title=""></a></li>
 
                     <li class="display-tools"></li>
                   </ul>
