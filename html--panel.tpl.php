@@ -132,7 +132,7 @@
             $block = module_invoke('views', 'block_view', 'panel_selector-block');
             print render($block);
             ?>
-            
+
             <div class="carousel-left-limit"></div>
             <div class="carousel-right-limit"></div>
         </section>
@@ -149,6 +149,14 @@
                           print '<div class="zoom-hotspots">' . PHP_EOL;
                           foreach ($variables['warburg']['ordinal'] as $hotspot) {
                             print $hotspot['box_link'] . PHP_EOL;
+                          }
+                          print '</div>' . PHP_EOL;
+                        }
+                        else if (!empty($variables['warburg']['sequence'])) {
+                          print '<div class="zoom-hotspots">' . PHP_EOL;
+                          foreach ($variables['warburg']['sequence'] as $hotspot) {
+                            print $hotspot['box_link'] . PHP_EOL;
+                            break; // just the first
                           }
                           print '</div>' . PHP_EOL;
                         }
@@ -185,13 +193,13 @@
 
             <nav>
                 <ul id="panel-tools">
-                  
+
                   <?php
                   $overview_link = $variables['warburg']['nav']['overview'];
                   $images_link = $variables['warburg']['nav']['images'];
                   $pathways_link = $variables['warburg']['nav']['pathways'];
                   ?>
-                  
+
                   <li><a class="original active" href="<?php print $overview_link; ?>" title=""></a></li>
                   <li><a class="map" href="<?php $images_link; ?>" title=""></a></li>
                   <li><a class="pathway" href="<?php $pathways_link; ?>" title=""></a></li>
@@ -238,9 +246,9 @@
   <?php
     print '<pre>Variables: ' . print_r($variables['warburg'], true) . '</pre>';
   ?>
-  
 
-  
+
+
   </body>
 </html>
 
