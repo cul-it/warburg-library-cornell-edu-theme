@@ -244,6 +244,13 @@ function warburg_preprocess_html(&$vars) {
         $vars['warburg'] = warburgtools_panel_info($node);
       }
     }
+    elseif ($node->type == 'panel_image') {
+      $vars['theme_hook_suggestions'][] = 'html__panel_image';
+      if (module_exists('warburgtools')) {
+        // add some useful info for the theme to use when drawing the panel
+        $vars['warburg'] = warburgtools_panel_image_info($node);
+      }
+    }
   }
 }
 
