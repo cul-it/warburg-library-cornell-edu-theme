@@ -140,12 +140,19 @@
 
                 <div id="container">
 
-                    <?php
-                    $block = module_invoke('warburgtools', 'block_view', 'tilezoom_display');
-                    print render($block);
-                    ?>
+                    <div class="zoom-holder">
+                        <?php
+                        if (!empty($variables['ordinal'])) {
+                          print '<div class="zoom-hotspots">' . PHP_EOL;
+                          foreach ($variables['ordinal'] as $hotspot) {                            print $hotspot['box_link'] . PHP_EOL;
+                          }
+                          print '</div>' . PHP_EOL;
+                        }
+                        ?>
+                    </div>
 
                 </div>
+
             </section>
 
             <section class="panel-description">
