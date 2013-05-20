@@ -231,6 +231,16 @@
   <?php
     print '<pre>Variables: ' . print_r($variables['warburg'], true) . '</pre>';
   ?>
+  
+  
+  <?php
+  $overview_link = $variables['warburg']['nav']['overview'];
+  $images_link = $variables['warburg']['nav']['images'];
+  $pathways_link = $variables['warburg']['nav']['pathways'];
+  print "$overview_link -- $images_link -- $pathways_link";
+  
+  ?>
+  
   </body>
 </html>
 
