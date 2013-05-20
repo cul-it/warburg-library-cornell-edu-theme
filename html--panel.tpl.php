@@ -97,7 +97,7 @@
             zoomOut: '#minus',
             goHome: '#home',
             beforeZoom: function($cont) {
-              active = $cont.data('tilezoom.settings').hotspots.children().find('a');
+              active = $('.zoom-holder').find('a');
               alert(active.toSource());
               }
           });
