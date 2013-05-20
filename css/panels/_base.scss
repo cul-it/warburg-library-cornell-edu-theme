@@ -463,7 +463,7 @@ body {
 		background-position: -5px -63px;
 		width: 38px;
 		height: 100px;
-		@include opacity(.5);
+		@include opacity(.3);
 		z-index: 99;
 	}
 	
@@ -479,7 +479,7 @@ body {
 		background-position: -54px -63px;
 		width: 38px;
 		height: 100px;
-		@include opacity(.5);
+		@include opacity(.3);
 		z-index: 99;
 		
 	}
