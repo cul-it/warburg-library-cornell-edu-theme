@@ -201,17 +201,15 @@
             </section>
 
             <nav>
-                <ul id="panel-tools">
+               <ul id="panel-tools">
 
-                  <?php
-                  $overview_link = $variables['warburg']['nav']['overview'];
-                  $images_link = $variables['warburg']['nav']['images'];
-                  $pathways_link = $variables['warburg']['nav']['pathways'];
-                  ?>
-
-                  <li><a class="original active" href="<?php print $overview_link; ?>" title=""></a></li>
-                  <li><a class="map" href="<?php $images_link; ?>" title=""></a></li>
-                  <li><a class="pathway" href="<?php $pathways_link; ?>" title=""></a></li>
+                  <li><a class="original active" href="<?php print $variables['warburg']['nav']['overview']; ?>" title=""></a></li>
+                  <?php if (!empty($variables['warburg']['nav']['images'])): ?>
+                  <li><a class="map" href="<?php $variables['warburg']['nav']['images']; ?>" title=""></a></li>
+                  <?php endif ?>
+                  <?php if (!empty($variables['warburg']['nav']['pathways'])): ?>
+                  <li><a class="pathway" href="<?php $variables['warburg']['nav']['pathways']; ?>" title=""></a></li>
+                  <?php endif ?>
 
                   <li class="display-tools"></li>
                 </ul>
