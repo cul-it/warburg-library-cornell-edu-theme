@@ -97,7 +97,7 @@
             zoomOut: '#minus',
             goHome: '#home',
             beforeZoom: function($cont) {
-              active = $('.zoom-holder').find('a');
+              active = $('.zoom-holder').find('a.active');
               alert(active.attr('href').toSource());
               }
           });
