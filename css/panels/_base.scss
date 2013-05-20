@@ -609,7 +609,8 @@ body {
 			padding-top: 6px;
 		}	
 		
-		h5 + p {
+		h5.theme + p,
+		h5.secondary-theme + p {
 			display: inline-block;
 			padding: 6px 8px;
 			background-color: $green;
