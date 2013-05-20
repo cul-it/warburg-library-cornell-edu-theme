@@ -95,8 +95,12 @@
             navigation: null,
             zoomIn: '#plus',
             zoomOut: '#minus',
-            goHome: '#home'
+            goHome: '#home',
+            beforeZoom: 'doBefore'
           });
+        function doBefore($cont){
+          alert($cont);
+        }
         });
       })(jQuery);
       </script>
