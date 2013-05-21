@@ -20,7 +20,7 @@
 ?>
 <?php print $prefix; ?>
 <?php
-if ($style_name == 'tilezoom') {
+if (FALSE && $style_name == 'tilezoom') {
   // find out what mode display
   $mode = '';
   if (in_array(arg(0), array('panel-overview', 'panel-images', 'panel-sequence'))) {
