@@ -822,6 +822,29 @@ body {
 
 
 
+@media only screen and ( max-width: 857px )  {
+
+
+	.page.panels {
+
+		header {
+
+			#search-panels {
+				top: 45px;
+				right: 0;
+				background-color: $gray;
+
+				input[type="text"] {
+				}
+
+				input[type="submit"] {
+					margin-right: 7px;
+				}
+			}
+		}
+	}
+	
+}
 
 
 
@@ -918,10 +941,23 @@ body {
 
 	.page.panels {
 
-	/*
-	 *
-	 */
 		header {
+			
+			#search-panels {
+				top: -1px;
+				right: 45px;
+				background-color: none;
+
+
+				input[type="text"] {
+				}
+
+				input[type="submit"] {
+					margin-right: 0;
+				}
+			}
+			
+			
 			#nav
 			{
 				position: relative;
