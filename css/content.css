@@ -6125,7 +6125,8 @@ a.signale {
   display: table;
   clear: both;
   padding: 15px 0;
-  background: url("../images/pathway-bg.png") no-repeat bottom; }
+  background: url("../images/pathway-bg.png") no-repeat bottom;
+  width: 100%; }
   .pathway img {
     border: 1px solid #c8c8c8;
     float: left;
