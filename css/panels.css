@@ -5073,7 +5073,9 @@ body {
         height: 16px;
         background-color: #727375;
         border: 1px solid #a6a6a8;
-        color: white; }
+        color: white;
+        width: 140px;
+        margin-left: 20px; }
       .page.panels header #search-panels input[type="submit"] {
         color: white;
         background-color: #1faac0;
