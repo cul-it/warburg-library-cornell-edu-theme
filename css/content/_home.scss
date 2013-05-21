@@ -112,14 +112,14 @@ a.signale {
 	img { margin-bottom: 15px; }
 }
 
-/* Interviews */
+/* Pathways */
 /*------------------------------*/
-.interview {
+.pathway {
 	content: "";
 	display: table;
 	clear: both;
 	padding: 15px 0;
-	background: url("../images/interview-bg.png") no-repeat bottom;
+	background: url("../images/pathway-bg.png") no-repeat bottom;
 	img { 
 		border: 1px solid #c8c8c8; // TODO: Add variable; change to global rule for images to have border?
 		float: left;

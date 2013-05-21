@@ -6118,15 +6118,15 @@ a.signale {
 .warburg-institute img {
   margin-bottom: 15px; }
 
-/* Interviews */
+/* Pathways */
 /*------------------------------*/
-.interview {
+.pathway {
   content: "";
   display: table;
   clear: both;
   padding: 15px 0;
-  background: url("../images/interview-bg.png") no-repeat bottom; }
-  .interview img {
+  background: url("../images/pathway-bg.png") no-repeat bottom; }
+  .pathway img {
     border: 1px solid #c8c8c8;
     float: left;
     margin-right: 10px; }
