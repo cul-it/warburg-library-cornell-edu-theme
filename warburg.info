@@ -12,6 +12,7 @@ stylesheets[all][] = css/content.css
 ;stylesheets[all][] = css/panels/carousel/jquery.rs.carousel.css
 
 scripts[] = js/bootstrap.min.js
+scripts[] = js/content-utils.js
 
 ; Carousel jquery library
 ;scripts[] = js/carousel/lib/jquery.event.drag.js
