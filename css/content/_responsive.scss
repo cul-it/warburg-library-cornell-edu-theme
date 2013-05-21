@@ -13,9 +13,5 @@
 // Mobile Portrait Size to Mobile Landscape Size
 @import 'responsive-480px-max';
 
-
-@media (min-width: 1372px) {
-	.hero {
-		.home-content { padding-left: 15%; }
-	}
-}
+// Responsive specifically for home page hero
+@import 'responsive-hero';
