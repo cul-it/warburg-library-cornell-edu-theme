@@ -242,6 +242,8 @@ function warburg_preprocess_html(&$vars) {
       if (module_exists('warburgtools')) {
         // add some useful info for the theme to use when drawing the panel
         $vars['warburg'] = warburgtools_panel_info($node);
+        $xml_panel = $vars['warburg']['image']['xml'];
+        warburgtools_add_tilezoom_js($xml_panel);
       }
     }
     elseif ($node->type == 'panel_image') {
@@ -249,6 +251,8 @@ function warburg_preprocess_html(&$vars) {
       if (module_exists('warburgtools')) {
         // add some useful info for the theme to use when drawing the panel
         $vars['warburg'] = warburgtools_panel_image_info($node);
+        $xml_panel = $vars['warburg']['image']['xml'];
+        warburgtools_add_tilezoom_js($xml_panel, TRUE);
       }
     }
   }
