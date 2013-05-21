@@ -550,7 +550,7 @@ body {
 				color: #919194;
 			}
 			
-			.secuence {
+			.sequence {
 				
 				display: inline-block;
 				font-size: 30px;
@@ -570,7 +570,28 @@ body {
 			//}
 			
 			a {
-				font-size: 24px;
+				font-size: 18px;
+				color: $white;
+				text-decoration: none;
+				//margin-top: -10px;
+				
+				&.prev-sequence {
+					padding: 5px 7px 5px 7px;
+					background-color: $green;
+				}
+				
+				&.next-sequence {
+					padding: 5px 7px 5px 7px;
+					background-color: $green;
+				}
+				
+				&.prev-sequence:hover {
+					background-color: $blue;
+				}
+				
+				&.next-sequence:hover  {
+					background-color: $blue;
+				}
 			}
 		}
 		
@@ -623,6 +644,7 @@ body {
 			text-decoration: none;	
 			margin-left: 20px;
 			clear: both;
+			width: 80%;
 		}
 		
 		

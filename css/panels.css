@@ -5229,15 +5229,27 @@ body {
       margin-top: 0; }
       .panels-display .panel-description h3.pathway {
         color: #919194; }
-      .panels-display .panel-description h3 .secuence {
+      .panels-display .panel-description h3 .sequence {
         display: inline-block;
         font-size: 30px;
         margin-top: 10px;
         color: #fff; }
-        .panels-display .panel-description h3 .secuence img {
+        .panels-display .panel-description h3 .sequence img {
           vertical-align: middle; }
       .panels-display .panel-description h3 a {
-        font-size: 24px; }
+        font-size: 18px;
+        color: white;
+        text-decoration: none; }
+        .panels-display .panel-description h3 a.prev-sequence {
+          padding: 5px 7px 5px 7px;
+          background-color: #7a9945; }
+        .panels-display .panel-description h3 a.next-sequence {
+          padding: 5px 7px 5px 7px;
+          background-color: #7a9945; }
+        .panels-display .panel-description h3 a.prev-sequence:hover {
+          background-color: #1faac0; }
+        .panels-display .panel-description h3 a.next-sequence:hover {
+          background-color: #1faac0; }
     .panels-display .panel-description h4 {
       font-weight: normal;
       font-size: 24px;
@@ -5276,7 +5288,8 @@ body {
       color: #fff;
       text-decoration: none;
       margin-left: 20px;
-      clear: both; }
+      clear: both;
+      width: 80%; }
   .panels-display nav {
     position: absolute;
     top: 0;
