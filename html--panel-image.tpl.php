@@ -97,6 +97,8 @@
             zoomOut: '#minus',
             goHome: '#home',
            });
+        });
+        $(document).ready(function(){
           $('#tilezoom-starthere').click();
         });
       })(jQuery);
