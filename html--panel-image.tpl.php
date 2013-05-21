@@ -86,23 +86,6 @@
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
 
-     <script type="text/javascript">
-      (function($){
-        $(document).ready(function(){
-          $('#container').tilezoom({
-            xml: '<?php print $variables['warburg']['image']['xml']; ?>',
-            mousewheel: false,
-            navigation: null,
-            zoomIn: '#plus',
-            zoomOut: '#minus',
-            goHome: '#home',
-           });
-        });
-        $(document).ready(function(){
-          $('#tilezoom-starthere').click();
-        });
-      })(jQuery);
-      </script>
   </head>
 
 <body>
@@ -225,7 +208,7 @@
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-autoscroll.js"></script>
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-continuous.js"></script>
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-touch.js"></script>
-    
+
     <script>
     		// iOS viewport scaling bug fix, by @mathias, @cheeaun and @jdalton
     		(function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
@@ -234,10 +217,6 @@
     <!-- Drop-Down Navigation: Responsive and Touch-Friendly -->
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/DoubleTapToGo.js"></script>
 
-
-    <!-- tilezoom -->
-    <!--<script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/jquery.mousewheel.js"></script>-->
-  	<script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/tilezoom/jquery.tilezoom.js"></script>
 
   	 <!-- panel utils -->
       <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels-utils.js"></script>
