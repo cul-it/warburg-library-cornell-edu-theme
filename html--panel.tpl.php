@@ -85,6 +85,7 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
   </head>
 
 <body>
@@ -172,7 +173,7 @@
               </ul>
             -->
               <!--END Template metadata individual panels -->
-              
+
 
               <!-- Template metadata PATHWAY panels -->
               <!--<h3 class="pathway">Panel 79<br />
@@ -180,14 +181,14 @@
                  <a class="prev-sequence" href="#" title="Previous sequence" title="Previous Sequence">Previous</a>
                  <a class="next-sequence" href="#" title="Next sequence"  title="Next Sequence">Next</a>
                </h3>
-               
+
                <h4>Various levels of transferring the cosmic system to humanity. Harmonic correspondence. Later reduction of the harmony to abstract geometry instead of to cosmically conditional [geometry] (Leonardo). </h4>
-               
+
                 <p>Panels B and <a href="#" title="">C</a>  (which along with the not included panel A) provide the ‘grammar’ or ‘syntax’ with which to read the subsequent 60 panels. Offering an initial, paradigmatic itinerary or ‘meandering’ through Warburg’s vision, we see the genealogical and astrological connections that link humanity and the cosmos. Panel B tracks the tensions between astrological and scientific-astronomical world views. In panel B the astrological is still dominant, whereas in panel <a href="#" title="">C</a>, with images showing Kepler’s astrological and astronomical</p>
 
                 <h5>Theme:</h5>
                 <p>Cosmographical sequence</p>
-                
+
                 <h5>Secondary</h5>
                 <p>Cosmographical sequence</p> -->
                 <!-- END Template metadata PATHWAY panels -->
@@ -234,7 +235,7 @@
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-autoscroll.js"></script>
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-continuous.js"></script>
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-touch.js"></script>
-    
+
     <script>
     		// iOS viewport scaling bug fix, by @mathias, @cheeaun and @jdalton
     		(function(doc){var addEvent='addEventListener',type='gesturestart',qsa='querySelectorAll',scales=[1,1],meta=qsa in doc?doc[qsa]('meta[name=viewport]'):[];function fix(){meta.content='width=device-width,minimum-scale='+scales[0]+',maximum-scale='+scales[1];doc.removeEventListener(type,fix,true);}if((meta=meta[meta.length-1])&&addEvent in doc){fix();scales=[.25,1.6];doc[addEvent](type,fix,true);}}(document));
@@ -243,10 +244,6 @@
     <!-- Drop-Down Navigation: Responsive and Touch-Friendly -->
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/DoubleTapToGo.js"></script>
 
-
-    <!-- tilezoom -->
-    <!--<script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/jquery.mousewheel.js"></script>-->
-  	<script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/tilezoom/jquery.tilezoom.js"></script>
 
   	 <!-- panel utils -->
       <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels-utils.js"></script>
