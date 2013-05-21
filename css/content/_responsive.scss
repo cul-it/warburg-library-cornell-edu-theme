@@ -14,3 +14,8 @@
 @import 'responsive-480px-max';
 
 
+@media (min-width: 1372px) {
+	.hero {
+		.home-content { padding-left: 15%; }
+	}
+}
