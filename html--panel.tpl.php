@@ -85,30 +85,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
-
-     <script type="text/javascript">
-      (function($){
-        $(document).ready(function(){
-          $('#container').tilezoom({
-            xml: '<?php print $variables['warburg']['image']['xml']; ?>',
-            mousewheel: false,
-            navigation: null,
-            zoomIn: '#plus',
-            zoomOut: '#minus',
-            goHome: '#home',
-            beforeZoom: function($cont) {
-              active = $('.zoom-holder').find('a.active');
-              if (active.length !== 0) {
-                href = active.attr('href');
-                if (href.length !== 0) {
-                  window.location = href;
-                }
-              }
-              }
-          });
-        });
-      })(jQuery);
-      </script>
   </head>
 
 <body>
