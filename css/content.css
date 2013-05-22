@@ -6235,19 +6235,19 @@ p.caption {
   .hero .home-content {
     padding-left: 15%; } }
 @media screen and (max-width: 983px) {
-  .hero .content {
+  .hero .home-content {
     padding-left: 5%; }
-    .hero .content h2 {
+    .hero .home-content h2 {
       width: 430px;
       font-size: 2.7em;
       padding: 20px;
       margin: 0; }
-    .hero .content p {
+    .hero .home-content p {
       width: 450px;
       font-size: 1.3em;
       padding: 20px;
       margin: 0; }
-    .hero .content ul {
+    .hero .home-content ul {
       margin-top: 7px; }
 
   .btn-pathway {
@@ -6265,12 +6265,12 @@ p.caption {
     margin-top: 22px;
     max-width: 100%; } }
 @media screen and (max-width: 866px) {
-  .hero .content h2 {
+  .hero .home-content h2 {
     width: 320px;
     font-size: 2.6em;
     padding: 10px;
     margin: 0; }
-  .hero .content p {
+  .hero .home-content p {
     width: 350px; }
 
   .btn-panels {
@@ -6279,15 +6279,15 @@ p.caption {
 @media screen and (max-width: 702px) {
   .hero {
     width: 100%; }
-    .hero .content {
+    .hero .home-content {
       padding-left: 5%;
       width: 95%;
       opacity: 1; }
-      .hero .content h2 {
+      .hero .home-content h2 {
         width: 75%; }
-      .hero .content p {
+      .hero .home-content p {
         width: 85%; }
-      .hero .content ul {
+      .hero .home-content ul {
         margin-top: 7px; }
     .hero aside {
       float: left;
