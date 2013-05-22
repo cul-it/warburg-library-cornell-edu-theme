@@ -104,7 +104,7 @@
                 ?>
             </nav>
 
-            <a class="search-panels" href="#" title=""><span class="search-panels-icon"></span></a>
+            <a class="search-panels" href="#" title="Search panels"><span class="search-panels-icon"></span></a>
 
              <form id="search-panels" action="#" method="get" name="search-panels">
                     <input name="query" type="text" value="" />
@@ -127,7 +127,7 @@
 
             <section class="panels-photo">
 
-                <div id="container">
+                <div id="container" data-panelinfo='[<?php print $variables['warburg']['panel']['tilezoominfo']; ?>]'>
 
                     <div class="zoom-holder">
                         <?php
@@ -170,7 +170,7 @@
             </section>
 
             <nav>
-                <ul id="panel-tools">
+               <ul id="panel-tools">
 
                   <li><a class="original active" href="<?php print $variables['warburg']['nav']['overview']; ?>" title=""></a></li>
                   <?php if (!empty($variables['warburg']['nav']['images'])): ?>
