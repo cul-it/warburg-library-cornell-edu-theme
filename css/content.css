@@ -6230,7 +6230,13 @@ p.caption {
     width: 90%; } }
 @media (max-width: 480px) {
   .navbar .brand {
-    margin-left: -15px; } }
+    margin-left: -15px; }
+
+  .featured-content-first {
+    clear: both; }
+
+  .media {
+    background-image: none; } }
 @media (min-width: 1372px) {
   .hero .home-content {
     padding-left: 15%; } }
