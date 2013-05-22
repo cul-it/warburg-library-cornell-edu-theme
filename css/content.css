@@ -6224,7 +6224,10 @@ p.caption {
       background-image: none; }
 
   .container {
-    padding: 0 10px; } }
+    padding: 0 10px; }
+
+  .book-cover {
+    width: 90%; } }
 @media (max-width: 480px) {
   .navbar .brand {
     margin-left: -15px; } }
