@@ -259,7 +259,7 @@ function warburg_preprocess_html(&$vars) {
       $vars['theme_hook_suggestions'][] = 'html__image_group';
       if (module_exists('warburgtools')) {
         // add some useful info for the theme to use when drawing the panel
-        $vars['warburg'] = warburgtools_panel_image_info($node);
+        $vars['warburg'] = warburgtools_image_group_info($node);
         $xml_panel = $vars['warburg']['panel']['xml'];
         warburgtools_add_tilezoom_js($xml_panel, TRUE);
       }
