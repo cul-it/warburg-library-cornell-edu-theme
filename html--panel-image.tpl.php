@@ -147,7 +147,7 @@
 
             <section class="panel-description">
                     <?php
-                    $result = module_invoke('views', 'block_view', 'panel_description_block-block');
+                    $result = module_invoke('views', 'block_view', 'panel_image_description_block-block');
                     print render($result);
                     ?>
 
