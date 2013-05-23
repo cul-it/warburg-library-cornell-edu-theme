@@ -244,6 +244,9 @@
     <!-- Drop-Down Navigation: Responsive and Touch-Friendly -->
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/DoubleTapToGo.js"></script>
 
+
+  	 <!-- panel utils -->
+      <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels-utils.js"></script>
   <?php
     print '<pre>Variables: ' . print_r($variables['warburg'], true) . '</pre>';
   ?>
