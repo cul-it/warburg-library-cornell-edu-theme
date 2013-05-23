@@ -5479,7 +5479,8 @@ body {
       left: 0;
       right: 0; }
     .page.panels header #nav:target > ul {
-      display: block; }
+      display: block;
+      z-index: 4; }
     .page.panels header #nav > ul > li {
       width: 100%;
       float: none; }
@@ -5495,7 +5496,8 @@ body {
       position: static;
       padding: 1.25em;
       /* 20 */
-      padding-top: 0; }
+      padding-top: 0;
+      z-index: 4; }
 
   .panels-display {
     height: 400px !important; }
