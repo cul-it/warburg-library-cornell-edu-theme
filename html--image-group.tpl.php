@@ -131,10 +131,11 @@
 
                     <div class="zoom-holder">
                         <?php
-                        if (!empty($variables['warburg']['ordinal'])) {
+                        if (!empty($variables['warburg']['sequence'])) {
                           print '<div class="zoom-hotspots">' . PHP_EOL;
-                          foreach ($variables['warburg']['ordinal'] as $hotspot) {
+                          foreach ($variables['warburg']['sequence'] as $hotspot) {
                             print $hotspot['spot_link'] . PHP_EOL;
+                            break; // just the first
                           }
                           print '</div>' . PHP_EOL;
                         }
