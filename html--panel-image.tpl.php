@@ -172,12 +172,12 @@
             <nav>
                <ul id="panel-tools">
 
-                  <li><a class="original active" href="<?php print $variables['warburg']['nav']['overview']; ?>" title=""></a></li>
+                  <li><a class="original active" href="<?php print $variables['warburg']['nav']['overview']; ?>" title="full panel"></a></li>
                   <?php if (!empty($variables['warburg']['nav']['images'])): ?>
-                  <li><a class="map" href="<?php $variables['warburg']['nav']['images']; ?>" title=""></a></li>
+                  <li><a class="map" href="<?php print $variables['warburg']['nav']['images']; ?>" title="individual images"></a></li>
                   <?php endif ?>
                   <?php if (!empty($variables['warburg']['nav']['pathways'])): ?>
-                  <li><a class="pathway" href="<?php $variables['warburg']['nav']['pathways']; ?>" title=""></a></li>
+                  <li><a class="pathway" href="<?php print $variables['warburg']['nav']['pathways']; ?>" title="guided pathways"></a></li>
                   <?php endif ?>
 
                   <li class="display-tools"></li>
