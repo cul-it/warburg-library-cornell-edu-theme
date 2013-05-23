@@ -133,9 +133,15 @@
                         <?php
                         if (!empty($variables['warburg']['sequence'])) {
                           print '<div class="zoom-hotspots">' . PHP_EOL;
-                          foreach ($variables['warburg']['sequence'] as $hotspot) {
-                            print $hotspot['spot_link'] . PHP_EOL;
-                            break; // just the first
+                          $selected = $variables['warburg']['selected'];
+                          foreach ($variables['warburg']['sequence'] as $group) {
+                            if ($group['nid'] == $selected) {
+                              print $group['spot_link'] . PHP_EOL;
+                              foreach ($group['hotspots'] as $hotspot) {
+                                print $hotspot['box_link'] . PHP_EOL;
+                              }
+                              break; // just the  selected
+                            }
                           }
                           print '</div>' . PHP_EOL;
                         }
