@@ -1010,6 +1010,7 @@ body {
 				#nav:target > ul
 				{
 					display: block;
+					z-index: 4;
 				}
 				#nav > ul > li
 				{
@@ -1036,6 +1037,7 @@ body {
 					position: static;
 					padding: 1.25em; /* 20 */
 					padding-top: 0;
+					z-index: 4;
 				}
 			}
 		}
