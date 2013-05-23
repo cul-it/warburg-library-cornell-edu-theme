@@ -136,10 +136,10 @@
                           $selected = $variables['warburg']['selected'];
                           foreach ($variables['warburg']['sequence'] as $group) {
                             if ($group['nid'] == $selected) {
-                              print $group['spot_link'] . PHP_EOL;
-                              foreach ($group['hotspots'] as $hotspot) {
+                               foreach ($group['hotspots'] as $hotspot) {
                                 print $hotspot['box_link'] . PHP_EOL;
                               }
+                             print $group['spot_link'] . PHP_EOL;
                               break; // just the  selected
                             }
                           }
