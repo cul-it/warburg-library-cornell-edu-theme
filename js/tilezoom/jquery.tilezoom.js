@@ -239,7 +239,7 @@ function initLevel(settings) {
 		}
 		level++;
 	}
-	return level-1;
+	return Math.max(level-1, 9); // jgr25 - tilegenerator only goes down to 9
 };
 
 function initTiles($cont, level) {
@@ -500,19 +500,19 @@ function initNavigation($cont) {
 	}
 
 	if($nav && $nav.get(0)) {
-	  
+
 	  //goHome button
 		if(!$nav.children('a.go-home').get(0)) {
 			$nav.append('<a class="go-home" href="#" title="Go Home"><!--Go Home--></a>');
 		}
 		settings.goHome = $nav.children('a.go-home');
-    
+
 		//zoomIn button
 		if(!$nav.children('a.zoom-in').get(0)) {
 			$nav.append('<a class="zoom-in" href="#" title="Zoom in"><!--Zoom In--></a>');
 		}
 		settings.zoomIn = $nav.children('a.zoom-in');
-		
+
 		//zoomOut button
 		if(!$nav.children('a.zoom-out').get(0)) {
 			$nav.append('<a class="zoom-out" href="#" title="Zoom Out"><!--Zoom Out--></a>');
