@@ -154,7 +154,7 @@
 
             <section class="panel-description">
                     <?php
-                    $result = module_invoke('views', 'block_view', '240f2561056d0722cec3e68a281bd9e6');
+                    $result = module_invoke('views', 'block_view', '35f1a9715f23a6c1a632122714cbe031');
                     print render($result);
                     ?>
 
