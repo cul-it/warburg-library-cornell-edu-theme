@@ -210,10 +210,10 @@
                   <li class="display-tools"></li>
 
                   <li class="display-tools2">
-                    <a id="home" class="go-home" href="#" title="Go Home"><!--Go Home--></a>
-                    <a id="plus" class="zoom-in" href="#" title="Zoom in"><!--Zoom In--></a>
-                    <a id="minus" class="zoom-out" href="#" title="Zoom Out"><!--Zoom Out--></a>
-                    <a class="toggle-full" href="#" title="Toggle Full Page"><!--Toggle Full Page--></a></li>
+                    <a id="home" class="go-home2" href="#" title="Go Home"><!-Go Home--></a>
+                    <a id="plus" class="zoom-in2" href="#" title="Zoom in"><!-Zoom In--></a>
+                    <a id="minus" class="zoom-out2" href="#" title="Zoom Out"><!-Zoom Out--></a>
+                    <a class="toggle-full2" href="#" title="Toggle Full Page"><!-Toggle Full Page--></a></li>
                 </ul>
             </nav>
 
