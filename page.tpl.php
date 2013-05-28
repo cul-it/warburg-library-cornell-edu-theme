@@ -96,11 +96,6 @@
             <?php print render($page['navigation']); ?>
           </div>
         </div>
-        <a class="search-panels" href="#" title="Search panels"><span class="search-panels-icon"></span></a>
-        <form id="search-panels" action="#" method="get" name="search-panels">
-        <input name="query" type="text" value="" />
-        <input class="search" type="submit" value="search" />
-        </form>
       </div>
     </div>
   </div>
