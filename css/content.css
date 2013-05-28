@@ -5945,6 +5945,65 @@ h2 {
   .institution-brand a {
     color: #fefefe; }
 
+/* Search Box */
+a.search-panels {
+  z-index: 99999;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  float: right;
+  padding: 0; }
+  a.search-panels span:after {
+    border-top-color: none;
+    border: none; }
+  a.search-panels:hover {
+    background-color: transparent;
+    opacity: 0.005;
+    filter: alpha(opacity=0.5); }
+  a.search-panels .search-panels-icon {
+    background: url("../images/panels/search-icon.png") no-repeat 0 0;
+    width: 28px;
+    height: 26px;
+    display: inline-block;
+    margin-top: 9px;
+    margin-right: 5px; }
+  a.search-panels .search-panels-close-icon {
+    background: url("../images/panels/hide-search-icon.png") no-repeat 0 0;
+    width: 28px;
+    height: 26px;
+    display: inline-block;
+    margin-top: 9px;
+    margin-right: 5px; }
+
+#search-panels {
+  z-index: 99999;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 45px;
+  display: none; }
+  #search-panels input[type="text"] {
+    margin-top: 10px;
+    border-radius: 0;
+    height: 16px;
+    background-color: #eeeeee;
+    border: 1px solid #999999;
+    color: white;
+    width: 140px;
+    margin-left: 20px; }
+  #search-panels input[type="submit"] {
+    color: white;
+    background-color: #049cdb;
+    font-family: 'Abel', sans-serif;
+    font-weight: normal;
+    border-radius: 0;
+    height: 26px;
+    border: none;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px; }
+
 /* Header on sub pages */
 /*------------------------------*/
 header {
