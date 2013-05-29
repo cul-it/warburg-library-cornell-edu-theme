@@ -5292,7 +5292,7 @@ body {
       text-decoration: none;
       margin-left: 20px;
       clear: both;
-      width: 80%; }
+      width: auto; }
   .panels-display nav {
     position: absolute;
     top: 0;
