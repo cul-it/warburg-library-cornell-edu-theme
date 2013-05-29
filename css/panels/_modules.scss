@@ -17,7 +17,7 @@
 */
 @mixin panel-tool-states ( $name) {
   a.#{$name} {
-    background: url($pathPanelIcons + $name + '.png') 0 0;
+    background: url($pathPanelIcons + $name + '.png')  no-repeat 0 0;
 		margin-top: -4px;
   }
 
