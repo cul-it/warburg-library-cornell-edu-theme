@@ -69,7 +69,7 @@
  * @see template_process()
  */
 ?>
-<div class="panels">
+<div class="page panels">
 <header>
 <section class="institution-brand">
   <div class="container">
