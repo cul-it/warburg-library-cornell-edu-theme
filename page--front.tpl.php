@@ -69,8 +69,7 @@
  * @see template_process()
  */
 ?>
-<div class="page panels">
-<header>
+
 <section class="institution-brand">
   <div class="container">
     <a href="http://www.library.cornell.edu">Cornell University Library</a> | <a href="http://warburg.sas.ac.uk/home/">The Warburg Institute</a> | <a href="http://www.cornellpress.cornell.edu/">Cornell University Press</a>
@@ -81,8 +80,7 @@
     </form>
   </div>
 </section>
-</header>
-</div>
+
 
 <nav class="navbar">
   <div class="container">
