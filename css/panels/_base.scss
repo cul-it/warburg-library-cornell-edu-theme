@@ -513,7 +513,7 @@ body {
 
 		float: left;
 		width: 30.902778%;
-		border: 1px solid #eeede9;
+		border-left: 1px solid #b4b3b2;
 
 		background-color: #76777b;
 		//@include opacity(.5);
@@ -810,7 +810,7 @@ body {
 
 
 
-@media only screen and ( max-width: 857px )  {
+@media only screen and ( max-width: 927px )  {
 
 
 	.page.panels {
@@ -922,8 +922,7 @@ body {
 
 
 
-@media only screen and ( max-width: 694px ) 
-{
+@media only screen and ( max-width: 694px ) {
 
 	.page.panels {
 

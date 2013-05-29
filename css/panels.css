@@ -5181,7 +5181,7 @@ body {
   .panels-display .panel-description {
     float: left;
     width: 30.902778%;
-    border: 1px solid #eeede9;
+    border-left: 1px solid #b4b3b2;
     background-color: #76777b;
     color: #fff;
     overflow: auto;
@@ -5404,7 +5404,7 @@ body {
     margin-right: 20px; }
   .panels-display nav {
     width: 40px; } }
-@media only screen and (max-width: 857px) {
+@media only screen and (max-width: 927px) {
   .page.panels header #search-panels {
     top: 45px;
     right: 0;
