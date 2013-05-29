@@ -5318,51 +5318,51 @@ body {
           background: url("../images/panels/panel-nav/original.png") no-repeat 0 0;
           margin-top: -4px; }
         .panels-display nav #panel-tools li a.original:hover {
-          background: url("../images/panels/panel-nav/original-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/original-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li a.original.active {
-          background: url("../images/panels/panel-nav/original-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/original-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li a.map {
           background: url("../images/panels/panel-nav/map.png") no-repeat 0 0;
           margin-top: -4px; }
         .panels-display nav #panel-tools li a.map:hover {
-          background: url("../images/panels/panel-nav/map-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/map-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li a.map.active {
-          background: url("../images/panels/panel-nav/map-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/map-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li a.pathway {
           background: url("../images/panels/panel-nav/pathway.png") no-repeat 0 0;
           margin-top: -4px; }
         .panels-display nav #panel-tools li a.pathway:hover {
-          background: url("../images/panels/panel-nav/pathway-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/pathway-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li a.pathway.active {
-          background: url("../images/panels/panel-nav/pathway-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/pathway-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.go-home {
           background: url("../images/panels/panel-nav/go-home.png") no-repeat 0 0;
           margin-top: -4px; }
         .panels-display nav #panel-tools li.display-tools a.go-home:hover {
-          background: url("../images/panels/panel-nav/go-home-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/go-home-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.go-home.active {
-          background: url("../images/panels/panel-nav/go-home-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/go-home-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.zoom-in {
           background: url("../images/panels/panel-nav/zoom-in.png") no-repeat 0 0;
           margin-top: -4px; }
         .panels-display nav #panel-tools li.display-tools a.zoom-in:hover {
-          background: url("../images/panels/panel-nav/zoom-in-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/zoom-in-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.zoom-in.active {
-          background: url("../images/panels/panel-nav/zoom-in-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/zoom-in-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.zoom-out {
           background: url("../images/panels/panel-nav/zoom-out.png") no-repeat 0 0;
           margin-top: -4px; }
         .panels-display nav #panel-tools li.display-tools a.zoom-out:hover {
-          background: url("../images/panels/panel-nav/zoom-out-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/zoom-out-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.zoom-out.active {
-          background: url("../images/panels/panel-nav/zoom-out-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/zoom-out-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.toggle-full {
           background: url("../images/panels/panel-nav/toggle-full.png") no-repeat 0 0;
           margin-top: -4px; }
         .panels-display nav #panel-tools li.display-tools a.toggle-full:hover {
-          background: url("../images/panels/panel-nav/toggle-full-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/toggle-full-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.toggle-full.active {
-          background: url("../images/panels/panel-nav/toggle-full-active.png") 0 0; }
+          background: url("../images/panels/panel-nav/toggle-full-active.png") no-repeat 0 0; }
 
 /*
 .search-panels {

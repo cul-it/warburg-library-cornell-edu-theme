@@ -22,12 +22,12 @@
   }
 
   a.#{$name}:hover {
-    background: url($pathPanelIcons + $name + '-active.png') 0 0;
+    background: url($pathPanelIcons + $name + '-active.png') no-repeat 0 0;
   }
   
   a.#{$name}.active {
 
-    background: url($pathPanelIcons + $name + '-active.png') 0 0;
+    background: url($pathPanelIcons + $name + '-active.png') no-repeat 0 0;
   }
 }
 
