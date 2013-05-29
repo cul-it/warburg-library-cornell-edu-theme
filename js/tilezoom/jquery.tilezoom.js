@@ -520,8 +520,8 @@ function initNavigation($cont) {
 		settings.zoomOut = $nav.children('a.zoom-out');
 
 		//toggleFull button
-		if(!$nav.children('a.toggle-full').get(0)) {
-			$nav.append('<a class="toggle-full" href="#" title="Toggle Full Page"><!--Toggle Full Page--></a>');
+		//if(!$nav.children('a.toggle-full').get(0)) {
+			//$nav.append('<a class="toggle-full" href="#" title="Toggle Full Page"><!--Toggle Full Page--></a>');
 		}
 		settings.toggleFull = $nav.children('a.toggle-full');
 	}
