@@ -513,6 +513,7 @@ body {
 
 		float: left;
 		width: 30.902778%;
+		border: 1px solid #eeede9;
 
 		background-color: #76777b;
 		//@include opacity(.5);
@@ -854,12 +855,10 @@ body {
 .rs-carousel {
 	
 	ul {
-		
-		
-		
+
 		li {
 
-			margin-right: 25px;
+			//margin-right: 25px;
 			
 			&:first-child {
 				margin-left: 0;
@@ -923,7 +922,7 @@ body {
 
 
 
-@media only screen and ( max-width: 40em ) /* 640 */
+@media only screen and ( max-width: 694px ) 
 {
 
 	.page.panels {

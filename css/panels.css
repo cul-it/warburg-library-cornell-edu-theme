@@ -5181,6 +5181,7 @@ body {
   .panels-display .panel-description {
     float: left;
     width: 30.902778%;
+    border: 1px solid #eeede9;
     background-color: #76777b;
     color: #fff;
     overflow: auto;
@@ -5417,10 +5418,8 @@ body {
   .carousel-right-limit {
     display: none; }
 
-  .rs-carousel ul li {
-    margin-right: 25px; }
-    .rs-carousel ul li:first-child {
-      margin-left: 0; }
+  .rs-carousel ul li:first-child {
+    margin-left: 0; }
   .rs-carousel .rs-carousel-action-prev {
     display: none; }
   .rs-carousel .rs-carousel-action-next {
@@ -5436,7 +5435,7 @@ body {
     margin-right: 20px; }
   .panels-display nav {
     width: 40px; } }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 694px) {
   .page.panels header {
     /* first level */
     /* second level */ }
