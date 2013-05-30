@@ -19,6 +19,6 @@
               $searchFlag = !$searchFlag;
   			  }
   		
-  	
+  			});
 
 })(jQuery);		
