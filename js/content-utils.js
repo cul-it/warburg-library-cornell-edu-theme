@@ -18,4 +18,5 @@
         $searchIconImg.removeClass("search-panels-close-icon");
         $searchFlag = !$searchFlag;
       };
+    }      
 })(jQuery);
