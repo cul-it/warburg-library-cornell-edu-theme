@@ -100,7 +100,7 @@
   		//.search-panels-close-icon
 		
   		// $('#search-panels').show();
-  		/*
+  		
 		   var $searchIcon = $('.search-panels');
 		   var $searchIconImg = $('.search-panels span');
 		   var $searchFlag = true;
@@ -120,7 +120,7 @@
   		
   			});
 			
-	*/
+	
         //Drop-down touch friendly
         $( '#nav li:has(ul)' ).doubleTapToGo();
 
