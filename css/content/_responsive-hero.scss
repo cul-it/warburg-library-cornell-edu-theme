@@ -4,10 +4,20 @@
 	}
 }
 
+@media (max-width: 1147px) {
+	.hero {
+		.home-content { 
+			padding-left: 15%;
+			padding-top: 50px;
+			p { width: 550px; }
+		}
+	}
+}
+
 @media screen and (max-width: 983px) {
 	.hero{
 		.home-content { 
-			padding-left: 5%;
+			padding-left: 10%;
 			h2 {
 				width: 430px;
 				font-size: 2.7em;
