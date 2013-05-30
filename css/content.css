@@ -6138,6 +6138,11 @@ footer {
   margin-left: 3px;
   color: white; }
 
+.btn-pathway:hover,
+.btn-panels:hover {
+  background-color: #005580;
+  color: white; }
+
 .book-cover {
   margin-top: 22px; }
 

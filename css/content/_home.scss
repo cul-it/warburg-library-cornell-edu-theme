@@ -54,8 +54,11 @@
 	background-color: #7ca43f;
 	padding: 10px;
 	margin-left: 3px;
-	color: $textColorLight;
-}
+	color: $textColorLight; }
+.btn-pathway:hover,
+.btn-panels:hover {
+	background-color: #005580;
+	color: $textColorLight; }
 .book-cover {
 	margin-top: 22px;
 }
