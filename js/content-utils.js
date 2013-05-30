@@ -3,7 +3,7 @@
 //Wrapping all in an anonymous self invoking function because Drupal is too delicate.
 
 (function ($) {
-    var $searchIcon = $('.search-panels');
+    var $searchIcon = $('.search-panels-content');
     var $searchIconImg = $('.search-panels span');
     var $searchFlag = true;
     $searchIcon .click(function(){
