@@ -53,7 +53,7 @@
   });
 
 
-/*
+
   $(document).ready(function () {
       $('.rs-carousel').carousel(
           {
