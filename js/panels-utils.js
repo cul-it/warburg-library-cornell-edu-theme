@@ -101,7 +101,7 @@
 		
   		// $('#search-panels').show();
   		
-		  /* var $searchIcon = $('.search-panels');
+		   var $searchIcon = $('.search-panels');
 		   var $searchIconImg = $('.search-panels span');
 		   var $searchFlag = true;
   			$searchIcon .click(function(){
@@ -119,7 +119,7 @@
   			  }
   		
   			});
-			*/
+			
 	
         //Drop-down touch friendly
         $( '#nav li:has(ul)' ).doubleTapToGo();
