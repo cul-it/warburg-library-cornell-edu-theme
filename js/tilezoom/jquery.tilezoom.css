@@ -38,7 +38,7 @@ div.zoom-container div.zoom-hotspots {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 0;
+		top: 0;
 	z-index: 2;
 	background: url("images/transparent.gif") repeat scroll 0 0 transparent;
 }
@@ -49,14 +49,15 @@ div.zoom-container div.zoom-holder .grabbing {
 	cursor: move;
 }
 div.zoom-container div.zoom-hotspots a {
-	background: url("images/hotspot.png") no-repeat 0 0;
-    display: block;
-    overflow: hidden;
-    position: absolute;
-    text-indent: -9999px;
+	background: url("images/hotspot.png") no-repeat 50% 50%;
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	/*text-indent: -9999px;*/
 	width: 24px;
 	height: 24px;
-	margin: -12px 0 0 -12px;
+	margin: 0 0 0 0;
+	
 }
 div.zoom-container div.zoom-hotspots a.active {
 	background: url("images/hotspot_active.png") no-repeat 0 0;
