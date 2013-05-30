@@ -5842,7 +5842,8 @@ a {
   color: #a7c03a; }
 
 a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #005580; }
 
 /* Typography */
 /*------------------------------*/

@@ -9,7 +9,9 @@ body {
 /*------------------------------*/
 a { color: $linkPrimary;}
 a:visited {}
-a:hover { text-decoration: none; }
+a:hover { 
+	text-decoration: none;
+	color: $linkHover; }
 a:active { }
 
 
