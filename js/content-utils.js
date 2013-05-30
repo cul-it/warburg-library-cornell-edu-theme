@@ -7,6 +7,7 @@
     var $searchIconImg = $('.search-panels span');
     var $searchFlag = true;
     $searchIcon .click(function(){
+      console.log("I am being clicked");
       if ($searchFlag) {
         $('#search-panels').show();
         $searchIconImg.removeClass("search-panels-icon");
