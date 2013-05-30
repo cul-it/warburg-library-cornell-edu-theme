@@ -1,5 +1,4 @@
-// It will handle user interaction just for content, not panels. For example: revealing phonetics, search form, etc.
-(function($){
+// It will handle user interaction just for content, not panels. For example: revealing phonetics, search form, etc
 
 	  $(document).ready(function () {
 
@@ -20,7 +19,6 @@
               $searchFlag = !$searchFlag;
   			  }
   		
-  			});
+  	
 
 })(jQuery);		
-}
