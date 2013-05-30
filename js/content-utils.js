@@ -18,6 +18,6 @@ $(document).ready(function () {
               $searchIconImg.addClass("search-panels-icon");
               $searchIconImg.removeClass("search-panels-close-icon");
               $searchFlag = !$searchFlag;
-  			  });
+  			  };
   		
   			});
