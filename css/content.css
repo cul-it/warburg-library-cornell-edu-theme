@@ -6099,6 +6099,8 @@ footer {
         display: block;
         list-style-type: none;
         float: left; }
+    .hero .home-content h2 {
+      font-size: 2.75em; }
   .hero aside {
     float: right;
     width: 37.6388889%;
