@@ -124,6 +124,15 @@
         //Drop-down touch friendly
         $( '#nav li:has(ul)' ).doubleTapToGo();
 
+		
+		//show/hide carousel
+		
+		$carousel-toggle = $('.carousel-toggle');
+		
+		$carousel-toggle.click(function(){
+			$('.rs-carousel').slideToggle('slow');	
+		});
+
 
 
 

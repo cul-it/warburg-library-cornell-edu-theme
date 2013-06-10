@@ -114,7 +114,7 @@
        </header>
 
         <section>
-				<a class="carousel-toggle ">hide</a>
+				<a class="carousel-toggle">hide</a>
             <?php
             $block = module_invoke('views', 'block_view', 'panel_selector-block');
             print render($block);
