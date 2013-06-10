@@ -127,9 +127,9 @@
 		
 		//show/hide carousel
 		
-		$carousel-toggle = $('.carousel-toggle');
+		var $carouselToggle = $('.carousel-toggle');
 		
-		$carousel-toggle.click(function(){
+		$carouselToggle.click(function(){
 			$('.rs-carousel').slideToggle('slow');	
 		});
 
