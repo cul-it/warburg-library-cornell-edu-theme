@@ -5088,6 +5088,14 @@ body {
         padding-left: 10px;
         padding-right: 10px; }
 
+.carousel-toggle {
+  width: 70px;
+  padding: 5px;
+  color: #fff;
+  background-color: green;
+  position: absolute;
+  left: 50%; }
+
 .carousel-left-limit {
   height: 220px;
   width: 80px;
