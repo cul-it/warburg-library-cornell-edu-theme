@@ -63,7 +63,8 @@ div.zoom-container div.zoom-hotspots a {
 div.zoom-container div.zoom-hotspots a .panel-name {
 	color: #fff;
 	background-color: #7A9945;
-	padding: 5px;	
+	padding: 5px;
+	margin-top: 35%;	
 }
 div.zoom-container div.zoom-hotspots a.active {
 	background: url("images/hotspot_active.png") no-repeat 0 0;
