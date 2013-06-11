@@ -220,8 +220,11 @@
 
   	 <!-- panel utils -->
       <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels-utils.js"></script>
+
+
+	<!-- Him: I am hiding this for now, uncomment when you need.>
   <?php
-    print '<pre>Variables: ' . print_r($variables['warburg'], true) . '</pre>';
+    //print '<pre>Variables: ' . print_r($variables['warburg'], true) . '</pre>';
   ?>
 
 
