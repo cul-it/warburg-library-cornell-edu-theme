@@ -130,12 +130,13 @@
 	    $('.carousel-toggle').click(function () {
 
 
-	       
+	        $('.rs-carousel').toggle(function () {
 
-	            $('.rs-carousel').slideToggle('slow');
-				
-		
-	    
+	            $('.rs-carousel').slideUp('slow');
+
+	        }, function () {
+	            $('.rs-carousel').slideDown('slow');
+	        });
 
 
 	        //$(this).toggleClass("active");
