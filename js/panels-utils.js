@@ -132,10 +132,10 @@
 
 	        $('.rs-carousel').slideToggle(function () {
 
-	            $('.rs-carousel').addClass('hide');
+	            $('.rs-carousel').hide();
 
 	        }, function () {
-	            $('.rs-carousel').removeClass('hide');
+	            $('.rs-carousel').show();
 	        });
 
 

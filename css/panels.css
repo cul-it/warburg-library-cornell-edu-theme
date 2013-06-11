@@ -5527,3 +5527,5 @@ body {
       right: 0;
       height: 400px !important;
       z-index: 99999; } }
+.hide {
+  display: none; }
