@@ -67,6 +67,8 @@ div.zoom-container div.zoom-hotspots a .panel-number {
 	padding: 5px;
 	display: inline-block;
 	width: auto;	
+	font-size: 1.5em;
+	opacity: .8;
 }
 div.zoom-container div.zoom-hotspots a.active {
 	/*background: url("images/hotspot_active.png") no-repeat 0 0;*/
