@@ -55,8 +55,8 @@ div.zoom-container div.zoom-hotspots a {
 	overflow: hidden;
 	position: absolute;
 	/*text-indent: -9999px;*/
-	width: 24px;
-	height: 24px;
+	//width: 24px;
+	//height: 24px;
 	margin: 0 0 0 0;
 	text-decoration: none;		
 }
