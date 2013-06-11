@@ -126,13 +126,24 @@
 
 		
 		//show/hide carousel
+
+	    $('.carousel-toggle').click(function () {
+
+
+	        $('.rs-carousel').slideToggle(function () {
+
+	            $('.rs-carousel').addClass('hide');
+
+	        }, function () {
+	            $('.rs-carousel').removeClass('hide');
+	        });
+
+
+	        //$(this).toggleClass("active");
+
+
+	    });
 		
-		var $carouselToggle = $('.carousel-toggle');
-		
-		$carouselToggle.click(function(e){
-			e.preventDefault();
-			$('.rs-carousel').slideToggle('slow');	
-		});
 
 
 
