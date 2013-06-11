@@ -130,12 +130,12 @@
 	    $('.carousel-toggle').click(function () {
 
 
-	        $('.rs-carousel').toggle(function () {
+	       
 
 	            $('.rs-carousel').slideToggle('slow');
 				
-				return false;
-	        });
+		
+	    
 
 
 	        //$(this).toggleClass("active");
