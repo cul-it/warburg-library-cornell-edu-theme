@@ -126,11 +126,11 @@
 
 		
 		//show/hide carousel
+		
+	    
 
-	    $('.carousel-toggle').click(function () {
 
-
-	        $('.rs-carousel').toggle(function () {
+	        $('.carousel-toggle').toggle(function () {
 
 	            $('.rs-carousel').slideUp('slow');
 
@@ -142,7 +142,7 @@
 	        //$(this).toggleClass("active");
 
 
-	    });
+	   
 		
 
 
