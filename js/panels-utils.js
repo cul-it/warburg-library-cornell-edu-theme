@@ -130,7 +130,15 @@
 	    $('.carousel-toggle').click(function () {
 
 
-	        $('.rs-carousel').slideToggle();
+	        $('.rs-carousel').toggle(function () {
+
+	            $('.rs-carousel').slideToggle('slow');
+				console.log ("hide");
+
+	        }, function () {
+	            $('.rs-carousel').slideToggle('slow');
+				console.log ("show");
+	        });
 
 
 	        //$(this).toggleClass("active");
