@@ -50,13 +50,13 @@ div.zoom-container div.zoom-holder .grabbing {
 }
 
 div.zoom-container div.zoom-hotspots a {
-	//background: url("images/hotspot.png") no-repeat 50% 50%;
+	/*background: url("images/hotspot.png") no-repeat 50% 50%;*/
 	display: block;
 	overflow: hidden;
 	position: absolute;
 	/*text-indent: -9999px;*/
-	//width: 24px;
-	//height: 24px;
+	/*width: 24px;*/
+	/*height: 24px;*/
 	margin: 0 0 0 0;
 	text-decoration: none;		
 }
@@ -69,7 +69,7 @@ div.zoom-container div.zoom-hotspots a .panel-number {
 	width: auto;	
 }
 div.zoom-container div.zoom-hotspots a.active {
-	//background: url("images/hotspot_active.png") no-repeat 0 0;
+	/*background: url("images/hotspot_active.png") no-repeat 0 0;*/
 	width: 40px;
 	height: 40px;
 	margin: -15px 0 0 -15px;
