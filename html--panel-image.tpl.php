@@ -172,13 +172,18 @@
             <nav>
                <ul id="panel-tools">
 
-                  <li><a class="original active" href="<?php print $variables['warburg']['nav']['overview']; ?>" title="full panel"></a></li>
-                  <?php if (!empty($variables['warburg']['nav']['images'])): ?>
-                  <li><a class="map" href="<?php print $variables['warburg']['nav']['images']; ?>" title="individual images"></a></li>
-                  <?php endif ?>
-                  <?php if (!empty($variables['warburg']['nav']['pathways'])): ?>
-                  <li><a class="pathway" href="<?php print $variables['warburg']['nav']['pathways']; ?>" title="guided pathways"></a></li>
-                  <?php endif ?>
+                  <li><a class="original enabled" href="<?php print $variables['warburg']['nav']['overview']; ?>" title="full panel"></a></li>
+                  <?php
+                  $nav_classes = $variables['warburg']['nav']['images_class'];
+                  $nav_link = empty($variables['warburg']['nav']['images']) ? '#' : empty($variables['warburg']['nav']['images']);
+                  ?>
+                  <li><a class="map active <?php print $nav_classes; ?>" href="<?php print $nav_link; ?>" title="individual images"></a></li>
+                  <?php
+                  $nav_classes = $variables['warburg']['nav']['pathways_class'];
+                  $nav_link = empty($variables['warburg']['nav']['pathways']) ? '#' : empty($variables['warburg']['nav']['pathways']);
+                  ?>
+                  <li><a class="pathway <?php print $nav_classes; ?>" href="<?php print $nav_link; ?>" title="guided pathways"></a></li>
+
 
                   <li class="display-tools"></li>
                 </ul>
