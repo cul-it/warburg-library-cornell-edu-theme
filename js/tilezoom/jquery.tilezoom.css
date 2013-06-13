@@ -57,7 +57,7 @@ div.zoom-container div.zoom-hotspots a {
 	/*text-indent: -9999px;*/
 	/*width: 24px;*/
 	/*height: 24px;*/
-	margin: 0 0 0 0;
+	margin: 0;
 	text-decoration: none;		
 }
 
@@ -72,10 +72,8 @@ div.zoom-container div.zoom-hotspots a .panel-number {
 	border: 1px solid #cfcfcf;
 }
 div.zoom-container div.zoom-hotspots a.active {
-	/*background: url("images/hotspot_active.png") no-repeat 0 0;*/
-	width: 40px;
-	height: 40px;
-	/*margin: -15px 0 0 -15px;*/
+	margin: 0;
+	border: 3px solid blue;
 }
 div.zoom-container div.zoom-navigation {
 	right: 0;
