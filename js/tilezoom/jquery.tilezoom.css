@@ -73,7 +73,7 @@ div.zoom-container div.zoom-hotspots a .panel-number {
 }
 div.zoom-container div.zoom-hotspots a.active {
 	margin: 0;
-	border: 3px solid blue;
+	background-color: #0088CC;
 }
 div.zoom-container div.zoom-navigation {
 	right: 0;
