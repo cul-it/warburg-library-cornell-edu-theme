@@ -135,7 +135,7 @@
                         if (!empty($variables['warburg']['ordinal'])) {
                           print '<div class="zoom-hotspots">' . PHP_EOL;
                           foreach ($variables['warburg']['ordinal'] as $hotspot) {
-                            print $hotspot['box_link'] . PHP_EOL;
+                            print $hotspot['spot_link'] . PHP_EOL;
                           }
                           print '</div>' . PHP_EOL;
                         }
