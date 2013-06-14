@@ -101,7 +101,8 @@
         <section>
 				<a class="carousel-toggle" href="#">hide</a>
             <?php
-            $block = module_invoke('views', 'block_view', 'panel_selector-block');
+            $theme_term = isset($_GET['theme']) ? $_GET['theme'] : 'all';
+            $block = module_invoke('views', 'block_view', 'panel_selector-block', $theme_term);
             print render($block);
             ?>
 
