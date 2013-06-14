@@ -351,7 +351,7 @@ EOD;
  */
 function warburg_insert_css() {
 
-  drupal_add_css('fonts.googleapis.com/css?family=Abel',
+  drupal_add_css('//fonts.googleapis.com/css?family=Abel',
     array('type' => 'external', 'group' => CSS_THEME, 'weight' => 10));
 
   drupal_add_css(drupal_get_path('theme', 'warburg') .'/css/panels.css',
