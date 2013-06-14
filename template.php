@@ -244,6 +244,7 @@ function warburg_preprocess_html(&$vars) {
         $vars['warburg'] = warburgtools_panel_info($node);
         $xml_panel = $vars['warburg']['panel']['xml'];
         warburgtools_add_tilezoom_js($xml_panel);
+        $vars['warburg']['search_form'] = warburg_search_form();
       }
     }
     elseif ($node->type == 'panel_image') {
@@ -253,6 +254,7 @@ function warburg_preprocess_html(&$vars) {
         $vars['warburg'] = warburgtools_panel_image_info($node);
         $xml_panel = $vars['warburg']['panel']['xml'];
         warburgtools_add_tilezoom_js($xml_panel, TRUE);
+        $vars['warburg']['search_form'] = warburg_search_form();
       }
     }
    elseif ($node->type == 'image_group') {
@@ -262,6 +264,7 @@ function warburg_preprocess_html(&$vars) {
         $vars['warburg'] = warburgtools_image_group_info($node);
         $xml_panel = $vars['warburg']['panel']['xml'];
         warburgtools_add_tilezoom_js($xml_panel, TRUE);
+        $vars['warburg']['search_form'] = warburg_search_form();
       }
     }
   }
@@ -319,3 +322,14 @@ function warburg_preprocess_views_view__panels__page_1(&$vars) {
   //dsm($vars);
 }
 
+function warburg_search_form() {
+  $output = <<<EOD
+            <a class="search-panels" href="#" title="Search panels"><span class="search-panels-icon"></span></a>
+
+             <form id="search-panels" name="search-panels"  action="/search/node" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+                    <input name="keys" type="text" value="" />
+                    <input class="search" type="submit" value="search" />
+            </form>
+EOD;
+  return $output;
+}
