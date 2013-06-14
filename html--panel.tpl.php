@@ -102,18 +102,8 @@
 				<a class="carousel-toggle" href="#">hide</a>
             <?php
             $theme_term = isset($_GET['theme']) ? $_GET['theme'] : 'all';
-            //$block = module_invoke('views', 'block_view', 'panel_selector-block', $theme_term);
-            //print render($block);
-            // // get view
-            $view = views_get_view('panel_selector');
-            // set display for view
-            $view->set_display('panel_selector-block');
-            // set current node nid as argument to view
-            $view->set_arguments(array($theme_term));
-            // execute view
-            $view->execute();
-            // render view
-            print $view->render();
+            $block = module_invoke('views', 'block_view', 'panel_selector-block', $theme_term);
+            print render($block);
             ?>
 
             <div class="carousel-left-limit"></div>
