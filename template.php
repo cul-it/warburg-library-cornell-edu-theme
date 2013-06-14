@@ -355,7 +355,7 @@ function warburg_insert_css() {
     array('type' => 'external', 'group' => CSS_THEME, 'weight' => 10));
 
   drupal_add_css(drupal_get_path('theme', 'warburg') .'/css/panels.css',
-    array('group' => CSS_THEME, 'basename' => 'warburg', 'weight' => 11));
+    array('group' => CSS_THEME, 'weight' => 11));
 
   // carousel
   drupal_add_css(drupal_get_path('theme', 'warburg') .'/css/panels/carousel/jquery.rs.carousel.css',
