@@ -102,7 +102,7 @@
 				<a class="carousel-toggle" href="#">hide</a>
             <?php
             $theme_term = isset($_GET['theme']) ? $_GET['theme'] : 'all';
-            dsm("theme $theme_term");
+            print "<pre>dbg:Theme $theme_term</pre>";
             $block = module_invoke('views', 'block_view', 'panel_selector-block', $theme_term);
             print render($block);
             ?>
