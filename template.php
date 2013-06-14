@@ -245,6 +245,7 @@ function warburg_preprocess_html(&$vars) {
         $xml_panel = $vars['warburg']['panel']['xml'];
         warburgtools_add_tilezoom_js($xml_panel);
         $vars['warburg']['search_form'] = warburg_search_form();
+        warburg_insert_js();
       }
     }
     elseif ($node->type == 'panel_image') {
@@ -255,6 +256,7 @@ function warburg_preprocess_html(&$vars) {
         $xml_panel = $vars['warburg']['panel']['xml'];
         warburgtools_add_tilezoom_js($xml_panel, TRUE);
         $vars['warburg']['search_form'] = warburg_search_form();
+        warburg_insert_js();
       }
     }
    elseif ($node->type == 'image_group') {
@@ -265,6 +267,7 @@ function warburg_preprocess_html(&$vars) {
         $xml_panel = $vars['warburg']['panel']['xml'];
         warburgtools_add_tilezoom_js($xml_panel, TRUE);
         $vars['warburg']['search_form'] = warburg_search_form();
+        warburg_insert_js();
       }
     }
   }
@@ -322,6 +325,10 @@ function warburg_preprocess_views_view__panels__page_1(&$vars) {
   //dsm($vars);
 }
 
+/**
+ * renders the search icon and form
+ * @return html a link to reveal search form and the form itself
+ */
 function warburg_search_form() {
   $output = <<<EOD
 
@@ -333,4 +340,44 @@ function warburg_search_form() {
             </form>
 EOD;
   return $output;
+}
+
+/**
+ * inserts all the js needed for carousel and other theme features
+ * @return nothing
+ */
+function warburg_insert_js() {
+  // carousel lib
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.ui.widget.js',
+    array('group' => JS_THEME, 'weight' => 10));
+  // if using touch
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.event.drag.js',
+    array('group' => JS_THEME, 'weight' => 11));
+  // if using touch and translate3d
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.event.translate3d.js',
+    array('group' => JS_THEME, 'weight' => 12));
+
+  // carousel core
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.rs.carousel.js',
+    array('group' => JS_THEME, 'weight' => 13));
+  // carousel extensions (optional)
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.rs.carousel-autoscroll.js',
+    array('group' => JS_THEME, 'weight' => 14));
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.rs.carousel-continuous.js',
+    array('group' => JS_THEME, 'weight' => 15));
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.rs.carousel-touch.js',
+    array('group' => JS_THEME, 'weight' => 16));
+
+  // scaling fix - was inline
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/ios-viewport-scaling-fix.js',
+    array('group' => JS_THEME, 'weight' => 17));
+
+  // Drop-Down Navigation: Responsive and Touch-Friendly
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/DoubleTapToGo.js',
+    array('group' => JS_THEME, 'weight' => 18));
+
+  // panel utils
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/panels-utils.js',
+    array('group' => JS_THEME, 'weight' => 19));
+
 }
