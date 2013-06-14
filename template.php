@@ -354,18 +354,18 @@ function warburg_insert_js() {
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.event.drag.js',
     array('group' => JS_THEME, 'weight' => 11));
   // if using touch and translate3d
-  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.event.translate3d.js',
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.translate3d.js',
     array('group' => JS_THEME, 'weight' => 12));
 
   // carousel core
-  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.rs.carousel.js',
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel.js',
     array('group' => JS_THEME, 'weight' => 13));
   // carousel extensions (optional)
-  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.rs.carousel-autoscroll.js',
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-autoscroll.js',
     array('group' => JS_THEME, 'weight' => 14));
-  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.rs.carousel-continuous.js',
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-continuous.js',
     array('group' => JS_THEME, 'weight' => 15));
-  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.rs.carousel-touch.js',
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-touch.js',
     array('group' => JS_THEME, 'weight' => 16));
 
   // scaling fix - was inline
