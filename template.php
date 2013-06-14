@@ -245,6 +245,7 @@ function warburg_preprocess_html(&$vars) {
         $xml_panel = $vars['warburg']['panel']['xml'];
         warburgtools_add_tilezoom_js($xml_panel);
         $vars['warburg']['search_form'] = warburg_search_form();
+        warburg_insert_css();
         warburg_insert_js();
       }
     }
@@ -256,6 +257,7 @@ function warburg_preprocess_html(&$vars) {
         $xml_panel = $vars['warburg']['panel']['xml'];
         warburgtools_add_tilezoom_js($xml_panel, TRUE);
         $vars['warburg']['search_form'] = warburg_search_form();
+        warburg_insert_css();
         warburg_insert_js();
       }
     }
@@ -267,6 +269,7 @@ function warburg_preprocess_html(&$vars) {
         $xml_panel = $vars['warburg']['panel']['xml'];
         warburgtools_add_tilezoom_js($xml_panel, TRUE);
         $vars['warburg']['search_form'] = warburg_search_form();
+        warburg_insert_css();
         warburg_insert_js();
       }
     }
@@ -340,6 +343,27 @@ function warburg_search_form() {
             </form>
 EOD;
   return $output;
+}
+
+/**
+ * inserts all the css needed for panel/carousel display
+ * @return nothing
+ */
+function warburg_insert_css() {
+
+  drupal_add_css('fonts.googleapis.com/css?family=Abel',
+    array('type' => 'external', 'group' => CSS_THEME, 'weight' => 10));
+
+  drupal_add_css(drupal_get_path('theme', 'warburg') .'/css/panels.css',
+    array('group' => CSS_THEME, 'basename' => 'warburg', 'weight' => 11));
+
+  // carousel
+  drupal_add_css(drupal_get_path('theme', 'warburg') .'/css/panels/carousel/jquery.rs.carousel.css',
+    array('group' => CSS_THEME, 'basename' => 'warburg', 'weight' => 12));
+
+  // zoom
+  drupal_add_css(drupal_get_path('theme', 'warburg') .'/js/tilezoom/jquery.tilezoom.css',
+    array('group' => CSS_THEME, 'basename' => 'warburg', 'weight' => 13));
 }
 
 /**
