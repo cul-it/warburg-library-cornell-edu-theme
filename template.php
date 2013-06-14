@@ -359,11 +359,11 @@ function warburg_insert_css() {
 
   // carousel
   drupal_add_css(drupal_get_path('theme', 'warburg') .'/css/panels/carousel/jquery.rs.carousel.css',
-    array('group' => CSS_THEME, 'basename' => 'warburg', 'weight' => 12));
+    array('group' => CSS_THEME, 'weight' => 12));
 
   // zoom
   drupal_add_css(drupal_get_path('theme', 'warburg') .'/js/tilezoom/jquery.tilezoom.css',
-    array('group' => CSS_THEME, 'basename' => 'warburg', 'weight' => 13));
+    array('group' => CSS_THEME, 'weight' => 13));
 }
 
 /**
