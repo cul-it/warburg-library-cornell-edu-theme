@@ -324,6 +324,7 @@ function warburg_preprocess_views_view__panels__page_1(&$vars) {
 
 function warburg_search_form() {
   $output = <<<EOD
+
             <a class="search-panels" href="#" title="Search panels"><span class="search-panels-icon"></span></a>
 
              <form id="search-panels" name="search-panels"  action="/search/node" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
