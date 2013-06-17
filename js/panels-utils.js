@@ -129,9 +129,9 @@
 
 	        $('.carousel-toggle').toggle(function () {
 
-	            $('.rs-carousel').slideUp('slow');
+	            $('.rs-carousel').slideUp('slow').removeClass('carousel-toggle-hide').addClass('carousel-toggle-show');
 				
-				
+			
 								headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
 
  								carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
@@ -146,7 +146,7 @@
 			      		$('.panels-display nav').height(maxHeightPanel);
 
 	        }, function () {
-	            $('.rs-carousel').slideDown('slow');
+	            $('.rs-carousel').slideDown('slow').removeClass('carousel-toggle-show').addClass('carousel-toggle-hide');;
 	
 								headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
 

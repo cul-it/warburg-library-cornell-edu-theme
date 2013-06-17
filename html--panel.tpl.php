@@ -99,7 +99,7 @@
        </header>
 
         <section>
-				<a class="carousel-toggle" href="#">hide</a>
+				<a class="carousel-toggle carousel-toggle-hide" href="#"></a>
             <?php
             $theme_term = isset($_GET['theme']) ? $_GET['theme'] : 'all';
             $block = module_invoke('views', 'block_view', 'panel_selector-block', $theme_term);

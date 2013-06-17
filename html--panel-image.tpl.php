@@ -99,7 +99,7 @@
        </header>
 
         <section>
-        <a class="carousel-toggle" href="#">hide</a>
+        <a class="carousel-toggle carousel-toggle-hide" href="#"></a>
             <?php
             $block = module_invoke('views', 'block_view', 'panel_selector-block');
             print render($block);

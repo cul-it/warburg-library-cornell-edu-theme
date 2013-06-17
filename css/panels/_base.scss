@@ -337,14 +337,27 @@ body {
 
 .carousel-toggle {
 	background-color: green;
-   color: #FFFFFF;
-   left: 50%;
-   padding: 5px;
-   position: absolute;
-   text-align: center;
-   width: 40px;
-   z-index: 20;
+	color: #FFFFFF;
+	left: 50%;
+	padding: 5px;
+	position: absolute;
+	text-align: center;
+	width: 40px;
+	z-index: 20;
+	width: 43px;
+	height: 13px;
+	display: inline-block;
 }
+
+.carousel-toggle-hide {
+	background: url('../images/panels/carousel-hide.png') no-repeat 0 0;
+}
+
+.carousel-toggle-show {
+	background: url('../images/panels/carousel-show.png') no-repeat 0 0;
+}
+
+
 
 //Carousel
 .carousel-left-limit {
@@ -511,9 +524,6 @@ body {
 
 	}
 
-
-	
-	
 	
 	.panel-description {
 
