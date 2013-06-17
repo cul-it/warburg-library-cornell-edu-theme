@@ -5096,7 +5096,7 @@ body {
   position: absolute;
   text-align: center;
   width: 40px;
-  z-index: 2; }
+  z-index: 20; }
 
 .carousel-left-limit {
   height: 220px;
@@ -5237,7 +5237,7 @@ body {
       position: relative;
       font-weight: normal;
       font-size: 36px;
-      background-color: #4d4e53;
+      background-color: #3f4043;
       padding: 15px 20px;
       margin-top: 0; }
       .panels-display .panel-description h3.pathway {
