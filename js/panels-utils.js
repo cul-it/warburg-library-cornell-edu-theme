@@ -134,8 +134,6 @@
 			
 								headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
 
- 								carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
-
 								$winHeight = ($(window).height()) + 10;
 
 								maxHeightPanel = $winHeight - (headerHeight + 10);
@@ -146,7 +144,7 @@
 			      		$('.panels-display nav').height(maxHeightPanel);
 
 	        }, function () {
-	            $('.rs-carousel').slideDown('slow').removeClass('carousel-toggle-show').addClass('carousel-toggle-hide');;
+	            $('.rs-carousel').slideDown('slow').removeClass('carousel-toggle-show').addClass('carousel-toggle-hide');
 	
 								headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
 
