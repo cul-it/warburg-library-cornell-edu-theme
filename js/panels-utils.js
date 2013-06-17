@@ -143,6 +143,8 @@
 			      		$('.panels-photo').height(maxHeightPanel);
 			      		$('.panel-description').height(maxHeightPanel);
 			      		$('.panels-display nav').height(maxHeightPanel);
+			
+								$(':rs-carousel').carousel('refresh');
 
 	        }, function () {
 	            $('.rs-carousel').slideDown('slow');
@@ -160,6 +162,8 @@
 			      		$('.panels-photo').height(maxHeightPanel);
 			      		$('.panel-description').height(maxHeightPanel);
 			      		$('.panels-display nav').height(maxHeightPanel);
+			
+								$(':rs-carousel').carousel('refresh');
 	        });
 
 
