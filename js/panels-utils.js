@@ -24,8 +24,7 @@
 
 
 
- 
-  //console.log($('.win').html($winHeight));   
+
           
   $(window).resize(function(){
     
@@ -47,9 +46,7 @@
       //$('#container').hide();
     
       $(':rs-carousel').carousel('refresh');
-      console.log( maxHeightPanel + " Refreshed");
-      
-      console.log( headerHeight + " header");
+
   });
 
 
@@ -133,6 +130,12 @@
 	        $('.carousel-toggle').toggle(function () {
 
 	            $('.rs-carousel').slideUp('slow');
+				
+				
+				$('.panels-display').height(maxHeightPanel);  
+			      $('.panels-photo').height(maxHeightPanel);
+			      $('.panel-description').height(maxHeightPanel);
+			      $('.panels-display nav').height(maxHeightPanel);
 
 	        }, function () {
 	            $('.rs-carousel').slideDown('slow');
