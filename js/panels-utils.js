@@ -132,22 +132,34 @@
 	            $('.rs-carousel').slideUp('slow');
 				
 				
-				headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
+								headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
 
-			      carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
+ 								carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
 
-			      $winHeight = ($(window).height()) + 10;
+								$winHeight = ($(window).height()) + 10;
 
-			      maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
+								maxHeightPanel = $winHeight - (headerHeight + 10);
 			
-				
-				$('.panels-display').height(maxHeightPanel);  
-			      $('.panels-photo').height(maxHeightPanel);
-			      $('.panel-description').height(maxHeightPanel);
-			      $('.panels-display nav').height(maxHeightPanel);
+								$('.panels-display').height(maxHeightPanel);  
+			      		$('.panels-photo').height(maxHeightPanel);
+			      		$('.panel-description').height(maxHeightPanel);
+			      		$('.panels-display nav').height(maxHeightPanel);
 
 	        }, function () {
 	            $('.rs-carousel').slideDown('slow');
+	
+								headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
+
+ 								carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
+
+								$winHeight = ($(window).height()) + 10;
+
+								maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
+			
+								$('.panels-display').height(maxHeightPanel);  
+			      		$('.panels-photo').height(maxHeightPanel);
+			      		$('.panel-description').height(maxHeightPanel);
+			      		$('.panels-display nav').height(maxHeightPanel);
 	        });
 
 
