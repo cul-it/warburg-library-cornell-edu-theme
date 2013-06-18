@@ -695,9 +695,10 @@ body {
 	
 	nav {
 		
-		position: absolute;
-		top: 0;
-		right: 0;
+		//position: absolute;
+		//top: 0;
+		//right: 0;
+		float left;
 
 		width: 3.3333333%;
 		background-color: #303030;
