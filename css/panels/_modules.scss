@@ -29,5 +29,15 @@
 
     background: url($pathPanelIcons + $name + '-active.png') no-repeat 0 0;
   }
+
+	a.#{$name}.enabled {
+
+    background: url($pathPanelIcons + $name + '-active.png') no-repeat 0 0;
+  }
+
+	a.#{$name}.disabled {
+
+    display: none;
+  }
 }
 
