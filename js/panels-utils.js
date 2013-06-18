@@ -33,22 +33,14 @@
   $(window).resize(function(){
 	
 
-	
-			carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
-		
-			$carouselHidden = carouselHeight;
     
       headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
     
       carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
 
-      if (carouselHeight === 0){
-		  	carouselHeight = $carouselHidden;
-			}
-
 			$winHeight = ($(window).height()) + 10;
 
-      maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
+      maxHeightPanel = $winHeight - ((headerHeight) + 10);
     
       $('.panels-display').height(maxHeightPanel);  
       $('.panels-photo').height(maxHeightPanel);
