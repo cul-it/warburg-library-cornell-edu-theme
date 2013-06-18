@@ -634,13 +634,20 @@ body {
 		}	
 		
 		h5.theme,
-		h5.secondary-theme {
+		h5.secondary-theme,
+		h5.panel,
+		h5.source,
+		h5.work-type
+		 {
 			padding-bottom: 0;
 			display: block;
 		}
 		
 		h5.theme + p,
-		h5.secondary-theme + p {
+		h5.secondary-theme + p,
+		h5.panel,
+		h5.source,
+		h5.work-type {
 			display: inline-block;
 			padding: 6px 8px;
 			background-color: $green;
