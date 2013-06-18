@@ -167,7 +167,7 @@
 	
 								headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
 
- 								carouselHeight = $carouselHidden;
+ 								//carouselHeight = $carouselHidden;
 
 								$winHeight = ($(window).height()) + 10;
 
