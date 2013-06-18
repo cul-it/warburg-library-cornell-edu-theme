@@ -637,7 +637,9 @@ body {
 		h5.secondary-theme,
 		h5.panel,
 		h5.source,
-		h5.work-type
+		h5.work-type,
+		h5.repository,
+		h5.measurements
 		 {
 			padding-bottom: 0;
 			display: block;
@@ -648,7 +650,9 @@ body {
 		h5.secondary-theme + p,
 		h5.panel + p,
 		h5.source + p,
-		h5.work-type + p {
+		h5.work-type + p,
+		h5.repository + p,
+		h5.measurements + p {
 			display: inline-block;
 			padding: 6px 8px;
 			background-color: $green;
