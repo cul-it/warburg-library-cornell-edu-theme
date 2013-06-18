@@ -5327,10 +5327,10 @@ body {
       -webkit-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px; }
-    .panels-display .panel-description h5.measurements a {
+    .panels-display .panel-description h5.measurements + p {
       display: inline-block;
-      padding: 6px 8px;
-      background-color: #7a9945;
+      padding: 0;
+      background-color: #4d4e53;
       color: #fff;
       text-decoration: none;
       margin-left: 20px;
@@ -5341,7 +5341,17 @@ body {
       -webkit-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px; }
-      .panels-display .panel-description h5.measurements a:hover {
+    .panels-display .panel-description h5.measurements + p a {
+      display: inline-block;
+      padding: 6px 8px;
+      background-color: #7a9945;
+      color: #fff;
+      text-decoration: none;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px; }
+      .panels-display .panel-description h5.measurements + p a:hover {
         background-color: #1faac0; }
   .panels-display nav {
     position: absolute;

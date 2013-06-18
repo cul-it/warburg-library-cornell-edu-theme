@@ -669,16 +669,28 @@ body {
 			border-radius: 5px;
 		}
 		
-		h5.measurements  a {
+		h5.measurements + p {
 			display: inline-block;
-			padding: 6px 8px;
-			background-color: $green;
+			padding: 0;
+			background-color: #4d4e53;
 			color: #fff;
 			text-decoration: none;	
 			margin-left: 20px;
 			margin-right: 20px;
 			clear: both;
 			width: auto;
+			-moz-border-radius: 5px; 
+			-webkit-border-radius: 5px;
+			-o-border-radius: 5px;
+			border-radius: 5px;
+		}
+		
+		h5.measurements  + p a {
+			display: inline-block;
+			padding: 6px 8px;
+			background-color: $green;
+			color: #fff;
+			text-decoration: none;	
 			-moz-border-radius: 5px; 
 			-webkit-border-radius: 5px;
 			-o-border-radius: 5px;
