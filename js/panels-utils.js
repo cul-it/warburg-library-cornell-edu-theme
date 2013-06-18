@@ -190,6 +190,19 @@
 
 
 	   
+				//action states for panel icons (zoom in, zoom out, home panel)
+				
+				var $homeBtn = $('a.go-home');
+				var $zoomInBtn = $('a.zoom-in');
+				var $zoomOutBtn = $('a.zoom-out');
+				
+				$homeBtn.click(function(){
+					$(this).addClass('active');
+					$zoomInBtn.removeClass('active');
+					$zoomOutBtn.removeClass('active');
+				});
+				
+					
 		
 
 
