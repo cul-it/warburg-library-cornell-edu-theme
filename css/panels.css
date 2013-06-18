@@ -5304,7 +5304,8 @@ body {
     .panels-display .panel-description h5.source,
     .panels-display .panel-description h5.work-type {
       padding-bottom: 0;
-      display: block; }
+      display: block;
+      font-wight: bold; }
     .panels-display .panel-description h5.theme + p,
     .panels-display .panel-description h5.secondary-theme + p,
     .panels-display .panel-description h5.panel + p,
