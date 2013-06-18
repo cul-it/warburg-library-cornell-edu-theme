@@ -532,6 +532,9 @@ function initNavigation($cont) {
 		var settings = $cont.data('tilezoom.settings');
 		var level = settings.level+1;
 		$cont.tilezoom('zoom', level, coords={});
+		$(this).addClass('active');
+		$(settings.goHome).removeClass('active');
+		$(settings.zoomOut).removeClass('active');
 		return false;
 	});
 
@@ -541,6 +544,9 @@ function initNavigation($cont) {
 		var settings = $cont.data('tilezoom.settings');
 		var level = settings.level-1;
 		$cont.tilezoom('zoom', level, coords={});
+		$(this).addClass('active');
+		$(settings.goHome).removeClass('active');
+		$(settings.zoomIn).removeClass('active');
 		return false;
 	});
 
@@ -553,6 +559,8 @@ function initNavigation($cont) {
 		var level = settings.startLevel;
 		$cont.tilezoom('zoom', level, coords={});
 		$(this).addClass('active');
+		$(settings.zoomIn).removeClass('active');
+		$(settings.zoomOut).removeClass('active');
 		return false;
 	});
 
