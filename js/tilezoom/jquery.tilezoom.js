@@ -552,7 +552,7 @@ function initNavigation($cont) {
 		$hotspots.children().removeClass('active');
 		var level = settings.startLevel;
 		$cont.tilezoom('zoom', level, coords={});
-		$(this).addClass('active').
+		$(this).addClass('active');
 		return false;
 	});
 
