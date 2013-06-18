@@ -16,6 +16,8 @@
   var maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
 
 	var $carouselHidden = 0;
+	
+
   
   $('.panels-display').height(maxHeightPanel); 
 
@@ -29,12 +31,22 @@
 
           
   $(window).resize(function(){
+	
+
+	
+			carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
+		
+			$carouselHidden = carouselHeight;
     
       headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
     
       carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
 
-      $winHeight = ($(window).height()) + 10;
+      if (carouselHeight === 0){
+		  	carouselHeight = $carouselHidden;
+			}
+
+			$winHeight = ($(window).height()) + 10;
 
       maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
     
