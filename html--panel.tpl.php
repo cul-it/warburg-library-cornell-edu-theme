@@ -140,25 +140,6 @@
 
             </section>
 
-						<nav>
-              <ul id="panel-tools">
-
-                <li><a class="original <?php print $variables['warburg']['nav']['overview_class']; ?>" href="<?php print $variables['warburg']['nav']['overview']; ?>" title="full panel"></a></li>
-                <?php
-                $nav_classes = $variables['warburg']['nav']['images_class'];
-                $nav_link = empty($variables['warburg']['nav']['images']) ? '#' : $variables['warburg']['nav']['images'];
-                ?>
-                <li><a class="map <?php print $nav_classes; ?>" href="<?php print $nav_link; ?>" title="individual images"></a></li>
-                <?php
-                $nav_classes = $variables['warburg']['nav']['pathways_class'];
-                $nav_link = empty($variables['warburg']['nav']['pathways']) ? '#' : $variables['warburg']['nav']['pathways'];
-                ?>
-                <li><a class="pathway <?php print $nav_classes; ?>" href="<?php print $nav_link; ?>" title="guided pathways"></a></li>
-
-                <li class="display-tools"></li>
-              </ul>
-            </nav>
-
             <section class="panel-description">
                     <?php
                     $result = module_invoke('views', 'block_view', 'panel_description_block-block');
@@ -201,6 +182,25 @@
 
 
             </section>
+
+            <nav>
+              <ul id="panel-tools">
+
+                <li><a class="original <?php print $variables['warburg']['nav']['overview_class']; ?>" href="<?php print $variables['warburg']['nav']['overview']; ?>" title="full panel"></a></li>
+                <?php
+                $nav_classes = $variables['warburg']['nav']['images_class'];
+                $nav_link = empty($variables['warburg']['nav']['images']) ? '#' : $variables['warburg']['nav']['images'];
+                ?>
+                <li><a class="map <?php print $nav_classes; ?>" href="<?php print $nav_link; ?>" title="individual images"></a></li>
+                <?php
+                $nav_classes = $variables['warburg']['nav']['pathways_class'];
+                $nav_link = empty($variables['warburg']['nav']['pathways']) ? '#' : $variables['warburg']['nav']['pathways'];
+                ?>
+                <li><a class="pathway <?php print $nav_classes; ?>" href="<?php print $nav_link; ?>" title="guided pathways"></a></li>
+
+                <li class="display-tools"></li>
+              </ul>
+            </nav>
 
         </section>
 

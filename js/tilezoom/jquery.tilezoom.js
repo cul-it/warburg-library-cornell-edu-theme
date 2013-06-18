@@ -503,7 +503,7 @@ function initNavigation($cont) {
 
 	  //goHome button
 		if(!$nav.children('a.go-home').get(0)) {
-			$nav.append('<a class="go-home" href="#" title="Go Home"><!--Go Home--></a>');
+			$nav.append('<a class="go-home" href="#" title="Full panel"><!--Go Home--></a>');
 		}
 		settings.goHome = $nav.children('a.go-home');
 
