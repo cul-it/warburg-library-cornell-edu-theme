@@ -5327,7 +5327,7 @@ body {
       -webkit-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px; }
-    .panels-display .panel-description h5.measurements + p a {
+    .panels-display .panel-description h5.measurements a {
       display: inline-block;
       padding: 6px 8px;
       background-color: #7a9945;
@@ -5341,7 +5341,7 @@ body {
       -webkit-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px; }
-      .panels-display .panel-description h5.measurements + p a:hover {
+      .panels-display .panel-description h5.measurements a:hover {
         background-color: #1faac0; }
   .panels-display nav {
     position: absolute;
