@@ -200,6 +200,7 @@
 					$(this).addClass('active');
 					$zoomInBtn.removeClass('active');
 					$zoomOutBtn.removeClass('active');
+					console.log('clicked');
 				});
 				
 					
