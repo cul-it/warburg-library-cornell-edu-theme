@@ -130,7 +130,7 @@
 	        $('.carousel-toggle').toggle(function () {
 
 	            $('.rs-carousel').slideUp('slow');
-							$(this).removeClass('carousel-toggle-hide').addClass('carousel-toggle-show');
+							$(this).removeClass('carousel-toggle-hide').addClass('carousel-toggle-show').attr('title', 'expand panels');
 				
 			
 								headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
@@ -148,7 +148,7 @@
 
 	        }, function () {
 	            $('.rs-carousel').slideDown('slow');
-							$(this).removeClass('carousel-toggle-show').addClass('carousel-toggle-hide');
+							$(this).removeClass('carousel-toggle-show').addClass('carousel-toggle-hide').attr('title', 'collapse panels');;
 	
 								headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
 
