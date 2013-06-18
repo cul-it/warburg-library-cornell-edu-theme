@@ -5314,7 +5314,9 @@ body {
       clear: both;
       width: auto; }
   .panels-display nav {
-    float: left;
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 3.3333333%;
     background-color: #303030; }
     .panels-display nav #panel-tools {
