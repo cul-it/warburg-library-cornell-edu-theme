@@ -165,7 +165,7 @@
             <nav>
                <ul id="panel-tools">
 
-                  <li><a class="original enabled" href="<?php print $variables['warburg']['nav']['overview']; ?>" title="full panel"></a></li>
+                  <li><a class="original enabled" href="<?php print $variables['warburg']['nav']['overview']; ?>" title="original panel"></a></li>
                   <?php
                   $nav_classes = $variables['warburg']['nav']['images_class'];
                   $nav_link = empty($variables['warburg']['nav']['images']) ? '#' : $variables['warburg']['nav']['images'];
