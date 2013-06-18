@@ -645,9 +645,9 @@ body {
 		
 		h5.theme + p,
 		h5.secondary-theme + p,
-		h5.panel,
-		h5.source,
-		h5.work-type {
+		h5.panel + p,
+		h5.source + p,
+		h5.work-type + p {
 			display: inline-block;
 			padding: 6px 8px;
 			background-color: $green;

@@ -5307,9 +5307,9 @@ body {
       display: block; }
     .panels-display .panel-description h5.theme + p,
     .panels-display .panel-description h5.secondary-theme + p,
-    .panels-display .panel-description h5.panel,
-    .panels-display .panel-description h5.source,
-    .panels-display .panel-description h5.work-type {
+    .panels-display .panel-description h5.panel + p,
+    .panels-display .panel-description h5.source + p,
+    .panels-display .panel-description h5.work-type + p {
       display: inline-block;
       padding: 6px 8px;
       background-color: #7a9945;
