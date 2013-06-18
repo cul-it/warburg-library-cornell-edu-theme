@@ -39,8 +39,10 @@
       carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
 
 			$winHeight = ($(window).height()) + 10;
+			
+			//$('.rs-carousel').is(":visible");
 
-      maxHeightPanel = $winHeight - ((headerHeight) + 10);
+      maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
     
       $('.panels-display').height(maxHeightPanel);  
       $('.panels-photo').height(maxHeightPanel);
@@ -135,9 +137,9 @@
 
 	        $('.carousel-toggle').toggle(function () {
 						
-							carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
+							//carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
 							
-							$carouselHidden = carouselHeight;
+							//<p></p>$carouselHidden = carouselHeight;
 
 	            $('.rs-carousel').slideUp('slow');
 	
