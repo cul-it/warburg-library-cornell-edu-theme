@@ -14,6 +14,8 @@
   var $winHeight = $(window).height();
 
   var maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
+
+	var $carousel-hidden;
   
   $('.panels-display').height(maxHeightPanel); 
 
@@ -130,9 +132,12 @@
 	        $('.carousel-toggle').toggle(function () {
 
 	            $('.rs-carousel').slideUp('slow');
+	
 							$(this).removeClass('carousel-toggle-hide').addClass('carousel-toggle-show').attr('title', 'expand panels');
 				
-			
+								
+								$carousel-hidden = carouselHeight;
+								
 								headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
 
 								$winHeight = ($(window).height()) + 10;
@@ -148,11 +153,12 @@
 
 	        }, function () {
 	            $('.rs-carousel').slideDown('slow');
-							$(this).removeClass('carousel-toggle-show').addClass('carousel-toggle-hide').attr('title', 'collapse panels');;
+	
+							$(this).removeClass('carousel-toggle-show').addClass('carousel-toggle-hide').attr('title', 'collapse panels');
 	
 								headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
 
- 								carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
+ 								carouselHeight = $carousel-hidden;
 
 								$winHeight = ($(window).height()) + 10;
 
