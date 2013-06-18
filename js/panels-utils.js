@@ -40,9 +40,13 @@
 
 			$winHeight = ($(window).height()) + 10;
 			
-			//$('.rs-carousel').is(":visible");
+			if ($('.rs-carousel').is(":visible")) {
+				maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
+			}else {
+				maxHeightPanel = $winHeight - ((headerHeight) + 10);
+			};
 
-      maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
+      
     
       $('.panels-display').height(maxHeightPanel);  
       $('.panels-photo').height(maxHeightPanel);
