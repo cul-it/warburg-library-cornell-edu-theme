@@ -5286,10 +5286,12 @@ body {
       line-height: 1.2em; }
       .panels-display .panel-description p a {
         display: inline-block;
-        padding: 4px;
+        padding: 8px 6px;
         background-color: #7a9945;
         color: #fff;
         text-decoration: none; }
+        .panels-display .panel-description p a:hover {
+          background-color: #1faac0; }
     .panels-display .panel-description h5 {
       font-weight: normal;
       font-size: 18px;
@@ -5313,7 +5315,8 @@ body {
     .panels-display .panel-description h5.panel + p,
     .panels-display .panel-description h5.source + p,
     .panels-display .panel-description h5.measurements + p,
-    .panels-display .panel-description h5.repository + p {
+    .panels-display .panel-description h5.repository + p,
+    .panels-display .panel-description h5.work-type + p {
       display: inline-block;
       padding: 6px 8px;
       background-color: #4d4e53;
@@ -5327,27 +5330,6 @@ body {
       -webkit-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px; }
-    .panels-display .panel-description h5.work-type + p {
-      display: inline-block;
-      padding: 0;
-      background-color: #7a9945;
-      color: #fff;
-      text-decoration: none;
-      margin-left: 20px;
-      margin-right: 20px;
-      clear: both;
-      width: auto;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      -o-border-radius: 5px;
-      border-radius: 5px; }
-    .panels-display .panel-description h5.work-type p a {
-      background-color: #7a9945;
-      color: #fff;
-      text-decoration: none;
-      padding: 6px 8px; }
-      .panels-display .panel-description h5.work-type p a:hover {
-        background-color: #1faac0; }
   .panels-display nav {
     position: absolute;
     top: 0;
