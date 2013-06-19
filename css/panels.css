@@ -5286,9 +5286,14 @@ body {
       line-height: 1.2em; }
       .panels-display .panel-description p a {
         display: inline-block;
+        padding: 8px 6px;
         background-color: #7a9945;
         color: #fff;
-        text-decoration: none; }
+        text-decoration: none;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-radius: 5px; }
         .panels-display .panel-description p a:hover {
           background-color: #1faac0; }
     .panels-display .panel-description h5 {
@@ -5309,13 +5314,13 @@ body {
       padding-bottom: 0;
       display: block;
       font-wight: bold; }
-    .panels-display .panel-description h5.theme + p,
-    .panels-display .panel-description h5.secondary-theme + p,
-    .panels-display .panel-description h5.panel + p,
-    .panels-display .panel-description h5.source + p,
-    .panels-display .panel-description h5.measurements + p,
-    .panels-display .panel-description h5.repository + p,
-    .panels-display .panel-description h5.work-type + p {
+    .panels-display .panel-description h5.theme p,
+    .panels-display .panel-description h5.secondary-theme p,
+    .panels-display .panel-description h5.panel p,
+    .panels-display .panel-description h5.source p,
+    .panels-display .panel-description h5.measurements p,
+    .panels-display .panel-description h5.repository p,
+    .panels-display .panel-description h5.work-type p {
       display: inline-block;
       padding: 6px 8px;
       background-color: #4d4e53;
