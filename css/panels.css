@@ -5319,8 +5319,7 @@ body {
     .panels-display .panel-description h5.panel + p,
     .panels-display .panel-description h5.source + p,
     .panels-display .panel-description h5.measurements + p,
-    .panels-display .panel-description h5.repository + p,
-    .panels-display .panel-description h5.work-type + p {
+    .panels-display .panel-description h5.repository + p {
       display: inline-block;
       padding: 6px 8px;
       background-color: #4d4e53;
