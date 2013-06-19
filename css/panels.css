@@ -5312,7 +5312,7 @@ body {
     .panels-display .panel-description h5.secondary-theme + p,
     .panels-display .panel-description h5.panel + p,
     .panels-display .panel-description h5.source + p,
-    .panels-display .panel-description h5.work-type + p,
+    .panels-display .panel-description h5.measurements + p,
     .panels-display .panel-description h5.repository + p {
       display: inline-block;
       padding: 6px 8px;
@@ -5327,7 +5327,7 @@ body {
       -webkit-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px; }
-    .panels-display .panel-description h5.measurements p {
+    .panels-display .panel-description h5.work-type + p {
       display: inline-block;
       padding: 0;
       background-color: #7a9945;
@@ -5341,11 +5341,11 @@ body {
       -webkit-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px; }
-    .panels-display .panel-description h5.measurements p a {
+    .panels-display .panel-description h5.work-type p a {
       background-color: #7a9945;
       color: #fff;
       text-decoration: none; }
-      .panels-display .panel-description h5.measurements p a:hover {
+      .panels-display .panel-description h5.work-type p a:hover {
         background-color: #1faac0; }
   .panels-display nav {
     position: absolute;
