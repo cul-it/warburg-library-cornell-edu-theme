@@ -5344,7 +5344,8 @@ body {
     .panels-display .panel-description h5.work-type p a {
       background-color: #7a9945;
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      padding: 6px 8px; }
       .panels-display .panel-description h5.work-type p a:hover {
         background-color: #1faac0; }
   .panels-display nav {

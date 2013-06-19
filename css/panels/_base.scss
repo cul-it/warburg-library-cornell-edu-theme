@@ -688,7 +688,8 @@ body {
 		h5.work-type  p a {
 			background-color: $green;
 			color: #fff;
-			text-decoration: none;	
+			text-decoration: none;
+			padding: 6px 8px;	
 			
 			&:hover {
 				background-color: $blue;
