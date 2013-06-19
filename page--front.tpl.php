@@ -73,11 +73,7 @@
 <section class="institution-brand">
   <div class="container">
     <a href="http://www.library.cornell.edu">Cornell University Library</a> | <a href="http://warburg.sas.ac.uk/home/">The Warburg Institute</a> | <a href="http://www.cornellpress.cornell.edu/">Cornell University Press</a>
-    <a class="search-panels" href="#" title="Search panels"><span class="search-panels-icon"></span></a>
-    <form id="search-panels" action="#" method="get" name="search-panels">
-      <input name="query" type="text" value="" />
-      <input class="search" type="submit" value="search" />
-    </form>
+     <?php print $variables['warburg']['search_form']; ?>
   </div>
 </section>
 
