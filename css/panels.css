@@ -5289,11 +5289,7 @@ body {
         padding: 8px 6px;
         background-color: #7a9945;
         color: #fff;
-        text-decoration: none;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -o-border-radius: 5px;
-        border-radius: 5px; }
+        text-decoration: none; }
         .panels-display .panel-description p a:hover {
           background-color: #1faac0; }
     .panels-display .panel-description h5 {
