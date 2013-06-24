@@ -369,6 +369,7 @@ body {
 	position: absolute;
 	top: 49px;
 	left: 0;
+	@include opacity(.8);
 }
 
 .carousel-right-limit {
@@ -380,6 +381,7 @@ body {
 	position: absolute;
 	top: 45px;
 	right: 0;
+	@include opacity(.8);
 }
 
 .rs-carousel {
