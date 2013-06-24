@@ -52,6 +52,11 @@ p.caption {
     font-family: 'Abel', sans-serif;
   	font-weight: normal;
   	border: none;
+  	
+  	&:hover {
+  	  
+  	  background-color: #005580;
+  	}
 
   }
 

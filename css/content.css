@@ -6274,6 +6274,8 @@ p.caption {
   font-family: 'Abel', sans-serif;
   font-weight: normal;
   border: none; }
+  .page-search .form-submit:hover {
+    background-color: #005580; }
 .page-search .content h2 {
   background: none repeat scroll 0 0 #595959;
   color: white;
