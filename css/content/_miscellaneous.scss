@@ -25,32 +25,43 @@ p.caption {
 	
 	
 
-  /* Search pages */
-  /*------------------------------*/	
+/* Search pages */
+/*------------------------------*/	
 
-  .page-search {
-    label {
-      font-size: 1.5em;
-    }
+.page-search {
 
-    .form-submit {
+  label {
+    font-size: 1.5em;
+  }
+  
+  .form-text {
+  
+    -o-border-radius: 0; 
+    -moz-border-radius: 0; 
+    -webkit-border-radius: 0;
+    border-radius: 0; 
+    
+  }
 
-      background-color: #83B63D;
-        color: white;
-        font-size: 2em;
-        padding: 10px;
+  .form-submit {
 
-    }
+    background-color: #83B63D;
+    color: white;
+    font-size: 1em;
+    padding: 5px;
+    font-family: 'Abel', sans-serif;
+  	font-weight: normal;
+  	border: none;
 
-    .content {
+  }
 
-      h2 {
-        display: inline-block;
-        background: none repeat scroll 0 0 #595959;
-        color: white;
-        font-size: 1.625em;
-        margin-bottom: 1em;
-        padding: 5px 10px;
-      }
+  .content {
+
+    h2 {
+      background: none repeat scroll 0 0 #595959;
+      color: white;
+      font-size: 1.625em;
+      padding: 5px 10px;
     }
   }
+}
