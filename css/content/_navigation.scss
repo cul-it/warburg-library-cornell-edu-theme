@@ -14,13 +14,14 @@
 		  max-width: 100%;
 		  background: url('../images/mnemosyne-logo.png') no-repeat 0 0;
 		  
-		  span.displace {
-		    left: -9999px;
-		    position: absolute;
-		  }
-		  
+		  span {
+		    .displace {
+		        left: -9999px;
+		        position: absolute;
+		      }
+		    }		  
+	    }
 	  }
-	}
 	
 	
 	
