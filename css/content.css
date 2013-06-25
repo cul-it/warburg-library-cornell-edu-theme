@@ -5919,13 +5919,15 @@ img.pull-right {
   margin-bottom: 0; }
   .navbar .container {
     width: 1170px; }
-  .navbar .logo a {
-    display: inline-block;
-    max-width: 100%;
-    background: url("../images/mnemosyne-logo.png") no-repeat 0 0; }
-    .navbar .logo a span .displace {
-      left: -9999px;
-      position: absolute; }
+  .navbar .logo {
+    position: relative; }
+    .navbar .logo a {
+      display: inline-block;
+      max-width: 100%;
+      background: url("../images/mnemosyne-logo.png") no-repeat 0 0; }
+      .navbar .logo a .displace {
+        left: -9999px;
+        position: absolute; }
   .navbar .nav {
     float: right; }
     .navbar .nav li {
