@@ -5946,7 +5946,7 @@ img.pull-right {
       -o-transition: all .5s ease;
       transition: all .5s ease; }
       .navbar .logo .toggle-logo:hover {
-        opacity: .8;
+        opacity: .5;
         -moz-transform: rotate(90deg);
         -webkit-transform: rotate(90deg);
         -o-transform: rotate(90deg);

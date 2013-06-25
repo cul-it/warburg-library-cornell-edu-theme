@@ -96,14 +96,6 @@
          <h1><a href="<?php print $front_page; ?>"><span class="displace"><?php print $site_name; ?>. Meanderings through Aby Warburg's Atlas</span></a></h1> 
          <a class="toggle-logo" title="phonetic" href="#"></a>
         <?php endif; ?>
-        
-        
-        <!-- <div class="subtitle">Meanderings through Aby Warburg's Atlas</div> -->
-        
-        
- 
-        
-        
       </div>
       <div class="span8">
         <div class="nav-collapse collapse">
