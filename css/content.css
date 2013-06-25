@@ -5974,8 +5974,7 @@ a.search-panels {
     border: none; }
   a.search-panels:hover {
     background-color: transparent;
-    opacity: 0.005;
-    filter: alpha(opacity=0.5); }
+    opacity: .5; }
   a.search-panels .search-panels-icon {
     background: url("../images/panels/search-icon.png") no-repeat 0 0;
     width: 28px;

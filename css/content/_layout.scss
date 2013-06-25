@@ -24,7 +24,7 @@ a.search-panels {
   
   &:hover {
     background-color: transparent;
-    @include opacity(.5);
+    opacity: .5;
   }
 
 	.search-panels-icon {
