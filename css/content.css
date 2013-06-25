@@ -5923,6 +5923,9 @@ img.pull-right {
     display: inline-block;
     max-width: 100%;
     background: url("../images/mnemosyne-logo.png") no-repeat 0 0; }
+    .navbar .logo a .displace {
+      left: -9999px;
+      position: absolute; }
   .navbar .nav {
     float: right; }
     .navbar .nav li {

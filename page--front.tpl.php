@@ -95,7 +95,7 @@
         <?php if ($site_name): ?>
           
            
-         <h1><a class="displace" href="<?php print $front_page; ?>"><?php print $site_name; ?>. Meanderings through Aby Warburg's Atlas</a></h1> 
+         <h1><a class="displace" href="<?php print $front_page; ?>"><span class="displace"><?php print $site_name; ?>. Meanderings through Aby Warburg's Atlas</span></a></h1> 
         
         <?php endif; ?>
         
