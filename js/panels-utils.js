@@ -5,10 +5,7 @@
 
 (function($){
 	
-	alert("panels: " + $().jquery);
-	
-	
-  //Comment? get max height for panels
+  //Get max height for panels display, description, and panel tools containers.
 
   var $header = $('.panels header');
 
