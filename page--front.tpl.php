@@ -92,12 +92,12 @@
     </a>
     <div class="row">
       <div class="span4 logo">
-        <?php //if ($site_name): ?>
+        <?php if ($site_name): ?>
           
            
-        <!-- <h1><a class="displace" href="<?php print $front_page; ?>"><?php print $site_name; ?>. Meanderings through Aby Warburg's Atlas</a></h1> -->
+         <h1><a class="displace" href="<?php print $front_page; ?>"><?php print $site_name; ?>. Meanderings through Aby Warburg's Atlas</a></h1> 
         
-        <?php //endif; ?>
+        <?php endif; ?>
         
         
         <!-- <div class="subtitle">Meanderings through Aby Warburg's Atlas</div> -->
