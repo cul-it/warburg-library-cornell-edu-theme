@@ -5938,8 +5938,8 @@ img.pull-right {
       position: absolute;
       top: 0;
       right: 0;
-      width: 26px;
-      height: 28px;
+      width: 28px;
+      height: 27px;
       background: url("../images/logo-toggle.png") no-repeat 0 0;
       -moz-transition: all .5s ease;
       -webkit-transition: all .5s ease;
