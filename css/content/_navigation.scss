@@ -17,13 +17,12 @@
 		  background: url('../images/mnemosyne-logo.png') no-repeat 0 0;
 		  
 		  &:hover {
-		    opacity: .8;
 		    background: url('../images/mnemosyne-phonetics-logo.png') no-repeat 0 0;
 		    
 		  }
       
       &.phonetic {
-      
+        background: url('../images/mnemosyne-phonetics-logo.png') no-repeat 0 0;
       }
 		   
 	    .displace {
@@ -41,6 +40,19 @@
 	      width: 26px;
 	      height: 28px;
 	      background: url('../images/logo-toggle.png') no-repeat 0 0;
+	      -moz-transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        transition: all 1s ease;
+        
+        &:hover {
+        opacity: .8;
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+ 
+        }
 	    }
 	  }
 	
