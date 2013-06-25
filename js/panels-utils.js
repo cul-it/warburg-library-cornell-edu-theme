@@ -73,8 +73,8 @@
               },
               insertNextAction: function () {
                   return $('<a href="#" class="rs-carousel-action rs-carousel-action-next"><span class="carousel-right-control"></span></a>').appendTo(this);
-              }//,
-              //pagination: false
+              },
+              pagination: false
           }
       );
     
