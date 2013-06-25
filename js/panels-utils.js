@@ -5,6 +5,9 @@
 
 (function($){
 	
+	alert("panels: " + $().jquery);
+	
+	
   //Comment? get max height for panels
 
   var $header = $('.panels header');
