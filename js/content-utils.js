@@ -38,7 +38,8 @@
 			//Display/Hide phonetic for logo
 			
 			$('.toggle-logo').hover(function(e){
-				
+				console.log("kk");
+				e.preventDefault();
 				$('.logo h1 a').toggleClass('phonetic');
 				
 			});
