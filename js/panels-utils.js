@@ -1,6 +1,10 @@
-//Wrapping all in an anonymous self invoking function because Drupal is too delicate.
+/*
+ * THIS FILES HANDLES PANELS INTERACTION.
+ *
+ */
 
 (function($){
+	
   //Comment? get max height for panels
 
   var $header = $('.panels header');
@@ -16,23 +20,16 @@
   var maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
 
 	var $carouselHidden = 0;
-	
-
   
   $('.panels-display').height(maxHeightPanel); 
 
   $('.panels-photo').height(maxHeightPanel);
+
   $('.panel-description').height(maxHeightPanel);
+
   $('.panels-display nav').height(maxHeightPanel);
-
-
-
-
-
-          
+    
   $(window).resize(function(){
-	
-
     
       headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
     
@@ -41,29 +38,33 @@
 			$winHeight = ($(window).height()) + 10;
 			
 			if ($('.rs-carousel').is(":visible")) {
+				
 				maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
+				
 			}else {
+				
 				maxHeightPanel = $winHeight - ((headerHeight) + 10);
 			};
 
-      
-    
       $('.panels-display').height(maxHeightPanel);  
+
       $('.panels-photo').height(maxHeightPanel);
+
       $('.panel-description').height(maxHeightPanel);
+
       $('.panels-display nav').height(maxHeightPanel);
     
-    
-      //center panel
-      //$('#container').hide();
+
+      // Refresh carousel items
     
       $(':rs-carousel').carousel('refresh');
 
   });
 
-
-
   $(document).ready(function () {
+	
+			//Init carousel
+	
       $('.rs-carousel').carousel(
           {
               nextPrevActions: true,
@@ -77,53 +78,47 @@
           }
       );
     
-    
-      //ZOOM
-      /*$('#container').tilezoom({
-  			xml: 'dest/Panel79a.xml',
-  			mousewheel: true,
-  			navigation: true,
-  			zoomIn: '#plus',
-  			zoomOut: '#minus',
-  			goHome: '#home',
-  			navigation: '#panel-tools li.display-tools'
-  			//'#panel-tools'
+		
+  		//Hover over carousel of panels will change image legend to active color.
 
-  		});*/
-		
-		
-  		//hover over carousel of panels will change image legend to active color.
   		$('.panel-item').hover(function(){
+	
   		  $(this).find('.panel-name').addClass('hover');
+
   		}, function(){
+	
   		  $(this).find('.panel-name').removeClass('hover');
   		});
 		
 		
-  		//search
-  		//.search-panels
-		
-		
-  		//#search-panels
-  		//.search-panels-icon
-  		//.search-panels-close-icon
-		
-  		// $('#search-panels').show();
+			//Reveal/Hide dearch form
   		
 		   var $searchIcon = $('.search-panels');
+		
 		   var $searchIconImg = $('.search-panels span');
+		
 		   var $searchFlag = true;
+		
   			$searchIcon .click(function(){
   			  
   			  if ($searchFlag) {
-  			    $('#search-panels').show();
-  			      $searchIconImg.removeClass("search-panels-icon");
+	
+						$('#search-panels').show();
+
+							$searchIconImg.removeClass("search-panels-icon");
+
   			      $searchIconImg.addClass("search-panels-close-icon");
+
   			      $searchFlag = !$searchFlag;
+
   			  }else{
+	
             $('#search-panels').hide();
+
               $searchIconImg.addClass("search-panels-icon");
+
               $searchIconImg.removeClass("search-panels-close-icon");
+
               $searchFlag = !$searchFlag;
   			  }
   		
@@ -135,54 +130,51 @@
 
 		
 		//show/hide carousel
-		
-	    
 
+     $('.carousel-toggle').toggle(function () {
 
-	        $('.carousel-toggle').toggle(function () {
-				
-	            $('.rs-carousel').slideUp('slow');
+         $('.rs-carousel').slideUp('slow');
+
+				$(this).removeClass('carousel-toggle-hide').addClass('carousel-toggle-show').attr('title', 'expand panels');
+			
+				headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
+
+				$winHeight = ($(window).height()) + 10;
+
+				maxHeightPanel = $winHeight - (headerHeight + 10);
+
+				$('.panels-display').height(maxHeightPanel); 
+				 
+     		$('.panels-photo').height(maxHeightPanel);
+
+     		$('.panel-description').height(maxHeightPanel);
+
+     		$('.panels-display nav').height(maxHeightPanel);
+
+				$(':rs-carousel').carousel('refresh');
+
+     }, function () {
 	
-							$(this).removeClass('carousel-toggle-hide').addClass('carousel-toggle-show').attr('title', 'expand panels');
-				
-								
-								
-								headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
+         $('.rs-carousel').slideDown('slow');
 
-								$winHeight = ($(window).height()) + 10;
+				$(this).removeClass('carousel-toggle-show').addClass('carousel-toggle-hide').attr('title', 'collapse panels');
 
-								maxHeightPanel = $winHeight - (headerHeight + 10);
-			
-								$('.panels-display').height(maxHeightPanel);  
-			      		$('.panels-photo').height(maxHeightPanel);
-			      		$('.panel-description').height(maxHeightPanel);
-			      		$('.panels-display nav').height(maxHeightPanel);
-			
-								$(':rs-carousel').carousel('refresh');
+				headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
 
-	        }, function () {
-	            $('.rs-carousel').slideDown('slow');
-	
-							$(this).removeClass('carousel-toggle-show').addClass('carousel-toggle-hide').attr('title', 'collapse panels');
-	
-								headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
+				$winHeight = ($(window).height()) + 10;
 
- 								//carouselHeight = $carouselHidden;
+				maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
 
-								$winHeight = ($(window).height()) + 10;
+				$('.panels-display').height(maxHeightPanel); 
+				 
+     		$('.panels-photo').height(maxHeightPanel);
 
-								maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
-			
-								$('.panels-display').height(maxHeightPanel);  
-			      		$('.panels-photo').height(maxHeightPanel);
-			      		$('.panel-description').height(maxHeightPanel);
-			      		$('.panels-display nav').height(maxHeightPanel);
-			
-								$(':rs-carousel').carousel('refresh');
-	        });
+     		$('.panel-description').height(maxHeightPanel);
 
+     		$('.panels-display nav').height(maxHeightPanel);
 
-	        //$(this).toggleClass("active");
+				$(':rs-carousel').carousel('refresh');
+     });
 
   });
 
