@@ -5932,6 +5932,10 @@ img.pull-right {
       .navbar .logo a .displace {
         left: -9999px;
         position: absolute; }
+    .navbar .logo .toggle-logo {
+      position: absolute;
+      top: 0;
+      right: 0; }
   .navbar .nav {
     float: right; }
     .navbar .nav li {
