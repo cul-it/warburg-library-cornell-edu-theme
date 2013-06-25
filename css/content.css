@@ -5941,16 +5941,17 @@ img.pull-right {
       width: 26px;
       height: 28px;
       background: url("../images/logo-toggle.png") no-repeat 0 0;
-      -moz-transition: all 1s ease;
-      -webkit-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      transition: all 1s ease; }
+      -moz-transition: all .5s ease;
+      -webkit-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
       .navbar .logo .toggle-logo:hover {
         opacity: .8;
         -moz-transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
         -o-transform: rotate(45deg);
-        transform: rotate(45deg); }
+        transform: rotate(45deg);
+        background: url("../images/logo-toggle.png") no-repeat 0 0; }
   .navbar .nav {
     float: right; }
     .navbar .nav li {
