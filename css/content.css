@@ -5934,9 +5934,12 @@ img.pull-right {
         position: absolute;
         background: url("../images/logo-toggle.png") no-repeat 0 0; }
     .navbar .logo .toggle-logo {
+      display: block;
       position: absolute;
       top: 0;
-      right: 0; }
+      right: 0;
+      width: 26px;
+      height: 28px; }
   .navbar .nav {
     float: right; }
     .navbar .nav li {
