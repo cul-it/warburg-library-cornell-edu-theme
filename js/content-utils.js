@@ -36,6 +36,12 @@
       };
 
 			//Display/Hide phonetic for logo
+			
+			$('.toggle-logo').hover(function(e){
+				
+				$('.logo h1 a').toggleClass('phonetic');
+				
+			});
 
     });      
 })(jQuery);

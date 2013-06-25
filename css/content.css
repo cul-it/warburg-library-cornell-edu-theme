@@ -5947,10 +5947,10 @@ img.pull-right {
       transition: all .5s ease; }
       .navbar .logo .toggle-logo:hover {
         opacity: .8;
-        -moz-transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        -o-transform: rotate(45deg);
-        transform: rotate(45deg);
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
         background: url("../images/logo-toggle.png") no-repeat 0 0; }
   .navbar .nav {
     float: right; }
