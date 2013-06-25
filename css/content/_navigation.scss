@@ -5,18 +5,26 @@
 	padding: 30px 0 15px 0;
 	margin-bottom: 0;
 	.container { width: 1170px; } // bootstrap override to set fixed width
-	.brand {
-		float: none;
-		font-size: 3.875em;
-		color: #403e3c;
-		font-family: 'WalkwaySemiBoldRegular';
-		text-shadow: 0 0 0;
+	
+	
+	.logo {
+	
+	  a {
+		  display: inline-block;
+		  max-width: 100%;
+		  background: url('../images/mnemosyne-logo.png') no-repeat 0 0;
+		  
+	  }
 	}
-	.subtitle { 
-		color: #869c4f;
-		font-size: 1.125em; 
-		font-family: 'WalkwayBoldRegular';
-		margin-top: 15px; }
+	
+	
+	
+	
+	//.subtitle { 
+		//color: #869c4f;
+		//font-size: 1.125em; 
+		//font-family: 'WalkwayBoldRegular';
+		//margin-top: 15px; }
 	.nav {
 		float: right;
 		li {

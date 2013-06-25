@@ -73,11 +73,11 @@
 <section class="institution-brand">
   <div class="container">
     <a href="http://www.library.cornell.edu">Cornell University Library</a> | <a href="http://warburg.sas.ac.uk/home/">The Warburg Institute</a> | <a href="http://www.cornellpress.cornell.edu/">Cornell University Press</a>
-     <a class="search-panels" href="#" title="search"><span class="search-panels-icon"></span></a>
-
-     <form id="search-panels" name="search-panels" action="/search/node" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
-             <input name="keys" type="text" value="" />
-             <input class="search" type="submit" value="search" />
+    <a class="search-panels" href="#" title="search"><span class="search-panels-icon"></span></a>
+    
+    <form id="search-panels" name="search-panels" action="/search/node" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+      <input name="keys" type="text" value="" />
+      <input class="search" type="submit" value="search" />
      </form>
   </div>
 </section>
@@ -91,11 +91,21 @@
       <span class="icon-bar"></span>
     </a>
     <div class="row">
-      <div class="span4">
-        <?php if ($site_name): ?>
-          <a class="brand" href="<?php print $front_page; ?>"><?php print $site_name; ?></a>
-        <?php endif; ?>
-        <div class="subtitle">Meanderings through Aby Warburg's Atlas</div>
+      <div class="span4 logo">
+        <?php //if ($site_name): ?>
+          
+           
+        <!-- <h1><a class="displace" href="<?php print $front_page; ?>"><?php print $site_name; ?>. Meanderings through Aby Warburg's Atlas</a></h1> -->
+        
+        <?php //endif; ?>
+        
+        
+        <!-- <div class="subtitle">Meanderings through Aby Warburg's Atlas</div> -->
+        
+        
+ 
+        
+        
       </div>
       <div class="span8">
         <div class="nav-collapse collapse">

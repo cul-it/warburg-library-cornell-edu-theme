@@ -4,6 +4,8 @@
 
 (function ($) {
 
+		//Display/Hide search form
+		
     var $searchIcon = $('.search-panels');
 
     var $searchIconImg = $('.search-panels span');
@@ -32,5 +34,8 @@
 
         $searchFlag = !$searchFlag;
       };
+
+			//Display/Hide phonetic for logo
+
     });      
 })(jQuery);

@@ -77,8 +77,8 @@
     <a class="search-panels" href="#" title="search"><span class="search-panels-icon"></span></a>
 
     <form id="search-panels" name="search-panels" action="/search/node" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
-            <input name="keys" type="text" value="" />
-            <input class="search" type="submit" value="search" />
+      <input name="keys" type="text" value="" />
+      <input class="search" type="submit" value="search" />
     </form>
   </div>
 </section>
