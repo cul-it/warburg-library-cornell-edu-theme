@@ -38,12 +38,12 @@
 			//Display/Hide phonetic for logo
 			
 			$('a.toggle-logo').mouseover(function(e){
-				$('.logo h1 a').addCss('phonetic');
+				$('.logo h1 a').addClass('phonetic');
 				e.preventDefault();
 			});
 			
 			$('a.toggle-logo').mouseout(function(e){
-				$('.logo h1 a').removeCss('phonetic');
+				$('.logo h1 a').removeClass('phonetic');
 				e.preventDefault();
 			});
 
