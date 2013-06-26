@@ -286,6 +286,10 @@ function warburg_preprocess_page(&$vars) {
   }
   if (module_exists('warburgtools')) {
     $vars['warburg']['search_form'] = warburg_search_form();
+
+    // content utils in the footer
+    drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/content-utils.js',
+      array('group' => JS_THEME, 'weight' => 19, 'scope' => 'footer'));
   }
   else {
     // No warburgtools means we need to add it, let everyone know.
