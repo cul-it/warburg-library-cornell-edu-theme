@@ -37,8 +37,8 @@
 
 			//Display/Hide phonetic for logo
 			
-			$('a.toggle-logo').hover(function(e){
-				$('div.logo h1 a').addClass('phonetic');
+			$('a.toggle-logo').click(function(e){
+				$('.logo h1 a').addClass('phonetic');
 				e.preventDefault();
 			});
 
