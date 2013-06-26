@@ -38,8 +38,8 @@
 			//Display/Hide phonetic for logo
 			
 			$('a.toggle-logo').hover(function(e){
-				e.preventDefault();
 				$('.logo h1 a').toggleClass('phonetic');
+				e.preventDefault();
 				console.log("hover");
 				
 			});
