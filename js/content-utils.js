@@ -38,12 +38,12 @@
 			//Display/Hide phonetic for logo
 			
 			$('a.toggle-logo').mouseover(function(e){
-				$('.logo h1 a').addClass('phonetic');
+				$('.logo h1 a').css("background" , "url('../images/mnemosyne-phonetics-logo.png') no-repeat 0 0");
 				e.preventDefault();
 			});
 			
 			$('a.toggle-logo').mouseout(function(e){
-				$('.logo h1 a').removeClass('phonetic');
+					$('.logo h1 a').css("background" , "none");
 				e.preventDefault();
 			});
 
