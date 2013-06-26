@@ -37,11 +37,14 @@
 
 			//Display/Hide phonetic for logo
 			
-			$('a.toggle-logo').hover(function(e){
-				$('.logo h1 a').css('border' , '1px solid red');
+			$('a.toggle-logo').mouseover(function(e){
+				$('.logo h1 a').addCss('phonetic');
 				e.preventDefault();
-				console.log("hover");
-				
+			});
+			
+			$('a.toggle-logo').mouseout(function(e){
+				$('.logo h1 a').removeCss('phonetic');
+				e.preventDefault();
 			});
 
     });      
