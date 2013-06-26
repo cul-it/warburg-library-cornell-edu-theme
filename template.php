@@ -284,7 +284,10 @@ function warburg_preprocess_page(&$vars) {
     $nodetype = $vars['node']->type;
     $vars['theme_hook_suggestions'][] = 'page__' . $nodetype;
   }
-  if (!module_exists('warburgtools')) {
+  if (module_exists('warburgtools')) {
+    $vars['warburg']['search_form'] = warburg_search_form();
+  }
+  else {
     // No warburgtools means we need to add it, let everyone know.
     //
     print "<h1>"  . t( 'mytheme requires that module warburgtools is installed')
