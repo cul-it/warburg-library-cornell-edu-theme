@@ -38,7 +38,7 @@
 			//Display/Hide phonetic for logo
 			
 			$('a.toggle-logo').hover(function(e){
-				$('.logo h1 a').css( 'background', "url('../images/mnemosyne-phonetics-logo.png') no-repeat 0 0");
+				$('.logo h1 a').toggleClass('phonetic')
 				e.preventDefault();
 			});
 
