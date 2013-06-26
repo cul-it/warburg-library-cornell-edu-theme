@@ -93,8 +93,7 @@
     <div class="row">
       <div class="span4 logo">
         <?php if ($site_name): ?>
-         <h1><a href="<?php print $front_page; ?>"><span class="displace"><?php print $site_name; ?>. Meanderings through Aby Warburg's Atlas</span></a></h1> 
-         <a class="toggle-logo" title="phonetic" href="#"></a>
+         <h1><a href="<?php print $front_page; ?>"><span class="displace"><?php print $site_name; ?>. Meanderings through Aby Warburg's Atlas</span></a><a class="toggle-logo" title="phonetic" href="#"></a></h1> 
         <?php endif; ?>
       </div>
       <div class="span8">
