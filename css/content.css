@@ -5919,21 +5919,21 @@ img.pull-right {
   margin-bottom: 0; }
   .navbar .container {
     width: 1170px; }
-  .navbar .logo h1 {
+  .navbar .logo {
     position: relative; }
-    .navbar .logo h1 a {
+    .navbar .logo a {
       display: inline-block;
       width: 100%;
       height: 88px;
       background: url("../images/mnemosyne-logo.png") no-repeat 0 0; }
-      .navbar .logo h1 a:hover {
+      .navbar .logo a:hover {
         background: url("../images/mnemosyne-phonetics-logo.png") no-repeat 0 0; }
-      .navbar .logo h1 a .displace {
+      .navbar .logo a.phonetic {
+        background: url("../images/mnemosyne-phonetics-logo.png") no-repeat 0 0; }
+      .navbar .logo a .displace {
         left: -9999px;
         position: absolute; }
-    .navbar .logo h1 .phonetic {
-      background: url("../images/mnemosyne-phonetics-logo.png") no-repeat 0 0; }
-    .navbar .logo h1 a.toggle-logo {
+    .navbar .logo .toggle-logo {
       display: block;
       position: absolute;
       top: 0;
@@ -5945,7 +5945,7 @@ img.pull-right {
       -webkit-transition: all .5s ease;
       -o-transition: all .5s ease;
       transition: all .5s ease; }
-      .navbar .logo h1 a.toggle-logo:hover {
+      .navbar .logo .toggle-logo:hover {
         opacity: .5;
         -moz-transform: rotate(90deg);
         -webkit-transform: rotate(90deg);
