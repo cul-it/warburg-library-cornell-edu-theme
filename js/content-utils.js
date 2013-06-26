@@ -40,7 +40,7 @@
 			$('a.toggle-logo').hover(function(e){
 				e.preventDefault();
 				$('.logo h1 a').toggleClass('phonetic');
-				
+				console.log("hover");
 				
 			});
 
