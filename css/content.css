@@ -5928,8 +5928,6 @@ img.pull-right {
       background: url("../images/mnemosyne-logo.png") no-repeat 0 0; }
       .navbar .logo a:hover {
         background: url("../images/mnemosyne-phonetics-logo.png") no-repeat 0 0; }
-      .navbar .logo a.phonetic {
-        background: url("../images/mnemosyne-phonetics-logo.png") no-repeat 0 0; }
       .navbar .logo a .displace {
         left: -9999px;
         position: absolute; }
@@ -5973,6 +5971,9 @@ img.pull-right {
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none; }
+
+.phonetic {
+  background: url("../images/mnemosyne-phonetics-logo.png") no-repeat 0 0; }
 
 /* Institution branding */
 /*------------------------------*/

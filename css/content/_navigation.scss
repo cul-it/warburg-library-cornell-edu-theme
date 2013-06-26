@@ -20,11 +20,7 @@
 		    background: url('../images/mnemosyne-phonetics-logo.png') no-repeat 0 0;
 		    
 		  }
-      
-      &.phonetic {
-        background: url('../images/mnemosyne-phonetics-logo.png') no-repeat 0 0;
-      }
-		   
+
 	    .displace {
 	        left: -9999px;
 	        position: absolute;
@@ -88,4 +84,8 @@
 				box-shadow: none; }
 		}
 	}
+}
+
+.phonetic {
+  background: url('../images/mnemosyne-phonetics-logo.png') no-repeat 0 0;
 }
