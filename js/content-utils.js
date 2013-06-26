@@ -43,7 +43,7 @@
 			});
 			
 			$('a.toggle-logo').mouseout(function(e){
-					$('.logo h1 a').css("background" , "none");
+					$('.logo h1 a').css("background" , "url('../images/mnemosyne-logo.png') no-repeat 0 0");
 				e.preventDefault();
 			});
 
