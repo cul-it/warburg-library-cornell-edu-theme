@@ -41,6 +41,7 @@
 				e.preventDefault();
 				$('.logo h1 a').toggleClass('phonetic');
 				
+				
 			});
 
     });      

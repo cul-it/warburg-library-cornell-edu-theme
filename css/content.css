@@ -5928,11 +5928,11 @@ img.pull-right {
       background: url("../images/mnemosyne-logo.png") no-repeat 0 0; }
       .navbar .logo h1 a:hover {
         background: url("../images/mnemosyne-phonetics-logo.png") no-repeat 0 0; }
-      .navbar .logo h1 a.phonetic {
-        background: url("../images/mnemosyne-phonetics-logo.png") no-repeat 0 0; }
       .navbar .logo h1 a .displace {
         left: -9999px;
         position: absolute; }
+    .navbar .logo h1 .phonetic {
+      background: url("../images/mnemosyne-phonetics-logo.png") no-repeat 0 0; }
     .navbar .logo h1 a.toggle-logo {
       display: block;
       position: absolute;

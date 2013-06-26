@@ -23,15 +23,15 @@
 		    
   		  }
       
-        &.phonetic {
-          background: url('../images/mnemosyne-phonetics-logo.png') no-repeat 0 0;
-        }
-		   
   	    .displace {
   	        left: -9999px;
   	        position: absolute;
   	      }		  
   	    }
+  	    
+  	    .phonetic {
+          background: url('../images/mnemosyne-phonetics-logo.png') no-repeat 0 0;
+        }
 	    
   	   a.toggle-logo {
   	      display: block;
