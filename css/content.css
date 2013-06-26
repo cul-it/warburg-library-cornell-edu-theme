@@ -5972,6 +5972,9 @@ img.pull-right {
       -moz-box-shadow: none;
       box-shadow: none; }
 
+.phonetic {
+  background: url("../images/mnemosyne-phonetics-logo.png") no-repeat 0 0; }
+
 /* Institution branding */
 /*------------------------------*/
 .institution-brand {
