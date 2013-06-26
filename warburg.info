@@ -22,7 +22,7 @@ scripts[] = js/content-utils.js
 ;scripts[] = js/carousel/jquery.rs.carousel-continuous.js
 ;scripts[] = js/carousel/jquery.rs.carousel-touch.js
 
-scripts[] = js/panels-utils.js
+;scripts[] = js/panels-utils.js
 
 regions[header]         = Header
 regions[navigation]     = Navigation bar
