@@ -198,9 +198,14 @@
 
 	//Hide hotspot [*] panel group for pathways
 	
-	if (($('span.panel-number').text()) === '*'){
-		$('span.panel-number').txt('');
-	};
+	$('.panel-number').each(function(){
+		
+		if ($(this).text() === '*'){
+			$(this).text('');
+		};
+	});
+	
+	
 
 })(jQuery);
 
