@@ -85,7 +85,7 @@
 			}
 			
 			if (!$('#right-nav').hasClass('rs-carousel-action-active')){
-				$('#left-nav').hide();
+				$('#right-nav').hide();
 			}
 			
 			
