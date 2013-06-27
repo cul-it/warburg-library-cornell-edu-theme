@@ -71,3 +71,14 @@ p.caption {
     }
   }
 }
+
+/* Other buttons, such as book purchase*/
+/*------------------------------*/  
+
+.btn-standard {
+  font-size: 1em;
+  background-color: #83b63d;
+  padding: 10px;
+  color: $textColorLight;
+  display: inline-block;
+}

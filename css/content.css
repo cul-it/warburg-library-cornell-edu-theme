@@ -6311,6 +6311,15 @@ p.caption {
   font-size: 1.625em;
   padding: 8px 13px; }
 
+/* Other buttons, such as book purchase*/
+/*------------------------------*/
+.btn-standard {
+  font-size: 1em;
+  background-color: #83b63d;
+  padding: 10px;
+  color: white;
+  display: inline-block; }
+
 @media (min-width: 980px) and (max-width: 1199px) {
   .navbar .container {
     width: 940px; }
