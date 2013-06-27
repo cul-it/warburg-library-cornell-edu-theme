@@ -5180,7 +5180,8 @@ body {
   filter: alpha(opacity=80);
   opacity: 0.8; }
 .rs-carousel .rs-carousel-action-active {
-  opacity: 1; }
+  filter: alpha(opacity=80);
+  opacity: 0.8; }
 
 .panels-display {
   position: relative;

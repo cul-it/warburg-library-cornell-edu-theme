@@ -491,7 +491,7 @@ body {
   
 	.rs-carousel-action-active {
 		
-		opacity: 1;
+		@include opacity(.8);
 		
 
 	}
