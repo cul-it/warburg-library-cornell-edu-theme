@@ -438,7 +438,7 @@ body {
 		display: inline-block;
 		
 		position: absolute;
-		top: 100px;
+		top: 60px;
 		left: 20px;
 		
 		background-image: url($pathSprites);
@@ -454,7 +454,7 @@ body {
 		display: inline-block;
 		
 		position: absolute;
-		top: 100px;
+		top: 60px;
 		right: 20px;
 		
 		background-image: url($pathSprites);
@@ -483,7 +483,6 @@ body {
   	height: 220px;
   	width: 80px;
   	background-color: $white;
-  	//opacity: .8;
   	position: absolute;
   	top: 45px;
   	right: 0;

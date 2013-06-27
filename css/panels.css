@@ -5140,7 +5140,7 @@ body {
 .rs-carousel .rs-carousel-action-prev {
   display: inline-block;
   position: absolute;
-  top: 100px;
+  top: 60px;
   left: 20px;
   background-image: url("../images/panels/panelsSprites.png");
   background-position: -5px -63px;
@@ -5152,7 +5152,7 @@ body {
 .rs-carousel .rs-carousel-action-next {
   display: inline-block;
   position: absolute;
-  top: 100px;
+  top: 60px;
   right: 20px;
   background-image: url("../images/panels/panelsSprites.png");
   background-position: -54px -63px;
