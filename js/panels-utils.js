@@ -82,7 +82,7 @@
 			
 			//rs-carousel-action-active
 			
-			console.log(#left-nav);
+			console.log($('#left-nav');
 			
   		//Hover over carousel of panels will change image legend to active color.
 
