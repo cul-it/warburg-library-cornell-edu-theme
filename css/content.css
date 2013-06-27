@@ -5880,7 +5880,8 @@ img.pull-right {
   margin: 0 0 20px 20px; }
 
 .cover {
-  width: 200px; }
+  width: 200px;
+  margin-bottom: .5em; }
 
 /* Icons */
 /*------------------------------*/
@@ -6318,7 +6319,8 @@ p.caption {
   background-color: #83b63d;
   padding: 10px;
   color: white;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 5px; }
 
 @media (min-width: 980px) and (max-width: 1199px) {
   .navbar .container {
