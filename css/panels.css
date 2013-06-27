@@ -5182,6 +5182,7 @@ body {
   opacity: 0.8;
   display: none; }
 .rs-carousel .rs-carousel-action-active {
+  display: block;
   filter: alpha(opacity=80);
   opacity: 0.8; }
 
