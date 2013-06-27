@@ -69,16 +69,21 @@
           {
               nextPrevActions: true,
               insertPrevAction: function () {
-                  return $('<div class="carousel-left-limit"><a href="#" class="rs-carousel-action rs-carousel-action-prev"><span class="carousel-left-control"></span></a></div>').appendTo(this);
+                  return $('<div id="left-nav" class="carousel-left-limit"><a href="#" class="rs-carousel-action rs-carousel-action-prev"><span class="carousel-left-control"></span></a></div>').appendTo(this);
               },
               insertNextAction: function () {
-                  return $('<div class="carousel-right-limit"><a href="#" class="rs-carousel-action rs-carousel-action-next"><span class="carousel-right-control"></span></a></div>').appendTo(this);
+                  return $('<div id="right-nav" class="carousel-right-limit"><a href="#" class="rs-carousel-action rs-carousel-action-next"><span class="carousel-right-control"></span></a></div>').appendTo(this);
               },
               pagination: false
           }
       );
     
-		
+			//Hide carousel UI nav control when beginning and ending of carousel items.
+			
+			//rs-carousel-action-active
+			
+			console.log(#left-nav);
+			
   		//Hover over carousel of panels will change image legend to active color.
 
   		$('.panel-item').hover(function(){
