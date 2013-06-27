@@ -275,7 +275,9 @@ function warburg_preprocess_html(&$vars) {
     }
     if (module_exists('warburgtools')) {
       $bclasses = warburgtools_body_classes($node);
-      $vars['classes_array'] = array_merge( $vars['classes_array'], $bclasses);
+      foreach($bclasses as $bc) {
+        $vars['classes_array'][] = $bc;
+      }
     }
   }
 }
