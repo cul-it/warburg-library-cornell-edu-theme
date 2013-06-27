@@ -84,9 +84,17 @@
 				$('#left-nav').hide();
 			}
 			
+			if ($('#left-nav').hasClass('rs-carousel-action-active')){
+				$('#left-nav').show();
+			}
+			
 			if (!$('#right-nav').hasClass('rs-carousel-action-active')){
 				$('#right-nav').hide();
 			}
+			
+				if ($('#right-nav').hasClass('rs-carousel-action-active')){
+					$('#right-nav').show();
+				}
 			
 			
   		//Hover over carousel of panels will change image legend to active color.
