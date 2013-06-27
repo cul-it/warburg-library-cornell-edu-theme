@@ -199,7 +199,7 @@
 	//Hide hotspot [*] panel group for pathways
 	
 	$('.panel-number').each(function(){
-		
+		console.log($(this));
 		if ($(this).text() === '*'){
 			//$(this).css({'border': 'none', 'background-color': 'none'});
 			console.log('check');
