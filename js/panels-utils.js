@@ -79,10 +79,15 @@
       );
     
 			//Hide carousel UI nav control when beginning and ending of carousel items.
+	
+			if (!$('#left-nav').hasClass('rs-carousel-action-active')){
+				$('#left-nav').hide();
+			}
 			
-			//rs-carousel-action-active
+			if (!$('#right-nav').hasClass('rs-carousel-action-active')){
+				$('#left-nav').hide();
+			}
 			
-			console.log($('#left-nav'));
 			
   		//Hover over carousel of panels will change image legend to active color.
 
