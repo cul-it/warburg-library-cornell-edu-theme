@@ -59,17 +59,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
     <link href='//fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-    
+
     <link href="<?php print $path_theme_panels; ?>/css/panels.css" rel="stylesheet">
-    
+
     <!-- carousel CSS -->
     <link rel="stylesheet" type="text/css" href="<?php print $path_theme_panels; ?>/css/panels/carousel/jquery.rs.carousel.css" media="all" />
-    
+
     <!-- ZOOM -->
     <link rel="stylesheet" type="text/css" media="all" href="<?php print $path_theme_panels; ?>/js/tilezoom/jquery.tilezoom.css" />
-    
+
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -83,13 +83,13 @@
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
   </head>
 
-<body>
-    
+<body class="<?php print $classes; ?>" <?php print $attributes;?>>
+
 
     <div class="page panels">
-        
+
         <header>
-            
+
             <nav id="nav" role="navigation">
             	<a href="#nav" title="Show navigation">Show navigation</a>
             	<a href="#" title="Hide navigation">Hide navigation</a>
@@ -106,33 +106,33 @@
             				<li><a href="#">Theme type #3</a></li>
             			</ul>
             		</li>
-                     
+
             	</ul>
-            
-           
+
+
             </nav>
-            
+
             <a class="search-panels" href="#" title=""><span class="search-panels-icon"></span></a>
-            
+
              <form id="search-panels" action="#" method="get" name="search-panels">
                     <input name="query" type="text" value="" />
                     <input class="search" type="submit" value="search" />
             </form>
-            
+
             <!--<nav>
                 <ul>
                     <li><a href="#" title="">Home</a></li>
                     <li><a class="active" href="#" title="">All Panels</a></li>
                     <li><a href="#" title="">Guided Panels</a></li>
                     <li><a href="#" title="">Browse Themes</a></li>
-                
+
                     <li class="search-panels"><a href="#" title=""><span class="search-panels-icon"></span></a></li>
                 </ul>
-            </nav> --> 
-            
-            
+            </nav> -->
+
+
         </header>
-        
+
         <section>
             <nav class="rs-carousel">
                 <ul>
@@ -141,7 +141,7 @@
                             <a href="#" title"">
                                 <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-B.jpg" width="148" height="198" alt="Panel B" />
                                 <span class="panel-name">Panel B</span>
-                            </a>                        
+                            </a>
                         </p>
                     </li>
                     <li>
@@ -149,7 +149,7 @@
                             <a href="#" title"">
                                 <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-C.jpg" width="148" height="198" alt="Panel C" />
                                 <span class="panel-name">Panel C</span>
-                            </a>                        
+                            </a>
                         </p>
                     </li>
                     <li>
@@ -157,7 +157,7 @@
                             <a href="#" title"">
                                 <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-8.jpg" width="148" height="198" alt="Panel 8" />
                                 <span class="panel-name">Panel 8</span>
-                            </a>                        
+                            </a>
                         </p>
                     </li>
                     <li>
@@ -165,77 +165,77 @@
                             <a href="#" title"">
                                 <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-45.jpg" width="148" height="198" alt="Panel 45" />
                                 <span class="panel-name">Panel 45</span>
-                            </a>                        
+                            </a>
                         </p>
-                        
+
                     </li>
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
                                 <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-46.jpg" width="148" height="198" alt="Panel 46" />
                                 <span class="panel-name">Panel 46</span>
-                            </a>                        
+                            </a>
                         </p>
-                        
+
                     </li>
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
                                 <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-47.jpg" width="148" height="198" alt="Panel 47" />
                                 <span class="panel-name">Panel 47</span>
-                            </a>                        
+                            </a>
                         </p>
-                
+
                     </li>
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
                                 <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-48.jpg" width="148" height="198" alt="Panel 48" />
                                 <span class="panel-name active">Panel 48</span>
-                            </a>                        
+                            </a>
                         </p>
-                                  
+
                     </li>
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
                                 <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-61-62-63-64.jpg" width="148" height="198" alt="Panel 61-62-63-64" />
                                 <span class="panel-name">Panel 61-62-63-64</span>
-                            </a>                        
+                            </a>
                         </p>
-                       
+
                     </li>
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
                                 <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-70.jpg" width="148" height="198" alt="Panel 70" />
                                 <span class="panel-name">Panel 70</span>
-                            </a>                        
+                            </a>
                         </p>
-                      
+
                     </li>
                     <li>
                         <p class="panel-item">
                             <a href="#" title"">
                                 <img class="panel-image" src="<?php print $path_theme_panels; ?>/images/panels/carousel/Panel-79.jpg" width="148" height="198" alt="Panel 79" />
                                 <span class="panel-name">Panel 79</span>
-                            </a>                        
+                            </a>
                         </p>
-                       
+
                     </li>
                 </ul>
             </nav>
-    
+
             <div class="carousel-left-limit"></div>
             <div class="carousel-right-limit"></div>
         </section>
-            
+
         <section class="panels-display">
 
             <section class="panels-photo">
-          
+
                 <div id="container">
-              
+
                     <div class="zoom-holder">
                         <div class="zoom-hotspots">
                             <a style="left:85%;top:55%;" href="#"></a>
@@ -244,17 +244,17 @@
                             <!--<a style="left:7%;top:66%;display:block;width:45%;height:24%;background-color: green;opacity: .5" href="#"  rel="10"></a>-->
                         </div>
                     </div>
-                    
+
                 </div>
             </section>
-          
+
             <section class="panel-description">
-              
+
               <!-- Template metadata individual panels -->
               <h3><span>Panel 48</h3>
               <h4>Various levels of transferring the cosmic system to humanity. Harmonic correspondence. Later reduction of the harmony to abstract geometry instead of to cosmically conditional [geometry] (Leonardo). </h4>
               <p>Panels  B  and  <a href="#" title="">C</a>  (which along with the not included panel A) provide the ‘grammar’ or ‘syntax’ with which to read the subsequent 60 panels. Offering an initial, paradigmatic itinerary or ‘meandering’ through Warburg’s vision, we see the genealogical and astrological  connections that link humanity and the cosmos. Panel B tracks the tensions between astrological and scientific-astronomical world views. In panel B the astrological is still dominant, whereas in panel <a href="#" title="">C</a>, with images showing Kepler’s astrological and astronomical</p>
-               
+
               <h5>Theme:</h5>
               <ul>
                   <li><a href="#" title="">Cosmographical sequence</a></li>
@@ -262,29 +262,29 @@
                   <li><a href="#" title="">Theme 3</a></li>
               </ul>
               <!--END Template metadata individual panels -->
-            
-  
+
+
             </section>
-            
+
             <nav>
                 <ul id="panel-tools">
                     <li><a class="original active" href="#" title=""></a></li>
                     <li><a class="map" href="#" title=""></a></li>
                     <li><a class="pathway" href="#" title=""></a></li>
-                    
+
                     <li class="display-tools"></li>
                   </ul>
             </nav>
-           
-            
-            
-            
+
+
+
+
         </section>
     </div>
 
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <!--<script src="js/bootstrap.min.js"></script>-->
-    
+
     <!-- carousel lib -->
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/lib/jquery.ui.widget.js"></script>
     <!-- if using touch -->
@@ -299,18 +299,18 @@
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-autoscroll.js"></script>
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-continuous.js"></script>
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/carousel/jquery.rs.carousel-touch.js"></script>
-    
-    <!-- Drop-Down Navigation: Responsive and Touch-Friendly --> 	
+
+    <!-- Drop-Down Navigation: Responsive and Touch-Friendly -->
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/DoubleTapToGo.js"></script>
 
-   
+
     <!-- tilezoom -->
     <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/jquery.mousewheel.js"></script>
   	<script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/tilezoom/jquery.tilezoom.js"></script>
-  	
+
   	 <!-- panel utils -->
       <script type="text/javascript" src="<?php print $path_theme_panels; ?>/js/panels-utils.js"></script>
-    
+
 
   </body>
 </html>

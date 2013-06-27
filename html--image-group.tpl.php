@@ -78,7 +78,7 @@
 
   </head>
 
-<body>
+<body class="<?php print $classes; ?>" <?php print $attributes;?>>
 
 
     <div class="page panels">
