@@ -476,6 +476,7 @@ body {
   	top: 49px;
   	left: 0;
   	@include opacity(.8);
+  	display: none;
   }
 
   .carousel-right-limit {
@@ -487,7 +488,9 @@ body {
   	top: 45px;
   	right: 0;
   	@include opacity(.8);
+  	display: none;
   }
+  
   
 	.rs-carousel-action-active {
 		

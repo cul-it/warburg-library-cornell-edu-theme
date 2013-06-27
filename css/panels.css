@@ -5169,7 +5169,8 @@ body {
   top: 49px;
   left: 0;
   filter: alpha(opacity=80);
-  opacity: 0.8; }
+  opacity: 0.8;
+  display: none; }
 .rs-carousel .carousel-right-limit {
   height: 220px;
   width: 80px;
@@ -5178,7 +5179,8 @@ body {
   top: 45px;
   right: 0;
   filter: alpha(opacity=80);
-  opacity: 0.8; }
+  opacity: 0.8;
+  display: none; }
 .rs-carousel .rs-carousel-action-active {
   filter: alpha(opacity=80);
   opacity: 0.8; }
