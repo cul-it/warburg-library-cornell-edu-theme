@@ -37,10 +37,10 @@
 
 			//Display/Hide phonetic for logo
 			
-			$('a.toggle-logo').hover(function(e){
-				$('.logo h1 a').toggleClass('phonetic')
-				e.preventDefault();
-			});
+			//$('a.toggle-logo').hover(function(e){
+				//$('.logo h1 a').toggleClass('phonetic')
+				//e.preventDefault();
+			//});
 
     });      
 })(jQuery);

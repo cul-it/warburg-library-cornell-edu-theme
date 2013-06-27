@@ -5924,7 +5924,29 @@ img.pull-right {
   .navbar .container {
     width: 1170px; }
   .navbar .logo {
-    position: relative; }
+    position: relative;
+    	   /*.toggle-logo {
+    	      display: block;
+    	      position: absolute;
+    	      top: 0;
+    	      right: -10px;
+    	      width: 28px;
+    	      height: 27px;
+    	      background: url('../images/logo-toggle.png') no-repeat 0 0;
+    	      -moz-transition: all .5s ease;
+            -webkit-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            transition: all .5s ease;
+            
+            &:hover {
+              opacity: .5;
+              -moz-transform: rotate(90deg);
+              -webkit-transform: rotate(90deg);
+              -o-transform: rotate(90deg);
+              transform: rotate(90deg);
+              background: url('../images/logo-toggle.png') no-repeat 0 0;
+            }
+    	    } */ }
     .navbar .logo h1 a {
       display: inline-block;
       width: 100%;
@@ -5935,25 +5957,6 @@ img.pull-right {
       .navbar .logo h1 a .displace {
         left: -9999px;
         position: absolute; }
-    .navbar .logo .toggle-logo {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: -10px;
-      width: 28px;
-      height: 27px;
-      background: url("../images/logo-toggle.png") no-repeat 0 0;
-      -moz-transition: all .5s ease;
-      -webkit-transition: all .5s ease;
-      -o-transition: all .5s ease;
-      transition: all .5s ease; }
-      .navbar .logo .toggle-logo:hover {
-        opacity: .5;
-        -moz-transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-        transform: rotate(90deg);
-        background: url("../images/logo-toggle.png") no-repeat 0 0; }
   .navbar .nav {
     float: right; }
     .navbar .nav li {
@@ -5975,9 +5978,6 @@ img.pull-right {
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none; }
-
-.phonetic {
-  background: url("../images/mnemosyne-phonetics-logo.png") no-repeat 0 0 !important; }
 
 /* Institution branding */
 /*------------------------------*/
