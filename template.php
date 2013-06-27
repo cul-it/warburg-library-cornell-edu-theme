@@ -273,6 +273,9 @@ function warburg_preprocess_html(&$vars) {
         warburg_insert_js();
       }
     }
+  if (module_exists('warburgtools')) {
+    $bclasses = warburgtools_body_classes($node);
+    $vars['classes_array'] = array_merge( $vars['classes_array'], $bclasses);
   }
 }
 
