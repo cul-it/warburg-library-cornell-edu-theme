@@ -201,7 +201,7 @@
 	$('.panel-number').each(function(){
 		
 		if (($(this).text()) === '*'){
-			$(this).css({'border': 'none', 'background-color': 'none'}).text('');
+			$(this).hide();
 		};
 	});
 	
