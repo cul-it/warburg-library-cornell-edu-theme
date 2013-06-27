@@ -69,10 +69,10 @@
           {
               nextPrevActions: true,
               insertPrevAction: function () {
-                  return $('<a href="#" class="rs-carousel-action rs-carousel-action-prev"><span class="carousel-left-control"></span></a>').appendTo(this);
+                  return $('<div class="carousel-left-limit"><a href="#" class="rs-carousel-action rs-carousel-action-prev"><span class="carousel-left-control"></span></a></div>').appendTo(this);
               },
               insertNextAction: function () {
-                  return $('<a href="#" class="rs-carousel-action rs-carousel-action-next"><span class="carousel-right-control"></span></a>').appendTo(this);
+                  return $('<div class="carousel-right-limit"><a href="#" class="rs-carousel-action rs-carousel-action-next"><span class="carousel-right-control"></span></a></div>').appendTo(this);
               },
               pagination: false
           }
