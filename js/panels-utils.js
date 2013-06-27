@@ -196,5 +196,11 @@
 
   });
 
+	//Hide hotspot [*] panel group for pathways
+	
+	if ($('span.panel-number').txt() === '*'){
+		$('span.panel-number').txt('');
+	};
+
 })(jQuery);
 
