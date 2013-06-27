@@ -5208,6 +5208,24 @@ body {
     background-color: #76777b;
     color: #fff;
     overflow: auto;
+    		/*h5.work-type p.work-type {
+    			display: inline-block;
+    			padding: 0;
+    			background-color: $green;
+    			color: #fff;
+    			text-decoration: none;	
+    			margin-left: 20px;
+    			margin-right: 20px;
+    			clear: both;
+    			width: auto;
+    			
+    			a {
+    				display: inline-block;
+    				padding: 6px 8px;
+    				background-color: $green;
+    
+    			}
+    		}*/
     /*ul {
     	float: left;
     	list-style-type: none;
@@ -5319,7 +5337,8 @@ body {
     .panels-display .panel-description h5.panel + p,
     .panels-display .panel-description h5.source + p,
     .panels-display .panel-description h5.measurements + p,
-    .panels-display .panel-description h5.repository + p {
+    .panels-display .panel-description h5.repository + p,
+    .panels-display .panel-description h5.work-type {
       display: inline-block;
       padding: 6px 8px;
       background-color: #4d4e53;
@@ -5333,20 +5352,6 @@ body {
       -webkit-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px; }
-    .panels-display .panel-description h5.work-type p.work-type {
-      display: inline-block;
-      padding: 0;
-      background-color: #7a9945;
-      color: #fff;
-      text-decoration: none;
-      margin-left: 20px;
-      margin-right: 20px;
-      clear: both;
-      width: auto; }
-      .panels-display .panel-description h5.work-type p.work-type a {
-        display: inline-block;
-        padding: 6px 8px;
-        background-color: #7a9945; }
   .panels-display nav {
     position: absolute;
     top: 0;
