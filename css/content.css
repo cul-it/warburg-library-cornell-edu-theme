@@ -6237,6 +6237,8 @@ a.signale {
     border: 1px solid #c8c8c8;
     float: left;
     margin-right: 10px; }
+  .pathway a {
+    font-size: 1.4em; }
 
 /* Other Atlas */
 /*------------------------------*/
