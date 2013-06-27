@@ -5146,8 +5146,8 @@ body {
   background-position: -5px -63px;
   width: 38px;
   height: 100px;
-  filter: alpha(opacity=0);
-  opacity: 0;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
   z-index: 99; }
 .rs-carousel .rs-carousel-action-next {
   display: inline-block;
@@ -5158,8 +5158,8 @@ body {
   background-position: -54px -63px;
   width: 38px;
   height: 100px;
-  filter: alpha(opacity=0);
-  opacity: 0;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
   z-index: 99; }
 .rs-carousel .carousel-left-limit {
   height: 220px;
