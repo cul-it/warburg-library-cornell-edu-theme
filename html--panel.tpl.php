@@ -101,8 +101,15 @@
         <section>
 				<a title="collapse panels" class="carousel-toggle carousel-toggle-hide" href="#"></a>
             <?php
-            $theme_term = isset($_GET['theme']) ? $_GET['theme'] : 'all';
-            $block = module_invoke('views', 'block_view', 'panel_selector-block', $theme_term);
+            if (isset($_GET['theme'])) {
+              $theme_term = $_GET['theme'];
+              $selector = 'panel_selector-block_1';
+            }
+            else {
+              $theme_term = 'all';
+              $selector = 'panel_selector-block';
+            }
+            $block = module_invoke('views', 'block_view', $selector, $theme_term);
             print render($block);
             ?>
         </section>
