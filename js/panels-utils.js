@@ -70,6 +70,8 @@
 		
 		var $isThemePage = $('.rs-carousel h3');
 		
+		console.log($isThemePage);
+		
 		if ($isThemePage) {
 			$isThemePage.hide();
 		}
