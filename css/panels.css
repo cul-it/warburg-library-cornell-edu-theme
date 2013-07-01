@@ -5088,10 +5088,12 @@ body {
         padding-left: 10px;
         padding-right: 10px; }
 
-.browse-themes li:nth-child(4) {
+.browse-themes .page.panels header #nav ul li:nth-child(4) {
   background-color: #1faac0;
-  border-bottom: 3px solid #37c1d6;
-  color: white; }
+  border-bottom: 3px solid #37c1d6; }
+  .browse-themes .page.panels header #nav ul li:nth-child(4) a {
+    color: white;
+    background-color: #1faac0; }
 
 .carousel-toggle {
   background-color: green;

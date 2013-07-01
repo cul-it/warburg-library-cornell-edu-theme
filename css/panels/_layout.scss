@@ -338,14 +338,18 @@ body {
 //guided-pathways
 //selected-panels
 
-//.browse-themes .page.panels header #nav  ul  li
-.browse-themes {
-  li:nth-child(4) {
-		background-color: $blue;
-		border-bottom: 3px solid $blueLight;
+.browse-themes .page.panels header #nav  ul  li:nth-child(4) {
+
+  background-color: $blue;
+  border-bottom: 3px solid $blueLight;
+  
+  a {
+		
 		color: $white;
+		background-color: $blue;
 	}
 }
+
 
 .carousel-toggle {
 	background-color: green;
