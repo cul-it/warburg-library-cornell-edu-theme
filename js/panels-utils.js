@@ -76,7 +76,7 @@
 		
 		if ($isThemePage) {
 			$themeType.hide();
-			$('.rs-carousel').prepend("<li>" + $themeTypeValue +"</li>");	
+			$('rs-carousel-runner').prepend("<li>" + $themeTypeValue +"</li>");	
 		}
 		
 	
