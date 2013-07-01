@@ -5403,6 +5403,8 @@ body {
         .panels-display nav #panel-tools li a.original.active {
           background: url("../images/panels/panel-nav/original-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li a.original.enabled {
+          background: url("../images/panels/panel-nav/original.png") no-repeat 0 0; }
+        .panels-display nav #panel-tools li a.original.enabled.active {
           background: url("../images/panels/panel-nav/original-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li a.original.disabled {
           display: none; }
@@ -5414,6 +5416,8 @@ body {
         .panels-display nav #panel-tools li a.map.active {
           background: url("../images/panels/panel-nav/map-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li a.map.enabled {
+          background: url("../images/panels/panel-nav/map.png") no-repeat 0 0; }
+        .panels-display nav #panel-tools li a.map.enabled.active {
           background: url("../images/panels/panel-nav/map-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li a.map.disabled {
           display: none; }
@@ -5425,6 +5429,8 @@ body {
         .panels-display nav #panel-tools li a.pathway.active {
           background: url("../images/panels/panel-nav/pathway-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li a.pathway.enabled {
+          background: url("../images/panels/panel-nav/pathway.png") no-repeat 0 0; }
+        .panels-display nav #panel-tools li a.pathway.enabled.active {
           background: url("../images/panels/panel-nav/pathway-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li a.pathway.disabled {
           display: none; }
@@ -5436,6 +5442,8 @@ body {
         .panels-display nav #panel-tools li.display-tools a.go-home.active {
           background: url("../images/panels/panel-nav/go-home-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.go-home.enabled {
+          background: url("../images/panels/panel-nav/go-home.png") no-repeat 0 0; }
+        .panels-display nav #panel-tools li.display-tools a.go-home.enabled.active {
           background: url("../images/panels/panel-nav/go-home-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.go-home.disabled {
           display: none; }
@@ -5447,6 +5455,8 @@ body {
         .panels-display nav #panel-tools li.display-tools a.zoom-in.active {
           background: url("../images/panels/panel-nav/zoom-in-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.zoom-in.enabled {
+          background: url("../images/panels/panel-nav/zoom-in.png") no-repeat 0 0; }
+        .panels-display nav #panel-tools li.display-tools a.zoom-in.enabled.active {
           background: url("../images/panels/panel-nav/zoom-in-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.zoom-in.disabled {
           display: none; }
@@ -5458,6 +5468,8 @@ body {
         .panels-display nav #panel-tools li.display-tools a.zoom-out.active {
           background: url("../images/panels/panel-nav/zoom-out-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.zoom-out.enabled {
+          background: url("../images/panels/panel-nav/zoom-out.png") no-repeat 0 0; }
+        .panels-display nav #panel-tools li.display-tools a.zoom-out.enabled.active {
           background: url("../images/panels/panel-nav/zoom-out-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.zoom-out.disabled {
           display: none; }
@@ -5469,6 +5481,8 @@ body {
         .panels-display nav #panel-tools li.display-tools a.toggle-full.active {
           background: url("../images/panels/panel-nav/toggle-full-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.toggle-full.enabled {
+          background: url("../images/panels/panel-nav/toggle-full.png") no-repeat 0 0; }
+        .panels-display nav #panel-tools li.display-tools a.toggle-full.enabled.active {
           background: url("../images/panels/panel-nav/toggle-full-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.toggle-full.disabled {
           display: none; }

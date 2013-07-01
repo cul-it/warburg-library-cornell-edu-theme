@@ -32,7 +32,12 @@
 
 	a.#{$name}.enabled {
 
-    background: url($pathPanelIcons + $name + '-active.png') no-repeat 0 0;
+   background: url($pathPanelIcons + $name + '.png')  no-repeat 0 0;
+  }
+  
+  a.#{$name}.enabled.active {
+
+   background: url($pathPanelIcons + $name + '-active.png') no-repeat 0 0;
   }
 
 	a.#{$name}.disabled {
