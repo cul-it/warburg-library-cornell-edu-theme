@@ -816,6 +816,37 @@ body {
 	height: 100px;
 }*/
 
+//Styles for theme header
+
+.browse-themes {
+  
+  .rs-carousel  {
+
+    h3 {
+      background-color: #1FAAC0;
+      border: medium none;
+      color: #FFFFFF;
+      display: block;
+      font-size: 1.1em;
+      height: 181px;
+      left: 22px;
+      line-height: 1.3em;
+      padding-left: 10px;
+      padding-top: 20px;
+      position: absolute;
+      top: 50px;
+      vertical-align: bottom;
+      width: 138px;
+    }
+  }
+  
+  .rs-carousel-runner {
+    margin-left: 173px;
+  }
+}
+
+
+
 
 @media only screen and ( max-width: 62.5em ) /* 1000 */
 {
