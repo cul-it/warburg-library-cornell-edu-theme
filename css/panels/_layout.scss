@@ -339,7 +339,7 @@ body {
 //selected-panels
 
 .browse-themes {
-  a.nth-child(4) {
+  a:nth-child(4) {
 		background-color: $blue;
 		border-bottom: 3px solid $blueLight;
 		color: $white;
