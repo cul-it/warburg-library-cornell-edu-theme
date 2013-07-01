@@ -63,24 +63,6 @@
 
   $(document).ready(function () {
 	
-	
-	
-	
-		//Add theme panel to carousel
-		
-		var $themeType = $('.rs-carousel h3');
-		var $isThemePage = $themeType.length;
-		
-		var $themeTypeValue = $themeType.text();
-		
-		
-		if ($isThemePage) {
-			$themeType.hide();
-			$('.rs-carousel-runner').prepend("<li>" + $themeTypeValue +"</li>");	
-			console.log("<li>" + $themeTypeValue +"</li>");
-		}
-		
-	
 			//Init carousel
 	
       $('.rs-carousel').carousel(
