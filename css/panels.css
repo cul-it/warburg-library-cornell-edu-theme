@@ -5088,6 +5088,20 @@ body {
         padding-left: 10px;
         padding-right: 10px; }
 
+.selected-panels .page.panels header #nav ul li:nth-child(2) {
+  background-color: #1faac0;
+  border-bottom: 3px solid #37c1d6; }
+  .selected-panels .page.panels header #nav ul li:nth-child(2) a {
+    color: white;
+    background-color: #1faac0; }
+
+.guided-pathways .page.panels header #nav ul li:nth-child(3) {
+  background-color: #1faac0;
+  border-bottom: 3px solid #37c1d6; }
+  .guided-pathways .page.panels header #nav ul li:nth-child(3) a {
+    color: white;
+    background-color: #1faac0; }
+
 .browse-themes .page.panels header #nav ul li:nth-child(4) {
   background-color: #1faac0;
   border-bottom: 3px solid #37c1d6; }

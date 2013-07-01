@@ -335,10 +335,35 @@ body {
 	}*/
 }
 
-//guided-pathways
-//selected-panels
+//Add link color to selected main nav tab
+//We should have for each tab a class for <a> element like
+// <li class="leaf active-trail"><a CLASS="BROWSE_THEMES" title="Search for keywords within the panels and panel images." href="/about/mnemosyne-themes">Browse Themes</a>
 
-.browse-themes .page.panels header #nav  ul  li:nth-child(4) {
+.selected-panels .page.panels header #nav  ul li:nth-child(2) {
+
+  background-color: $blue;
+  border-bottom: 3px solid $blueLight;
+  
+  a {
+		
+		color: $white;
+		background-color: $blue;
+	}
+}
+
+.guided-pathways .page.panels header #nav  ul li:nth-child(3) {
+
+  background-color: $blue;
+  border-bottom: 3px solid $blueLight;
+  
+  a {
+		
+		color: $white;
+		background-color: $blue;
+	}
+}
+
+.browse-themes .page.panels header #nav  ul li:nth-child(4) {
 
   background-color: $blue;
   border-bottom: 3px solid $blueLight;
