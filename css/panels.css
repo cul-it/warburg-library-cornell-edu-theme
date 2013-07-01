@@ -4998,8 +4998,6 @@ body {
       color: white;
       font-size: 1.375em; }
     .page.panels header #nav > ul > li > a.active {
-      background-color: #1faac0;
-      border-bottom: 3px solid #37c1d6;
       color: white; }
     .page.panels header #nav > ul > li:not(:last-child) > a {
       border-right: 1px solid #717175; }
