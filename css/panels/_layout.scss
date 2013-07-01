@@ -338,8 +338,9 @@ body {
 //guided-pathways
 //selected-panels
 
+//.browse-themes .page.panels header #nav  ul  li
 .browse-themes {
-  a:nth-child(4) {
+  li:nth-child(4) {
 		background-color: $blue;
 		border-bottom: 3px solid $blueLight;
 		color: $white;
