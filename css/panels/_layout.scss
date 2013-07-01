@@ -335,6 +335,21 @@ body {
 	}*/
 }
 
+
+.browse-themes {
+  header {
+    nav {
+      
+      .menu {
+      
+        li:eq(2) {
+          background-color: #1FAAC0;
+        }
+      }
+    }
+  }
+}
+
 .carousel-toggle {
 	background-color: green;
 	color: #FFFFFF;
