@@ -68,12 +68,15 @@
 	
 		//Add theme panel to carousel
 		
-		var $isThemePage = $('.rs-carousel h3');
+		var $themeType = $('.rs-carousel h3');
+		var $isThemePage = $themeType.length;
 		
-		console.log($isThemePage);
+		var $themeTypeValue = $themeType.text();
+		
 		
 		if ($isThemePage) {
 			$isThemePage.hide();
+			$('.rs-carousel').prepend("<li>" + $themeTypeValue +"</li>");	
 		}
 		
 	
