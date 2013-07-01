@@ -63,6 +63,18 @@
 
   $(document).ready(function () {
 	
+	
+	
+	
+		//Add theme panel to carousel
+		
+		var $isThemePage = $('.rs-carousel h3');
+		
+		if ($isThemePage) {
+			$isThemePage.hide();
+		}
+		
+	
 			//Init carousel
 	
       $('.rs-carousel').carousel(
@@ -78,24 +90,6 @@
           }
       );
     
-			//Hide carousel UI nav control when beginning and ending of carousel items.
-	
-		/*	if (!$('#left-nav').hasClass('rs-carousel-action-active')){
-				$('#left-nav').hide();
-			}
-			
-			if ($('#left-nav').hasClass('rs-carousel-action-active')){
-				$('#left-nav').show();
-			}
-			
-			if (!$('#right-nav').hasClass('rs-carousel-action-active')){
-				$('#right-nav').hide();
-			}
-			
-				if ($('#right-nav').hasClass('rs-carousel-action-active')){
-					$('#right-nav').show();
-				}*/
-			
 			
   		//Hover over carousel of panels will change image legend to active color.
 
