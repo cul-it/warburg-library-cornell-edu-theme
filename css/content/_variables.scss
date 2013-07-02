@@ -3,17 +3,11 @@
 
 $darkGray: #4d4e53;
 
-
-// $primaryColor: #210d29; 
-// $headerColor: #3a114a; 
-// $highlightColor: #e6b91c;
-// $highlightColorHover: #c29700;
-
 $textColorDark: #486570;
 $textColorLight: white;
 
-// $lightGray: #bebebe;
-// $mediumGray: #a2a1a1;
+$grayLight: #a6a6a8;
+$grayLighter: #727375;
 
 $linkPrimary: #a7c03a;
 $linkHover: #005580;
@@ -23,10 +17,3 @@ $linkHover: #005580;
 $baseFontFamily:        Abel;        @import
 url(//fonts.googleapis.com/css?family=Abel);
 
-// -------------------
-// Boostrap overrides
-// -------------------
-
-// Wells
-// -------------------------
-// $wellBackground: $primaryColor;

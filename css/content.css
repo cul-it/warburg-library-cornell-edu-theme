@@ -5988,7 +5988,8 @@ img.pull-right {
   .institution-brand a {
     color: #fefefe; }
 
-/* Search Box */
+/* Search box */
+/*------------------------------*/
 a.search-panels {
   z-index: 99999;
   display: block;
@@ -6029,8 +6030,8 @@ a.search-panels {
     margin-top: 10px;
     border-radius: 0;
     height: 16px;
-    background-color: #eeeeee;
-    border: 1px solid #999999;
+    background-color: #727375;
+    border: 1px solid #a6a6a8;
     color: white;
     width: 140px;
     margin-left: 20px;
