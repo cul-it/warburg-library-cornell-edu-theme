@@ -6034,8 +6034,7 @@ a.search-panels {
     border: 1px solid #a6a6a8;
     color: white;
     width: 140px;
-    margin-left: 20px;
-    color: #000; }
+    margin-left: 20px; }
   #search-panels input[type="submit"] {
     color: white;
     background-color: #83B63D;
