@@ -83,3 +83,6 @@ p.caption {
   display: inline-block;
   margin-bottom: 5px;
 }
+.btn-standard:hover {
+  background-color: $linkHover;
+  color: $textColorLight; }
