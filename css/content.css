@@ -5865,6 +5865,8 @@ h2 {
 .main-content li {
   font-size: 1.4375em;
   line-height: 1.2em; }
+  .main-content li p {
+    font-size: 1em; }
 .main-content h3 {
   font-size: 1.625em;
   margin-top: 1.5em; }
