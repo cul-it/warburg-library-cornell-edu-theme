@@ -6345,6 +6345,8 @@ p.caption {
 .contributor-info {
   float: left;
   width: 70%; }
+  .contributor-info strong {
+    font-size: 110%; }
 
 .main-content .contributor-publications h5 {
   font-size: 1.1em; }
