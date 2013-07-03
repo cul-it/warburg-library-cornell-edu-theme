@@ -99,9 +99,12 @@ p.caption {
   float: left;
   width: 70%;
 }
-.contributor-publications {
-  h5 {
-    font-size: 1.4375em;
+.main-content {
+  .contributor-publications {
+    h5 {
+      font-size: 1.1em;
+    }
+    li { font-size: 1em; }
   }
 }
 .main-content {
