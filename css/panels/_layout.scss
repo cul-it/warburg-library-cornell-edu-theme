@@ -838,6 +838,20 @@ body {
 	
 }
 
+/* Start pathway, previous and next buttons */
+
+.btn-start {
+	a { 
+		font-size: 2em;
+		background-color: $green;
+		padding: 10px;
+		color: $white;
+		display: block; }
+	a:hover {
+		background-color: $blue;
+		color: $white; }
+}
+
 /*
 .search-panels {
 	background-position: 0 0;

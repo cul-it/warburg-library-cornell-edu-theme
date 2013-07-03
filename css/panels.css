@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  * Bootstrap v2.3.1
  *
@@ -5484,6 +5485,17 @@ body {
           background: url("../images/panels/panel-nav/toggle-full-active.png") no-repeat 0 0; }
         .panels-display nav #panel-tools li.display-tools a.toggle-full.disabled {
           display: none; }
+
+/* Start pathway, previous and next buttons */
+.btn-start a {
+  font-size: 2em;
+  background-color: #7a9945;
+  padding: 10px;
+  color: white;
+  display: block; }
+.btn-start a:hover {
+  background-color: #1faac0;
+  color: white; }
 
 /*
 .search-panels {
