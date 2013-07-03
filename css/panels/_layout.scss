@@ -717,6 +717,17 @@ body {
 			-o-border-radius: 5px;
 			border-radius: 5px;
 		}
+
+		p.additional-image-link {
+			padding: 0 0 0 20x;
+			a {
+				-moz-border-radius: 5px; 
+				-webkit-border-radius: 5px;
+				-o-border-radius: 5px;
+				border-radius: 5px;
+			}
+				
+		} 
 		
 		/*h5.work-type p.work-type {
 			display: inline-block;
@@ -780,17 +791,6 @@ body {
 			}
 		}*/
 	}
-
-	p.additional-image-link {
-		padding: 0 0 0 20x;
-		a {
-			-moz-border-radius: 5px; 
-			-webkit-border-radius: 5px;
-			-o-border-radius: 5px;
-			border-radius: 5px;
-		}
-			
-	} 
 	
 	nav {
 		
