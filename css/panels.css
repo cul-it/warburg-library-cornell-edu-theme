@@ -5721,4 +5721,7 @@ body {
     font-size: 1.25em; } }
 @media only screen and (max-width: 1135px) {
   .sequence-label {
-    display: block; } }
+    display: block; }
+
+  .views-field-field-previous-image-group .btn-pager {
+    margin-left: 20px; } }
