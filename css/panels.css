@@ -5552,8 +5552,7 @@ body {
 .addl-img-modal {
   -webkit-border-radius: 0;
   -mox-border-radius: 0;
-  border-radius: 0;
-  width: auto; }
+  border-radius: 0; }
 
 /*
 .search-panels {
