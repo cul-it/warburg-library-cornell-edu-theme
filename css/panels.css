@@ -5514,6 +5514,9 @@ body {
   margin-left: 20px;
   font-size: 1.75em; }
 
+.btn-pager {
+  display: inline-block; }
+
 /*
 .search-panels {
 	background-position: 0 0;
