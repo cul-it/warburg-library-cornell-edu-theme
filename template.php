@@ -417,8 +417,4 @@ function warburg_insert_js() {
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/panels-utils.js',
     array('group' => JS_THEME, 'weight' => 19, 'scope' => 'footer'));
 
-  // draggable modal window
-  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/draggable-modal.js',
-    array('group' => JS_THEME, 'weight' => 20, 'scope' => 'footer'));
-
 }
