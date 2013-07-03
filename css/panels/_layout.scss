@@ -840,7 +840,8 @@ body {
 
 /* Start pathway, previous and next buttons */
 
-.btn-start {
+.btn-start,
+.btn-pager {
 	a { 
 		font-size: 1.75em;
 		background-color: $green;
