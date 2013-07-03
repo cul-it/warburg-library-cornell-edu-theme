@@ -5487,16 +5487,14 @@ body {
           display: none; }
 
 /* Start pathway, previous and next buttons */
-.btn-start a,
-.btn-pager a {
+.btn-start a {
   font-size: 1.75em;
   background-color: #7a9945;
   padding: 7px 10px 5px 10px;
   margin-left: 20px;
   color: white;
   display: inline-block; }
-.btn-start a:hover,
-.btn-pager a:hover {
+.btn-start a:hover {
   background-color: #1faac0;
   color: white;
   text-decoration: none; }
@@ -5516,6 +5514,16 @@ body {
 
 .btn-pager {
   display: inline-block; }
+  .btn-pager a {
+    font-size: 1.75em;
+    background-color: #7a9945;
+    padding: 7px 10px 5px 10px;
+    color: white;
+    display: inline-block; }
+  .btn-pager a:hover {
+    background-color: #1faac0;
+    color: white;
+    text-decoration: none; }
 
 /*
 .search-panels {

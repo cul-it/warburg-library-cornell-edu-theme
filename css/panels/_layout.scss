@@ -840,8 +840,7 @@ body {
 
 /* Start pathway, previous and next buttons */
 
-.btn-start,
-.btn-pager {
+.btn-start {
 	a { 
 		font-size: 1.75em;
 		background-color: $green;
@@ -865,7 +864,20 @@ body {
 	display: inline-block;
 	margin-left: 20px;
 	font-size: 1.75em; }
-.btn-pager { display: inline-block; }
+.btn-pager { 
+	display: inline-block;
+	a { 
+		font-size: 1.75em;
+		background-color: $green;
+		padding: 7px 10px 5px 10px;
+		color: $white;
+		display: inline-block; }
+	a:hover {
+		background-color: $blue;
+		color: $white;
+		text-decoration: none; }
+
+}
 
 /*
 .search-panels {
