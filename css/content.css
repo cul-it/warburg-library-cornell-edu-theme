@@ -6338,11 +6338,12 @@ p.caption {
   clear: both; }
 
 .contributor-photo {
-  width: 200px;
-  float: left; }
+  width: 20%;
+  float: left;
+  margin-right: 20px; }
 
 .contributor-info {
-  float: right; }
+  float: left; }
 
 @media (min-width: 980px) and (max-width: 1199px) {
   .navbar .container {
