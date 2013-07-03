@@ -6372,6 +6372,8 @@ p.caption {
     width: 724px; }
   .navbar .nav li a {
     font-size: 1em; }
+  .navbar .logo h1 a {
+    width: 125%; }
   .navbar .btn-navbar {
     display: none; }
 

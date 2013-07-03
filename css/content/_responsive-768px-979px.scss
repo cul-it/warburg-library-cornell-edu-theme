@@ -11,6 +11,11 @@
 				a { font-size: 1em; }
 			}
 		}
+		.logo {
+			h1 {
+				a { width: 125%; }
+			}
+		}
 		// override bootstrap nav collapse at this size
 		.btn-navbar { display: none; }
 	}
