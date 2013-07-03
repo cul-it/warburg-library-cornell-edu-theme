@@ -5372,16 +5372,7 @@ body {
       -webkit-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px; }
-  .panels-display p.additional-image-link {
-    display: inline-block;
-    padding: 6px 8px;
-    background-color: #4d4e53;
-    color: #fff;
-    text-decoration: none;
-    margin-left: 20px;
-    margin-right: 20px;
-    clear: both;
-    width: auto;
+  .panels-display p.additional-image-link a {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     -o-border-radius: 5px;
