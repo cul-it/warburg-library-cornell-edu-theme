@@ -6318,8 +6318,8 @@ p.caption {
   font-size: 1.625em;
   padding: 8px 13px; }
 
-/* Other buttons, such as book purchase*/
-/*------------------------------*/
+/* Other buttons, such as book purchase */
+/*---------------------------------------*/
 .btn-standard {
   font-size: 1.1em;
   background-color: #83b63d;
@@ -6331,6 +6331,18 @@ p.caption {
 .btn-standard:hover {
   background-color: #005580;
   color: white; }
+
+/* Contributors page */
+/*------------------------------*/
+.contributor {
+  clear: both; }
+
+.contributor-photo {
+  width: 200px;
+  float: left; }
+
+.contributor-info {
+  float: right; }
 
 @media (min-width: 980px) and (max-width: 1199px) {
   .navbar .container {
