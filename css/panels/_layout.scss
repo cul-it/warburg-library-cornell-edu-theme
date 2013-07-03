@@ -716,25 +716,6 @@ body {
 			-o-border-radius: 5px;
 			border-radius: 5px;
 		}
-
-		.panels-display {
-			p.additional-image-link {
-				display: inline-block;
-				padding: 6px 8px;
-				background-color: #4d4e53;
-				color: #fff;
-				text-decoration: none;	
-				margin-left: 20px;
-				margin-right: 20px;
-				clear: both;
-				width: auto;
-				-moz-border-radius: 5px; 
-				-webkit-border-radius: 5px;
-				-o-border-radius: 5px;
-				border-radius: 5px;
-			}
-			
-		} 
 		
 		/*h5.work-type p.work-type {
 			display: inline-block;
@@ -798,6 +779,23 @@ body {
 			}
 		}*/
 	}
+
+	p.additional-image-link {
+			display: inline-block;
+			padding: 6px 8px;
+			background-color: #4d4e53;
+			color: #fff;
+			text-decoration: none;	
+			margin-left: 20px;
+			margin-right: 20px;
+			clear: both;
+			width: auto;
+			-moz-border-radius: 5px; 
+			-webkit-border-radius: 5px;
+			-o-border-radius: 5px;
+			border-radius: 5px;
+			
+		} 
 	
 	nav {
 		
