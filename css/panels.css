@@ -5709,7 +5709,10 @@ body {
       top: 0;
       right: 0;
       height: 400px !important;
-      z-index: 99999; } }
+      z-index: 99999; }
+
+  .sequence-label {
+    display: inline-block; } }
 .hide {
   display: none; }
 
