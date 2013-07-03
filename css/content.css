@@ -6410,7 +6410,10 @@ p.caption {
     width: 90%; }
 
   .media {
-    background-image: none; } }
+    background-image: none; }
+
+  .sidebar h3 {
+    clear: both; } }
 @media (max-width: 480px) {
   .navbar .brand {
     margin-left: -15px; }
