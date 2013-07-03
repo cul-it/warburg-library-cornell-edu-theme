@@ -5510,7 +5510,8 @@ body {
 .sequence-label {
   display: inline-block;
   margin-left: 20px;
-  font-size: 1.75em; }
+  font-size: 1.75em;
+  margin-right: 10px; }
 
 .btn-pager {
   display: inline-block; }
@@ -5519,7 +5520,8 @@ body {
     background-color: #7a9945;
     padding: 10px;
     color: white;
-    display: inline-block; }
+    display: inline-block;
+    margin-left: 5px; }
   .btn-pager a:hover {
     background-color: #1faac0;
     color: white;
