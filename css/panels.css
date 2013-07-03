@@ -5358,8 +5358,21 @@ body {
     .panels-display .panel-description h5.source + p,
     .panels-display .panel-description h5.measurements + p,
     .panels-display .panel-description h5.repository + p,
-    .panels-display .panel-description h5.work-type + p,
-    .panels-display .panel-description h5.additional-image p {
+    .panels-display .panel-description h5.work-type + p {
+      display: inline-block;
+      padding: 6px 8px;
+      background-color: #4d4e53;
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      margin-right: 20px;
+      clear: both;
+      width: auto;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px; }
+    .panels-display .panel-description .panels-display .additional-image-link p {
       display: inline-block;
       padding: 6px 8px;
       background-color: #4d4e53;
