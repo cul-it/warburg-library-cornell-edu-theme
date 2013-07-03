@@ -6346,6 +6346,9 @@ p.caption {
   float: left;
   width: 70%; }
 
+.contributor-publications h5 {
+  font-size: 1.4375em; }
+
 @media (min-width: 980px) and (max-width: 1199px) {
   .navbar .container {
     width: 940px; }
