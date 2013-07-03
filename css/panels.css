@@ -5567,6 +5567,18 @@ body {
   font-size: 40px;
   color: white; }
 
+.close:hover {
+  text-shadow: 0 0 0 black;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  padding: 5px;
+  background: #1faac0;
+  font-size: 40px;
+  color: white; }
+
 /*
 .search-panels {
 	background-position: 0 0;
