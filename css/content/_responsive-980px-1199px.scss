@@ -7,5 +7,11 @@
 	.navbar {
 		.container { width: 940px; }
 		.subtitle { font-size: 1em; }
+		.logo {
+			h1 {
+				a { width: 125%; }
+			}
+		}
+
 	}
 }

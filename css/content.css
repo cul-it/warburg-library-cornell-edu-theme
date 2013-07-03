@@ -6361,7 +6361,9 @@ p.caption {
   .navbar .container {
     width: 940px; }
   .navbar .subtitle {
-    font-size: 1em; } }
+    font-size: 1em; }
+  .navbar .logo h1 a {
+    width: 125%; } }
 @media (min-width: 768px) and (max-width: 979px) {
   body {
     font-size: 90%; }
