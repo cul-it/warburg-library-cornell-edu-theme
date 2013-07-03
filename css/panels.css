@@ -5527,6 +5527,16 @@ body {
     color: white;
     text-decoration: none; }
 
+.icon-arrow {
+  width: 6px;
+  height: 17px;
+  vertical-align: middle;
+  margin-bottom: 2px;
+  margin-top: 0; }
+
+.icon-arrow-white {
+  background: url("../images/icon-arrow-white.png") no-repeat; }
+
 /*
 .search-panels {
 	background-position: 0 0;
