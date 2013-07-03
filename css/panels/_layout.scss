@@ -902,6 +902,17 @@ body {
 .icon-arrow-white-prev {
 	background: url("../images/icon-arrow-white-prev.png") no-repeat; }
 
+/* Additional image modal - Bootstrap overrides */
+
+.addl-img-modal {
+	-webkit-border-radius: 0;
+	-mox-border-radius: 0;
+	border-radius: 0;
+	width: auto;
+}
+
+
+
 /*
 .search-panels {
 	background-position: 0 0;
