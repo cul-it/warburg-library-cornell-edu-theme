@@ -5493,7 +5493,7 @@ body {
   padding: 15px 20px;
   margin-left: 20px;
   color: white;
-  display: block; }
+  display: inline-block; }
 .btn-start a:hover {
   background-color: #1faac0;
   color: white; }
