@@ -5537,6 +5537,9 @@ body {
 .icon-arrow-white {
   background: url("../images/icon-arrow-white.png") no-repeat; }
 
+.icon-arrow-white-prev {
+  background: url("../images/icon-arrow-white-prev.png") no-repeat; }
+
 /*
 .search-panels {
 	background-position: 0 0;
