@@ -5372,11 +5372,13 @@ body {
       -webkit-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px; }
-  .panels-display p.additional-image-link a {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px; }
+  .panels-display p.additional-image-link {
+    padding: 0 0 0 20x; }
+    .panels-display p.additional-image-link a {
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -o-border-radius: 5px;
+      border-radius: 5px; }
   .panels-display nav {
     position: absolute;
     top: 0;
