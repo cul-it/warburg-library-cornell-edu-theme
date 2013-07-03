@@ -1259,10 +1259,7 @@ body {
 }
 @media only screen and ( max-width: 1135px )  {
 	
-	.sequence-label { font-size: 1.25; }
-	.btn-pager { 
-		a { font-size: 1.1em; }
-	}
+	.sequence-label { display: block; }
 	
 }
 
