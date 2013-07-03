@@ -5496,7 +5496,8 @@ body {
   display: inline-block; }
 .btn-start a:hover {
   background-color: #1faac0;
-  color: white; }
+  color: white;
+  text-decoration: none; }
 
 /*
 .search-panels {
