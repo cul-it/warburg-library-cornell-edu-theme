@@ -5712,3 +5712,10 @@ body {
       z-index: 99999; } }
 .hide {
   display: none; }
+
+@media only screen and (max-width: 1186) {
+  .sequence-label {
+    font-size: 1.5; }
+
+  .btn-pager a {
+    font-size: 1.25em; } }
