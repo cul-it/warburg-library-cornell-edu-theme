@@ -701,7 +701,8 @@ body {
 		h5.source  + p,
 		h5.measurements + p,
 		h5.repository + p,
-		h5.work-type + p {
+		h5.work-type + p,
+		h5.additional-image + p {
 			display: inline-block;
 			padding: 6px 8px;
 			background-color: #4d4e53;
