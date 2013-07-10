@@ -130,7 +130,7 @@
 
             </section>
 
-            <section class="panel-description">
+            <section id="imageMetadata" class="panel-description">
                     <?php
                     $result = module_invoke('views', 'block_view', '240f2561056d0722cec3e68a281bd9e6');
                     print render($result);
