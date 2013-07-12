@@ -18,11 +18,6 @@
   // });
 
   $('body').on('click', "#additional-image-link", function() {
-    $('#test-dialog').modal('show);'
-    // {
-    //   toggle: true,
-    //   //onShow: function () { this.container.draggable(); }
-    // })
-  })
-
+    $('#test-dialog').modal('show');
+  });
 })(jQuery);
