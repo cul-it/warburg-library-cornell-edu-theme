@@ -10,11 +10,11 @@
   //   $("#test-dialog").dialog('open');
   //   return false;
   // });
-  // $('#additionalImage').modal({onShow: function (dialog) {
-  // dialog.container.draggable();
-  // }});
-  $('body').on('show', '#additionalImage', function(dialog) {
-    dialog.container.draggable();
-  });
+  $('#additionalImage').modal({onShow: function (dialog) {
+  dialog.container.draggable();
+  }});
+  // $('body').on('show', '#additionalImage', function(dialog) {
+  //   dialog.container.draggable();
+  // });
 
 })(jQuery);
