@@ -4,7 +4,7 @@
   	//    handle: ".modal-header"
   	//});
   //});
-  $('#additional-image-link').click(function() {
+  $('body').on('click', '#additional-image-link', function() {
     alert('clicked on #additional-image-link');
     $("#additionalImage").dialog({
       height:140,
