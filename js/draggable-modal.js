@@ -18,6 +18,7 @@
   // });
 
   $('body').on('click', "#additional-image-link", function() {
+    $('#additionalImage').modal({onShow: function (dialog) { dialog.container.draggable()}});
     $('#additionalImage').modal('show');
   });
 })(jQuery);
