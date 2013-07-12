@@ -4,10 +4,10 @@
   	//    handle: ".modal-header"
   	//});
   //});
-  $('#additional-image-link').click() {
+  $('#additional-image-link').click(function() {
     $("#additionalImage").dialog({
       height:140,
       model: true
     });
-  }
+  });
 })(jQuery);
