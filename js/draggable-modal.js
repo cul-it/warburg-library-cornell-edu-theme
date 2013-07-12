@@ -18,6 +18,6 @@
   // });
 
   $('body').on('click', "#additional-image-link", function() {
-    $('#test-dialog').modal('show');
+    $('#additionalImage').modal('show');
   });
 })(jQuery);
