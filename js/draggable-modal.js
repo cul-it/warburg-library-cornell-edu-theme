@@ -6,9 +6,7 @@
   //});
   $('body').on('click', '#additional-image-link', function() {
     alert('clicked on #additional-image-link');
-    $("#additionalImage").dialog({
-      height:140,
-      model: true
-    });
+    $("#additionalImage").dialog('open');
+    return false;
   });
 })(jQuery);
