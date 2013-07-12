@@ -75,7 +75,8 @@
 		li:first-child {
 			a { border: none; }
 		}
-		li.active-trail {
+		li.active-trail,
+		li.active {
 			a, 
 			a:hover {
 				color: $linkPrimary;

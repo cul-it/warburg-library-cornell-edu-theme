@@ -5976,7 +5976,9 @@ img.pull-right {
     .navbar .nav li:first-child a {
       border: none; }
     .navbar .nav li.active-trail a,
-    .navbar .nav li.active-trail a:hover {
+    .navbar .nav li.active-trail a:hover,
+    .navbar .nav li.active a,
+    .navbar .nav li.active a:hover {
       color: #a7c03a;
       border-bottom: 4px solid #a7c03a;
       background-color: inherit;
