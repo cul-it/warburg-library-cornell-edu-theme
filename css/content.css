@@ -6089,19 +6089,19 @@ footer {
   footer .container {
     background: url("../images/hr.png") no-repeat top;
     padding: 30px 0; }
-  footer ul.footer-nav {
+  footer ul.menu {
     list-style: none;
     margin: 0 0 1em; }
-    footer ul.footer-nav li {
+    footer ul.menu li {
       display: inline-block;
       font-size: 1.1875em; }
-      footer ul.footer-nav li .divider {
+      footer ul.menu li .divider {
         padding: 0 5px; }
-    footer ul.footer-nav li.active {
+    footer ul.menu li.active {
       color: #a7c03a; }
-      footer ul.footer-nav li.active a {
+      footer ul.menu li.active a {
         color: #a7c03a; }
-      footer ul.footer-nav li.active .divider {
+      footer ul.menu li.active .divider {
         color: #4d4e53; }
   footer p {
     font-size: 1.125em; }
