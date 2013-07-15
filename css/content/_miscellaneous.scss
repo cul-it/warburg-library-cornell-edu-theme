@@ -120,6 +120,9 @@ p.caption {
 /*------------------------------*/  
 .panel-themes {
   list-style: none;
+  margin-left: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #dedede;
   li {
     float: left;
     margin-right: 5px;

@@ -6366,7 +6366,10 @@ p.caption {
 /* Panel list on themes page */
 /*------------------------------*/
 .panel-themes {
-  list-style: none; }
+  list-style: none;
+  margin-left: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #dedede; }
   .panel-themes li {
     float: left;
     margin-right: 5px;
