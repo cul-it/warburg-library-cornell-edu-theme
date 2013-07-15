@@ -5871,7 +5871,8 @@ h2 {
   font-size: 1.625em;
   margin-top: 1.5em;
   clear: both;
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 1.25em; }
   .main-content h3 a,
   .main-content h3 a:hover {
     color: white; }
@@ -6365,9 +6366,14 @@ p.caption {
 /*------------------------------*/
 .panel-themes {
   list-style: none; }
-  .panel-themes li, .panel-themes a {
+  .panel-themes li {
     float: left;
-    margin-right: 5px; }
+    margin-right: 5px;
+    background: #a6a6a8;
+    padding: 4px 8px;
+    color: white; }
+  .panel-themes li.link {
+    padding: 0; }
   .panel-themes a {
     background: #a7c03a;
     padding: 4px 8px;

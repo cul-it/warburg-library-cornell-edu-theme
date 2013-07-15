@@ -120,12 +120,15 @@ p.caption {
 /*------------------------------*/  
 .panel-themes {
   list-style: none;
-  li, a {
+  li {
     float: left;
     margin-right: 5px;
-    // background: $grayLight;
-    // padding: 4px 8px;
-    // color: white;
+    background: $grayLight;
+    padding: 4px 8px;
+    color: white;
+  }
+  li.link {
+    padding: 0;
   }
   a {
     background: $linkPrimary;
