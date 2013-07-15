@@ -5778,4 +5778,4 @@ body {
     margin-left: 20px; } }
 
 //jgr test
-div .rs-carousel-disabled { opacity: 1.0; }
+div .rs-carousel-disabled .ui-state-disabled { opacity: 1.0; }
