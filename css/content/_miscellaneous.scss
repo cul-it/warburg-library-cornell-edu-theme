@@ -129,6 +129,8 @@ p.caption {
   }
   a {
     background: $linkPrimary;
+    padding: 4px 8px;
+    color: white;
   }
   a:hover {
     background: $linkHover;

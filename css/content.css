@@ -6367,7 +6367,9 @@ p.caption {
     float: left;
     margin-right: 5px; }
   .panel-themes a {
-    background: #a7c03a; }
+    background: #a7c03a;
+    padding: 4px 8px;
+    color: white; }
   .panel-themes a:hover {
     background: #005580; }
 
