@@ -5859,9 +5859,6 @@ h2 {
   margin: 0;
   color: white; }
 
-h3 {
-  clear: both; }
-
 .main-content p {
   font-size: 1.4375em;
   line-height: 1.4em; }
@@ -5872,7 +5869,9 @@ h3 {
     font-size: 1em; }
 .main-content h3 {
   font-size: 1.625em;
-  margin-top: 1.5em; }
+  margin-top: 1.5em;
+  clear: both;
+  font-weight: normal; }
   .main-content h3 a,
   .main-content h3 a:hover {
     color: white; }
