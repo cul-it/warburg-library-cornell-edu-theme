@@ -6369,7 +6369,8 @@ p.caption {
   list-style: none;
   margin-left: 0;
   overflow: hidden;
-  border-bottom: 1px solid #dedede; }
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 5px; }
   .panel-themes li {
     float: left;
     margin-right: 5px;
