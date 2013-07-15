@@ -6365,10 +6365,7 @@ p.caption {
   list-style: none; }
   .panel-themes li, .panel-themes a {
     float: left;
-    margin-right: 5px;
-    background: #a6a6a8;
-    padding: 4px 8px;
-    color: white; }
+    margin-right: 5px; }
   .panel-themes a {
     background: #a7c03a; }
   .panel-themes a:hover {
