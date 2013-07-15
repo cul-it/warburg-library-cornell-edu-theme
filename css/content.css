@@ -6369,6 +6369,7 @@ p.caption {
   .panel-themes li {
     float: left;
     margin-right: 5px;
+    margin-bottom: 10px;
     background: #a6a6a8;
     padding: 4px 8px;
     color: white; }
