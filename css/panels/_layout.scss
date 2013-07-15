@@ -916,6 +916,8 @@ body {
 		text-decoration: none; }
 }
 
+/* Bug fix for opacity of carousel */
+.rs-carousel { opacity: 1; }
 
 /* Additional image modal - Bootstrap overrides */
 
