@@ -125,5 +125,8 @@ p.caption {
     margin-right: 5px;
     background: $grayLight;
     padding: 4px 8px;
+    color: white;
+    a { background: $linkPrimary; }
+    a:hover { background: $linkHover; }
   }
 }

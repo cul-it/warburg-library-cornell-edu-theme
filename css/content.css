@@ -6367,7 +6367,12 @@ p.caption {
     float: left;
     margin-right: 5px;
     background: #a6a6a8;
-    padding: 4px 8px; }
+    padding: 4px 8px;
+    color: white; }
+    .panel-themes li a {
+      background: #a7c03a; }
+    .panel-themes li a:hover {
+      background: #005580; }
 
 @media (min-width: 980px) and (max-width: 1199px) {
   .navbar .container {
