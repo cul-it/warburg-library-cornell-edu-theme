@@ -4845,19 +4845,19 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* 
- * The modules directory is reserved for Sass code that doesn’t 
- *cause Sass to actually output CSS. Things like mixin 
+/*
+ * The modules directory is reserved for Sass code that doesn’t
+ *cause Sass to actually output CSS. Things like mixin
  *declarations, functions, and variables.
  */
-/* 
+/*
  * Opacity
  */
-/* 
+/*
 * Panel tools states
 */
 /*
- * 
+ *
  */
 body {
   width: 100%;
@@ -4871,36 +4871,36 @@ body {
    *
    */
   	/*header {
-  		
+
   		nav {
-  		
+
   			ul {
   				height: 45px;
   				background-color: $gray;
   				list-style-type: none;
   				margin-left: 0;
   				margin-bottom: 0;
-  			
+
   				li {
   					float: left;
   					height: 45px;
   					line-height: 45px;
   					background-color: $gray;
   					overflow: hidden;
-  					
+
   					&.search-panels {
-  						
+
   						float: right;
-  						
+
   						a {
-  							
+
   							padding: 0;
-  							
+
   							&:hover {
   								background-color: transparent;
   								@include opacity(.5);
   							}
-  							
+
   							.search-panels-icon {
   								background-image: url($pathSprites);
   								background-position: 0 0;
@@ -4910,9 +4910,9 @@ body {
   								margin-top: 9px;
   								margin-right: 5px;
   							}
-  						}	
+  						}
   					}
-  
+
           			a {
           				display: inline-block;
           				padding-left: 24px;
@@ -4920,13 +4920,13 @@ body {
           				text-decoration: none;
           				color: $white;
   								font-size: 1.375em;
-  
+
           				&.active {
           					background-color: $blue;
           					border-bottom: 3px solid $blueLight;
           					color: $white;
           				}
-  
+
           				&:hover {
           					background-color: $blue;
           					border-bottom: 3px solid $blueLight;
@@ -5233,28 +5233,28 @@ body {
     			padding: 0;
     			background-color: $green;
     			color: #fff;
-    			text-decoration: none;	
+    			text-decoration: none;
     			margin-left: 20px;
     			margin-right: 20px;
     			clear: both;
     			width: auto;
-    			
+
     			a {
     				display: inline-block;
     				padding: 6px 8px;
     				background-color: $green;
-    
+
     			}
     		}*/
     /*ul {
     	float: left;
     	list-style-type: none;
     	margin-left: 5px;
-    	
+
     	li {
     		float: left;
     		margin-right: 10px;
-    		
+
     		a	 {
     			display: inline-block;
     			padding: 6px 8px;
@@ -5268,11 +5268,11 @@ body {
     	float: left;
     	list-style-type: none;
     	margin-left: 5px;
-    	
+
     	li {
     		float: left;
     		margin-right: 10px;
-    		
+
     		a	 {
     			display: inline-block;
     			padding: 6px 8px;
@@ -5776,3 +5776,6 @@ body {
 
   .views-field-field-previous-image-group .btn-pager {
     margin-left: 20px; } }
+
+//jgr test
+div .rs-carousel-disabled { opacity: 1.0; }
