@@ -908,7 +908,9 @@ body {
 	font-size: 1.25em;
 }
 .guide {
-	a { background: $green; }
+	a { 
+		color: white;
+		background: $green; }
 	a:hover { 
 		background: $blueLight;
 		text-decoration: none; }

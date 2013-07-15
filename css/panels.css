@@ -5554,6 +5554,7 @@ body {
   font-size: 1.25em; }
 
 .guide a {
+  color: white;
   background: #7a9945; }
 .guide a:hover {
   background: #37c1d6;
