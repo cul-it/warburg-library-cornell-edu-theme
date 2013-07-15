@@ -5548,6 +5548,16 @@ body {
 .icon-arrow-white-prev {
   background: url("../images/icon-arrow-white-prev.png") no-repeat; }
 
+/* Pathway sequence number and guide */
+.sequence-guide {
+  margin: 10px 0 0 20px;
+  font-size: 1.25em; }
+
+.guide a {
+  color: #7a9945; }
+.guide a:hover {
+  color: white; }
+
 /* Additional image modal - Bootstrap overrides */
 .addl-img-modal {
   -webkit-border-radius: 0;
