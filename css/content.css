@@ -6371,7 +6371,7 @@ p.caption {
     float: left;
     margin-right: 5px;
     margin-bottom: 10px;
-    background: #ccccd0;
+    background: #c0c0c3;
     padding: 4px 8px;
     color: white; }
   .panel-themes li.link {
@@ -6379,7 +6379,8 @@ p.caption {
   .panel-themes a {
     background: #a7c03a;
     padding: 4px 8px;
-    color: white; }
+    color: white;
+    display: block; }
   .panel-themes a:hover {
     background: #005580; }
 
