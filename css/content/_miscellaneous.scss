@@ -120,13 +120,17 @@ p.caption {
 /*------------------------------*/  
 .panel-themes {
   list-style: none;
-  li {
+  li, a {
     float: left;
     margin-right: 5px;
     background: $grayLight;
     padding: 4px 8px;
     color: white;
-    a { background: $linkPrimary; }
-    a:hover { background: $linkHover; }
+  }
+  a {
+    background: $linkPrimary;
+  }
+  a:hover {
+    background: $LinkHover;
   }
 }
