@@ -5554,9 +5554,10 @@ body {
   font-size: 1.25em; }
 
 .guide a {
-  color: #7a9945; }
+  background: #7a9945; }
 .guide a:hover {
-  color: white; }
+  background: #37c1d6;
+  text-decoration: none; }
 
 /* Additional image modal - Bootstrap overrides */
 .addl-img-modal {
