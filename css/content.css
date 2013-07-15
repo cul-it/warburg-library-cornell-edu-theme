@@ -6359,6 +6359,16 @@ p.caption {
 .main-content .contributor-bio p {
   font-size: 1.25em; }
 
+/* Panel list on themes page */
+/*------------------------------*/
+.panel-themes {
+  list-style: none; }
+  .panel-themes li {
+    float: left;
+    margin-right: 5px;
+    background: #a6a6a8;
+    padding: 4px 8px; }
+
 @media (min-width: 980px) and (max-width: 1199px) {
   .navbar .container {
     width: 940px; }

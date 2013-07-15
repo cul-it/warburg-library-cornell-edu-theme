@@ -115,3 +115,15 @@ p.caption {
     p { font-size: 1.25em; }
   }
 }
+
+/* Panel list on themes page */
+/*------------------------------*/  
+.panel-themes {
+  list-style: none;
+  li {
+    float: left;
+    margin-right: 5px;
+    background: $grayLight;
+    padding: 4px 8px;
+  }
+}
