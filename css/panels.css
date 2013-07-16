@@ -5361,7 +5361,6 @@ body {
     .panels-display .panel-description h5.measurements + p,
     .panels-display .panel-description h5.repository + p,
     .panels-display .panel-description h5.work-type + p,
-    .panels-display .panel-description h5.external-links + p,
     .panels-display .panel-description .identification {
       display: inline-block;
       padding: 6px 8px;
@@ -5376,9 +5375,11 @@ body {
       -webkit-border-radius: 5px;
       -o-border-radius: 5px;
       border-radius: 5px; }
-    .panels-display .panel-description p.additional-image-link {
+    .panels-display .panel-description p.additional-image-link,
+    .panels-display .panel-description p.external-link {
       padding: 0 0 0 20px; }
-      .panels-display .panel-description p.additional-image-link a {
+      .panels-display .panel-description p.additional-image-link a,
+      .panels-display .panel-description p.external-link a {
         -moz-border-radius: 5px;
         -webkit-border-radius: 5px;
         -o-border-radius: 5px;

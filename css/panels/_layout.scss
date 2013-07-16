@@ -704,7 +704,6 @@ body {
 		h5.measurements + p,
 		h5.repository + p,
 		h5.work-type + p,
-		h5.external-links + p,
 		.identification {
 			display: inline-block;
 			padding: 6px 8px;
@@ -721,7 +720,8 @@ body {
 			border-radius: 5px;
 		}
 
-		p.additional-image-link {
+		p.additional-image-link,
+		p.external-link {
 			padding: 0 0 0 20px;
 			a {
 				-moz-border-radius: 5px; 
