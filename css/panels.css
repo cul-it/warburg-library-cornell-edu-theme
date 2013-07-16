@@ -5349,7 +5349,8 @@ body {
     .panels-display .panel-description h5.work-type,
     .panels-display .panel-description h5.repository,
     .panels-display .panel-description h5.measurements,
-    .panels-display .panel-description h5.additional-image {
+    .panels-display .panel-description h5.additional-image,
+    .panels-display .panel-description h5.external-links {
       padding-bottom: 0;
       display: block;
       font-wight: bold; }
@@ -5360,6 +5361,7 @@ body {
     .panels-display .panel-description h5.measurements + p,
     .panels-display .panel-description h5.repository + p,
     .panels-display .panel-description h5.work-type + p,
+    .panels-display .panel-description h5.external-links + p,
     .panels-display .panel-description .identification {
       display: inline-block;
       padding: 6px 8px;

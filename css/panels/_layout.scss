@@ -687,7 +687,8 @@ body {
 		h5.work-type,
 		h5.repository,
 		h5.measurements,
-		h5.additional-image
+		h5.additional-image,
+		h5.external-links
 		 {
 			padding-bottom: 0;
 			display: block;
@@ -703,6 +704,7 @@ body {
 		h5.measurements + p,
 		h5.repository + p,
 		h5.work-type + p,
+		h5.external-links + p,
 		.identification {
 			display: inline-block;
 			padding: 6px 8px;
