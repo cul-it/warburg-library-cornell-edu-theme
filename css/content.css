@@ -6215,6 +6215,8 @@ a.signale {
     .featured-content .media h4 a {
       font-size: 75%;
       margin-left: 10px; }
+  .featured-content img {
+    border: 1px solid #c8c8c8; }
 
 .featured-content-first {
   background: url("../images/hr.png") no-repeat bottom;
@@ -6248,7 +6250,6 @@ a.signale {
   background: url("../images/pathway-bg.png") no-repeat bottom;
   width: 100%; }
   .pathway img {
-    border: 1px solid #c8c8c8;
     float: left;
     margin-right: 10px; }
   .pathway a {
@@ -6259,7 +6260,6 @@ a.signale {
 .other-atlas {
   padding: 15px 0 0; }
   .other-atlas img {
-    border: 1px solid #c8c8c8;
     margin-bottom: 10px; }
   .other-atlas p {
     margin-left: 15px; }

@@ -95,6 +95,7 @@ a.signale {
 				margin-left: 10px; }
 		}
 	}
+	img { border: 1px solid #c8c8c8; }
 }
 .featured-content-first {
 	background: url("../images/hr.png") no-repeat bottom;
@@ -126,7 +127,6 @@ a.signale {
 	background: url("../images/pathway-bg.png") no-repeat bottom;
 	width: 100%;
 	img { 
-		border: 1px solid #c8c8c8; // TODO: Add variable; change to global rule for images to have border?
 		float: left;
 		margin-right: 10px; }
 	a { font-size: 1.4em; }
@@ -136,9 +136,7 @@ a.signale {
 /*------------------------------*/
 .other-atlas {
 	padding: 15px 0 0;
-	img {
-		border: 1px solid #c8c8c8;
-		margin-bottom: 10px; }
+	img { margin-bottom: 10px; }
 	p { margin-left: 15px; }
 }
 
