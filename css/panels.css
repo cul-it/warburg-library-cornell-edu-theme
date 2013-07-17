@@ -5387,7 +5387,8 @@ body {
         border-radius: 5px;
         margin: 0 5px 5px 0;
         display: inline-block;
-        background: #7a9945; }
+        background: #7a9945;
+        padding: 6px 8px; }
       .panels-display .panel-description .additional-images a:hover,
       .panels-display .panel-description p.external-link a:hover {
         background: #1faac0; }
