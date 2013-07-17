@@ -733,8 +733,13 @@ body {
 				display: inline-block;
 				background: $green;
 				padding: 6px 8px;
+				color: white;
+				font-size: 18px;
 			}
-			a:hover { background: $blue; }
+			a:hover { 
+				background: $blue;
+				color: white;
+				text-decoration: none; }
 		} 
 		
 		/*h5.work-type p.work-type {
