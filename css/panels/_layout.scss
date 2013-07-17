@@ -723,13 +723,13 @@ body {
 
 		p.additional-image-link,
 		p.external-link {
-			padding: 0 0 0 20px;
+			padding: 0 20px;
 			a {
 				-moz-border-radius: 5px; 
 				-webkit-border-radius: 5px;
 				-o-border-radius: 5px;
 				border-radius: 5px;
-				margin-bottom: 5px;
+				margin: 0 5px 5px 0;
 			}
 				
 		} 
