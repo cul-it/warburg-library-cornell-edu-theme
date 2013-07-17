@@ -5336,7 +5336,7 @@ body {
           background-color: #1faac0; }
     .panels-display .panel-description h5 {
       font-weight: normal;
-      font-size: 18px;
+      font-size: 1em;
       padding: 0 20px 20px 20px;
       clear: both;
       display: inline-block;
@@ -5376,8 +5376,7 @@ body {
       -o-border-radius: 5px;
       border-radius: 5px;
       margin-bottom: 10px;
-      line-height: 1.3em;
-      font-size: 1em; }
+      line-height: 1.3em; }
     .panels-display .panel-description .additional-images,
     .panels-display .panel-description p.external-link {
       padding: 0 20px; }
