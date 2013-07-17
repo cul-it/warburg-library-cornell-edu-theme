@@ -5376,16 +5376,21 @@ body {
       -o-border-radius: 5px;
       border-radius: 5px;
       margin-bottom: 10px; }
-    .panels-display .panel-description p.additional-images,
+    .panels-display .panel-description .additional-images,
     .panels-display .panel-description p.external-link {
       padding: 0 20px; }
-      .panels-display .panel-description p.additional-images a,
+      .panels-display .panel-description .additional-images a,
       .panels-display .panel-description p.external-link a {
         -moz-border-radius: 5px;
         -webkit-border-radius: 5px;
         -o-border-radius: 5px;
         border-radius: 5px;
-        margin: 0 5px 5px 0; }
+        margin: 0 5px 5px 0;
+        display: inline-block;
+        background: #7a9945; }
+      .panels-display .panel-description .additional-images a:hover,
+      .panels-display .panel-description p.external-link a:hover {
+        background: #1faac0; }
   .panels-display nav {
     position: absolute;
     top: 0;
