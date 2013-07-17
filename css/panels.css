@@ -5397,6 +5397,9 @@ body {
         background: #1faac0;
         color: white;
         text-decoration: none; }
+    .panels-display .panel-description .note {
+      margin: 30px 20px;
+      color: #ccc; }
   .panels-display nav {
     position: absolute;
     top: 0;

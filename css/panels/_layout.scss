@@ -741,7 +741,13 @@ body {
 				background: $blue;
 				color: white;
 				text-decoration: none; }
-		} 
+		}
+
+		// TEMPORARY NOTE IN METADATA DISPLAY BEFORE DELETING FULL TITLE FIELD
+		.note {
+			 margin: 30px 20px;
+			 color: #ccc;
+		}
 		
 		/*h5.work-type p.work-type {
 			display: inline-block;
