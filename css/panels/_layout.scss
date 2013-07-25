@@ -976,11 +976,7 @@ body {
 				-moz-border-radius: 0;
 				border-radius: 0;
 				text-align: center;
-				width: auto;
-				img {
-					max-width: 600px;
-					max-height: 800px;
-				}
+				max-width: 560px;
 				a {
 					cursor: move;
 					-webkit-border-radius: 0;
