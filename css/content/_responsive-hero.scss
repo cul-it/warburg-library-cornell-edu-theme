@@ -7,6 +7,14 @@
 @media (max-width: 1147px) {
 	.hero {
 		.home-content { 
+			h2 { font-size: 2em; }
+		}
+	}
+}
+
+@media (max-width: 1147px) {
+	.hero {
+		.home-content { 
 			padding-left: 15%;
 			padding-top: 50px;
 			p { width: 550px; }

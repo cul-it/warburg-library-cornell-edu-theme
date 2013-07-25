@@ -6458,6 +6458,9 @@ p.caption {
   .hero .home-content {
     padding-left: 10%; } }
 @media (max-width: 1147px) {
+  .hero .home-content h2 {
+    font-size: 2em; } }
+@media (max-width: 1147px) {
   .hero .home-content {
     padding-left: 15%;
     padding-top: 50px; }
