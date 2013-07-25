@@ -6491,23 +6491,18 @@ p.caption {
   .btn-panels {
     font-size: 1.1em; } }
 @media screen and (max-width: 983px) {
-  .hero {
-    height: 450px; }
-    .hero .home-content {
-      padding-left: 10%; }
-      .hero .home-content h2 {
-        width: 80%;
-        padding: 20px;
-        margin: 0; }
-      .hero .home-content p {
-        width: 420px;
-        padding: 20px;
-        margin: 0; }
-      .hero .home-content ul {
-        margin-top: 7px; }
-
-  aside {
-    height: 453px; }
+  .hero .home-content {
+    padding-left: 10%; }
+    .hero .home-content h2 {
+      width: 80%;
+      padding: 20px;
+      margin: 0; }
+    .hero .home-content p {
+      width: 420px;
+      padding: 20px;
+      margin: 0; }
+    .hero .home-content ul {
+      margin-top: 7px; }
 
   .btn-pathway {
     padding: 8px;
