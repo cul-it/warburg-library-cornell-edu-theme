@@ -5616,7 +5616,8 @@ body {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  text-align: center; }
+  text-align: center;
+  width: auto; }
   .panels-display .panel-description .additional-images .addl-img-modal img {
     max-width: 600px;
     max-height: 800px; }
