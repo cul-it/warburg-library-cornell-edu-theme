@@ -5612,11 +5612,17 @@ body {
   font-size: 40px;
   color: white; }
 
-.panels-display .panel-description .additional-images .addl-img-modal a {
-  cursor: move;
+.panels-display .panel-description .additional-images .addl-img-modal {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 0; }
+  border-radius: 0;
+  text-align: center;
+  padding: 5px; }
+  .panels-display .panel-description .additional-images .addl-img-modal a {
+    cursor: move;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0; }
 
 /*
 .search-panels {
