@@ -976,12 +976,12 @@ body {
 				-moz-border-radius: 0;
 				border-radius: 0;
 				text-align: center;
-				padding: 5px;
 				a {
 					cursor: move;
 					-webkit-border-radius: 0;
 					-moz-border-radius: 0;
 					border-radius: 0; }
+				a.close { cursor: pointer; }
 			}
 		}
 	}
