@@ -5587,12 +5587,6 @@ body {
   opacity: .1;
   filter: alpha(opacity=10); }
 
-.addl-img-modal a {
-  cursor: move;
-  -webkit-border-radius: 0;
-  -mox-border-radius: 0;
-  border-radius: 0; }
-
 .close {
   float: none;
   text-shadow: 0 0 0 black;
@@ -5617,6 +5611,12 @@ body {
   background: #1faac0;
   font-size: 40px;
   color: white; }
+
+.panels-display .panel-description .additional-images .addl-img-modal a {
+  cursor: move;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0; }
 
 /*
 .search-panels {
