@@ -6466,7 +6466,10 @@ p.caption {
 @media (max-width: 1147px) {
   .hero .home-content {
     padding-top: 50px; }
+    .hero .home-content h2 {
+      font-size: 1.8em; }
     .hero .home-content p {
+      font-size: 1.2em;
       width: 550px; }
 
   .btn-pathway {
