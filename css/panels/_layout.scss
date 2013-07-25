@@ -942,9 +942,11 @@ body {
 }
 
 .addl-img-modal {
-	-webkit-border-radius: 0;
-	-mox-border-radius: 0;
-	border-radius: 0;
+	a {
+		cursor: move;
+		-webkit-border-radius: 0;
+		-mox-border-radius: 0;
+		border-radius: 0; }
 }
 .close {
 	float: none;
@@ -971,11 +973,6 @@ body {
 	font-size: 40px;
 	color: $white;
 }
-
-#additionalImage {
-	a { cursor: move; }
-}
-
 
 /*
 .search-panels {
