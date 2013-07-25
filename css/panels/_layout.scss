@@ -935,6 +935,12 @@ body {
 
 /* Additional image modal - Bootstrap overrides */
 
+.modal-backdrop,
+.modal-backdrop.fade.in { 
+	opacity: 0;
+	filter: alpha(opacity=80);
+}
+
 .addl-img-modal {
 	-webkit-border-radius: 0;
 	-mox-border-radius: 0;
