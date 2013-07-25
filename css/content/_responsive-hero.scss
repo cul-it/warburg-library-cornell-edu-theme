@@ -109,6 +109,17 @@
 	}
 }
 
+@media (max-width: 1023px) {
+	.hero {
+		.home-content {
+			p {
+				width: 325px;
+			}
+		}
+	}
+}
+
+
 @media screen and (max-width: 702px) {
 	
 	.hero {
