@@ -5617,6 +5617,9 @@ body {
   font-size: 40px;
   color: white; }
 
+#additionalImage a {
+  cursor: move; }
+
 /*
 .search-panels {
 	background-position: 0 0;
