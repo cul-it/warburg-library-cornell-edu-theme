@@ -976,7 +976,10 @@ body {
 				-moz-border-radius: 0;
 				border-radius: 0;
 				text-align: center;
-				max-width: 600px;
+				img {
+					max-width: 600px;
+					max-height: 800px;
+				}
 				a {
 					cursor: move;
 					-webkit-border-radius: 0;
