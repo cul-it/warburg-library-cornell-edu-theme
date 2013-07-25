@@ -5989,6 +5989,9 @@ img.pull-right {
       -moz-box-shadow: none;
       box-shadow: none; }
 
+.sidebar ul.menu {
+  margin-left: 5px; }
+
 /* Institution branding */
 /*------------------------------*/
 .institution-brand {
