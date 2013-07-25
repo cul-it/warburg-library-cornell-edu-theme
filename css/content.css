@@ -6456,10 +6456,10 @@ p.caption {
     clear: both; } }
 @media (min-width: 1372px) {
   .hero .home-content {
-    padding-left: 15%; } }
+    padding-left: 10%; } }
 @media (max-width: 1147px) {
   .hero .home-content {
-    padding-left: 10%;
+    padding-left: 15%;
     padding-top: 50px; }
     .hero .home-content p {
       width: 550px; } }
