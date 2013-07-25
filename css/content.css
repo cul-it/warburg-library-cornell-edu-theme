@@ -6463,9 +6463,10 @@ p.caption {
 @media (max-width: 1169px) {
   .btn-pathway {
     font-size: 1.8em; } }
-@media (max-width: 1147px) {
+@media (max-width: 1157px) {
   .hero .home-content h2 {
-    font-size: 1.8em; }
+    font-size: 1.75em; } }
+@media (max-width: 1147px) {
   .hero .home-content p {
     font-size: 1.2em;
     width: 550px; }
@@ -6475,6 +6476,9 @@ p.caption {
 
   .btn-panels {
     font-size: 1.4em; } }
+@media (max-width: 1103px) {
+  .hero .home-content p {
+    width: 500px; } }
 @media screen and (max-width: 983px) {
   .hero .home-content {
     padding-left: 10%; }
