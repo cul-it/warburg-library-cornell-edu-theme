@@ -6479,6 +6479,17 @@ p.caption {
 @media (max-width: 1103px) {
   .hero .home-content p {
     width: 500px; } }
+@media (max-width: 1023px) {
+  .hero .home-content {
+    padding-left: 5%; }
+    .hero .home-content h2 {
+      font-size: 1.5em; }
+
+  .btn-pathway {
+    font-size: 1.2em; }
+
+  .btn-panels {
+    font-size: 1.1em; } }
 @media screen and (max-width: 983px) {
   .hero .home-content {
     padding-left: 10%; }
