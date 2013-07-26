@@ -6462,7 +6462,11 @@ p.caption {
       background: url("../images/mnemosyne-phonetics-logo-300.png") no-repeat 0 0; }
 
   .featured-content-first {
-    clear: both; } }
+    clear: both; }
+
+  #search-panels {
+    background: #a6a6a8;
+    padding-right: 20px; } }
 @media (min-width: 1372px) {
   .hero .home-content {
     padding-left: 10%; } }
