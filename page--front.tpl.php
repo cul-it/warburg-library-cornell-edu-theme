@@ -72,8 +72,10 @@
 
 <section class="institution-brand">
   <div class="container">
-    <a href="http://www.library.cornell.edu">Cornell University Library</a> | <a href="http://warburg.sas.ac.uk/home/">The Warburg Institute</a> | <a href="http://www.cornellpress.cornell.edu/">Cornell University Press</a>
-    <a class="search-panels" href="#" title="search"><span class="search-panels-icon"></span></a>
+    <div class="institution-links">
+      <a href="http://www.library.cornell.edu">Cornell University Library</a> | <a href="http://warburg.sas.ac.uk/home/">The Warburg Institute</a> | <a href="http://www.cornellpress.cornell.edu/">Cornell University Press</a>
+      <a class="search-panels" href="#" title="search"><span class="search-panels-icon"></span></a>
+    </div>
     
     <form id="search-panels" name="search-panels" action="/search/node" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
       <input name="keys" type="text" value="" />
@@ -94,7 +96,6 @@
       <div class="span4 logo">
         <?php if ($site_name): ?>
          <h1><a href="<?php print $front_page; ?>"><span class="displace"><?php print $site_name; ?>. Meanderings through Aby Warburg's Atlas</span></a></h1> 
-         <!--<a class="toggle-logo" title="phonetic" href="#"></a>-->
         <?php endif; ?>
       </div>
       <div class="span8">
