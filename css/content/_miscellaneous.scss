@@ -72,6 +72,15 @@ p.caption {
   }
 }
 
+.main-content {
+  .search-results {
+    h3 {
+      a { color: $linkPrimary; }
+      a:hover { color: $linkHover; }
+    }
+  }
+}
+
 /* Other buttons, such as book purchase */
 /*---------------------------------------*/  
 

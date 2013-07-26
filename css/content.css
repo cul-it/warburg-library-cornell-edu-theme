@@ -6326,6 +6326,11 @@ p.caption {
   font-size: 1.625em;
   padding: 8px 13px; }
 
+.main-content .search-results h3 a {
+  color: #a7c03a; }
+.main-content .search-results h3 a:hover {
+  color: #005580; }
+
 /* Other buttons, such as book purchase */
 /*---------------------------------------*/
 .btn-standard {
