@@ -5,7 +5,16 @@
 @media (max-width: 480px) {
 	.navbar {
 		.brand { margin-left: -15px; }
+		.logo {
+	  	  	a {
+	  		  	height: 70px;
+	  		  	background: url('../images/mnemosyne-logo-300.png') no-repeat 0 0;
+	  		  	&:hover {
+	  		    	background: url('../images/mnemosyne-phonetics-logo-300.png') no-repeat 0 0; }
+	  		}
+	  	}
 	}
 	.featured-content-first { clear: both; }
+
 }
 
