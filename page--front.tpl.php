@@ -102,7 +102,7 @@
         <!-- <div class="nav-collapse collapse">
           <div class="nav">
             <?php print render($page['navigation']); ?>
-          </div -->>
+          </div -->
         </div>
 
         <nav id="nav" role="navigation">
@@ -112,7 +112,7 @@
               <?php print render($page['navigation']); ?>
             </div>
         </nav>
-        
+
       </div>
     </div>
   </div>
