@@ -1039,13 +1039,6 @@ body {
   }
 }
 
-// fix for safari draggable bug
-div.zoom-container {
-	div.zoom-holder {
-		img.zoom-thumb { position: absolute !important; }
-	}
-}
-
 
 
 @media only screen and ( max-width: 62.5em ) /* 1000 */
