@@ -17,12 +17,14 @@
 		  		}
 		  	}
 	  	}
-	  	ul.menu { 
-	  		margin-left: 0;
-	  		a {	
+	  	ul.menu { margin-left: 0; }
+	  	.nav {
+	  		li {
+	  			a {	
 	  			display: inline-block;
 		  		font-size: 1em;
 		  		margin-bottom: 2px; }
+	  		}
 	  	}
 	}
 	.featured-content-first { clear: both; }

@@ -6469,10 +6469,10 @@ p.caption {
         background: url("../images/mnemosyne-phonetics-logo-300.png") no-repeat 0 0; }
     .navbar ul.menu {
       margin-left: 0; }
-      .navbar ul.menu a {
-        display: inline-block;
-        font-size: 1em;
-        margin-bottom: 2px; }
+    .navbar .nav li a {
+      display: inline-block;
+      font-size: 1em;
+      margin-bottom: 2px; }
 
   .featured-content-first {
     clear: both; }
