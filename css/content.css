@@ -6470,9 +6470,14 @@ p.caption {
     .navbar ul.menu {
       margin-left: 0; }
     .navbar .nav li a {
-      display: inline-block;
-      font-size: 1em;
-      margin-bottom: 2px; }
+      border-left: 0;
+      padding: 2px 6px;
+      font-size: 1em; }
+    .navbar .nav li.active-trail a,
+    .navbar .nav li.active-trail a:hover,
+    .navbar .nav li.active a,
+    .navbar .nav li.active a:hover {
+      border-bottom: 0; }
 
   .featured-content-first {
     clear: both; }
