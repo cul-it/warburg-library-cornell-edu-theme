@@ -6487,7 +6487,10 @@ p.caption {
     padding-right: 20px; }
 
   .institution-links {
-    width: 90%; } }
+    width: 90%; }
+
+  h2 {
+    font-size: 2em; } }
 @media (min-width: 1372px) {
   .hero .home-content {
     padding-left: 15%; } }
