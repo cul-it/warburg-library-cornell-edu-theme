@@ -5664,6 +5664,9 @@ body {
 .browse-themes .rs-carousel-runner {
   margin-left: 173px; }
 
+div.zoom-container div.zoom-holder img.zoom-thumb {
+  position: absolute !important; }
+
 @media only screen and (max-width: 62.5em) {
   #nav {
     width: 100%;
