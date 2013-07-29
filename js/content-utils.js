@@ -42,8 +42,5 @@
 				//e.preventDefault();
 			//});
 
-            //Drop-down touch friendly
-        $( '#nav li:has(ul)' ).doubleTapToGo();
-
     });      
 })(jQuery);

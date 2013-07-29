@@ -96,34 +96,9 @@
         <?php endif; ?>
       </div>
       <div class="span8">
-        <!-- original nav markup -->
-        <!-- <div class="nav-collapse collapse">
-          <div class="nav">
-            <?php print render($page['navigation']); ?>
-          </div>
-        </div> -->
-
-        <nav id="nav" role="navigation">
-          <a href="#nav" title="Show navigation">Show navigation</a>
-          <a href="#" title="Hide navigation">Hide navigation</a>
-            <div class="nav">
-              <?php print render($page['navigation']); ?>
-            </div>
-        </nav>
-
-        <!-- panel navigation markup
-        <!-- <nav id="nav" role="navigation">
-              <a href="#nav" title="Show navigation">Show navigation</a>
-              <a href="#" title="Hide navigation">Hide navigation</a>
-                <?php
-                $block = module_invoke('menu', 'block_view', 'menu-panel-navigation');
-                print render($block);
-                ?>
-            </nav> -->
-
-      
-
-
+        <div class="nav">
+          <?php print render($page['navigation']); ?>
+        </div>
       </div>
     </div>
   </div>
