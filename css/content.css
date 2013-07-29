@@ -6464,14 +6464,15 @@ p.caption {
     .navbar .logo h1 a {
       width: 300px;
       height: 70px;
-      background: url("../images/mnemosyne-logo-300.png") no-repeat 0 0;
-      display: inline-block;
-      font-size: 1em;
-      margin-bottom: 2px; }
+      background: url("../images/mnemosyne-logo-300.png") no-repeat 0 0; }
       .navbar .logo h1 a:hover {
         background: url("../images/mnemosyne-phonetics-logo-300.png") no-repeat 0 0; }
     .navbar ul.menu {
       margin-left: 0; }
+      .navbar ul.menu a {
+        display: inline-block;
+        font-size: 1em;
+        margin-bottom: 2px; }
 
   .featured-content-first {
     clear: both; }
