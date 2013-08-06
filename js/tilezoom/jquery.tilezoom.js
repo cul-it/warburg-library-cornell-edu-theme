@@ -259,7 +259,7 @@ function initTiles($cont, level) {
 		var offsetX = tile[0] == 0 ? 0 : settings.overlap;
        	var offsetY = tile[1] == 0 ? 0 : settings.overlap;
 		var id = 'zoom-'+settings.id+'-tile-'+tile[0]+'-'+tile[1];
-		var style = 'position: absolute !important; left: '+(tile[0]*settings.tileSize-offsetX)+'px; top: '+(tile[1]*settings.tileSize-offsetY)+'px; z-index: 0;';
+		var style = 'position: absolute; left: '+(tile[0]*settings.tileSize-offsetX)+'px; top: '+(tile[1]*settings.tileSize-offsetY)+'px; z-index: 0;';
 		$('<img/>', {
 		    _src: src,
 			id: id,
