@@ -5864,7 +5864,8 @@ h2 {
   line-height: 1.4em; }
 .main-content li {
   font-size: 1.4375em;
-  line-height: 1.2em; }
+  line-height: 1.4em;
+  margin-bottom: 5px; }
   .main-content li p {
     font-size: 1em; }
 .main-content h3 {
