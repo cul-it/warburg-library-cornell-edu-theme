@@ -118,7 +118,8 @@
 
             <section class="panels-photo">
 
-                <div id="container" data-panelinfo='[<?php print $variables['warburg']['panel']['tilezoominfo']; ?>]'>
+                <!-- <div id="container" data-panelinfo='[<?php print $variables['warburg']['panel']['tilezoominfo']; ?>]'> -->
+               <div id="container">
 
                     <div class="zoom-holder">
                         <?php
