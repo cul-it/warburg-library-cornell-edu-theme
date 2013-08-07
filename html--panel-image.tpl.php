@@ -116,7 +116,7 @@
 
                     <div class="zoom-holder">
                         <?php
-                        if (!empty($variables['warburg']['ordinal'])) {
+                        if (!empty($variables['warburg']['ordinal'][0]['spot_metadata_link'])) {
                           print '<div class="zoom-hotspots">' . PHP_EOL;
                           foreach ($variables['warburg']['ordinal'] as $hotspot) {
                             if (isset($hotspot['spot_metadata_link'])) {
