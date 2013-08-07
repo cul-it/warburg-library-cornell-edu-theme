@@ -24,7 +24,7 @@ div.zoom-container div.zoom-holder img.zoom-thumb {
     left: 0;
     position: absolute;
     top: 0;
-    z-index: 1;
+    z-index: 0;
     display: block;
 }
 div.zoom-container div.zoom-tiles {
@@ -40,7 +40,7 @@ div.zoom-container div.zoom-hotspots {
     padding: 0;
     position: absolute;
 		top: 0;
-	z-index: 1;
+	z-index: 2;
 	background: url("images/transparent.gif") repeat scroll 0 0 transparent;
 }
 div.zoom-container div.zoom-holder .grab {
