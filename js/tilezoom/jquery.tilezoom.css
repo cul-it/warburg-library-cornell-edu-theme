@@ -40,7 +40,7 @@ div.zoom-container div.zoom-hotspots {
     padding: 0;
     position: absolute;
 		top: 0;
-	z-index: 2;
+	z-index: 1;
 	background: url("images/transparent.gif") repeat scroll 0 0 transparent;
 }
 div.zoom-container div.zoom-holder .grab {
