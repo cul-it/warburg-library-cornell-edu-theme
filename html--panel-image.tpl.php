@@ -97,7 +97,7 @@
 
        </header>
 
-        <section>
+        <section style="z-index: 0;">
         <a title="collapse panels" class="carousel-toggle carousel-toggle-hide" href="#"></a>
             <?php
             $block = module_invoke('views', 'block_view', 'panel_selector-block');
