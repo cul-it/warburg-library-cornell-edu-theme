@@ -96,7 +96,7 @@
             <?php print $variables['warburg']['search_form']; ?>
 
        </header>
-<!--
+
         <section>
         <a title="collapse panels" class="carousel-toggle carousel-toggle-hide" href="#"></a>
             <?php
@@ -107,7 +107,7 @@
             <div class="carousel-left-limit"></div>
             <div class="carousel-right-limit"></div>
         </section>
--->
+
         <section class="panels-display">
 
             <section class="panels-photo">
