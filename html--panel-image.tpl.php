@@ -98,7 +98,7 @@
        </header>
 
         <section>
-        <a title="expand panels" class="carousel-toggle carousel-toggle-show" href="#"></a>
+        <a title="collapse panels" class="carousel-toggle carousel-toggle-hide" href="#"></a>
             <?php
             $block = module_invoke('views', 'block_view', 'panel_selector-block');
             print render($block);
@@ -137,23 +137,6 @@
                     $result = module_invoke('views', 'block_view', '240f2561056d0722cec3e68a281bd9e6');
                     print render($result);
                     ?>
-
-              <!-- Template metadata individual panels -->
-              <!--
-              <h3><span>Panel 48</h3>
-              <h4>Various levels of transferring the cosmic system to humanity. Harmonic correspondence. Later reduction of the harmony to abstract geometry instead of to cosmically conditional [geometry] (Leonardo). </h4>
-              <p>Panels  B  and  <a href="#" title="">C</a>  (which along with the not included panel A) provide the ‘grammar’ or ‘syntax’ with which to read the subsequent 60 panels. Offering an initial, paradigmatic itinerary or ‘meandering’ through Warburg’s vision, we see the genealogical and astrological  connections that link humanity and the cosmos. Panel B tracks the tensions between astrological and scientific-astronomical world views. In panel B the astrological is still dominant, whereas in panel <a href="#" title="">C</a>, with images showing Kepler’s astrological and astronomical</p>
-
-              <h5>Theme:</h5>
-              <ul>
-                  <li><a href="#" title="">Cosmographical sequence</a></li>
-                  <li><a href="#" title="">Theme 2</a></li>
-                  <li><a href="#" title="">Theme 3</a></li>
-              </ul>
-            -->
-              <!--END Template metadata individual panels -->
-
-
             </section>
 
             <nav>
