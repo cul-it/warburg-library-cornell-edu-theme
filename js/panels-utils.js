@@ -8,11 +8,12 @@
   function check_panel_height(theirPanelHeight) {
     var $header = $('.panels header');
     var $carousel = $('.rs-carousel');
+    var $carousel_toggle = $('.carousel-toggle');
 
     var winHeight = $(window).height();
     var headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
     var carouselHeight = 0;
-    if ($carousel.is(":visible")) {
+    if ($carousel_toggle.hasClass("carousel-toggle-hide")) {
       carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
     }
     var maxHeightPanel = winHeight - headerHeight - carouselHeight;
