@@ -16,7 +16,7 @@
       find_panel_height.headerHeight = $header.height() + parseInt($header.css("paddingTop")) + parseInt($header.css("paddingBottom")) + parseInt($header.css("marginTop")) + parseInt($header.css("marginBottom"));
     }
 
-    if (typeof check_panel_height.carouselHeight == "undefined") {
+    if (typeof find_panel_height.carouselHeight == "undefined") {
       // assuming carousel's open properly on the first call!
       find_panel_height.carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop")) + parseInt($carousel.css("paddingBottom")) + parseInt($carousel.css("marginTop")) + parseInt($carousel.css("marginBottom"));
     }
