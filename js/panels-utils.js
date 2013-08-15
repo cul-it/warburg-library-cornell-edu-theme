@@ -126,7 +126,7 @@
 
 
         //Drop-down touch friendly
-       // $( '#nav li:has(ul)' ).doubleTapToGo();
+       $( '#nav li:has(ul)' ).doubleTapToGo();
 
 
 		//show/hide carousel
