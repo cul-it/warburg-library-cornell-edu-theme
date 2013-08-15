@@ -5,6 +5,23 @@
 
 (function($){
 
+  function check_panel_height(theirPanelHeight) {
+    var $header = $('.panels header');
+    var $carousel = $('.rs-carousel');
+
+    var winHeight = $(window).height();
+    var headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
+    var carouselHeight = 0;
+    if ($carousel.is(":visible")) {
+      carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
+    }
+    var maxHeightPanel = winHeight - headerHeight - carouselHeight;
+    if (theirPanelHeight != maxHeightPanel) {
+      console.log("panel height mismatch: " + maxHeightPanel + " vs. " theirPanelHeight);
+    }
+    return maxHeightPanel;
+ }
+
   //Get max height for panels display, description, and panel tools containers.
 
   var $header = $('.panels header');
@@ -20,6 +37,8 @@
   var maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
 
 	var $carouselHidden = 0;
+
+  check_panel_height(maxHeightPanel);
 
   $('.panels-display').height(maxHeightPanel);
 
@@ -45,6 +64,8 @@
 
 				maxHeightPanel = $winHeight - ((headerHeight) + 10);
 			};
+
+  check_panel_height(maxHeightPanel);
 
       $('.panels-display').height(maxHeightPanel);
 
@@ -142,6 +163,7 @@
 				$winHeight = ($(window).height()) + 10;
 
 				maxHeightPanel = $winHeight - (headerHeight + 10);
+  check_panel_height(maxHeightPanel);
 
 				$('.panels-display').height(maxHeightPanel);
 
@@ -164,6 +186,7 @@
 				$winHeight = ($(window).height()) + 10;
 
 				maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
+  check_panel_height(maxHeightPanel);
 
 				$('.panels-display').height(maxHeightPanel);
 
