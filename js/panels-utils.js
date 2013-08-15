@@ -11,12 +11,18 @@
     var $carousel_toggle = $('.carousel-toggle');
 
     var winHeight = $(window).height();
-    var headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
-    var carouselHeight = 0;
-    if ($carousel_toggle.hasClass("carousel-toggle-hide")) {
-      carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
+    var headerHeight = $header.height() + parseInt($header.css("paddingTop")) + parseInt($header.css("paddingBottom")) + parseInt($header.css("marginTop")) + parseInt($header.css("marginBottom"));
+
+    if (typeof check_panel_height.carouselHeight == "undefined") {
+      // assuming it's open properly on the first call!
+      check_panel_height.carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop")) + parseInt($carousel.css("paddingBottom")) + parseInt($carousel.css("marginTop")) + parseInt($carousel.css("marginBottom"));
     }
-    var maxHeightPanel = winHeight - headerHeight - carouselHeight;
+
+    var maxHeightPanel = winHeight - headerHeight;
+    if ($carousel_toggle.hasClass("carousel-toggle-hide")) {
+      // intending to be showing the carousel after all the animation
+      maxHeightPanel -= check_panel_height.carouselHeight;
+    }
     if (theirPanelHeight != maxHeightPanel) {
       console.log("panel height mismatch: " + maxHeightPanel + " vs. " + theirPanelHeight);
     }
