@@ -5,26 +5,26 @@
 
 (function($){
 
-  function check_panel_height(theirPanelHeight) {
+  function find_panel_height() {
     var $header = $('.panels header');
     var $carousel = $('.rs-carousel');
     var $carousel_toggle = $('.carousel-toggle');
 
     var winHeight = $(window).height();
-    var headerHeight = $header.height() + parseInt($header.css("paddingTop")) + parseInt($header.css("paddingBottom")) + parseInt($header.css("marginTop")) + parseInt($header.css("marginBottom"));
+
+    if (typeof find_panel_height.headerHeight == "undefined") {
+      find_panel_height.headerHeight = $header.height() + parseInt($header.css("paddingTop")) + parseInt($header.css("paddingBottom")) + parseInt($header.css("marginTop")) + parseInt($header.css("marginBottom"));
+    }
 
     if (typeof check_panel_height.carouselHeight == "undefined") {
       // assuming carousel's open properly on the first call!
-      check_panel_height.carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop")) + parseInt($carousel.css("paddingBottom")) + parseInt($carousel.css("marginTop")) + parseInt($carousel.css("marginBottom"));
+      find_panel_height.carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop")) + parseInt($carousel.css("paddingBottom")) + parseInt($carousel.css("marginTop")) + parseInt($carousel.css("marginBottom"));
     }
 
     var maxHeightPanel = winHeight - headerHeight;
     if ($carousel_toggle.hasClass("carousel-toggle-hide")) {
       // intending to be showing the carousel after all the animation
       maxHeightPanel -= check_panel_height.carouselHeight;
-    }
-    if (theirPanelHeight != maxHeightPanel) {
-      console.log("panel height mismatch: " + maxHeightPanel + " vs. " + theirPanelHeight);
     }
     return maxHeightPanel;
  }
@@ -70,7 +70,7 @@
 				maxHeightPanel = $winHeight - ((headerHeight) + 10);
 			};
 
-  check_panel_height(maxHeightPanel);
+      maxHeightPanel = find_panel_height();
 
       $('.panels-display').height(maxHeightPanel);
 
@@ -105,7 +105,7 @@
       );
 
       // initialize for sizing panels
-      check_panel_height(100);
+      maxHeightPanel = find_panel_height();
 
 
   		//Hover over carousel of panels will change image legend to active color.
@@ -171,7 +171,7 @@
 				$winHeight = ($(window).height()) + 10;
 
 				maxHeightPanel = $winHeight - (headerHeight + 10);
-  check_panel_height(maxHeightPanel);
+        maxHeightPanel = find_panel_height();
 
 				$('.panels-display').height(maxHeightPanel);
 
@@ -194,7 +194,7 @@
 				$winHeight = ($(window).height()) + 10;
 
 				maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
-  check_panel_height(maxHeightPanel);
+        maxHeightPanel = find_panel_height();
 
 				$('.panels-display').height(maxHeightPanel);
 
