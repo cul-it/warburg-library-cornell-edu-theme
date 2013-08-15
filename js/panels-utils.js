@@ -21,10 +21,10 @@
       find_panel_height.carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop")) + parseInt($carousel.css("paddingBottom")) + parseInt($carousel.css("marginTop")) + parseInt($carousel.css("marginBottom"));
     }
 
-    var maxHeightPanel = winHeight - headerHeight;
+    var maxHeightPanel = winHeight - find_panel_height.headerHeight;
     if ($carousel_toggle.hasClass("carousel-toggle-hide")) {
       // intending to be showing the carousel after all the animation
-      maxHeightPanel -= check_panel_height.carouselHeight;
+      maxHeightPanel -= find_panel_height.carouselHeight;
     }
     return maxHeightPanel;
  }
