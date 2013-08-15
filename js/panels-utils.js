@@ -100,7 +100,9 @@
               insertNextAction: function () {
                   return $('<div id="right-nav" class="carousel-right-limit"><a href="#" class="rs-carousel-action rs-carousel-action-next"><span class="carousel-right-control"></span></a></div>').appendTo(this);
               },
-              pagination: false
+              pagination: false,
+              noOfRows: 1,
+              itemsPerPage: 8
           }
       );
 
