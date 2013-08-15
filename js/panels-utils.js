@@ -46,55 +46,13 @@
 
   var $header = $('.panels header');
 
-  var headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
-
   var $carousel = $('.rs-carousel');
-
-  var carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
 
   var $winHeight = $(window).height();
 
-  var maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
-
-	var $carouselHidden = 0;
-
-  $('.panels-display').height(maxHeightPanel);
-
-  $('.panels-photo').height(maxHeightPanel);
-
-  $('.panel-description').height(maxHeightPanel);
-
-  $('.panels-display nav').height(maxHeightPanel);
-
   $(window).resize(function(){
 
-      headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
-
-      carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop") + $carousel.css("paddingBottom") + $carousel.css("marginTop") + $carousel.css("marginBottom"));
-
-			$winHeight = ($(window).height()) + 10;
-
-			if ($('.rs-carousel').is(":visible")) {
-
-				maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
-
-			}else {
-
-				maxHeightPanel = $winHeight - ((headerHeight) + 10);
-			};
-
-      maxHeightPanel = find_panel_height();
       set_panel_height();
-      /*
-      $('.panels-display').height(maxHeightPanel);
-
-      $('.panels-photo').height(maxHeightPanel);
-
-      $('.panel-description').height(maxHeightPanel);
-
-      $('.panels-display nav').height(maxHeightPanel);
-      */
-
       // Refresh carousel items
 
       $(':rs-carousel').carousel('refresh');
@@ -121,7 +79,7 @@
       );
 
       // initialize for sizing panels
-      maxHeightPanel = find_panel_height();
+      set_panel_height();
 
 
   		//Hover over carousel of panels will change image legend to active color.
@@ -182,24 +140,7 @@
 
 				$(this).removeClass('carousel-toggle-hide').addClass('carousel-toggle-show').attr('title', 'expand panels');
 
-				headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
-
-				$winHeight = ($(window).height()) + 10;
-
-				maxHeightPanel = $winHeight - (headerHeight + 10);
-        maxHeightPanel = find_panel_height();
         set_panel_height();
-        /*
-
-				$('.panels-display').height(maxHeightPanel);
-
-     		$('.panels-photo').height(maxHeightPanel);
-
-     		$('.panel-description').height(maxHeightPanel);
-
-     		$('.panels-display nav').height(maxHeightPanel);
-
-        */
 
 				$(':rs-carousel').carousel('refresh');
 
@@ -209,23 +150,7 @@
 
 				$(this).removeClass('carousel-toggle-show').addClass('carousel-toggle-hide').attr('title', 'collapse panels');
 
-				headerHeight = $header.height() + parseInt($header.css("paddingTop") + $header.css("paddingBottom") + $header.css("marginTop") + $header.css("marginBottom"));
-
-				$winHeight = ($(window).height()) + 10;
-
-				maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
-        maxHeightPanel = find_panel_height();
         set_panel_height();
-        /*
-
-				$('.panels-display').height(maxHeightPanel);
-
-     		$('.panels-photo').height(maxHeightPanel);
-
-     		$('.panel-description').height(maxHeightPanel);
-
-     		$('.panels-display nav').height(maxHeightPanel);
-        */
 
 				$(':rs-carousel').carousel('refresh');
      });
