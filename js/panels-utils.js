@@ -14,7 +14,7 @@
     var headerHeight = $header.height() + parseInt($header.css("paddingTop")) + parseInt($header.css("paddingBottom")) + parseInt($header.css("marginTop")) + parseInt($header.css("marginBottom"));
 
     if (typeof check_panel_height.carouselHeight == "undefined") {
-      // assuming it's open properly on the first call!
+      // assuming carousel's open properly on the first call!
       check_panel_height.carouselHeight = $carousel.height() + parseInt($carousel.css("paddingTop")) + parseInt($carousel.css("paddingBottom")) + parseInt($carousel.css("marginTop")) + parseInt($carousel.css("marginBottom"));
     }
 
@@ -44,8 +44,6 @@
   var maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
 
 	var $carouselHidden = 0;
-
-  check_panel_height(maxHeightPanel);
 
   $('.panels-display').height(maxHeightPanel);
 
@@ -105,6 +103,9 @@
               pagination: false
           }
       );
+
+      // initialize for sizing panels
+      check_panel_height(100);
 
 
   		//Hover over carousel of panels will change image legend to active color.
