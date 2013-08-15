@@ -29,6 +29,19 @@
     return maxHeightPanel;
  }
 
+ function set_panel_height() {
+  var maxHeightPanel = find_panel_height();
+
+  $('.panels-display').height(maxHeightPanel);
+
+  $('.panels-photo').height(maxHeightPanel);
+
+  $('.panel-description').height(maxHeightPanel);
+
+  $('.panels-display nav').height(maxHeightPanel);
+
+ }
+
   //Get max height for panels display, description, and panel tools containers.
 
   var $header = $('.panels header');
@@ -71,7 +84,8 @@
 			};
 
       maxHeightPanel = find_panel_height();
-
+      set_panel_height();
+      /*
       $('.panels-display').height(maxHeightPanel);
 
       $('.panels-photo').height(maxHeightPanel);
@@ -79,7 +93,7 @@
       $('.panel-description').height(maxHeightPanel);
 
       $('.panels-display nav').height(maxHeightPanel);
-
+      */
 
       // Refresh carousel items
 
@@ -174,6 +188,8 @@
 
 				maxHeightPanel = $winHeight - (headerHeight + 10);
         maxHeightPanel = find_panel_height();
+        set_panel_height();
+        /*
 
 				$('.panels-display').height(maxHeightPanel);
 
@@ -182,6 +198,8 @@
      		$('.panel-description').height(maxHeightPanel);
 
      		$('.panels-display nav').height(maxHeightPanel);
+
+        */
 
 				$(':rs-carousel').carousel('refresh');
 
@@ -197,6 +215,8 @@
 
 				maxHeightPanel = $winHeight - ((headerHeight + carouselHeight) + 10);
         maxHeightPanel = find_panel_height();
+        set_panel_height();
+        /*
 
 				$('.panels-display').height(maxHeightPanel);
 
@@ -205,6 +225,7 @@
      		$('.panel-description').height(maxHeightPanel);
 
      		$('.panels-display nav').height(maxHeightPanel);
+        */
 
 				$(':rs-carousel').carousel('refresh');
      });
