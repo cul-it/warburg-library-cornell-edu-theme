@@ -17,7 +17,7 @@
     }
     var maxHeightPanel = winHeight - headerHeight - carouselHeight;
     if (theirPanelHeight != maxHeightPanel) {
-      console.log("panel height mismatch: " + maxHeightPanel + " vs. " theirPanelHeight);
+      console.log("panel height mismatch: " + maxHeightPanel + " vs. " + theirPanelHeight);
     }
     return maxHeightPanel;
  }
