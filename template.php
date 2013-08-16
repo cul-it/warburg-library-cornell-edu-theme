@@ -396,14 +396,14 @@ function warburg_insert_js() {
 
   // carousel core
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel.js',
-    array('group' => JS_THEME, 'weight' => 13, 'scope' => 'footer'));
+    array('group' => JS_LIBRARY, 'weight' => 13));
   // carousel extensions (optional)
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-autoscroll.js',
-    array('group' => JS_THEME, 'weight' => 14, 'scope' => 'footer'));
+    array('group' => JS_LIBRARY, 'weight' => 14));
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-continuous.js',
-    array('group' => JS_THEME, 'weight' => 15, 'scope' => 'footer'));
+    array('group' => JS_LIBRARY, 'weight' => 15));
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-touch.js',
-    array('group' => JS_THEME, 'weight' => 16, 'scope' => 'footer'));
+    array('group' => JS_LIBRARY, 'weight' => 16));
 
   // scaling fix - was inline
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/ios-viewport-scaling-fix.js',
