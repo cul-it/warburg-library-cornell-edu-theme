@@ -74,6 +74,7 @@
               },
               pagination: false,
               noOfRows: 1,
+              orientation: 'horizontal',
               itemsPerPage: 8
           }
       );
