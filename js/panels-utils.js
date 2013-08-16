@@ -66,6 +66,9 @@
       if ($theCarousel.length === 0) {
         console.log('missing carousel');
       }
+      else {
+        console.log('carousel has this many pages: ' + $(':rs-carousel').carousel('getNoOfPages'));
+      }
 
       $('.rs-carousel').carousel(
           {
