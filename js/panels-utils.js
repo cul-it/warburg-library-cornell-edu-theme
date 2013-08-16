@@ -63,7 +63,7 @@
 
 			//Init carousel
 
-      var $theCarousel = $('.rs-carousel').noConflict();
+      var $theCarousel = $('.rs-carousel');
       if ($theCarousel.length === 0) {
         console.log('missing carousel');
       }
