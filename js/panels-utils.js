@@ -63,16 +63,7 @@
 
 			//Init carousel
 
-      var $theCarousel = $('.rs-carousel');
-      if ($theCarousel.length === 0) {
-        console.log('missing carousel');
-      }
-      else {
-        console.log('carousel has this many panels: ' + parseInt($(':rs-carousel').carousel('getNoOfItems')));
-      }
-
-
-      $('.item-list rs-carousel').carousel(
+      $('.rs-carousel').carousel(
           {
               nextPrevActions: true,
               insertPrevAction: function () {
@@ -87,6 +78,14 @@
               itemsPerPage: 8
           }
       );
+
+      var $theCarousel = $('.rs-carousel');
+      if ($theCarousel.length === 0) {
+        console.log('missing carousel');
+      }
+      else {
+        console.log('carousel has this many panels: ' + parseInt($(':rs-carousel').carousel('getNoOfItems')));
+      }
 
       // initialize for sizing panels
       set_panel_height();
