@@ -72,7 +72,7 @@
       }
       */
 
-      $('.rs-carousel').carousel(
+      $('.xxx-rs-carousel').carousel(
           {
               nextPrevActions: true,
               insertPrevAction: function () {
