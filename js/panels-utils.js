@@ -79,7 +79,7 @@
           }
       );
 
-      var $theCarousel = $('.rs-carousel');
+      var $theCarousel = $('.view-id-panel_selector').find('.rs-carousel');
       if ($theCarousel.length === 0) {
         console.log('missing carousel');
       }
