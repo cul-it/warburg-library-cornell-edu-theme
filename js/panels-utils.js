@@ -62,6 +62,10 @@
   $(document).ready(function () {
 
 			//Init carousel
+      var $theCarousel = $('.rs-carousel');
+      if ($theCarousel.length === 0) {
+        console.log('missing carousel');
+      }
 
       $('.rs-carousel').carousel(
           {
