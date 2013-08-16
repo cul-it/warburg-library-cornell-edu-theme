@@ -44,11 +44,11 @@
 
   //Get max height for panels display, description, and panel tools containers.
 
-  var $header = $('.panels header');
+  //var $header = $('.panels header');
 
-  var $carousel = $('.rs-carousel');
+  //var $carousel = $('.rs-carousel');
 
-  var $winHeight = $(window).height();
+  //var $winHeight = $(window).height();
 
   $(window).resize(function(){
 
@@ -62,6 +62,7 @@
   $(document).ready(function () {
 
 			//Init carousel
+     /* //
       var $theCarousel = $('.rs-carousel');
       if ($theCarousel.length === 0) {
         console.log('missing carousel');
@@ -69,6 +70,7 @@
       else {
         console.log('carousel has this many panels: ' + $(':rs-carousel').carousel('getNoOfItems'));
       }
+      */
 
       $('.rs-carousel').carousel(
           {
