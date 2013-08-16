@@ -67,7 +67,7 @@
         console.log('missing carousel');
       }
       else {
-        console.log('carousel has this many pages: ' + $(':rs-carousel').carousel('getNoOfPages'));
+        console.log('carousel has this many panels: ' + $(':rs-carousel').carousel('getNoOfItems'));
       }
 
       $('.rs-carousel').carousel(
