@@ -63,6 +63,15 @@
 
 			//Init carousel
 
+      var $theCarousel = $('.rs-carousel').noConflict();
+      if ($theCarousel.length === 0) {
+        console.log('missing carousel');
+      }
+      else {
+        $theCarousel.carousel({orientation: 'horizontal'});
+        console.log('carousel has this many panels: ' + parseInt($(':rs-carousel').carousel('getNoOfItems')));
+      }
+
       $('.rs-carousel').carousel(
           {
               nextPrevActions: true,
@@ -78,14 +87,6 @@
               itemsPerPage: 8
           }
       );
-
-      var $theCarousel = $('.view-id-panel_selector').find('.rs-carousel');
-      if ($theCarousel.length === 0) {
-        console.log('missing carousel');
-      }
-      else {
-        console.log('carousel has this many panels: ' + parseInt($(':rs-carousel').carousel('getNoOfItems')));
-      }
 
       // initialize for sizing panels
       set_panel_height();
