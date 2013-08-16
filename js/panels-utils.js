@@ -62,15 +62,15 @@
   $(document).ready(function () {
 
 			//Init carousel
-     /* //
+
       var $theCarousel = $('.rs-carousel');
       if ($theCarousel.length === 0) {
         console.log('missing carousel');
       }
       else {
-        console.log('carousel has this many panels: ' + $(':rs-carousel').carousel('getNoOfItems'));
+        console.log('carousel has this many panels: ' + parseInt($(':rs-carousel').carousel('getNoOfItems')));
       }
-      */
+
 
       $('.item-list rs-carousel').carousel(
           {
