@@ -386,40 +386,40 @@ function warburg_insert_css() {
 function warburg_insert_js() {
   // carousel lib
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.ui.widget.js',
-    array('group' => JS_THEME, 'weight' => 10));
+    array('group' => JS_LIBRARY, 'weight' => 10));
   // if using touch
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.event.drag.js',
-    array('group' => JS_THEME, 'weight' => 11));
+    array('group' => JS_LIBRARY, 'weight' => 11));
   // if using touch and translate3d
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/lib/jquery.translate3d.js',
-    array('group' => JS_THEME, 'weight' => 12));
+    array('group' => JS_LIBRARY, 'weight' => 12));
 
   // carousel core
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel.js',
-    array('group' => JS_THEME, 'weight' => 13, 'scope' => 'footer'));
+    array('group' => JS_LIBRARY, 'weight' => 13));
   // carousel extensions (optional)
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-autoscroll.js',
-    array('group' => JS_THEME, 'weight' => 14, 'scope' => 'footer'));
+    array('group' => JS_LIBRARY, 'weight' => 14));
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-continuous.js',
-    array('group' => JS_THEME, 'weight' => 15, 'scope' => 'footer'));
+    array('group' => JS_LIBRARY, 'weight' => 15));
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-touch.js',
-    array('group' => JS_THEME, 'weight' => 16, 'scope' => 'footer'));
+    array('group' => JS_LIBRARY, 'weight' => 16));
 
   // scaling fix - was inline
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/ios-viewport-scaling-fix.js',
-    array('group' => JS_THEME, 'weight' => 17));
+    array('group' => JS_LIBRARY, 'weight' => 17));
 
   // Drop-Down Navigation: Responsive and Touch-Friendly
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/DoubleTapToGo.js',
-    array('group' => JS_THEME, 'weight' => 18));
+    array('group' => JS_LIBRARY, 'weight' => 18));
 
   // panel utils
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/panels-utils.js',
-    array('group' => JS_THEME, 'weight' => 19, 'scope' => 'footer'));
+    array('group' => JS_THEME, 'weight' => 19));
 
   // additional image link
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/draggable-modal.js',
-    array('group' => JS_THEME, 'weight' => 20, 'scope' => 'footer'));
+    array('group' => JS_LIBRARY, 'weight' => 20));
 
   // add the javascript to support dragging
   drupal_add_library('system', 'ui.draggable');
