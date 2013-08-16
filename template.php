@@ -415,7 +415,7 @@ function warburg_insert_js() {
 
   // panel utils - must be before bootstrap.js
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/panels-utils.js',
-    array('group' => JS_THEME, 'weight' => -19));
+    array('group' => JS_LIBRARY, 'weight' => 19));
 
   // additional image link
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/draggable-modal.js',
