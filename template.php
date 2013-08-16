@@ -396,14 +396,14 @@ function warburg_insert_js() {
 
   // carousel core
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel.js',
-    array('group' => JS_LIBRARY, 'weight' => 13));
+    array('group' => JS_THEME, 'weight' => 13, 'scope' => 'footer'));
   // carousel extensions (optional)
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-autoscroll.js',
-    array('group' => JS_LIBRARY, 'weight' => 14));
+    array('group' => JS_THEME, 'weight' => 14, 'scope' => 'footer'));
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-continuous.js',
-    array('group' => JS_LIBRARY, 'weight' => 15));
+    array('group' => JS_THEME, 'weight' => 15, 'scope' => 'footer'));
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-touch.js',
-    array('group' => JS_LIBRARY, 'weight' => 16));
+    array('group' => JS_THEME, 'weight' => 16, 'scope' => 'footer'));
 
   // scaling fix - was inline
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/ios-viewport-scaling-fix.js',
@@ -413,9 +413,9 @@ function warburg_insert_js() {
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/DoubleTapToGo.js',
     array('group' => JS_LIBRARY, 'weight' => 18));
 
-  // panel utils - must be before bootstrap.js
+  // panel utils
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/panels-utils.js',
-    array('group' => JS_LIBRARY, 'weight' => 19));
+    array('group' => JS_THEME, 'weight' => 19, 'scope' => 'footer'));
 
   // additional image link
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/draggable-modal.js',
