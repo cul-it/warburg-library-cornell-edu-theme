@@ -402,8 +402,8 @@ function warburg_insert_js() {
     array('group' => JS_THEME, 'weight' => 14, 'scope' => 'footer'));
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-continuous.js',
     array('group' => JS_THEME, 'weight' => 15, 'scope' => 'footer'));
-  //drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-touch.js',
-  //  array('group' => JS_THEME, 'weight' => 16, 'scope' => 'footer'));
+  drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-touch.js',
+    array('group' => JS_THEME, 'weight' => 16, 'scope' => 'footer'));
 
   // scaling fix - was inline
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/ios-viewport-scaling-fix.js',
