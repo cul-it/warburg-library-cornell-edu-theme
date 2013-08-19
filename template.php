@@ -419,7 +419,7 @@ function warburg_insert_js() {
 
   // additional image link
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/draggable-modal.js',
-    array('group' => JS_LIBRARY, 'weight' => 20));
+    array('group' => JS_THEME, 'weight' => 20, 'scope' => 'footer'));
 
   // add the javascript to support dragging
   drupal_add_library('system', 'ui.draggable');
