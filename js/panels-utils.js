@@ -162,7 +162,7 @@
 
         set_panel_height();
 
-				$(':rs-carousel').carousel('refresh');
+				//$(':rs-carousel').carousel('refresh');
      });
 
   });
