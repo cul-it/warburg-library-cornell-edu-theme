@@ -414,8 +414,8 @@ function warburg_insert_js() {
     array('group' => JS_LIBRARY, 'weight' => 18));
 
   // testing jcarousel
-  drupal_add_js(drupal_get_path('module', 'jcarousel') . 'js/jquery.jcarousel.min.js', array('group' => JS_LIBRARY, 'weight' => 20));
- drupal_add_js(drupal_get_path('module', 'jcarousel') . 'js/jquery.jcarousel.js', array('group' => JS_LIBRARY, 'weight' => 21));
+  drupal_add_js(drupal_get_path('module', 'jcarousel') . '/js/jquery.jcarousel.min.js', array('group' => JS_LIBRARY, 'weight' => 20));
+ drupal_add_js(drupal_get_path('module', 'jcarousel') . '/js/jquery.jcarousel.js', array('group' => JS_LIBRARY, 'weight' => 21));
 
   // panel utils
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/panels-utils.js',
