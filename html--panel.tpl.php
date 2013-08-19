@@ -104,10 +104,12 @@
             if (isset($_GET['theme'])) {
               $theme_term = $_GET['theme'];
               $selector = 'panel_selector-block_1';
+              $selector = 'panel_selector_jcarousel-block_1';
             }
             else {
               $theme_term = 'all';
               $selector = 'panel_selector-block';
+              $selector = 'panel_selector_jcarousel-block';
             }
             $block = module_invoke('views', 'block_view', $selector, $theme_term);
             print render($block);
