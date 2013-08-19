@@ -156,7 +156,7 @@
 
      }, function () {
 
-      $(':rs-carousel').carousel('refresh');
+        var hgt = $('.rs-carousel').outerHeight(true);
 
          $('.rs-carousel').slideDown('slow');
 
