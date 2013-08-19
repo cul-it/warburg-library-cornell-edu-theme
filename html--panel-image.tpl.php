@@ -100,7 +100,7 @@
         <section>
         <a title="collapse panels" class="carousel-toggle carousel-toggle-hide" href="#"></a>
             <?php
-            $block = module_invoke('views', 'block_view', 'panel_selector-block');
+            $block = module_invoke('views', 'block_view', 'panel_selector_jcarousel-block');
             print render($block);
             ?>
 
