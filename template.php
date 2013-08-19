@@ -415,10 +415,12 @@ function warburg_insert_js() {
 
   // testing jcarousel
   // /skins/default/jcarousel-default.css
-  //
+  /*
   drupal_add_css(drupal_get_path('module', 'jcarousel') . '/skins/default/jcarousel-default.css', array('group' => CSS_THEME, 'weight' => 20));
   drupal_add_js(drupal_get_path('module', 'jcarousel') . '/js/jquery.jcarousel.min.js', array('group' => JS_LIBRARY, 'weight' => 20));
  drupal_add_js(drupal_get_path('module', 'jcarousel') . '/js/jquery.jcarousel.js', array('group' => JS_LIBRARY, 'weight' => 21));
+ */
+jcarousel_add('my-jcarousel', array());
 
   // panel utils
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/panels-utils.js',
