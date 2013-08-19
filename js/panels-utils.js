@@ -156,6 +156,8 @@
 
      }, function () {
 
+      $(':rs-carousel').carousel('refresh');
+
          $('.rs-carousel').slideDown('slow');
 
 				$(this).removeClass('carousel-toggle-show').addClass('carousel-toggle-hide').attr('title', 'collapse panels');
