@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Abel);
-/*
+/*!
  * Bootstrap v2.3.1
  *
  * Copyright 2012 Twitter, Inc
@@ -4845,7 +4845,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/*
+/*!
  * Bootstrap Responsive v2.3.1
  *
  * Copyright 2012 Twitter, Inc
@@ -6371,29 +6371,29 @@ p.caption {
 .main-content .contributor-bio p {
   font-size: 1.25em; }
 
-/* Panel list on themes page */
+/* Inline list of buttons */
 /*------------------------------*/
-.panel-themes {
+.button-list {
   list-style: none;
   margin-left: 0;
   overflow: hidden;
   border-bottom: 1px solid #dedede;
   padding-bottom: 5px; }
-  .panel-themes li {
+  .button-list li {
     float: left;
     margin-right: 5px;
     margin-bottom: 10px;
     background: #c0c0c3;
     padding: 4px 8px;
     color: white; }
-  .panel-themes li.link {
+  .button-list li.link {
     padding: 0; }
-  .panel-themes a {
+  .button-list a {
     background: #a7c03a;
     padding: 4px 8px;
     color: white;
     display: block; }
-  .panel-themes a:hover {
+  .button-list a:hover {
     background: #005580; }
 
 @media (min-width: 980px) and (max-width: 1199px) {
