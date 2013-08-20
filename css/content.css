@@ -6408,11 +6408,7 @@ p.caption {
     float: left;
     margin-right: 5px;
     margin-bottom: 10px;
-    background: #c0c0c3;
-    padding: 4px 8px;
     color: white; }
-  .anchor-list li.link {
-    padding: 0; }
   .anchor-list a {
     background: #a7c03a;
     padding: 4px 8px;
