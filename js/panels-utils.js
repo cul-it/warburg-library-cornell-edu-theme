@@ -55,7 +55,7 @@
       set_panel_height();
       // Refresh carousel items
 
-      //$(':rs-carousel').carousel('refresh');
+      $(':rs-carousel').carousel('refresh');
 
   });
 
