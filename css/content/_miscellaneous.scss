@@ -154,3 +154,33 @@ p.caption {
     background: $linkHover;
   }
 }
+
+/* Inline Aanchor list */
+/*------------------------------*/  
+.anchor-list {
+  list-style: none;
+  margin-left: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 5px;
+  li {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background: $grayVeryLight;
+    padding: 4px 8px;
+    color: white;
+  }
+  li.link {
+    padding: 0;
+  }
+  a {
+    background: $linkPrimary;
+    padding: 4px 8px;
+    color: white;
+    display: block;
+  }
+  a:hover {
+    background: $linkHover;
+  }
+}

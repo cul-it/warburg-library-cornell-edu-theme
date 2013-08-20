@@ -6396,6 +6396,31 @@ p.caption {
   .button-list a:hover {
     background: #005580; }
 
+/* Inline Aanchor list */
+/*------------------------------*/
+.anchor-list {
+  list-style: none;
+  margin-left: 0;
+  overflow: hidden;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 5px; }
+  .anchor-list li {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    background: #c0c0c3;
+    padding: 4px 8px;
+    color: white; }
+  .anchor-list li.link {
+    padding: 0; }
+  .anchor-list a {
+    background: #a7c03a;
+    padding: 4px 8px;
+    color: white;
+    display: block; }
+  .anchor-list a:hover {
+    background: #005580; }
+
 @media (min-width: 980px) and (max-width: 1199px) {
   .navbar .container {
     width: 940px; }
