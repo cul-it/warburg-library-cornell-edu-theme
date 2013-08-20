@@ -63,15 +63,6 @@
 
 			//Init carousel
 
-      var $theCarousel = $('.rs-carousel');
-      if ($theCarousel.length === 0) {
-        console.log('missing carousel');
-      }
-      else {
-        //$theCarousel.carousel({orientation: 'horizontal'});
-        console.log('carousel has this many panels: ' + parseInt($(':rs-carousel').carousel('getNoOfItems')));
-      }
-
       $('.rs-carousel').carousel(
           {
               nextPrevActions: true,
