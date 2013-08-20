@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*
+/*!
  * Bootstrap v2.3.1
  *
  * Copyright 2012 Twitter, Inc
@@ -5397,6 +5397,9 @@ body {
         background: #1faac0;
         color: white;
         text-decoration: none; }
+  .panels-display .btn-standard {
+    margin-left: 20px;
+    text-decoration: none; }
   .panels-display nav {
     position: absolute;
     top: 0;
