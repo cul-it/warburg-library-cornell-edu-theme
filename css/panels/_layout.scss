@@ -1051,7 +1051,7 @@ body {
 }
 
 @-moz-document url-prefix() {
-    .rs-carousel-runner { width: 1720px; }
+    .rs-carousel-runner { width: 1720px !important; }
 }
 
 
