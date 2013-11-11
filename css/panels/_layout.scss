@@ -405,8 +405,6 @@ body {
 
 
 .rs-carousel {
-
-	width: 100%;
 	
 	ul {
 		
@@ -420,6 +418,7 @@ body {
 
 			//margin-right: 25px;
 			margin-right: 0;
+			display: inline;
 
 			&:first-child {
 				//margin-left: 75px;
