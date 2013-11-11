@@ -1049,10 +1049,6 @@ body {
   }
 }
 
-// firefox fix
-@-moz-document url-prefix() {
-    .rs-carousel-runner { width: 1720px !important; }
-}
 
 
 @media only screen and ( max-width: 62.5em ) /* 1000 */
