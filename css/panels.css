@@ -5137,8 +5137,7 @@ body {
   margin-left: 0;
   margin-right: 0; }
   .rs-carousel ul li {
-    margin-right: 0;
-    display: inline; }
+    margin-right: 0; }
     .rs-carousel ul li .panel-item a {
       position: relative;
       display: inline-block;
@@ -5670,10 +5669,6 @@ body {
   width: 138px; }
 .browse-themes .rs-carousel-runner {
   margin-left: 173px; }
-
-@-moz-document url-prefix() {
-  .rs-carousel-runner {
-    width: 1720px !important; } }
 
 @media only screen and (max-width: 62.5em) {
   #nav {

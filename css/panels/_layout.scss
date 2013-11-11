@@ -418,8 +418,7 @@ body {
 
 			//margin-right: 25px;
 			margin-right: 0;
-			display: inline;
-
+			
 			&:first-child {
 				//margin-left: 75px;
 				//margin-left: 0;
@@ -1048,10 +1047,6 @@ body {
   .rs-carousel-runner {
     margin-left: 173px;
   }
-}
-
-@-moz-document url-prefix() {
-    .rs-carousel-runner { width: 1720px !important; }
 }
 
 
