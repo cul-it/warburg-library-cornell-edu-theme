@@ -5670,6 +5670,10 @@ body {
 .browse-themes .rs-carousel-runner {
   margin-left: 173px; }
 
+@-moz-document url-prefix() {
+  .rs-carousel-runner {
+    width: 1720px !important; } }
+
 @media only screen and (max-width: 62.5em) {
   #nav {
     width: 100%;
