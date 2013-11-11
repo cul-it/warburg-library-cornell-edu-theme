@@ -5130,85 +5130,86 @@ body {
 .carousel-toggle-show {
   background: url("../images/panels/carousel/carousel-show.png") no-repeat 0 0; }
 
-.rs-carousel ul {
-  height: 205px;
-  list-style-type: none;
-  padding-top: 15px;
-  margin-left: 0;
-  margin-right: 0; }
-  .rs-carousel ul li {
-    margin-right: 0;
-    width: auto; }
-    .rs-carousel ul li .panel-item a {
-      position: relative;
-      display: inline-block;
-      text-decoration: none; }
-      .rs-carousel ul li .panel-item a span.panel-name {
-        position: absolute;
+.rs-carousel {
+  width: 100%; }
+  .rs-carousel ul {
+    height: 205px;
+    list-style-type: none;
+    padding-top: 15px;
+    margin-left: 0;
+    margin-right: 0; }
+    .rs-carousel ul li {
+      margin-right: 0; }
+      .rs-carousel ul li .panel-item a {
+        position: relative;
         display: inline-block;
-        padding: 10px;
-        padding-right: 0;
-        font-size: 1.1em;
-        color: #fff;
-        background-color: #7a9945;
-        width: 138px;
-        bottom: 3px;
-        left: 0;
-        margin: 0; }
-        .rs-carousel ul li .panel-item a span.panel-name:hover {
-          background-color: #1faac0; }
-        .rs-carousel ul li .panel-item a span.panel-name.active {
-          background-color: #1faac0; }
-        .rs-carousel ul li .panel-item a span.panel-name.hover {
-          background-color: #1faac0; }
-.rs-carousel .rs-carousel-action-prev {
-  display: inline-block;
-  position: absolute;
-  top: 60px;
-  left: 20px;
-  background-image: url("../images/panels/panelsSprites.png");
-  background-position: -5px -63px;
-  width: 38px;
-  height: 100px;
-  filter: alpha(opacity=80);
-  opacity: 0.8;
-  z-index: 99; }
-.rs-carousel .rs-carousel-action-next {
-  display: inline-block;
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-image: url("../images/panels/panelsSprites.png");
-  background-position: -54px -63px;
-  width: 38px;
-  height: 100px;
-  filter: alpha(opacity=80);
-  opacity: 0.8;
-  z-index: 99; }
-.rs-carousel .carousel-left-limit {
-  height: 220px;
-  width: 80px;
-  background-color: white;
-  position: absolute;
-  top: 49px;
-  left: 0;
-  filter: alpha(opacity=80);
-  opacity: 0.8;
-  display: none; }
-.rs-carousel .carousel-right-limit {
-  height: 220px;
-  width: 80px;
-  background-color: white;
-  position: absolute;
-  top: 45px;
-  right: 0;
-  filter: alpha(opacity=80);
-  opacity: 0.8;
-  display: none; }
-.rs-carousel .rs-carousel-action-active {
-  display: block;
-  filter: alpha(opacity=80);
-  opacity: 0.8; }
+        text-decoration: none; }
+        .rs-carousel ul li .panel-item a span.panel-name {
+          position: absolute;
+          display: inline-block;
+          padding: 10px;
+          padding-right: 0;
+          font-size: 1.1em;
+          color: #fff;
+          background-color: #7a9945;
+          width: 138px;
+          bottom: 3px;
+          left: 0;
+          margin: 0; }
+          .rs-carousel ul li .panel-item a span.panel-name:hover {
+            background-color: #1faac0; }
+          .rs-carousel ul li .panel-item a span.panel-name.active {
+            background-color: #1faac0; }
+          .rs-carousel ul li .panel-item a span.panel-name.hover {
+            background-color: #1faac0; }
+  .rs-carousel .rs-carousel-action-prev {
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-image: url("../images/panels/panelsSprites.png");
+    background-position: -5px -63px;
+    width: 38px;
+    height: 100px;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    z-index: 99; }
+  .rs-carousel .rs-carousel-action-next {
+    display: inline-block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-image: url("../images/panels/panelsSprites.png");
+    background-position: -54px -63px;
+    width: 38px;
+    height: 100px;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    z-index: 99; }
+  .rs-carousel .carousel-left-limit {
+    height: 220px;
+    width: 80px;
+    background-color: white;
+    position: absolute;
+    top: 49px;
+    left: 0;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    display: none; }
+  .rs-carousel .carousel-right-limit {
+    height: 220px;
+    width: 80px;
+    background-color: white;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    display: none; }
+  .rs-carousel .rs-carousel-action-active {
+    display: block;
+    filter: alpha(opacity=80);
+    opacity: 0.8; }
 
 .panels-display {
   position: relative;
