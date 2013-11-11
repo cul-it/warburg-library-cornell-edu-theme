@@ -5137,7 +5137,8 @@ body {
   margin-left: 0;
   margin-right: 0; }
   .rs-carousel ul li {
-    margin-right: 0; }
+    margin-right: 0;
+    width: auto; }
     .rs-carousel ul li .panel-item a {
       position: relative;
       display: inline-block;
