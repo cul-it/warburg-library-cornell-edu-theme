@@ -102,15 +102,6 @@ p.caption {
 .contributor { 
   clear: both;
 }
-.view-scholars {
-  .views-row {
-    border-top: 1px solid $grayLight;
-    padding-top: 20px;
-  }
-  .views-row:first-child {
-    border-top: 0;
-  }
-}
 .contributor-photo { 
   width: 20%;
   float: left;
@@ -118,6 +109,7 @@ p.caption {
 .contributor-info {
   float: left;
   width: 70%;
+  margin-bottom: 20px;
   strong { font-size: 110%; }
 }
 .main-content {

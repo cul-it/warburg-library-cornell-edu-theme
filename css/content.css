@@ -6358,12 +6358,6 @@ p.caption {
 .contributor {
   clear: both; }
 
-.view-scholars .views-row {
-  border-top: 1px solid #a6a6a8;
-  padding-top: 20px; }
-.view-scholars .views-row:first-child {
-  border-top: 0; }
-
 .contributor-photo {
   width: 20%;
   float: left;
@@ -6371,7 +6365,8 @@ p.caption {
 
 .contributor-info {
   float: left;
-  width: 70%; }
+  width: 70%;
+  margin-bottom: 20px; }
   .contributor-info strong {
     font-size: 110%; }
 
