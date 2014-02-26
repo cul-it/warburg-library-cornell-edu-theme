@@ -6358,7 +6358,7 @@ p.caption {
 .contributor {
   clear: both;
   border-bottom: 1px solid #a6a6a8;
-  padding-top: 20px; }
+  padding-bottom: 20px; }
 
 .contributor-photo {
   width: 20%;
