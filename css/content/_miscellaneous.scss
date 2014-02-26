@@ -99,7 +99,11 @@ p.caption {
 /* Contributors page */
 /*------------------------------*/  
 
-.contributor { clear: both; }
+.contributor { 
+  clear: both;
+  border-bottom: 1px solid $grayLight;
+  padding-top: 20px;
+}
 .contributor-photo { 
   width: 20%;
   float: left;
