@@ -101,11 +101,15 @@ p.caption {
 
 .contributor { 
   clear: both;
-  border-top: 1px solid $grayLight;
-  padding-top: 20px;
 }
-.contributor:first-child {
-  border-top: 0;
+.view-scholars {
+  .views-row {
+    border-top: 1px solid $grayLight;
+    padding-top: 20px;
+  }
+  .views-row:first-child {
+    border-top: 0;
+  }
 }
 .contributor-photo { 
   width: 20%;
