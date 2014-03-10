@@ -96,16 +96,12 @@
             <?php print $variables['warburg']['search_form']; ?>
 
        </header>
-            <?php
-            print '<!-- test comment jgr25 -->'
-            print_r($variables['warburg']); // jgr25
-            ?>
 
         <section>
         <a title="collapse panels" class="carousel-toggle carousel-toggle-hide" href="#"></a>
             <?php
-            //$block = module_invoke('views', 'block_view', 'panel_selector-block_2');
-            //print render($block);
+            $block = module_invoke('views', 'block_view', 'panel_selector-block');
+            print render($block);
             ?>
 
             <div class="carousel-left-limit"></div>
