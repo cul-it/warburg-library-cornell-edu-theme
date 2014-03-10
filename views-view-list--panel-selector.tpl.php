@@ -28,7 +28,7 @@ if (!empty($rows)) {
   drupal_add_js(drupal_get_path('theme', 'warburg') . '/js/carousel/jquery.rs.carousel-touch.js', array('group' => JS_THEME));
 }
 ?>
-<?php print $messages . '<!-- jgr test comment --!>'; ?>
+<?php print '<!-- jgr test comment 2 --!>'; ?>
 <?php print $wrapper_prefix; ?>
   <?php if (!empty($title)) : ?>
     <h3><?php print $title; ?></h3>
