@@ -116,7 +116,7 @@
               $selector = 'panel_selector-block';
             }
             $block = module_invoke('views', 'block_view', $selector, $theme_term);
-            print render($block);
+            print render($block['content']);
             ?>
         </section>
 
