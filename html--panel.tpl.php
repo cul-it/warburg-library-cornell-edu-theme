@@ -103,12 +103,7 @@
             <?php
             if (isset($_GET['theme'])) {
               $theme_term = $_GET['theme'];
-              if (isset($_GET['view']) && ($_GET['view'] == 'pathways')) {
-                $selector = 'panel_selector-block_2';
-              }
-              else {
-                $selector = 'panel_selector-block_1';
-              }
+              $selector = 'panel_selector-block_1';
             }
             else {
               $theme_term = 'all';
