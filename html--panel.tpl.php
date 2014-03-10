@@ -101,13 +101,11 @@
         <section>
 				<a title="collapse panels" class="carousel-toggle carousel-toggle-hide" href="#"></a>
             <?php
-            print 'jgr25 html--panel.tpl.php';
             if (isset($_GET['theme'])) {
               $theme_term = $_GET['theme'];
               $selector = 'panel_selector-block_1';
             }
             else if (isset($_GET['view']) && ($_GET['view'] == 'pathways')) {
-              print 'pathways found';
               $theme_term = 'all';
               $selector = 'panel_selector-block_2';
             }
