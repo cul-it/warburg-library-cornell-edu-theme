@@ -104,8 +104,8 @@
         <section>
         <a title="collapse panels" class="carousel-toggle carousel-toggle-hide" href="#"></a>
             <?php
-            $block = module_invoke('views', 'block_view', 'panel_selector-block_2');
-            print render($block);
+            //$block = module_invoke('views', 'block_view', 'panel_selector-block_2');
+            //print render($block);
             ?>
 
             <div class="carousel-left-limit"></div>
