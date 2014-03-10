@@ -109,7 +109,7 @@
             else if (isset($_GET['view']) && ($_GET['view'] == 'pathways')) {
               print 'pathways found';
               $theme_term = 'all';
-              $selector = 'panel_selector-block_1';
+              $selector = 'panel_selector-35f1a9715f23a6c1a632122714cbe031';
             }
             else {
               $theme_term = 'all';
