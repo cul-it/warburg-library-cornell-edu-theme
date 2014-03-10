@@ -234,6 +234,7 @@ function signale_preprocess_block(&$variables, $hook) {
  */
 function warburg_preprocess_html(&$vars) {
   if ($node = menu_get_object()) {
+    print ("jgr25 preprocess node type: ". $node->type);
     if ($node->type == 'themo') {
       $vars['theme_hook_suggestions'][] = 'html__themo';
     }
