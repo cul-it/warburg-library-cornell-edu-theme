@@ -77,7 +77,7 @@
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
 
   </head>
-<!-- from panel-image.tpl.php -->
+
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 
     <div class="page panels">
