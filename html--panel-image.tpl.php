@@ -100,6 +100,7 @@
         <section>
         <a title="collapse panels" class="carousel-toggle carousel-toggle-hide" href="#"></a>
             <?php
+            print '<!-- test comment jgr25 -->'
             print_r($variables['warburg']); // jgr25
             $block = module_invoke('views', 'block_view', 'panel_selector-block');
             print render($block);
