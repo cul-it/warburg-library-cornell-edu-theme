@@ -161,7 +161,6 @@ textarea {
 
   @page {
     margin: 0.5cm; }
-
   p,
   h2,
   h3 {
@@ -4476,35 +4475,30 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 
   to {
     background-position: 0 0; } }
-
 @-moz-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
 
   to {
     background-position: 0 0; } }
-
 @-ms-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
 
   to {
     background-position: 0 0; } }
-
 @-o-keyframes progress-bar-stripes {
   from {
     background-position: 0 0; }
 
   to {
     background-position: 40px 0; } }
-
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
 
   to {
     background-position: 0 0; } }
-
 .progress {
   overflow: hidden;
   height: 20px;
@@ -5618,21 +5612,23 @@ body {
   font-size: 40px;
   color: white; }
 
-.panels-display .panel-description .additional-images .addl-img-modal {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  text-align: center;
-  max-width: 400px; }
-  .panels-display .panel-description .additional-images .addl-img-modal a {
-    cursor: move;
+.panels-display .panel-description .additional-images {
+  margin-bottom: 20px; }
+  .panels-display .panel-description .additional-images .addl-img-modal {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-    margin: 0; }
-  .panels-display .panel-description .additional-images .addl-img-modal a.close {
-    cursor: pointer;
-    margin: 0; }
+    text-align: center;
+    max-width: 400px; }
+    .panels-display .panel-description .additional-images .addl-img-modal a {
+      cursor: move;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      margin: 0; }
+    .panels-display .panel-description .additional-images .addl-img-modal a.close {
+      cursor: pointer;
+      margin: 0; }
 
 /*
 .search-panels {
@@ -5673,7 +5669,6 @@ body {
 @-moz-document url-prefix() {
   .rs-carousel-runner {
     width: 1720px !important; } }
-
 @media only screen and (max-width: 62.5em) {
   #nav {
     width: 100%;
