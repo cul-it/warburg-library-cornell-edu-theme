@@ -142,8 +142,12 @@
 <section class="featured-content">
   <div class="container">
     <div class="row">
-      <div class="span8 media">
+      <div class="span4 media">
         <?php print render($page['home_media']); ?>
+      </div>
+      <div class="span4 ">
+        <?php //print render($page['home_media']); ?>
+        TEST
       </div>
       <div class="span4">
         <?php print render($page['home_resources']); ?>
