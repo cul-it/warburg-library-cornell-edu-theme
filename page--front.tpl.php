@@ -138,7 +138,6 @@
     </div>
   </div>
 </section>  
-TEST
 <section class="featured-content">
   <div class="container">
     <div class="row">
@@ -146,8 +145,7 @@ TEST
         <?php print render($page['home_media']); ?>
       </div>
       <div class="span4 ">
-        <?php //print render($page['home_media']); ?>
-        TEST
+        <?php print render($page['home_companion_volumen']); ?>
       </div>
       <div class="span4">
         <?php print render($page['home_resources']); ?>
