@@ -73,7 +73,7 @@
 <section class="institution-brand">
   <div class="container">
     <div class="institution-links">
-      <a href="http://www.library.cornell.edu">Cornell University Library</a> | <a href="http://warburg.sas.ac.uk/home/">The Warburg Institute</a> | <a href="http://www.cornellpress.cornell.edu/">Cornell University Press</a>
+      <a href="http://www.library.cornell.edu">Cornell University Library</a> | <a href="http://warburg.sas.ac.uk/home/">The Warburg Institute</a> | <a href="http://www.cornellpress.cornell.edu/">Cornell University Press</a> | <a href="http://signale.cornell.edu">Signale</a>
       <a class="search-panels" href="#" title="search"><span class="search-panels-icon"></span></a>
     </div>
     
