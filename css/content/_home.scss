@@ -120,7 +120,11 @@ a.signale {
 
 /* Companion Volumen */
 /*------------------------------*/
-.volumen { font-size: 1.5em; font-height: 1.2em; }
+a.volumen { font-size: 1.5em; 
+			font-height: 1.2em; 
+			display: inline-block;
+			padding-bottom: 10px;
+}
 
 /* Warburg Institute */
 /*------------------------------*/
