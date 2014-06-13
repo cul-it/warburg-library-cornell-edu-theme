@@ -6534,7 +6534,8 @@ p.caption {
     font-size: 2em; } }
 @media (max-width: 1372px) {
   .hero .home-content {
-    padding-left: 7%; }
+    padding-left: 7%;
+    width: 996px; }
     .hero .home-content p {
       font-size: 1.6em; } }
 @media (max-width: 1292px) {
