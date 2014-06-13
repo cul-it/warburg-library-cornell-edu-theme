@@ -107,7 +107,6 @@
   <section class="home-content">
     <?php print render($page['home_text']); ?>
   </section>
-  
 </section>
 
 <section class="featured-content featured-content-first">
