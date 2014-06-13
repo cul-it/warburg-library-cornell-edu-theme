@@ -6532,10 +6532,13 @@ p.caption {
 
   h2 {
     font-size: 2em; } }
+@media (max-width: 1400px) {
+  .hero .home-content {
+    width: 996px; } }
 @media (max-width: 1372px) {
   .hero .home-content {
     padding-left: 7%;
-    width: 996px; }
+    width: 80%; }
     .hero .home-content p {
       font-size: 1.6em; } }
 @media (max-width: 1292px) {

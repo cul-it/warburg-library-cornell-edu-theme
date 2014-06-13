@@ -1,10 +1,18 @@
+@media (max-width: 1400px) {
+	.hero {
+	
+		.home-content { 
+			width: 996px;
+		}
+	}
+}
 
 @media (max-width: 1372px) {
 	.hero {
 	
 		.home-content { 
 			padding-left: 7%; 
-			width: 996px;
+			width: 80%;
 
 			p {
 				font-size: 1.6em;
