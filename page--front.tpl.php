@@ -142,7 +142,7 @@
         <?php print render($page['home_media']); ?>
       </div>
       <div class="span4 ">
-        <?php print render($page['home_companion_volumen']); ?>
+        <?php print render($page['home_companion_volume']); ?>
       </div>
       <div class="span4">
         <?php print render($page['home_resources']); ?>
