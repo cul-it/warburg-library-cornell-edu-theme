@@ -6535,7 +6535,8 @@ p.caption {
 @media (min-width: 1400px) {
   .hero .home-content {
     margin: 0 auto;
-    width: 996px; }
+    width: 996px;
+    border: 1px solid red; }
     .hero .home-content p {
       width: 996px; } }
 @media (max-width: 1372px) {
