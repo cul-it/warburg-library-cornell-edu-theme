@@ -6596,7 +6596,7 @@ p.caption {
     max-width: 50%; } }
 @media screen and (max-width: 866px) {
   .hero .home-content h2 {
-    width: 320px;
+    width: 70%;
     padding: 10px;
     margin: 0; }
 
