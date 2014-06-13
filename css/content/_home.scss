@@ -6,15 +6,19 @@
 	height: 543px;
 	background: url("../images/panel.jpg") no-repeat scroll top left;
 	background-position: center 14px;
+
 	.home-content {
 		float: left;
 		padding-left: 7%;
 		padding-top: 73px;
 		/*width: 62.3611111% minus padding 16.4583333%;*/
-		width: 43%;
+		//width: 43%;
 		color: $textColorLight;
+
+		h2 { font-size: 2.6em; }
+
 		p {
-			width: 575px;
+			width: 80%;
 			background-color: $textColorDark;
 			opacity: .91;
 			font-size: 1.3em;
@@ -30,7 +34,7 @@
 				list-style-type:none; 
 				float: left; }
 		}
-		h2 { font-size: 2.25em; }
+		
 	}
 	aside {
 		float: right;

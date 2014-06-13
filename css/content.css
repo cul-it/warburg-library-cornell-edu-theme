@@ -6136,10 +6136,11 @@ footer {
     padding-left: 7%;
     padding-top: 73px;
     /*width: 62.3611111% minus padding 16.4583333%;*/
-    width: 43%;
     color: white; }
+    .hero .home-content h2 {
+      font-size: 2.6em; }
     .hero .home-content p {
-      width: 575px;
+      width: 80%;
       background-color: #486570;
       opacity: .91;
       font-size: 1.3em;
@@ -6154,8 +6155,6 @@ footer {
         display: block;
         list-style-type: none;
         float: left; }
-    .hero .home-content h2 {
-      font-size: 2.25em; }
   .hero aside {
     float: right;
     width: 37.6388889%;
