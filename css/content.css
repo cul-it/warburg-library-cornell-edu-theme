@@ -6536,7 +6536,8 @@ p.caption {
   .hero .home-content {
     margin: 0 auto;
     width: 996px;
-    border: 1px solid red; }
+    float: none;
+    padding-left: 0; }
     .hero .home-content p {
       width: 996px; } }
 @media (max-width: 1372px) {
