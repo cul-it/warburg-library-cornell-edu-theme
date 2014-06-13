@@ -2,7 +2,12 @@
 	.hero {
 	
 		.home-content { 
+			margin: 0 auto;
 			width: 996px;
+
+			p {
+				width: 996px;
+			}
 		}
 	}
 }

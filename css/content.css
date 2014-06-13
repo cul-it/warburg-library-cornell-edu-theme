@@ -6534,7 +6534,10 @@ p.caption {
     font-size: 2em; } }
 @media (min-width: 1400px) {
   .hero .home-content {
-    width: 996px; } }
+    margin: 0 auto;
+    width: 996px; }
+    .hero .home-content p {
+      width: 996px; } }
 @media (max-width: 1372px) {
   .hero .home-content {
     padding-left: 7%; }
