@@ -7,6 +7,11 @@
 	background: #2b2d2f url("../images/panel.jpg") no-repeat scroll top left;
 	background-position: center 0;
 
+	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
 	.home-content {
 		float: left;
 		padding-left: 7%;
