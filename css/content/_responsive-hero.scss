@@ -1,4 +1,4 @@
-@media (max-width: 1400px) {
+@media (min-width: 1400px) {
 	.hero {
 	
 		.home-content { 
@@ -12,7 +12,6 @@
 	
 		.home-content { 
 			padding-left: 7%; 
-			width: 80%;
 
 			p {
 				font-size: 1.6em;
