@@ -6533,19 +6533,15 @@ p.caption {
   h2 {
     font-size: 2em; } }
 @media (max-width: 1372px) {
-  .hero {
-    border: 1px solid blue; }
-    .hero .home-content {
-      padding-left: 7%; }
-      .hero .home-content p {
-        font-size: 1.6em; } }
-@media (max-width: 1292px) {
-  .hero {
-    border: 1px solid orange; }
-    .hero .home-content h2 {
-      font-size: 2em; }
+  .hero .home-content {
+    padding-left: 7%; }
     .hero .home-content p {
-      font-size: 1.7em; } }
+      font-size: 1.6em; } }
+@media (max-width: 1292px) {
+  .hero .home-content h2 {
+    font-size: 2em; }
+  .hero .home-content p {
+    font-size: 1.7em; } }
 @media (max-width: 1169px) {
   .btn-pathway {
     font-size: 1.8em; } }
@@ -6554,8 +6550,7 @@ p.caption {
     font-size: 1.75em; } }
 @media (max-width: 1147px) {
   .hero .home-content p {
-    font-size: 1.2em;
-    width: 550px; }
+    font-size: 1.2em; }
 
   .btn-pathway {
     font-size: 1.6em; }
