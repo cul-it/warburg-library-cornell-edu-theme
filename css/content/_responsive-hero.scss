@@ -1,5 +1,6 @@
 @media (min-width: 1372px) {
 	.hero {
+	border: 1px solid red;
 		.home-content { 
 			padding-left: 15%; 
 
@@ -12,6 +13,7 @@
 
 @media (max-width: 1292px) {
 	.hero {
+	border: 1px solid blue;
 		.home-content { 
 			h2 { font-size: 2em; }
 		}
@@ -19,11 +21,15 @@
 }
 
 @media (max-width: 1169px) {
+.hero {
+	border: 1px solid green;
+}
 	.btn-pathway { font-size: 1.8em; }
 }
 
 @media (max-width: 1157px) {
 	.hero {
+		border: 1px solid orange;
 		.home-content { 
 			h2 { font-size: 1.75em; }
 		}
