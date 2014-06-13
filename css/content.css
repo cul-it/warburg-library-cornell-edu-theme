@@ -6545,7 +6545,9 @@ p.caption {
   .hero {
     border: 1px solid blue; }
     .hero .home-content h2 {
-      font-size: 2em; } }
+      font-size: 2em; }
+    .hero .home-content p {
+      font-size: 1.7em; } }
 @media (max-width: 1169px) {
   .hero {
     border: 3px solid red; }
