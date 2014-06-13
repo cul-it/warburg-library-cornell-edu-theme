@@ -6535,11 +6535,11 @@ p.caption {
 @media (min-width: 1400px) {
   .hero .home-content {
     margin: 0 auto;
-    width: 996px;
+    width: 1200px;
     float: none;
     padding-left: 0; }
     .hero .home-content p {
-      width: 996px; } }
+      width: 1200px; } }
 @media (max-width: 1372px) {
   .hero .home-content {
     padding-left: 7%; }
