@@ -6648,3 +6648,6 @@ p.caption {
     font-size: 1.3em;
     opacity: .6;
     margin-left: 6px; } }
+@media screen and (max-width: 702px) and (max-width: 485px) {
+  .hero .home-content {
+    padding-top: 20px; } }
