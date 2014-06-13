@@ -107,9 +107,7 @@
   <section class="home-content">
     <?php print render($page['home_text']); ?>
   </section>
-  <aside>
-    <?php print render($page['home_book']); ?>
-  </aside>
+  
 </section>
 
 <section class="featured-content featured-content-first">
