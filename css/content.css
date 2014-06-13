@@ -6535,30 +6535,23 @@ p.caption {
   h2 {
     font-size: 2em; } }
 @media (min-width: 1372px) {
-  .hero {
-    border: 1px solid red; }
-    .hero .home-content {
-      padding-left: 15%; }
-      .hero .home-content p {
-        font-size: 2em; } }
+  .hero .home-content {
+    padding-left: 15%; }
+    .hero .home-content p {
+      font-size: 2em; } }
 @media (max-width: 1292px) {
   .hero {
-    border: 1px solid blue; }
+    border: 1px solid orange; }
     .hero .home-content h2 {
       font-size: 2em; }
     .hero .home-content p {
       font-size: 1.7em; } }
 @media (max-width: 1169px) {
-  .hero {
-    border: 3px solid red; }
-
   .btn-pathway {
     font-size: 1.8em; } }
 @media (max-width: 1157px) {
-  .hero {
-    border: 1px solid orange; }
-    .hero .home-content h2 {
-      font-size: 1.75em; } }
+  .hero .home-content h2 {
+    font-size: 1.75em; } }
 @media (max-width: 1147px) {
   .hero .home-content p {
     font-size: 1.2em;
