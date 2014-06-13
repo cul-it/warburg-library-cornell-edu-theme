@@ -6557,9 +6557,6 @@ p.caption {
 
   .btn-panels {
     font-size: 1.4em; } }
-@media (max-width: 1103px) {
-  .hero .home-content p {
-    width: 500px; } }
 @media (max-width: 1023px) {
   .hero .home-content {
     padding-left: 5%; }
