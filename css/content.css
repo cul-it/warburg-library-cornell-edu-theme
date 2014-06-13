@@ -6532,7 +6532,7 @@ p.caption {
 
   h2 {
     font-size: 2em; } }
-@media (min-width: 1372px) {
+@media (max-width: 1372px) {
   .hero {
     border: 1px solid blue; }
     .hero .home-content {
