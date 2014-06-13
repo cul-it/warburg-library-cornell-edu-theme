@@ -6576,7 +6576,6 @@ p.caption {
       padding: 20px;
       margin: 0; }
     .hero .home-content p {
-      width: 420px;
       padding: 20px;
       margin: 0; }
     .hero .home-content ul {
@@ -6599,8 +6598,6 @@ p.caption {
     width: 320px;
     padding: 10px;
     margin: 0; }
-  .hero .home-content p {
-    width: 350px; }
 
   .btn-panels {
     margin-left: 0;
