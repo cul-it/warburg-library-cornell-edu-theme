@@ -1000,15 +1000,17 @@ body {
 					-moz-border-radius: 0;
 					border-radius: 0;
 					margin: 0; 
-					display: inline-block;
-					margin-top: 5px;
-					margin-bottom: 5px}
 				a.close { 
 					cursor: pointer;
 					margin: 0; }
 			}
 		}
 	}
+}
+
+.panels-display .panel-description p a {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 /*
