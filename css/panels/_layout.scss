@@ -934,7 +934,13 @@ body {
 .guide {
 	a { 
 		color: white;
-		background: $green; }
+		background: $green; 
+		display: inline-block;
+    	margin: 5px;
+    	padding: 4px;
+    	
+    }
+
 	a:hover { 
 		background: $blueLight;
 		text-decoration: none; }

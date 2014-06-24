@@ -5572,7 +5572,10 @@ body {
 
 .guide a {
   color: white;
-  background: #7a9945; }
+  background: #7a9945;
+  display: inline-block;
+  margin: 5px;
+  padding: 4px; }
 .guide a:hover {
   background: #37c1d6;
   text-decoration: none; }
