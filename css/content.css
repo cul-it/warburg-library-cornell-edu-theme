@@ -6367,7 +6367,9 @@ p.caption {
 /* Contributors page */
 /*------------------------------*/
 .contributor {
-  clear: both; }
+  clear: both;
+  margin-bottom: 2em;
+  overflow: hidden; }
 
 .contributor-photo {
   width: 20%;
