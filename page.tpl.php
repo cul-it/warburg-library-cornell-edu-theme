@@ -73,7 +73,7 @@
 <section class="institution-brand">
   <div class="container">
     <div class="institution-links">
-      <a href="http://www.library.cornell.edu">Cornell University Library</a> | <a href="http://warburg.sas.ac.uk/home/">The Warburg Institute</a> |      <a href="http://www.cornellpress.cornell.edu/">Cornell University Press</a>
+      <a href="http://www.library.cornell.edu">Cornell University Library</a> | <a href="http://warburg.sas.ac.uk/home/">The Warburg Institute</a> | <a href="http://www.cornellpress.cornell.edu/">Cornell University Press</a> | <a href="http://signale.cornell.edu">Signale</a>
     </div>
 
     <?php print $variables['warburg']['search_form']; ?>
