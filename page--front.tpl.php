@@ -124,10 +124,10 @@
     }?>
     <div class="row">
       <div class="span4">
-        <?php print render($page['home_panels']); ?>
+        <?php print render($page['home_panels_c1']); ?>
       </div>
       <div class="span4">
-        <?php print render($page['home_atlas']); ?>
+        <?php print render($page['home_panels_c2']); ?>
       </div>
       <div class="span4 warburg-institute">
         <?php print render($page['home_warburg']); ?>

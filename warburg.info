@@ -37,8 +37,9 @@ regions[home_book]   			= Home page book
 regions[home_media]   			= Home page media
 regions[home_companion_volume]   	= Home page companion volume
 regions[home_warburg]   		= Home page Warburg Institute
-regions[home_panels]   			= Home page panels
-regions[home_atlas]   			= Home page Other Atlas
+regions[home_panels_c1]   			= Home page panels first column
+regions[home_panels_c2]   			= Home page panels second column
+;regions[home_atlas]   			= Home page Other Atlas
 regions[home_resources] 		= Home page book resources
 
 regions[page_top]       		= Page top
